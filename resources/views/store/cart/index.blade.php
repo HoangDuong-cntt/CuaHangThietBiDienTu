@@ -41,7 +41,13 @@
                         data-variant-id="{{ $variant->id }}"
                         data-quantity="{{ $item['quantity'] }}"
                     >
-                        <div class="product-placeholder" aria-hidden="true">{{ mb_substr($variant->product->name, 0, 1) }}</div>
+                        @if($variant->product->images->first()?->image_url)
+                            <div class="w-16 h-16 rounded-xl bg-[#f8fafc] border border-slate-200/80 p-1 flex items-center justify-center shrink-0 overflow-hidden">
+                                <img src="{{ $variant->product->images->first()->image_url }}" alt="{{ $variant->product->name }}" class="w-full h-full object-contain">
+                            </div>
+                        @else
+                            <div class="product-placeholder" aria-hidden="true">{{ mb_substr($variant->product->name, 0, 1) }}</div>
+                        @endif
                         <div class="cart-product">
                             <h2>
                                 <a href="{{ route('products.show', $variant->product->slug) }}" class="hover:text-blue-600 transition-colors">

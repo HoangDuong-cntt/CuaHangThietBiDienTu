@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html lang="vi" class="h-full bg-slate-50">
+<html lang="vi" class="h-full bg-white">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'SmartTech - Cửa Hàng Thiết Bị Công Nghệ Thông Minh')</title>
+    <title>@yield('title', 'tinh. - Tinh Chọn Công Nghệ, Trọn Vẹn Trải Nghiệm')</title>
 
     <!-- Google Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .glass-header {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; }
     </style>
     @stack('styles')
 </head>
-<body class="flex flex-col min-h-screen text-slate-800 antialiased selection:bg-blue-500 selection:text-white">
+<body class="flex flex-col min-h-screen bg-white text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
 
     <!-- TOP ANNOUNCEMENT BAR -->
     <div class="bg-zinc-950 text-zinc-300 text-xs font-medium py-2 px-4 border-b border-zinc-900">

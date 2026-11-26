@@ -3,36 +3,32 @@
 @section('title', 'Danh Sách Thiết Bị Công Nghệ Chính Hãng - tinh.')
 
 @section('content')
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
 
-    <!-- Hero Banner -->
-    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-slate-900 via-blue-950 to-indigo-950 text-white p-8 md:p-12 shadow-xl">
-        <div class="relative z-10 max-w-2xl space-y-4">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30">
-                <i class="fa-solid fa-sparkles text-amber-300"></i> Tuần Lễ Công Nghệ Thông Minh 2026
+    <!-- Hero Banner (Chuẩn form mẫu tinh.) -->
+    <div class="relative overflow-hidden rounded-3xl bg-[#f4f6f8] border border-slate-200/70 p-8 sm:p-10">
+        <div class="relative z-10 max-w-2xl space-y-3">
+            <span class="text-blue-600 font-bold text-[11px] uppercase tracking-wider block">
+                CÔNG NGHỆ TINH GỌN &bull; TRẢI NGHIỆM TRỌN VẸN
             </span>
-            <h1 class="text-3xl md:text-5xl font-black tracking-tight leading-tight">
-                Thiết Bị Công Nghệ Cao Cấp <span class="bg-gradient-to-r from-blue-400 to-sky-300 bg-clip-text text-transparent">Chính Hãng</span>
+            <h1 class="text-2xl sm:text-3xl font-black tracking-tight text-slate-900">
+                Thiết Bị Công Nghệ Cao Cấp Chính Hãng
             </h1>
-            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+            <p class="text-xs sm:text-sm text-slate-500 leading-relaxed font-normal">
                 Khám phá bộ sưu tập hơn 250+ mẫu Laptop Gaming, Laptop Doanh nhân, Flagship Smartphone và Phụ kiện cao cấp với chính sách bảo hành 1 đổi 1.
             </p>
-            <div class="flex flex-wrap gap-4 pt-2">
-                <div class="flex items-center gap-2 text-xs font-medium text-slate-300 bg-white/5 border border-white/10 px-3.5 py-2 rounded-xl backdrop-blur-xs">
-                    <i class="fa-solid fa-award text-amber-400 text-sm"></i> 100% Chính Hãng Phân Phối
+            <div class="flex flex-wrap gap-3 pt-2">
+                <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 bg-white border border-slate-200 px-3 py-1.5 rounded-lg shadow-2xs">
+                    <i class="fa-solid fa-award text-amber-500 text-xs"></i> 100% Chính Hãng
                 </div>
-                <div class="flex items-center gap-2 text-xs font-medium text-slate-300 bg-white/5 border border-white/10 px-3.5 py-2 rounded-xl backdrop-blur-xs">
-                    <i class="fa-solid fa-bolt-lightning text-sky-400 text-sm"></i> Hỗ Trợ Trả Góp 0% Lãi Suất
+                <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 bg-white border border-slate-200 px-3 py-1.5 rounded-lg shadow-2xs">
+                    <i class="fa-solid fa-bolt-lightning text-blue-500 text-xs"></i> Trả Góp 0% Lãi Suất
                 </div>
-                <div class="flex items-center gap-2 text-xs font-medium text-slate-300 bg-white/5 border border-white/10 px-3.5 py-2 rounded-xl backdrop-blur-xs">
-                    <i class="fa-solid fa-repeat text-emerald-400 text-sm"></i> Đổi Trả Miễn Phí 30 Ngày
+                <div class="flex items-center gap-2 text-xs font-semibold text-slate-700 bg-white border border-slate-200 px-3 py-1.5 rounded-lg shadow-2xs">
+                    <i class="fa-solid fa-repeat text-emerald-500 text-xs"></i> Đổi Mới 30 Ngày
                 </div>
             </div>
         </div>
-
-        <!-- Decorative background shapes -->
-        <div class="absolute -right-20 -top-20 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute right-40 -bottom-20 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
     </div>
 
     <!-- Brand Filter Strip -->

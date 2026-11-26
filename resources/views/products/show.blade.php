@@ -264,39 +264,39 @@
 
             <!-- AI Summary Widget (Phân hệ AI Member 2 & 3) -->
             @if($product->ai_summary)
-                <div class="bg-gradient-to-br from-indigo-900 via-blue-900 to-slate-900 rounded-3xl p-6 md:p-8 text-white shadow-xl relative overflow-hidden">
+                <div class="bg-[#f0f3ff] rounded-3xl p-6 md:p-8 text-slate-800 border border-blue-100/70 shadow-2xs relative overflow-hidden">
                     <div class="relative z-10 space-y-4">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-2">
-                                <div class="w-8 h-8 rounded-lg bg-blue-500/30 border border-blue-400/40 flex items-center justify-center text-blue-300">
+                                <div class="w-8 h-8 rounded-lg bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-600">
                                     <i class="fa-solid fa-wand-magic-sparkles text-sm"></i>
                                 </div>
-                                <h3 class="font-extrabold text-base tracking-tight">AI Smart Summary</h3>
+                                <h3 class="font-extrabold text-base tracking-tight text-slate-900">AI Smart Summary</h3>
                             </div>
-                            <span class="text-[11px] font-bold uppercase tracking-wider bg-blue-500/20 text-blue-200 border border-blue-400/30 px-2.5 py-1 rounded-full">
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-white text-blue-600 border border-blue-200 px-2.5 py-1 rounded-full shadow-2xs">
                                 Phân tích kỹ thuật tự động
                             </span>
                         </div>
 
                         <!-- Target Audience -->
                         @if(isset($product->ai_summary['target_users']))
-                            <div class="bg-white/10 rounded-xl p-3 text-xs flex items-center gap-2 border border-white/10">
-                                <i class="fa-solid fa-user-check text-blue-300 text-sm"></i>
-                                <span><strong>Phù hợp nhất với:</strong> {{ $product->ai_summary['target_users'] }}</span>
+                            <div class="bg-white rounded-xl p-3 text-xs flex items-center gap-2 border border-slate-200/80 shadow-2xs">
+                                <i class="fa-solid fa-user-check text-blue-600 text-sm"></i>
+                                <span class="text-slate-700"><strong>Phù hợp nhất với:</strong> {{ $product->ai_summary['target_users'] }}</span>
                             </div>
                         @endif
 
                         <!-- Pros & Cons Grid -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs pt-1">
                             <!-- Pros -->
-                            <div class="space-y-2 bg-emerald-950/40 border border-emerald-500/30 rounded-2xl p-4">
-                                <span class="font-bold text-emerald-300 uppercase tracking-wider flex items-center gap-1.5 text-[11px]">
-                                    <i class="fa-solid fa-circle-check text-emerald-400"></i> Ưu điểm nổi trội
+                            <div class="space-y-2 bg-emerald-50/80 border border-emerald-200/80 rounded-2xl p-4">
+                                <span class="font-bold text-emerald-800 uppercase tracking-wider flex items-center gap-1.5 text-[11px]">
+                                    <i class="fa-solid fa-circle-check text-emerald-600"></i> Ưu điểm nổi trội
                                 </span>
-                                <ul class="space-y-1.5 text-slate-200">
+                                <ul class="space-y-1.5 text-slate-700">
                                     @foreach($product->ai_summary['pros'] ?? [] as $pro)
                                         <li class="flex items-start gap-1.5">
-                                            <span class="text-emerald-400 font-bold">•</span>
+                                            <span class="text-emerald-600 font-bold">•</span>
                                             <span>{{ $pro }}</span>
                                         </li>
                                     @endforeach
@@ -304,14 +304,14 @@
                             </div>
 
                             <!-- Cons -->
-                            <div class="space-y-2 bg-rose-950/40 border border-rose-500/30 rounded-2xl p-4">
-                                <span class="font-bold text-rose-300 uppercase tracking-wider flex items-center gap-1.5 text-[11px]">
-                                    <i class="fa-solid fa-circle-exclamation text-rose-400"></i> Lưu ý / Nhược điểm
+                            <div class="space-y-2 bg-rose-50/80 border border-rose-200/80 rounded-2xl p-4">
+                                <span class="font-bold text-rose-800 uppercase tracking-wider flex items-center gap-1.5 text-[11px]">
+                                    <i class="fa-solid fa-circle-exclamation text-rose-600"></i> Lưu ý / Nhược điểm
                                 </span>
-                                <ul class="space-y-1.5 text-slate-200">
+                                <ul class="space-y-1.5 text-slate-700">
                                     @foreach($product->ai_summary['cons'] ?? [] as $con)
                                         <li class="flex items-start gap-1.5">
-                                            <span class="text-rose-400 font-bold">•</span>
+                                            <span class="text-rose-600 font-bold">•</span>
                                             <span>{{ $con }}</span>
                                         </li>
                                     @endforeach

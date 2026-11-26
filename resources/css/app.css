@@ -11,9 +11,9 @@
 }
 
 :root {
-    color: #172033;
-    background: #f5f7fb;
-    font-family: var(--font-sans);
+    color: #0f172a;
+    background: #ffffff;
+    font-family: 'Plus Jakarta Sans', var(--font-sans);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
 }
@@ -26,6 +26,8 @@ body {
     min-width: 320px;
     min-height: 100vh;
     margin: 0;
+    background-color: #ffffff;
+    color: #0f172a;
 }
 
 a {

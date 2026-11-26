@@ -1,4 +1,6 @@
-@extends('layouts.app', ['title' => 'Hồ sơ cá nhân & Sổ địa chỉ'])
+@extends('layouts.client')
+
+@section('title', 'Hồ sơ cá nhân & Sổ địa chỉ - tinh.')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" x-data="addressManager()">

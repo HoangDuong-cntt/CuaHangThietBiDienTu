@@ -1,33 +1,32 @@
 @extends('layouts.client')
 
-@section('title', 'Cửa Hàng Thiết Bị Công Nghệ - SmartTech')
+@section('title', 'Cửa Hàng Thiết Bị Công Nghệ - tinh.')
 
 @section('content')
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
-    <!-- BREADCRUMB & HEADER BANNER -->
+    <!-- BREADCRUMB & HEADER BANNER (CHUẨN FORM MẪU TINH.) -->
     <div class="mb-8">
-        <nav class="flex items-center gap-2 text-xs text-slate-400 mb-3">
+        <nav class="flex items-center gap-2 text-xs text-slate-400 mb-4">
             <a href="{{ route('home') }}" class="hover:text-blue-600 transition-colors">Trang chủ</a>
             <i class="fa-solid fa-chevron-right text-[10px]"></i>
-            <span class="text-slate-700 font-semibold">Cửa hàng</span>
+            <span class="text-slate-800 font-medium">Cửa hàng</span>
             @if(request('category'))
                 <i class="fa-solid fa-chevron-right text-[10px]"></i>
                 <span class="text-blue-600 font-semibold">{{ request('category') }}</span>
             @endif
         </nav>
 
-        <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-blue-950 rounded-3xl p-6 sm:p-10 text-white relative overflow-hidden shadow-xl">
-            <div class="absolute -right-16 -bottom-16 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="relative z-10 max-w-2xl">
-                <span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-blue-500/30 text-blue-300 border border-blue-400/30 inline-block mb-3">
-                    🚀 Khám Phá Công Nghệ Mới
+        <div class="bg-[#f4f6f8] rounded-3xl p-8 sm:p-10 border border-slate-200/70 relative overflow-hidden">
+            <div class="relative z-10 max-w-2xl space-y-2">
+                <span class="text-blue-600 font-bold text-[11px] uppercase tracking-wider block">
+                    CÔNG NGHỆ TINH GỌN &bull; TRẢI NGHIỆM TRỌN VẸN
                 </span>
-                <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight mb-3">
-                    Hệ Thống Thiết Bị Thông Minh Chính Hãng
+                <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                    Hệ Thống Thiết Bị Thông Minh
                 </h1>
-                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    Khám phá hơn 250 sản phẩm cao cấp từ Apple, Asus, Dell, MSI, Lenovo, Samsung, Xiaomi. Sử dụng bộ lọc thông số sâu và trợ lý AI để chọn máy ưng ý nhất!
+                <p class="text-xs sm:text-sm text-slate-500 leading-relaxed font-normal">
+                    Khám phá thiết bị công nghệ chính hãng từ Apple, Asus, Dell, MSI, Lenovo, Samsung, Xiaomi. Sử dụng bộ lọc thông số sâu và trợ lý AI để chọn máy ưng ý nhất!
                 </p>
             </div>
         </div>
