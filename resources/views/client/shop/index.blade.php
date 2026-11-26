@@ -312,14 +312,14 @@
 
                         <!-- Product Thumbnail -->
                         <div>
-                            <div class="w-full h-44 rounded-2xl bg-slate-50/70 p-4 flex items-center justify-center overflow-hidden mb-3 border border-slate-100">
+                            <a href="{{ route('products.show', $product->slug) }}" class="w-full h-44 rounded-2xl bg-slate-50/70 p-4 flex items-center justify-center overflow-hidden mb-3 border border-slate-100 block group-hover:border-blue-200 transition-colors">
                                 <img 
                                     src="{{ $product->images->first()?->image_url ?? '/images/placeholder.svg' }}" 
                                     alt="{{ $product->name }}" 
                                     class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                                     onerror="this.src='/images/placeholder.svg'"
                                 >
-                            </div>
+                            </a>
 
                             <!-- Brand & SKU -->
                             <div class="flex items-center justify-between text-[11px] mb-1">
@@ -327,10 +327,12 @@
                                 <span class="text-slate-400 font-mono text-[10px]">{{ $product->sku_master }}</span>
                             </div>
 
-                            <!-- Product Name -->
-                            <h3 class="font-bold text-sm text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug mb-2">
-                                {{ $product->name }}
-                            </h3>
+                            <!-- Product Name (Linked to Detail Page) -->
+                            <a href="{{ route('products.show', $product->slug) }}" class="block mb-2">
+                                <h3 class="font-bold text-sm text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug">
+                                    {{ $product->name }}
+                                </h3>
+                            </a>
 
                             <!-- Key Specs Pills (Cân nặng, Pin, Màn hình) -->
                             <div class="flex flex-wrap gap-1.5 mb-3 text-[10px] font-medium text-slate-600">
@@ -365,12 +367,22 @@
                                 @endif
                             </div>
 
-                            <!-- Action Bar: So Sánh + Thêm Giỏ Hàng -->
-                            <div class="grid grid-cols-2 gap-2">
+                            <!-- Action Bar: Thêm Giỏ + So Sánh + Hỏi AI -->
+                            <div class="grid grid-cols-3 gap-1.5">
+                                <button 
+                                    type="button" 
+                                    onclick="addToCart({{ $product->variants->first()?->id ?? $product->id }}, 1)" 
+                                    class="py-2 px-2 rounded-xl bg-blue-50 hover:bg-blue-600 text-blue-600 hover:text-white text-xs font-bold transition-all text-center flex items-center justify-center gap-1 cursor-pointer"
+                                    title="Thêm vào giỏ hàng"
+                                >
+                                    <i class="fa-solid fa-cart-plus text-[11px]"></i>
+                                    <span>+ Giỏ</span>
+                                </button>
+
                                 <button 
                                     type="button" 
                                     onclick="addToCompare({{ $product->id }}, {{ $product->category?->getRoot()->id ?? $product->category_id }}, '{{ addslashes($product->category?->getRoot()->name ?? $product->category?->name) }}')" 
-                                    class="py-2 px-2.5 rounded-xl bg-slate-100 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 text-xs font-semibold text-center border border-slate-200/80 transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+                                    class="py-2 px-2 rounded-xl bg-slate-100 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 text-xs font-semibold text-center border border-slate-200/80 transition-colors flex items-center justify-center gap-1 cursor-pointer"
                                     title="So sánh với máy cùng loại"
                                 >
                                     <i class="fa-solid fa-scale-balanced text-[11px]"></i>
@@ -379,11 +391,11 @@
 
                                 <button 
                                     type="button" 
-                                    onclick="window.SmartTechAI && window.SmartTechAI.setProductContext({{ $product->id }}); window.SmartTechAI && window.SmartTechAI.openChat();"
-                                    class="py-2 px-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-xs font-semibold text-center shadow-xs transition-all flex items-center justify-center gap-1.5"
+                                    onclick="window.SmartTechAI && window.SmartTechAI.setProductContext({{ $product->id }}); window.SmartTechAI && window.SmartTechAI.openChat();" 
+                                    class="py-2 px-2 rounded-xl bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-blue-600 text-xs font-semibold text-center border border-slate-200/80 transition-colors flex items-center justify-center gap-1 cursor-pointer"
                                     title="Hỏi AI về máy này"
                                 >
-                                    <i class="fa-solid fa-sparkles text-[11px]"></i>
+                                    <i class="fa-solid fa-sparkles text-amber-500 text-[11px]"></i>
                                     <span>Hỏi AI</span>
                                 </button>
                             </div>

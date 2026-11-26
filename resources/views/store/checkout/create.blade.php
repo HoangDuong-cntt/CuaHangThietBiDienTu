@@ -1,14 +1,15 @@
 @extends('layouts.client')
 
-@section('title', 'Thanh toán')
+@section('title', 'Thanh toán - tinh.')
 
 @section('content')
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="page-heading">
         <div>
             <p class="eyebrow">HOÀN TẤT ĐẶT HÀNG</p>
             <h1>Thông tin thanh toán</h1>
         </div>
-        <a class="text-link" href="{{ route('cart.index') }}">Quay lại giỏ hàng</a>
+        <a class="text-link" href="{{ route('cart.index') }}">&larr; Quay lại giỏ hàng</a>
     </div>
 
     @if ($errors->any())
@@ -120,4 +121,5 @@
             <p class="secure-note">Voucher sẽ được áp dụng sau khi tích hợp API mã giảm giá.</p>
         </aside>
     </div>
+</div>
 @endsection

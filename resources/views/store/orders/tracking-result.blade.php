@@ -1,14 +1,15 @@
 @extends('layouts.client')
 
-@section('title', 'Theo dõi '.$order->order_code)
+@section('title', 'Theo dõi '.$order->order_code.' - tinh.')
 
 @section('content')
+<div class="max-w-4xl mx-auto px-4 py-8">
     <div class="page-heading">
         <div>
             <p class="eyebrow">TRA CỨU ĐƠN HÀNG</p>
             <h1>{{ $order->order_code }}</h1>
         </div>
-        <a class="text-link" href="{{ route('orders.track.form') }}">Tra cứu đơn khác</a>
+        <a class="text-link" href="{{ route('orders.track.form') }}">&larr; Tra cứu đơn khác</a>
     </div>
     <section class="card order-status-card">
         <div class="status-heading">
@@ -40,4 +41,5 @@
             </div>
         @endforeach
     </section>
+</div>
 @endsection

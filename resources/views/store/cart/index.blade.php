@@ -1,14 +1,15 @@
 @extends('layouts.client')
 
-@section('title', 'Giỏ hàng')
+@section('title', 'Giỏ hàng - tinh.')
 
 @section('content')
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="page-heading">
         <div>
             <p class="eyebrow">MUA SẮM</p>
             <h1>Giỏ hàng của bạn</h1>
         </div>
-        <a class="text-link" href="{{ url('/') }}">Tiếp tục mua sắm</a>
+        <a class="text-link" href="{{ route('shop.index') }}">&larr; Tiếp tục mua sắm</a>
     </div>
 
     @if ($errors->any())
@@ -24,7 +25,7 @@
             <span class="empty-icon" aria-hidden="true">🛒</span>
             <h2>Giỏ hàng đang trống</h2>
             <p>Thêm sản phẩm bạn yêu thích để tiếp tục đặt hàng.</p>
-            <a class="button button-primary" href="{{ url('/') }}">Khám phá sản phẩm</a>
+            <a class="button button-primary" href="{{ route('shop.index') }}">Khám phá sản phẩm</a>
         </section>
     @else
         <div class="cart-layout">
@@ -42,7 +43,11 @@
                     >
                         <div class="product-placeholder" aria-hidden="true">{{ mb_substr($variant->product->name, 0, 1) }}</div>
                         <div class="cart-product">
-                            <h2>{{ $variant->product->name }}</h2>
+                            <h2>
+                                <a href="{{ route('products.show', $variant->product->slug) }}" class="hover:text-blue-600 transition-colors">
+                                    {{ $variant->product->name }}
+                                </a>
+                            </h2>
                             <p>{{ collect([$variant->color_name, $variant->ram, $variant->storage])->filter()->join(' / ') ?: $variant->sku }}</p>
                             <strong>{{ number_format($unitPrice, 0, ',', '.') }} ₫</strong>
                             @if ($item['quantity'] > $variant->stock_quantity)
@@ -88,4 +93,5 @@
             </aside>
         </div>
     @endif
+</div>
 @endsection

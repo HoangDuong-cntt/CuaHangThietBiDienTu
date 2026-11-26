@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.client')
 
-@section('title', $product->name . ' Chính Hãng - SmartTech')
+@section('title', $product->name . ' Chính Hãng - tinh.')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-8">
@@ -15,9 +15,9 @@
     <nav class="flex items-center space-x-2 text-xs text-slate-500">
         <a href="{{ route('home') }}" class="hover:text-blue-600 transition">Trang chủ</a>
         <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
-        <a href="{{ route('products.index') }}" class="hover:text-blue-600 transition">Sản phẩm</a>
+        <a href="{{ route('shop.index') }}" class="hover:text-blue-600 transition">Cửa hàng</a>
         <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
-        <a href="{{ route('products.index', ['category' => $product->category?->slug]) }}" class="hover:text-blue-600 transition">
+        <a href="{{ route('shop.index', ['category' => $product->category?->slug]) }}" class="hover:text-blue-600 transition">
             {{ $product->category?->name }}
         </a>
         <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
@@ -615,21 +615,83 @@
         }
     }
 
-    // ===== User Feedback Toast =====
-    function showNotification(msg) {
-        const toast = document.createElement('div');
-        toast.className = 'fixed bottom-5 right-5 z-50 bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 border border-slate-700 animate-bounce text-sm';
-        toast.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i><span>${msg}</span>`;
-        document.body.appendChild(toast);
-        setTimeout(() => toast.remove(), 3500);
+    // ===== Real Add to Cart & Buy Now Integration =====
+    async function addToCart() {
+        if (!currentVariant) {
+            window.showToast('Vui lòng chọn cấu hình sản phẩm trước khi mua', 'error');
+            return;
+        }
+
+        const btn = document.getElementById('btnAddToCart');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i><span>Đang thêm...</span>';
+        btn.disabled = true;
+
+        try {
+            const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+            const res = await fetch('/cart/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken,
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    variant_id: currentVariant.id,
+                    quantity: 1
+                })
+            });
+
+            if (res.redirected) {
+                window.location.href = res.url;
+                return;
+            }
+
+            // Update badge
+            const badges = document.querySelectorAll('[data-cart-count]');
+            badges.forEach(badge => {
+                const current = parseInt(badge.textContent.trim(), 10) || 0;
+                badge.textContent = current + 1;
+            });
+
+            window.showToast(`Đã thêm ${currentVariant.sku || 'sản phẩm'} vào giỏ hàng!`, 'success');
+        } catch (e) {
+            window.location.href = '/cart';
+        } finally {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+        }
     }
 
-    function addToCart() {
-        showNotification(`Đã thêm <strong>${currentVariant ? currentVariant.sku : 'sản phẩm'}</strong> vào giỏ hàng!`);
-    }
+    async function buyNow() {
+        if (!currentVariant) {
+            window.showToast('Vui lòng chọn phiên bản sản phẩm', 'error');
+            return;
+        }
 
-    function buyNow() {
-        showNotification(`Đang chuyển hướng sang thanh toán cho mã: <strong>${currentVariant ? currentVariant.sku : ''}</strong>`);
+        const btn = document.getElementById('btnBuyNow');
+        btn.innerHTML = '<span>Đang chuyển sang giỏ hàng...</span>';
+        btn.disabled = true;
+
+        try {
+            const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+            await fetch('/cart/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken,
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    variant_id: currentVariant.id,
+                    quantity: 1
+                })
+            });
+
+            window.location.href = '{{ route('cart.index') }}';
+        } catch (e) {
+            window.location.href = '{{ route('cart.index') }}';
+        }
     }
 
     if (currentVariant) {
