@@ -109,6 +109,61 @@
                     <a href="{{ route('shop.index') }}" class="p-2 text-slate-600 hover:text-blue-600 hover:bg-slate-100 rounded-full transition-colors relative" title="Cửa hàng">
                         <i class="fa-solid fa-bag-shopping text-base"></i>
                     </a>
+
+                    <!-- User Account / Auth (Member 1 Integration) -->
+                    @guest
+                        <div class="flex items-center gap-1.5 pl-2 border-l border-slate-200">
+                            <a href="{{ route('login') }}" class="px-3 py-1.5 text-xs font-bold text-slate-700 hover:text-blue-600 rounded-xl hover:bg-slate-100/80 transition-colors">
+                                <i class="fa-regular fa-user mr-1 text-slate-400"></i>Đăng nhập
+                            </a>
+                            <a href="{{ route('register') }}" class="hidden sm:inline-block px-3 py-1.5 text-xs font-bold text-white bg-slate-900 hover:bg-blue-600 rounded-xl shadow-xs transition-colors">
+                                Đăng ký
+                            </a>
+                        </div>
+                    @else
+                        <div class="relative pl-2 border-l border-slate-200" id="user-menu-container">
+                            <button 
+                                type="button" 
+                                onclick="const dd = document.getElementById('user-dropdown'); dd.classList.toggle('hidden');" 
+                                class="flex items-center gap-2 px-2.5 py-1.5 rounded-xl hover:bg-slate-100 text-xs font-bold text-slate-700 transition-colors cursor-pointer"
+                            >
+                                <div class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px] font-extrabold uppercase shadow-xs">
+                                    {{ substr(Auth::user()->name, 0, 1) }}
+                                </div>
+                                <span class="max-w-[100px] truncate hidden sm:inline">{{ Auth::user()->name }}</span>
+                                <i class="fa-solid fa-chevron-down text-[10px] text-slate-400"></i>
+                            </button>
+
+                            <!-- User Dropdown Menu -->
+                            <div id="user-dropdown" class="hidden absolute right-0 mt-2 w-52 bg-white rounded-2xl shadow-xl border border-slate-100 py-1.5 z-50 text-xs">
+                                <div class="px-3 py-2 border-b border-slate-100">
+                                    <p class="font-bold text-slate-900 truncate">{{ Auth::user()->name }}</p>
+                                    <p class="text-[10px] text-slate-400 truncate">{{ Auth::user()->email }}</p>
+                                    <span class="inline-block mt-1 px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-slate-100 text-slate-600 uppercase">{{ Auth::user()->role }}</span>
+                                </div>
+                                
+                                @if(Auth::user()->isAdmin() || Auth::user()->isStaff())
+                                    <a href="{{ route('admin.dashboard') }}" class="flex items-center gap-2 px-3 py-2 text-indigo-600 hover:bg-indigo-50 font-bold transition-colors">
+                                        <i class="fa-solid fa-shield-halved text-xs text-indigo-500"></i>
+                                        <span>Quản trị Admin</span>
+                                    </a>
+                                @endif
+
+                                <a href="{{ route('profile.edit') }}" class="flex items-center gap-2 px-3 py-2 text-slate-700 hover:bg-slate-50 font-medium transition-colors">
+                                    <i class="fa-regular fa-id-card text-xs text-slate-400"></i>
+                                    <span>Hồ sơ & Sổ địa chỉ</span>
+                                </a>
+
+                                <form method="POST" action="{{ route('logout') }}" class="border-t border-slate-100">
+                                    @csrf
+                                    <button type="submit" class="w-full flex items-center gap-2 px-3 py-2 text-rose-600 hover:bg-rose-50 font-medium text-left transition-colors cursor-pointer">
+                                        <i class="fa-solid fa-arrow-right-from-bracket text-xs text-rose-400"></i>
+                                        <span>Đăng xuất</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    @endguest
                 </nav>
             </div>
         </div>
@@ -615,6 +670,15 @@
             }
             window.location.href = `/compare?ids=${ids.join(',')}`;
         }
+
+        // Đóng User Dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            const container = document.getElementById('user-menu-container');
+            const dropdown = document.getElementById('user-dropdown');
+            if (container && dropdown && !container.contains(e.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
 
         // Tự động kiểm tra badge yêu thích khi load trang
         document.addEventListener('DOMContentLoaded', function() {

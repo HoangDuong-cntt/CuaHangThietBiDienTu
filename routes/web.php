@@ -28,6 +28,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [CatalogController::class, 'home'])->name('home');
 Route::get('/shop', [CatalogController::class, 'index'])->name('shop.index');
 Route::get('/compare', [ProductComparisonController::class, 'index'])->name('compare.index');
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
 
 // =========================================================================
 // PHÂN HỆ XÁC THỰC (GUEST ONLY)
