@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CouponController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\OrderManagementController;
 use App\Http\Controllers\Admin\RolePermissionController;
@@ -92,7 +93,7 @@ Route::middleware('auth')->group(function () {
         $request->fulfill();
 
         return redirect()->intended('/')->with('success', 'Xác thực địa chỉ email thành công!');
-    })->middleware(['signed'])->name('verification.verify');
+    })->middleware(['signed:relative'])->name('verification.verify');
 
     Route::post('/email/verification-notification', function (Request $request) {
         $request->user()->sendEmailVerificationNotification();
@@ -135,11 +136,25 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
         ->name('dashboard');
 
     // Quản lý Đơn hàng & Kho hàng (Thành viên 4)
-    Route::get('/orders', [OrderManagementController::class, 'index'])->name('orders.index');
-    Route::get('/orders/{orderCode}/invoice', [OrderManagementController::class, 'invoice'])->name('orders.invoice');
-    Route::get('/orders/{orderCode}', [OrderManagementController::class, 'show'])->name('orders.show');
-    Route::patch('/orders/{orderCode}/status', [OrderManagementController::class, 'updateStatus'])->name('orders.status.update');
-    Route::get('/inventory/low-stock', [OrderManagementController::class, 'lowStock'])->name('inventory.low-stock');
+    Route::middleware('permission:manage_orders')->group(function () {
+        Route::get('/orders', [OrderManagementController::class, 'index'])->name('orders.index');
+        Route::get('/orders/{orderCode}/invoice', [OrderManagementController::class, 'invoice'])->name('orders.invoice');
+        Route::get('/orders/{orderCode}', [OrderManagementController::class, 'show'])->name('orders.show');
+        Route::patch('/orders/{orderCode}/status', [OrderManagementController::class, 'updateStatus'])->name('orders.status.update');
+    });
+
+    Route::get('/inventory/low-stock', [OrderManagementController::class, 'lowStock'])
+        ->middleware('permission:view_inventory')
+        ->name('inventory.low-stock');
+
+    // Quản lý Voucher & Khuyến mãi (Thành viên 1)
+    Route::middleware('permission:manage_coupons')->group(function () {
+        Route::get('/coupons', [CouponController::class, 'index'])->name('coupons.index');
+        Route::post('/coupons', [CouponController::class, 'store'])->name('coupons.store');
+        Route::put('/coupons/{id}', [CouponController::class, 'update'])->name('coupons.update');
+        Route::delete('/coupons/{id}', [CouponController::class, 'destroy'])->name('coupons.destroy');
+        Route::post('/coupons/{id}/toggle-status', [CouponController::class, 'toggleStatus'])->name('coupons.toggle-status');
+    });
 
     // Ma trận Phân quyền & Vai trò (RBAC)
     Route::get('/roles', [RolePermissionController::class, 'index'])
