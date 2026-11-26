@@ -44,6 +44,6 @@ class RegisterController extends Controller
         Auth::login($user);
         $request->session()->regenerate();
 
-        return redirect()->intended('/')->with('success', 'Tạo tài khoản thành công! Chào mừng bạn đến với SmartTech.');
+        return redirect()->intended('/')->with('success', 'Tạo tài khoản thành công! Chào mừng bạn đến với D&D.');
     }
 }
