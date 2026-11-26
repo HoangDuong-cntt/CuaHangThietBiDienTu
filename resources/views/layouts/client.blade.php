@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'tinh. - Tinh Chọn Công Nghệ, Trọn Vẹn Trải Nghiệm')</title>
+    <title>@yield('title', 'D&D - Tinh Chọn Công Nghệ, Trọn Vẹn Trải Nghiệm')</title>
 
     <!-- Google Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,9 +42,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 gap-4">
 
-                <!-- Logo tinh. -->
+                <!-- Logo D&D. -->
                 <a href="{{ route('home') }}" class="flex items-center gap-1 shrink-0 group">
-                    <span class="text-2xl font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">tinh<span class="text-blue-600 font-extrabold text-3xl leading-none">.</span></span>
+                    <span class="text-2xl font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">D&D<span class="text-blue-600 font-extrabold text-3xl leading-none">.</span></span>
                 </a>
 
                 <!-- Search Bar with Live Autocomplete & ⌘K Shortcut -->
@@ -242,7 +242,7 @@
                 <!-- Brand Column -->
                 <div class="space-y-3">
                     <div class="flex items-center gap-1">
-                        <span class="text-2xl font-black tracking-tight text-slate-900">tinh<span class="text-blue-600 font-extrabold text-3xl leading-none">.</span></span>
+                        <span class="text-2xl font-black tracking-tight text-slate-900">D&D<span class="text-blue-600 font-extrabold text-3xl leading-none">.</span></span>
                     </div>
                     <p class="text-xs text-slate-500 leading-relaxed font-medium">
                         Tinh chọn công nghệ.<br>Trọn vẹn trải nghiệm.
@@ -252,9 +252,9 @@
                     </p>
                 </div>
 
-                <!-- Column: Khám phá Tinh -->
+                <!-- Column: Khám phá D&D -->
                 <div>
-                    <h4 class="text-slate-900 text-xs font-bold tracking-wider mb-4">Khám phá Tinh</h4>
+                    <h4 class="text-slate-900 text-xs font-bold tracking-wider mb-4">Khám phá D&D</h4>
                     <ul class="space-y-2.5 text-xs text-slate-500">
                         <li><a href="{{ route('shop.index') }}" class="hover:text-blue-600 transition-colors">Về chúng tôi</a></li>
                         <li><a href="#goc-cong-nghe" class="hover:text-blue-600 transition-colors">Góc công nghệ</a></li>
@@ -283,7 +283,7 @@
                         <li class="text-slate-400">8:00 - 21:00, mỗi ngày</li>
                         <li class="pt-1">
                             <button type="button" onclick="window.SmartTechAI && window.SmartTechAI.openChat()" class="text-xs text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-1 cursor-pointer">
-                                <span>Kết nối với Tinh</span>
+                                <span>Kết nối với D&D</span>
                                 <span>&nearr;</span>
                             </button>
                         </li>
@@ -293,7 +293,7 @@
 
             <!-- Bottom Bar with Copyright & Payment Methods -->
             <div class="border-t border-slate-100 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
-                <div>&copy; 2026 Tinh. Công nghệ cho cuộc sống tinh gọn.</div>
+                <div>&copy; 2026 D&D Studio. Công nghệ cho cuộc sống hiện đại.</div>
                 <div class="flex items-center gap-6 text-[11px] text-slate-400">
                     <span class="flex items-center gap-1"><i class="fa-solid fa-lock text-slate-300"></i> Thanh toán an toàn</span>
                     <span>Thẻ ngân hàng</span>

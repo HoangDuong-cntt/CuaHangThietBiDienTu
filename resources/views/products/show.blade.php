@@ -1,6 +1,6 @@
 @extends('layouts.client')
 
-@section('title', $product->name . ' Chính Hãng - tinh.')
+@section('title', $product->name . ' Chính Hãng - D&D.')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-8">

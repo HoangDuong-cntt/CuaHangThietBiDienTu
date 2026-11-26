@@ -1,6 +1,6 @@
 @extends('layouts.client')
 
-@section('title', 'tinh. - Tinh Chọn Công Nghệ, Trọn Vẹn Trải Nghiệm')
+@section('title', 'D&D - Tinh Chọn Công Nghệ, Trọn Vẹn Trải Nghiệm')
 
 @section('content')
 <div class="space-y-16 py-6 sm:py-8 bg-white">
@@ -266,7 +266,7 @@
         <!-- Featured Products Grid (4 columns) -->
         <div id="featured-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             @php
-                $badges = ['Bán chạy', 'Tiết kiệm 3 triệu', 'Giảm 18%', 'Lựa chọn của Tinh'];
+                $badges = ['Bán chạy', 'Tiết kiệm 3 triệu', 'Giảm 18%', 'Lựa chọn của D&D'];
                 $badgeColors = [
                     'bg-blue-50 text-blue-600 border-blue-100',
                     'bg-amber-50 text-amber-700 border-amber-100',
@@ -365,12 +365,12 @@
                 <div class="lg:col-span-6 space-y-4">
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-100/80 text-blue-700 font-bold text-[10px] tracking-wider uppercase">
                         <i class="fa-solid fa-sparkles text-[10px]"></i>
-                        TRỢ LÝ AI CỦA TINH
+                        TRỢ LÝ AI CỦA D&D
                     </span>
 
                     <h2 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight leading-tight">
                         Không rành công nghệ?<br>
-                        Đã có Tinh hiểu bạn.
+                        Đã có D&D hiểu bạn.
                     </h2>
 
                     <p class="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-md">
@@ -545,7 +545,7 @@
             </div>
 
             <div class="w-full md:w-auto max-w-md shrink-0">
-                <form onsubmit="event.preventDefault(); window.showToast('Cảm ơn bạn đã đăng ký nhận tin từ tinh.!'); this.reset();" class="flex flex-col sm:flex-row gap-2">
+                <form onsubmit="event.preventDefault(); window.showToast('Cảm ơn bạn đã đăng ký nhận tin từ D&D.!'); this.reset();" class="flex flex-col sm:flex-row gap-2">
                     <input 
                         type="email" 
                         placeholder="Địa chỉ thư điện tử của bạn" 
@@ -560,7 +560,7 @@
                         <span class="text-xs">&rarr;</span>
                     </button>
                 </form>
-                <p class="text-[10px] text-slate-400 mt-2 text-center md:text-left">Bằng việc đăng ký, bạn đồng ý với Chính sách bảo mật của Tinh</p>
+                <p class="text-[10px] text-slate-400 mt-2 text-center md:text-left">Bằng việc đăng ký, bạn đồng ý với Chính sách bảo mật của D&D</p>
             </div>
         </div>
     </section>
@@ -587,7 +587,7 @@ async function switchFeaturedTab(tabName, btn) {
         </div>
     `).join('');
 
-    const badges = ['Bán chạy', 'Tiết kiệm 3 triệu', 'Giảm 18%', 'Lựa chọn của Tinh'];
+    const badges = ['Bán chạy', 'Tiết kiệm 3 triệu', 'Giảm 18%', 'Lựa chọn của D&D'];
     const badgeColors = [
         'bg-blue-50 text-blue-600 border-blue-100',
         'bg-amber-50 text-amber-700 border-amber-100',
