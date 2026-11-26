@@ -1,0 +1,5002 @@
+[
+    {
+        "variant_id": 1,
+        "product_id": 1,
+        "product_name": "MacBook Air 13 inch M3 (2024)",
+        "product_slug": "macbook-air-13-inch-m4-2025",
+        "brand": "Apple",
+        "color_name": "Xanh Đen (Midnight)",
+        "color_hex": "#1F2937",
+        "sku": "MBA-M4-13-V1"
+    },
+    {
+        "variant_id": 2,
+        "product_id": 1,
+        "product_name": "MacBook Air 13 inch M3 (2024)",
+        "product_slug": "macbook-air-13-inch-m4-2025",
+        "brand": "Apple",
+        "color_name": "Ánh Sao (Starlight)",
+        "color_hex": "#F4EAD4",
+        "sku": "MBA-M4-13-V2"
+    },
+    {
+        "variant_id": 3,
+        "product_id": 2,
+        "product_name": "MacBook Air 15 inch M3 (2024)",
+        "product_slug": "macbook-air-15-inch-m4-2025",
+        "brand": "Apple",
+        "color_name": "Xanh Đen (Midnight)",
+        "color_hex": "#1F2937",
+        "sku": "MBA-M4-15-V1"
+    },
+    {
+        "variant_id": 4,
+        "product_id": 2,
+        "product_name": "MacBook Air 15 inch M3 (2024)",
+        "product_slug": "macbook-air-15-inch-m4-2025",
+        "brand": "Apple",
+        "color_name": "Ánh Sao (Starlight)",
+        "color_hex": "#F4EAD4",
+        "sku": "MBA-M4-15-V2"
+    },
+    {
+        "variant_id": 5,
+        "product_id": 3,
+        "product_name": "MacBook Air 13 inch M3",
+        "product_slug": "macbook-air-13-inch-m3",
+        "brand": "Apple",
+        "color_name": "Xanh Đen (Midnight)",
+        "color_hex": "#1F2937",
+        "sku": "MBA-M3-13-V1"
+    },
+    {
+        "variant_id": 6,
+        "product_id": 3,
+        "product_name": "MacBook Air 13 inch M3",
+        "product_slug": "macbook-air-13-inch-m3",
+        "brand": "Apple",
+        "color_name": "Ánh Sao (Starlight)",
+        "color_hex": "#F4EAD4",
+        "sku": "MBA-M3-13-V2"
+    },
+    {
+        "variant_id": 7,
+        "product_id": 4,
+        "product_name": "MacBook Air 15 inch M3",
+        "product_slug": "macbook-air-15-inch-m3",
+        "brand": "Apple",
+        "color_name": "Xanh Đen (Midnight)",
+        "color_hex": "#1F2937",
+        "sku": "MBA-M3-15-V1"
+    },
+    {
+        "variant_id": 8,
+        "product_id": 4,
+        "product_name": "MacBook Air 15 inch M3",
+        "product_slug": "macbook-air-15-inch-m3",
+        "brand": "Apple",
+        "color_name": "Ánh Sao (Starlight)",
+        "color_hex": "#F4EAD4",
+        "sku": "MBA-M3-15-V2"
+    },
+    {
+        "variant_id": 9,
+        "product_id": 5,
+        "product_name": "MacBook Pro 14 inch M4",
+        "product_slug": "macbook-pro-14-inch-m4",
+        "brand": "Apple",
+        "color_name": "Đen Không Gian (Space Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "MBP-M4-14-V1"
+    },
+    {
+        "variant_id": 10,
+        "product_id": 5,
+        "product_name": "MacBook Pro 14 inch M4",
+        "product_slug": "macbook-pro-14-inch-m4",
+        "brand": "Apple",
+        "color_name": "Bạc (Silver)",
+        "color_hex": "#E5E7EB",
+        "sku": "MBP-M4-14-V2"
+    },
+    {
+        "variant_id": 11,
+        "product_id": 6,
+        "product_name": "MacBook Pro 14 inch M4 Pro",
+        "product_slug": "macbook-pro-14-inch-m4-pro",
+        "brand": "Apple",
+        "color_name": "Đen Không Gian (Space Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "MBP-M4P-14-V1"
+    },
+    {
+        "variant_id": 12,
+        "product_id": 6,
+        "product_name": "MacBook Pro 14 inch M4 Pro",
+        "product_slug": "macbook-pro-14-inch-m4-pro",
+        "brand": "Apple",
+        "color_name": "Bạc (Silver)",
+        "color_hex": "#E5E7EB",
+        "sku": "MBP-M4P-14-V2"
+    },
+    {
+        "variant_id": 13,
+        "product_id": 7,
+        "product_name": "MacBook Pro 14 inch M4 Max",
+        "product_slug": "macbook-pro-14-inch-m4-max",
+        "brand": "Apple",
+        "color_name": "Đen Không Gian (Space Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "MBP-M4M-14-V1"
+    },
+    {
+        "variant_id": 14,
+        "product_id": 7,
+        "product_name": "MacBook Pro 14 inch M4 Max",
+        "product_slug": "macbook-pro-14-inch-m4-max",
+        "brand": "Apple",
+        "color_name": "Bạc (Silver)",
+        "color_hex": "#E5E7EB",
+        "sku": "MBP-M4M-14-V2"
+    },
+    {
+        "variant_id": 15,
+        "product_id": 8,
+        "product_name": "MacBook Pro 16 inch M4 Pro",
+        "product_slug": "macbook-pro-16-inch-m4-pro",
+        "brand": "Apple",
+        "color_name": "Đen Không Gian (Space Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "MBP-M4P-16-V1"
+    },
+    {
+        "variant_id": 16,
+        "product_id": 8,
+        "product_name": "MacBook Pro 16 inch M4 Pro",
+        "product_slug": "macbook-pro-16-inch-m4-pro",
+        "brand": "Apple",
+        "color_name": "Bạc (Silver)",
+        "color_hex": "#E5E7EB",
+        "sku": "MBP-M4P-16-V2"
+    },
+    {
+        "variant_id": 17,
+        "product_id": 9,
+        "product_name": "MacBook Pro 16 inch M4 Max",
+        "product_slug": "macbook-pro-16-inch-m4-max",
+        "brand": "Apple",
+        "color_name": "Đen Không Gian (Space Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "MBP-M4M-16-V1"
+    },
+    {
+        "variant_id": 18,
+        "product_id": 9,
+        "product_name": "MacBook Pro 16 inch M4 Max",
+        "product_slug": "macbook-pro-16-inch-m4-max",
+        "brand": "Apple",
+        "color_name": "Bạc (Silver)",
+        "color_hex": "#E5E7EB",
+        "sku": "MBP-M4M-16-V2"
+    },
+    {
+        "variant_id": 19,
+        "product_id": 10,
+        "product_name": "iPhone 16 Pro Max 256GB VN\/A",
+        "product_slug": "iphone-16-pro-max-256gb-vna",
+        "brand": "Apple",
+        "color_name": "Titan Sa Mạc (Desert Titanium)",
+        "color_hex": "#C2AC99",
+        "sku": "IP16-PM-256-V1"
+    },
+    {
+        "variant_id": 20,
+        "product_id": 10,
+        "product_name": "iPhone 16 Pro Max 256GB VN\/A",
+        "product_slug": "iphone-16-pro-max-256gb-vna",
+        "brand": "Apple",
+        "color_name": "Titan Tự Nhiên (Natural Titanium)",
+        "color_hex": "#9F9A93",
+        "sku": "IP16-PM-256-V2"
+    },
+    {
+        "variant_id": 21,
+        "product_id": 11,
+        "product_name": "iPhone 16 Pro 128GB VN\/A",
+        "product_slug": "iphone-16-pro-128gb-vna",
+        "brand": "Apple",
+        "color_name": "Titan Đen (Black Titanium)",
+        "color_hex": "#38373B",
+        "sku": "IP16-P-128-V1"
+    },
+    {
+        "variant_id": 22,
+        "product_id": 11,
+        "product_name": "iPhone 16 Pro 128GB VN\/A",
+        "product_slug": "iphone-16-pro-128gb-vna",
+        "brand": "Apple",
+        "color_name": "Titan Trắng (White Titanium)",
+        "color_hex": "#F2F1ED",
+        "sku": "IP16-P-128-V2"
+    },
+    {
+        "variant_id": 23,
+        "product_id": 12,
+        "product_name": "iPhone 16 Plus 128GB VN\/A",
+        "product_slug": "iphone-16-plus-128gb-vna",
+        "brand": "Apple",
+        "color_name": "Xanh Lưu Ly (Ultramarine)",
+        "color_hex": "#4E6E8E",
+        "sku": "IP16-PL-128-V1"
+    },
+    {
+        "variant_id": 24,
+        "product_id": 12,
+        "product_name": "iPhone 16 Plus 128GB VN\/A",
+        "product_slug": "iphone-16-plus-128gb-vna",
+        "brand": "Apple",
+        "color_name": "Hồng (Pink)",
+        "color_hex": "#E8A5A5",
+        "sku": "IP16-PL-128-V2"
+    },
+    {
+        "variant_id": 25,
+        "product_id": 13,
+        "product_name": "iPhone 16 128GB VN\/A",
+        "product_slug": "iphone-16-128gb-vna",
+        "brand": "Apple",
+        "color_name": "Xanh Mòng Két (Teal)",
+        "color_hex": "#8CA7A1",
+        "sku": "IP16-128-V1"
+    },
+    {
+        "variant_id": 26,
+        "product_id": 13,
+        "product_name": "iPhone 16 128GB VN\/A",
+        "product_slug": "iphone-16-128gb-vna",
+        "brand": "Apple",
+        "color_name": "Đen (Black)",
+        "color_hex": "#35393B",
+        "sku": "IP16-128-V2"
+    },
+    {
+        "variant_id": 27,
+        "product_id": 14,
+        "product_name": "iPhone 15 Pro Max 256GB VN\/A",
+        "product_slug": "iphone-15-pro-max-256gb-vna",
+        "brand": "Apple",
+        "color_name": "Titan Tự Nhiên (Natural Titanium)",
+        "color_hex": "#9F9A93",
+        "sku": "IP15-PM-256-V1"
+    },
+    {
+        "variant_id": 28,
+        "product_id": 14,
+        "product_name": "iPhone 15 Pro Max 256GB VN\/A",
+        "product_slug": "iphone-15-pro-max-256gb-vna",
+        "brand": "Apple",
+        "color_name": "Titan Xanh (Blue Titanium)",
+        "color_hex": "#3B4450",
+        "sku": "IP15-PM-256-V2"
+    },
+    {
+        "variant_id": 29,
+        "product_id": 15,
+        "product_name": "iPhone 15 128GB VN\/A",
+        "product_slug": "iphone-15-128gb-vna",
+        "brand": "Apple",
+        "color_name": "Hồng Pastel (Pink)",
+        "color_hex": "#F9E5E8",
+        "sku": "IP15-128-V1"
+    },
+    {
+        "variant_id": 30,
+        "product_id": 15,
+        "product_name": "iPhone 15 128GB VN\/A",
+        "product_slug": "iphone-15-128gb-vna",
+        "brand": "Apple",
+        "color_name": "Đen (Black)",
+        "color_hex": "#35393B",
+        "sku": "IP15-128-V2"
+    },
+    {
+        "variant_id": 31,
+        "product_id": 16,
+        "product_name": "iPhone 14 128GB VN\/A",
+        "product_slug": "iphone-14-128gb-vna",
+        "brand": "Apple",
+        "color_name": "Xanh Dương (Blue)",
+        "color_hex": "#A0B4C8",
+        "sku": "IP14-128-V1"
+    },
+    {
+        "variant_id": 32,
+        "product_id": 16,
+        "product_name": "iPhone 14 128GB VN\/A",
+        "product_slug": "iphone-14-128gb-vna",
+        "brand": "Apple",
+        "color_name": "Ánh Sao (Starlight)",
+        "color_hex": "#F0E4D3",
+        "sku": "IP14-128-V2"
+    },
+    {
+        "variant_id": 33,
+        "product_id": 17,
+        "product_name": "iPhone 13 128GB VN\/A",
+        "product_slug": "iphone-13-128gb-vna",
+        "brand": "Apple",
+        "color_name": "Xanh Lá (Green)",
+        "color_hex": "#3B4E43",
+        "sku": "IP13-128-V1"
+    },
+    {
+        "variant_id": 34,
+        "product_id": 17,
+        "product_name": "iPhone 13 128GB VN\/A",
+        "product_slug": "iphone-13-128gb-vna",
+        "brand": "Apple",
+        "color_name": "Hồng (Pink)",
+        "color_hex": "#F9E5E8",
+        "sku": "IP13-128-V2"
+    },
+    {
+        "variant_id": 35,
+        "product_id": 18,
+        "product_name": "iPad Pro M4 13 inch Wi-Fi",
+        "product_slug": "ipad-pro-m4-13-inch-wi-fi",
+        "brand": "Apple",
+        "color_name": "Đen Không Gian (Space Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "IPAD-M4-13-V1"
+    },
+    {
+        "variant_id": 36,
+        "product_id": 18,
+        "product_name": "iPad Pro M4 13 inch Wi-Fi",
+        "product_slug": "ipad-pro-m4-13-inch-wi-fi",
+        "brand": "Apple",
+        "color_name": "Bạc (Silver)",
+        "color_hex": "#E5E7EB",
+        "sku": "IPAD-M4-13-V2"
+    },
+    {
+        "variant_id": 37,
+        "product_id": 19,
+        "product_name": "iPad Pro M4 11 inch Wi-Fi",
+        "product_slug": "ipad-pro-m4-11-inch-wi-fi",
+        "brand": "Apple",
+        "color_name": "Đen Không Gian (Space Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "IPAD-M4-11-V1"
+    },
+    {
+        "variant_id": 38,
+        "product_id": 19,
+        "product_name": "iPad Pro M4 11 inch Wi-Fi",
+        "product_slug": "ipad-pro-m4-11-inch-wi-fi",
+        "brand": "Apple",
+        "color_name": "Bạc (Silver)",
+        "color_hex": "#E5E7EB",
+        "sku": "IPAD-M4-11-V2"
+    },
+    {
+        "variant_id": 39,
+        "product_id": 20,
+        "product_name": "iPad Air M2 13 inch Wi-Fi",
+        "product_slug": "ipad-air-m2-13-inch-wi-fi",
+        "brand": "Apple",
+        "color_name": "Xanh Da Trời (Blue)",
+        "color_hex": "#C2D5E8",
+        "sku": "IPADA-M2-13-V1"
+    },
+    {
+        "variant_id": 40,
+        "product_id": 20,
+        "product_name": "iPad Air M2 13 inch Wi-Fi",
+        "product_slug": "ipad-air-m2-13-inch-wi-fi",
+        "brand": "Apple",
+        "color_name": "Ánh Sao (Starlight)",
+        "color_hex": "#F4EAD4",
+        "sku": "IPADA-M2-13-V2"
+    },
+    {
+        "variant_id": 41,
+        "product_id": 21,
+        "product_name": "iPad Air M2 11 inch Wi-Fi",
+        "product_slug": "ipad-air-m2-11-inch-wi-fi",
+        "brand": "Apple",
+        "color_name": "Xanh Da Trời (Blue)",
+        "color_hex": "#C2D5E8",
+        "sku": "IPADA-M2-11-V1"
+    },
+    {
+        "variant_id": 42,
+        "product_id": 21,
+        "product_name": "iPad Air M2 11 inch Wi-Fi",
+        "product_slug": "ipad-air-m2-11-inch-wi-fi",
+        "brand": "Apple",
+        "color_name": "Ánh Sao (Starlight)",
+        "color_hex": "#F4EAD4",
+        "sku": "IPADA-M2-11-V2"
+    },
+    {
+        "variant_id": 43,
+        "product_id": 22,
+        "product_name": "iPad Mini 7 A17 Pro Wi-Fi",
+        "product_slug": "ipad-mini-7-a17-pro-wi-fi",
+        "brand": "Apple",
+        "color_name": "Tím (Purple)",
+        "color_hex": "#DCD5E8",
+        "sku": "IPADM-7-V1"
+    },
+    {
+        "variant_id": 44,
+        "product_id": 22,
+        "product_name": "iPad Mini 7 A17 Pro Wi-Fi",
+        "product_slug": "ipad-mini-7-a17-pro-wi-fi",
+        "brand": "Apple",
+        "color_name": "Xám Không Gian (Space Gray)",
+        "color_hex": "#4B5563",
+        "sku": "IPADM-7-V2"
+    },
+    {
+        "variant_id": 45,
+        "product_id": 23,
+        "product_name": "AirPods Max USB-C 2024",
+        "product_slug": "airpods-max-usb-c-2024",
+        "brand": "Apple",
+        "color_name": "Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "APM-USBC-V1"
+    },
+    {
+        "variant_id": 46,
+        "product_id": 23,
+        "product_name": "AirPods Max USB-C 2024",
+        "product_slug": "airpods-max-usb-c-2024",
+        "brand": "Apple",
+        "color_name": "Xanh Đen (Midnight)",
+        "color_hex": "#1F2937",
+        "sku": "APM-USBC-V2"
+    },
+    {
+        "variant_id": 47,
+        "product_id": 24,
+        "product_name": "AirPods Pro 2 USB-C",
+        "product_slug": "airpods-pro-2-usb-c",
+        "brand": "Apple",
+        "color_name": "Trắng Tinh Khôi (White)",
+        "color_hex": "#FFFFFF",
+        "sku": "APP2-USBC-V1"
+    },
+    {
+        "variant_id": 48,
+        "product_id": 24,
+        "product_name": "AirPods Pro 2 USB-C",
+        "product_slug": "airpods-pro-2-usb-c",
+        "brand": "Apple",
+        "color_name": "Trắng Tinh Khôi (White)",
+        "color_hex": "#FFFFFF",
+        "sku": "APP2-USBC-V2"
+    },
+    {
+        "variant_id": 49,
+        "product_id": 25,
+        "product_name": "Magic Mouse USB-C 2024",
+        "product_slug": "magic-mouse-usb-c-2024",
+        "brand": "Apple",
+        "color_name": "Trắng (White)",
+        "color_hex": "#F5F5F7",
+        "sku": "MM-USBC-V1"
+    },
+    {
+        "variant_id": 50,
+        "product_id": 25,
+        "product_name": "Magic Mouse USB-C 2024",
+        "product_slug": "magic-mouse-usb-c-2024",
+        "brand": "Apple",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "MM-USBC-V2"
+    },
+    {
+        "variant_id": 51,
+        "product_id": 26,
+        "product_name": "Asus Zenbook 14 OLED UX3405CA",
+        "product_slug": "asus-zenbook-14-oled-ux3405ca",
+        "brand": "Asus",
+        "color_name": "Xanh Lam Trầm (Ponder Blue)",
+        "color_hex": "#2C3E50",
+        "sku": "ASUS-UX3405-V1"
+    },
+    {
+        "variant_id": 52,
+        "product_id": 26,
+        "product_name": "Asus Zenbook 14 OLED UX3405CA",
+        "product_slug": "asus-zenbook-14-oled-ux3405ca",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Sương (Foggy Silver)",
+        "color_hex": "#D5D8DC",
+        "sku": "ASUS-UX3405-V2"
+    },
+    {
+        "variant_id": 53,
+        "product_id": 27,
+        "product_name": "Asus Zenbook S 14 OLED UX5406",
+        "product_slug": "asus-zenbook-s-14-oled-ux5406",
+        "brand": "Asus",
+        "color_name": "Xanh Lam Trầm (Ponder Blue)",
+        "color_hex": "#2C3E50",
+        "sku": "ASUS-UX5406-V1"
+    },
+    {
+        "variant_id": 54,
+        "product_id": 27,
+        "product_name": "Asus Zenbook S 14 OLED UX5406",
+        "product_slug": "asus-zenbook-s-14-oled-ux5406",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Sương (Foggy Silver)",
+        "color_hex": "#D5D8DC",
+        "sku": "ASUS-UX5406-V2"
+    },
+    {
+        "variant_id": 55,
+        "product_id": 28,
+        "product_name": "Asus Zenbook S 16 OLED UM5606",
+        "product_slug": "asus-zenbook-s-16-oled-um5606",
+        "brand": "Asus",
+        "color_name": "Xanh Lam Trầm (Ponder Blue)",
+        "color_hex": "#2C3E50",
+        "sku": "ASUS-UM5606-V1"
+    },
+    {
+        "variant_id": 56,
+        "product_id": 28,
+        "product_name": "Asus Zenbook S 16 OLED UM5606",
+        "product_slug": "asus-zenbook-s-16-oled-um5606",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Sương (Foggy Silver)",
+        "color_hex": "#D5D8DC",
+        "sku": "ASUS-UM5606-V2"
+    },
+    {
+        "variant_id": 57,
+        "product_id": 29,
+        "product_name": "Asus Zenbook DUO 2 màn hình UX8406",
+        "product_slug": "asus-zenbook-duo-2-man-hinh-ux8406",
+        "brand": "Asus",
+        "color_name": "Xanh Lam Trầm (Ponder Blue)",
+        "color_hex": "#2C3E50",
+        "sku": "ASUS-UX8406-V1"
+    },
+    {
+        "variant_id": 58,
+        "product_id": 29,
+        "product_name": "Asus Zenbook DUO 2 màn hình UX8406",
+        "product_slug": "asus-zenbook-duo-2-man-hinh-ux8406",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Sương (Foggy Silver)",
+        "color_hex": "#D5D8DC",
+        "sku": "ASUS-UX8406-V2"
+    },
+    {
+        "variant_id": 59,
+        "product_id": 30,
+        "product_name": "Asus Vivobook S 14 OLED M5406",
+        "product_slug": "asus-vivobook-s-14-oled-m5406",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Trăng (Cool Silver)",
+        "color_hex": "#DCDDE0",
+        "sku": "ASUS-M5406-V1"
+    },
+    {
+        "variant_id": 60,
+        "product_id": 30,
+        "product_name": "Asus Vivobook S 14 OLED M5406",
+        "product_slug": "asus-vivobook-s-14-oled-m5406",
+        "brand": "Asus",
+        "color_name": "Đen Indie (Indie Black)",
+        "color_hex": "#212529",
+        "sku": "ASUS-M5406-V2"
+    },
+    {
+        "variant_id": 61,
+        "product_id": 31,
+        "product_name": "Asus Vivobook S 15 OLED S5507 Copilot+",
+        "product_slug": "asus-vivobook-s-15-oled-s5507-copilot",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Trăng (Cool Silver)",
+        "color_hex": "#DCDDE0",
+        "sku": "ASUS-S5507-V1"
+    },
+    {
+        "variant_id": 62,
+        "product_id": 31,
+        "product_name": "Asus Vivobook S 15 OLED S5507 Copilot+",
+        "product_slug": "asus-vivobook-s-15-oled-s5507-copilot",
+        "brand": "Asus",
+        "color_name": "Đen Indie (Indie Black)",
+        "color_hex": "#212529",
+        "sku": "ASUS-S5507-V2"
+    },
+    {
+        "variant_id": 63,
+        "product_id": 32,
+        "product_name": "Asus Vivobook S 16 OLED S5606",
+        "product_slug": "asus-vivobook-s-16-oled-s5606",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Trăng (Cool Silver)",
+        "color_hex": "#DCDDE0",
+        "sku": "ASUS-S5606-V1"
+    },
+    {
+        "variant_id": 64,
+        "product_id": 32,
+        "product_name": "Asus Vivobook S 16 OLED S5606",
+        "product_slug": "asus-vivobook-s-16-oled-s5606",
+        "brand": "Asus",
+        "color_name": "Đen Indie (Indie Black)",
+        "color_hex": "#212529",
+        "sku": "ASUS-S5606-V2"
+    },
+    {
+        "variant_id": 65,
+        "product_id": 33,
+        "product_name": "Asus Vivobook 15 X1504ZA",
+        "product_slug": "asus-vivobook-15-x1504za",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Trăng (Cool Silver)",
+        "color_hex": "#DCDDE0",
+        "sku": "ASUS-X1504-V1"
+    },
+    {
+        "variant_id": 66,
+        "product_id": 33,
+        "product_name": "Asus Vivobook 15 X1504ZA",
+        "product_slug": "asus-vivobook-15-x1504za",
+        "brand": "Asus",
+        "color_name": "Đen Indie (Indie Black)",
+        "color_hex": "#212529",
+        "sku": "ASUS-X1504-V2"
+    },
+    {
+        "variant_id": 67,
+        "product_id": 34,
+        "product_name": "Asus Vivobook Go 14 E1404FA",
+        "product_slug": "asus-vivobook-go-14-e1404fa",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Trăng (Cool Silver)",
+        "color_hex": "#DCDDE0",
+        "sku": "ASUS-E1404-V1"
+    },
+    {
+        "variant_id": 68,
+        "product_id": 34,
+        "product_name": "Asus Vivobook Go 14 E1404FA",
+        "product_slug": "asus-vivobook-go-14-e1404fa",
+        "brand": "Asus",
+        "color_name": "Đen Indie (Indie Black)",
+        "color_hex": "#212529",
+        "sku": "ASUS-E1404-V2"
+    },
+    {
+        "variant_id": 69,
+        "product_id": 35,
+        "product_name": "Asus ExpertBook B9 OLED Siêu Nhẹ 990g",
+        "product_slug": "asus-expertbook-b9-oled-sieu-nhe-990g",
+        "brand": "Asus",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "ASUS-B9403-V1"
+    },
+    {
+        "variant_id": 70,
+        "product_id": 35,
+        "product_name": "Asus ExpertBook B9 OLED Siêu Nhẹ 990g",
+        "product_slug": "asus-expertbook-b9-oled-sieu-nhe-990g",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "ASUS-B9403-V2"
+    },
+    {
+        "variant_id": 71,
+        "product_id": 36,
+        "product_name": "Asus ExpertBook P5 P5405 AI",
+        "product_slug": "asus-expertbook-p5-p5405-ai",
+        "brand": "Asus",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "ASUS-P5405-V1"
+    },
+    {
+        "variant_id": 72,
+        "product_id": 36,
+        "product_name": "Asus ExpertBook P5 P5405 AI",
+        "product_slug": "asus-expertbook-p5-p5405-ai",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "ASUS-P5405-V2"
+    },
+    {
+        "variant_id": 73,
+        "product_id": 37,
+        "product_name": "Asus ProArt P16 H7606 RTX 4070",
+        "product_slug": "asus-proart-p16-h7606-rtx-4070",
+        "brand": "Asus",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "ASUS-H7606-V1"
+    },
+    {
+        "variant_id": 74,
+        "product_id": 37,
+        "product_name": "Asus ProArt P16 H7606 RTX 4070",
+        "product_slug": "asus-proart-p16-h7606-rtx-4070",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "ASUS-H7606-V2"
+    },
+    {
+        "variant_id": 75,
+        "product_id": 38,
+        "product_name": "Asus ProArt PX13 HN7306 Xoay Gập",
+        "product_slug": "asus-proart-px13-hn7306-xoay-gap",
+        "brand": "Asus",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "ASUS-HN7306-V1"
+    },
+    {
+        "variant_id": 76,
+        "product_id": 38,
+        "product_name": "Asus ProArt PX13 HN7306 Xoay Gập",
+        "product_slug": "asus-proart-px13-hn7306-xoay-gap",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "ASUS-HN7306-V2"
+    },
+    {
+        "variant_id": 77,
+        "product_id": 39,
+        "product_name": "Asus ROG Strix G16 G614JU RTX 4050",
+        "product_slug": "asus-rog-strix-g16-g614ju-rtx-4050",
+        "brand": "Asus",
+        "color_name": "Xám Cơ Khí (Mecha Gray)",
+        "color_hex": "#4B5563",
+        "sku": "ASUS-G614JU-V1"
+    },
+    {
+        "variant_id": 78,
+        "product_id": 39,
+        "product_name": "Asus ROG Strix G16 G614JU RTX 4050",
+        "product_slug": "asus-rog-strix-g16-g614ju-rtx-4050",
+        "brand": "Asus",
+        "color_name": "Đen Huyền Bí (Eclipse Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "ASUS-G614JU-V2"
+    },
+    {
+        "variant_id": 79,
+        "product_id": 40,
+        "product_name": "Asus ROG Strix G16 G614JV RTX 4060",
+        "product_slug": "asus-rog-strix-g16-g614jv-rtx-4060",
+        "brand": "Asus",
+        "color_name": "Xám Cơ Khí (Mecha Gray)",
+        "color_hex": "#4B5563",
+        "sku": "ASUS-G614JV-V1"
+    },
+    {
+        "variant_id": 80,
+        "product_id": 40,
+        "product_name": "Asus ROG Strix G16 G614JV RTX 4060",
+        "product_slug": "asus-rog-strix-g16-g614jv-rtx-4060",
+        "brand": "Asus",
+        "color_name": "Đen Huyền Bí (Eclipse Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "ASUS-G614JV-V2"
+    },
+    {
+        "variant_id": 81,
+        "product_id": 41,
+        "product_name": "Asus ROG Strix SCAR 16 G634JZR RTX 4080",
+        "product_slug": "asus-rog-strix-scar-16-g634jzr-rtx-4080",
+        "brand": "Asus",
+        "color_name": "Xám Cơ Khí (Mecha Gray)",
+        "color_hex": "#4B5563",
+        "sku": "ASUS-G634JZR-V1"
+    },
+    {
+        "variant_id": 82,
+        "product_id": 41,
+        "product_name": "Asus ROG Strix SCAR 16 G634JZR RTX 4080",
+        "product_slug": "asus-rog-strix-scar-16-g634jzr-rtx-4080",
+        "brand": "Asus",
+        "color_name": "Đen Huyền Bí (Eclipse Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "ASUS-G634JZR-V2"
+    },
+    {
+        "variant_id": 83,
+        "product_id": 42,
+        "product_name": "Asus ROG Strix SCAR 18 G834JYR RTX 4090",
+        "product_slug": "asus-rog-strix-scar-18-g834jyr-rtx-4090",
+        "brand": "Asus",
+        "color_name": "Xám Cơ Khí (Mecha Gray)",
+        "color_hex": "#4B5563",
+        "sku": "ASUS-G834JYR-V1"
+    },
+    {
+        "variant_id": 84,
+        "product_id": 42,
+        "product_name": "Asus ROG Strix SCAR 18 G834JYR RTX 4090",
+        "product_slug": "asus-rog-strix-scar-18-g834jyr-rtx-4090",
+        "brand": "Asus",
+        "color_name": "Đen Huyền Bí (Eclipse Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "ASUS-G834JYR-V2"
+    },
+    {
+        "variant_id": 85,
+        "product_id": 43,
+        "product_name": "Asus ROG Zephyrus G14 GA403 OLED",
+        "product_slug": "asus-rog-zephyrus-g14-ga403-oled",
+        "brand": "Asus",
+        "color_name": "Xám Nhật Thực (Eclipse Gray)",
+        "color_hex": "#374151",
+        "sku": "ASUS-GA403-V1"
+    },
+    {
+        "variant_id": 86,
+        "product_id": 43,
+        "product_name": "Asus ROG Zephyrus G14 GA403 OLED",
+        "product_slug": "asus-rog-zephyrus-g14-ga403-oled",
+        "brand": "Asus",
+        "color_name": "Trắng Bạch Kim (Platinum White)",
+        "color_hex": "#F3F4F6",
+        "sku": "ASUS-GA403-V2"
+    },
+    {
+        "variant_id": 87,
+        "product_id": 44,
+        "product_name": "Asus ROG Zephyrus G16 GU605 OLED",
+        "product_slug": "asus-rog-zephyrus-g16-gu605-oled",
+        "brand": "Asus",
+        "color_name": "Xám Nhật Thực (Eclipse Gray)",
+        "color_hex": "#374151",
+        "sku": "ASUS-GU605-V1"
+    },
+    {
+        "variant_id": 88,
+        "product_id": 44,
+        "product_name": "Asus ROG Zephyrus G16 GU605 OLED",
+        "product_slug": "asus-rog-zephyrus-g16-gu605-oled",
+        "brand": "Asus",
+        "color_name": "Trắng Bạch Kim (Platinum White)",
+        "color_hex": "#F3F4F6",
+        "sku": "ASUS-GU605-V2"
+    },
+    {
+        "variant_id": 89,
+        "product_id": 45,
+        "product_name": "Asus ROG Flow Z13 GZ301",
+        "product_slug": "asus-rog-flow-z13-gz301",
+        "brand": "Asus",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "ASUS-GZ301-V1"
+    },
+    {
+        "variant_id": 90,
+        "product_id": 45,
+        "product_name": "Asus ROG Flow Z13 GZ301",
+        "product_slug": "asus-rog-flow-z13-gz301",
+        "brand": "Asus",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "ASUS-GZ301-V2"
+    },
+    {
+        "variant_id": 91,
+        "product_id": 46,
+        "product_name": "Asus TUF Gaming A15 FA507NV RTX 4060",
+        "product_slug": "asus-tuf-gaming-a15-fa507nv-rtx-4060",
+        "brand": "Asus",
+        "color_name": "Xám Cơ Khí (Mecha Gray)",
+        "color_hex": "#4B5563",
+        "sku": "ASUS-FA507NV-V1"
+    },
+    {
+        "variant_id": 92,
+        "product_id": 46,
+        "product_name": "Asus TUF Gaming A15 FA507NV RTX 4060",
+        "product_slug": "asus-tuf-gaming-a15-fa507nv-rtx-4060",
+        "brand": "Asus",
+        "color_name": "Đen Huyền Bí (Eclipse Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "ASUS-FA507NV-V2"
+    },
+    {
+        "variant_id": 93,
+        "product_id": 47,
+        "product_name": "Asus TUF Gaming F15 FX507ZC4 RTX 3050",
+        "product_slug": "asus-tuf-gaming-f15-fx507zc4-rtx-3050",
+        "brand": "Asus",
+        "color_name": "Xám Cơ Khí (Mecha Gray)",
+        "color_hex": "#4B5563",
+        "sku": "ASUS-FX507ZC-V1"
+    },
+    {
+        "variant_id": 94,
+        "product_id": 47,
+        "product_name": "Asus TUF Gaming F15 FX507ZC4 RTX 3050",
+        "product_slug": "asus-tuf-gaming-f15-fx507zc4-rtx-3050",
+        "brand": "Asus",
+        "color_name": "Đen Huyền Bí (Eclipse Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "ASUS-FX507ZC-V2"
+    },
+    {
+        "variant_id": 95,
+        "product_id": 48,
+        "product_name": "Asus TUF Gaming A14 FA401UU Siêu Nhẹ",
+        "product_slug": "asus-tuf-gaming-a14-fa401uu-sieu-nhe",
+        "brand": "Asus",
+        "color_name": "Xám Cơ Khí (Mecha Gray)",
+        "color_hex": "#4B5563",
+        "sku": "ASUS-FA401UU-V1"
+    },
+    {
+        "variant_id": 96,
+        "product_id": 48,
+        "product_name": "Asus TUF Gaming A14 FA401UU Siêu Nhẹ",
+        "product_slug": "asus-tuf-gaming-a14-fa401uu-sieu-nhe",
+        "brand": "Asus",
+        "color_name": "Đen Huyền Bí (Eclipse Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "ASUS-FA401UU-V2"
+    },
+    {
+        "variant_id": 97,
+        "product_id": 49,
+        "product_name": "ROG Phone 8 Pro 16GB\/512GB",
+        "product_slug": "rog-phone-8-pro-16gb512gb",
+        "brand": "Asus",
+        "color_name": "Đen Phantom (Phantom Black)",
+        "color_hex": "#1F2937",
+        "sku": "ASUS-ROG8P-V1"
+    },
+    {
+        "variant_id": 98,
+        "product_id": 49,
+        "product_name": "ROG Phone 8 Pro 16GB\/512GB",
+        "product_slug": "rog-phone-8-pro-16gb512gb",
+        "brand": "Asus",
+        "color_name": "Xám Bão Tố (Storm Grey)",
+        "color_hex": "#4B5563",
+        "sku": "ASUS-ROG8P-V2"
+    },
+    {
+        "variant_id": 99,
+        "product_id": 50,
+        "product_name": "Chuột Gaming ROG Harpe Ace Aim Lab",
+        "product_slug": "chuot-gaming-rog-harpe-ace-aim-lab",
+        "brand": "Asus",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1C1C1E",
+        "sku": "ASUS-HARPE-V1"
+    },
+    {
+        "variant_id": 100,
+        "product_id": 50,
+        "product_name": "Chuột Gaming ROG Harpe Ace Aim Lab",
+        "product_slug": "chuot-gaming-rog-harpe-ace-aim-lab",
+        "brand": "Asus",
+        "color_name": "Trắng Ánh Trăng (Moonlight White)",
+        "color_hex": "#F5F5F5",
+        "sku": "ASUS-HARPE-V2"
+    },
+    {
+        "variant_id": 101,
+        "product_id": 51,
+        "product_name": "Dell XPS 13 9340 Core Ultra 7",
+        "product_slug": "dell-xps-13-9340-core-ultra-7",
+        "brand": "Dell",
+        "color_name": "Bạch Kim (Platinum)",
+        "color_hex": "#E5E7EB",
+        "sku": "DELL-XPS9340-V1"
+    },
+    {
+        "variant_id": 102,
+        "product_id": 51,
+        "product_name": "Dell XPS 13 9340 Core Ultra 7",
+        "product_slug": "dell-xps-13-9340-core-ultra-7",
+        "brand": "Dell",
+        "color_name": "Than Chì (Graphite)",
+        "color_hex": "#374151",
+        "sku": "DELL-XPS9340-V2"
+    },
+    {
+        "variant_id": 103,
+        "product_id": 52,
+        "product_name": "Dell XPS 13 9345 Snapdragon X Elite",
+        "product_slug": "dell-xps-13-9345-snapdragon-x-elite",
+        "brand": "Dell",
+        "color_name": "Bạch Kim (Platinum)",
+        "color_hex": "#E5E7EB",
+        "sku": "DELL-XPS9345-V1"
+    },
+    {
+        "variant_id": 104,
+        "product_id": 52,
+        "product_name": "Dell XPS 13 9345 Snapdragon X Elite",
+        "product_slug": "dell-xps-13-9345-snapdragon-x-elite",
+        "brand": "Dell",
+        "color_name": "Than Chì (Graphite)",
+        "color_hex": "#374151",
+        "sku": "DELL-XPS9345-V2"
+    },
+    {
+        "variant_id": 105,
+        "product_id": 53,
+        "product_name": "Dell XPS 14 9440 OLED RTX 4050",
+        "product_slug": "dell-xps-14-9440-oled-rtx-4050",
+        "brand": "Dell",
+        "color_name": "Bạch Kim (Platinum)",
+        "color_hex": "#E5E7EB",
+        "sku": "DELL-XPS9440-V1"
+    },
+    {
+        "variant_id": 106,
+        "product_id": 53,
+        "product_name": "Dell XPS 14 9440 OLED RTX 4050",
+        "product_slug": "dell-xps-14-9440-oled-rtx-4050",
+        "brand": "Dell",
+        "color_name": "Than Chì (Graphite)",
+        "color_hex": "#374151",
+        "sku": "DELL-XPS9440-V2"
+    },
+    {
+        "variant_id": 107,
+        "product_id": 54,
+        "product_name": "Dell XPS 16 9640 OLED RTX 4060",
+        "product_slug": "dell-xps-16-9640-oled-rtx-4060",
+        "brand": "Dell",
+        "color_name": "Bạch Kim (Platinum)",
+        "color_hex": "#E5E7EB",
+        "sku": "DELL-XPS9640-V1"
+    },
+    {
+        "variant_id": 108,
+        "product_id": 54,
+        "product_name": "Dell XPS 16 9640 OLED RTX 4060",
+        "product_slug": "dell-xps-16-9640-oled-rtx-4060",
+        "brand": "Dell",
+        "color_name": "Than Chì (Graphite)",
+        "color_hex": "#374151",
+        "sku": "DELL-XPS9640-V2"
+    },
+    {
+        "variant_id": 109,
+        "product_id": 55,
+        "product_name": "Dell Inspiron 14 Plus 7440",
+        "product_slug": "dell-inspiron-14-plus-7440",
+        "brand": "Dell",
+        "color_name": "Đen Carbon (Carbon Black)",
+        "color_hex": "#1C1C1C",
+        "sku": "DELL-INS7440-V1"
+    },
+    {
+        "variant_id": 110,
+        "product_id": 55,
+        "product_name": "Dell Inspiron 14 Plus 7440",
+        "product_slug": "dell-inspiron-14-plus-7440",
+        "brand": "Dell",
+        "color_name": "Bạc Bạch Kim (Platinum Silver)",
+        "color_hex": "#D3D3D3",
+        "sku": "DELL-INS7440-V2"
+    },
+    {
+        "variant_id": 111,
+        "product_id": 56,
+        "product_name": "Dell Inspiron 14 5440 Core 7",
+        "product_slug": "dell-inspiron-14-5440-core-7",
+        "brand": "Dell",
+        "color_name": "Đen Carbon (Carbon Black)",
+        "color_hex": "#1C1C1C",
+        "sku": "DELL-INS5440-V1"
+    },
+    {
+        "variant_id": 112,
+        "product_id": 56,
+        "product_name": "Dell Inspiron 14 5440 Core 7",
+        "product_slug": "dell-inspiron-14-5440-core-7",
+        "brand": "Dell",
+        "color_name": "Bạc Bạch Kim (Platinum Silver)",
+        "color_hex": "#D3D3D3",
+        "sku": "DELL-INS5440-V2"
+    },
+    {
+        "variant_id": 113,
+        "product_id": 57,
+        "product_name": "Dell Inspiron 15 3530 i5-1335U",
+        "product_slug": "dell-inspiron-15-3530-i5-1335u",
+        "brand": "Dell",
+        "color_name": "Đen Carbon (Carbon Black)",
+        "color_hex": "#1C1C1C",
+        "sku": "DELL-INS3530-V1"
+    },
+    {
+        "variant_id": 114,
+        "product_id": 57,
+        "product_name": "Dell Inspiron 15 3530 i5-1335U",
+        "product_slug": "dell-inspiron-15-3530-i5-1335u",
+        "brand": "Dell",
+        "color_name": "Bạc Bạch Kim (Platinum Silver)",
+        "color_hex": "#D3D3D3",
+        "sku": "DELL-INS3530-V2"
+    },
+    {
+        "variant_id": 115,
+        "product_id": 58,
+        "product_name": "Dell Inspiron 16 5640 Core Ultra 7",
+        "product_slug": "dell-inspiron-16-5640-core-ultra-7",
+        "brand": "Dell",
+        "color_name": "Đen Carbon (Carbon Black)",
+        "color_hex": "#1C1C1C",
+        "sku": "DELL-INS5640-V1"
+    },
+    {
+        "variant_id": 116,
+        "product_id": 58,
+        "product_name": "Dell Inspiron 16 5640 Core Ultra 7",
+        "product_slug": "dell-inspiron-16-5640-core-ultra-7",
+        "brand": "Dell",
+        "color_name": "Bạc Bạch Kim (Platinum Silver)",
+        "color_hex": "#D3D3D3",
+        "sku": "DELL-INS5640-V2"
+    },
+    {
+        "variant_id": 117,
+        "product_id": 59,
+        "product_name": "Dell Inspiron 14 7445 2-in-1 Xoay Gập",
+        "product_slug": "dell-inspiron-14-7445-2-in-1-xoay-gap",
+        "brand": "Dell",
+        "color_name": "Đen Carbon (Carbon Black)",
+        "color_hex": "#1C1C1C",
+        "sku": "DELL-INS7445-V1"
+    },
+    {
+        "variant_id": 118,
+        "product_id": 59,
+        "product_name": "Dell Inspiron 14 7445 2-in-1 Xoay Gập",
+        "product_slug": "dell-inspiron-14-7445-2-in-1-xoay-gap",
+        "brand": "Dell",
+        "color_name": "Bạc Bạch Kim (Platinum Silver)",
+        "color_hex": "#D3D3D3",
+        "sku": "DELL-INS7445-V2"
+    },
+    {
+        "variant_id": 119,
+        "product_id": 60,
+        "product_name": "Dell Latitude 7450 Ultralight",
+        "product_slug": "dell-latitude-7450-ultralight",
+        "brand": "Dell",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "DELL-LAT7450-V1"
+    },
+    {
+        "variant_id": 120,
+        "product_id": 60,
+        "product_name": "Dell Latitude 7450 Ultralight",
+        "product_slug": "dell-latitude-7450-ultralight",
+        "brand": "Dell",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "DELL-LAT7450-V2"
+    },
+    {
+        "variant_id": 121,
+        "product_id": 61,
+        "product_name": "Dell Latitude 5450 Doanh Nghiệp",
+        "product_slug": "dell-latitude-5450-doanh-nghiep",
+        "brand": "Dell",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "DELL-LAT5450-V1"
+    },
+    {
+        "variant_id": 122,
+        "product_id": 61,
+        "product_name": "Dell Latitude 5450 Doanh Nghiệp",
+        "product_slug": "dell-latitude-5450-doanh-nghiep",
+        "brand": "Dell",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "DELL-LAT5450-V2"
+    },
+    {
+        "variant_id": 123,
+        "product_id": 62,
+        "product_name": "Dell Latitude 3440 Văn Phòng",
+        "product_slug": "dell-latitude-3440-van-phong",
+        "brand": "Dell",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "DELL-LAT3440-V1"
+    },
+    {
+        "variant_id": 124,
+        "product_id": 62,
+        "product_name": "Dell Latitude 3440 Văn Phòng",
+        "product_slug": "dell-latitude-3440-van-phong",
+        "brand": "Dell",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "DELL-LAT3440-V2"
+    },
+    {
+        "variant_id": 125,
+        "product_id": 63,
+        "product_name": "Dell Vostro 3530 i5 Văn Phòng",
+        "product_slug": "dell-vostro-3530-i5-van-phong",
+        "brand": "Dell",
+        "color_name": "Đen Carbon (Carbon Black)",
+        "color_hex": "#1C1C1C",
+        "sku": "DELL-VOS3530-V1"
+    },
+    {
+        "variant_id": 126,
+        "product_id": 63,
+        "product_name": "Dell Vostro 3530 i5 Văn Phòng",
+        "product_slug": "dell-vostro-3530-i5-van-phong",
+        "brand": "Dell",
+        "color_name": "Bạc Bạch Kim (Platinum Silver)",
+        "color_hex": "#D3D3D3",
+        "sku": "DELL-VOS3530-V2"
+    },
+    {
+        "variant_id": 127,
+        "product_id": 64,
+        "product_name": "Dell Vostro 5630 i7-1360P",
+        "product_slug": "dell-vostro-5630-i7-1360p",
+        "brand": "Dell",
+        "color_name": "Đen Carbon (Carbon Black)",
+        "color_hex": "#1C1C1C",
+        "sku": "DELL-VOS5630-V1"
+    },
+    {
+        "variant_id": 128,
+        "product_id": 64,
+        "product_name": "Dell Vostro 5630 i7-1360P",
+        "product_slug": "dell-vostro-5630-i7-1360p",
+        "brand": "Dell",
+        "color_name": "Bạc Bạch Kim (Platinum Silver)",
+        "color_hex": "#D3D3D3",
+        "sku": "DELL-VOS5630-V2"
+    },
+    {
+        "variant_id": 129,
+        "product_id": 65,
+        "product_name": "Dell Precision 3590 Workstation",
+        "product_slug": "dell-precision-3590-workstation",
+        "brand": "Dell",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "DELL-PRE3590-V1"
+    },
+    {
+        "variant_id": 130,
+        "product_id": 65,
+        "product_name": "Dell Precision 3590 Workstation",
+        "product_slug": "dell-precision-3590-workstation",
+        "brand": "Dell",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "DELL-PRE3590-V2"
+    },
+    {
+        "variant_id": 131,
+        "product_id": 66,
+        "product_name": "Dell Precision 5690 RTX 2000 Ada",
+        "product_slug": "dell-precision-5690-rtx-2000-ada",
+        "brand": "Dell",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "DELL-PRE5690-V1"
+    },
+    {
+        "variant_id": 132,
+        "product_id": 66,
+        "product_name": "Dell Precision 5690 RTX 2000 Ada",
+        "product_slug": "dell-precision-5690-rtx-2000-ada",
+        "brand": "Dell",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "DELL-PRE5690-V2"
+    },
+    {
+        "variant_id": 133,
+        "product_id": 67,
+        "product_name": "Dell Alienware m16 R2 RTX 4070",
+        "product_slug": "dell-alienware-m16-r2-rtx-4070",
+        "brand": "Dell",
+        "color_name": "Xám Đêm Trăng (Dark Metallic Moon)",
+        "color_hex": "#2C2D30",
+        "sku": "DELL-AWM16-V1"
+    },
+    {
+        "variant_id": 134,
+        "product_id": 67,
+        "product_name": "Dell Alienware m16 R2 RTX 4070",
+        "product_slug": "dell-alienware-m16-r2-rtx-4070",
+        "brand": "Dell",
+        "color_name": "Trắng Ánh Sao (Lunar Light)",
+        "color_hex": "#E8E8E8",
+        "sku": "DELL-AWM16-V2"
+    },
+    {
+        "variant_id": 135,
+        "product_id": 68,
+        "product_name": "Dell Alienware m18 R2 RTX 4080",
+        "product_slug": "dell-alienware-m18-r2-rtx-4080",
+        "brand": "Dell",
+        "color_name": "Xám Đêm Trăng (Dark Metallic Moon)",
+        "color_hex": "#2C2D30",
+        "sku": "DELL-AWM18-V1"
+    },
+    {
+        "variant_id": 136,
+        "product_id": 68,
+        "product_name": "Dell Alienware m18 R2 RTX 4080",
+        "product_slug": "dell-alienware-m18-r2-rtx-4080",
+        "brand": "Dell",
+        "color_name": "Trắng Ánh Sao (Lunar Light)",
+        "color_hex": "#E8E8E8",
+        "sku": "DELL-AWM18-V2"
+    },
+    {
+        "variant_id": 137,
+        "product_id": 69,
+        "product_name": "Dell Alienware x16 R2 Siêu Mỏng",
+        "product_slug": "dell-alienware-x16-r2-sieu-mong",
+        "brand": "Dell",
+        "color_name": "Xám Đêm Trăng (Dark Metallic Moon)",
+        "color_hex": "#2C2D30",
+        "sku": "DELL-AWX16-V1"
+    },
+    {
+        "variant_id": 138,
+        "product_id": 69,
+        "product_name": "Dell Alienware x16 R2 Siêu Mỏng",
+        "product_slug": "dell-alienware-x16-r2-sieu-mong",
+        "brand": "Dell",
+        "color_name": "Trắng Ánh Sao (Lunar Light)",
+        "color_hex": "#E8E8E8",
+        "sku": "DELL-AWX16-V2"
+    },
+    {
+        "variant_id": 139,
+        "product_id": 70,
+        "product_name": "Dell Gaming G15 5530 i7 RTX 4060",
+        "product_slug": "dell-gaming-g15-5530-i7-rtx-4060",
+        "brand": "Dell",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "DELL-G155530-V1"
+    },
+    {
+        "variant_id": 140,
+        "product_id": 70,
+        "product_name": "Dell Gaming G15 5530 i7 RTX 4060",
+        "product_slug": "dell-gaming-g15-5530-i7-rtx-4060",
+        "brand": "Dell",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "DELL-G155530-V2"
+    },
+    {
+        "variant_id": 141,
+        "product_id": 71,
+        "product_name": "Dell Gaming G15 5530 i5 RTX 3050",
+        "product_slug": "dell-gaming-g15-5530-i5-rtx-3050",
+        "brand": "Dell",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "DELL-G153050-V1"
+    },
+    {
+        "variant_id": 142,
+        "product_id": 71,
+        "product_name": "Dell Gaming G15 5530 i5 RTX 3050",
+        "product_slug": "dell-gaming-g15-5530-i5-rtx-3050",
+        "brand": "Dell",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "DELL-G153050-V2"
+    },
+    {
+        "variant_id": 143,
+        "product_id": 72,
+        "product_name": "Dell Gaming G16 7630 QHD+ 240Hz",
+        "product_slug": "dell-gaming-g16-7630-qhd-240hz",
+        "brand": "Dell",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "DELL-G167630-V1"
+    },
+    {
+        "variant_id": 144,
+        "product_id": 72,
+        "product_name": "Dell Gaming G16 7630 QHD+ 240Hz",
+        "product_slug": "dell-gaming-g16-7630-qhd-240hz",
+        "brand": "Dell",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "DELL-G167630-V2"
+    },
+    {
+        "variant_id": 145,
+        "product_id": 73,
+        "product_name": "Tai nghe Gaming Alienware Pro Wireless",
+        "product_slug": "tai-nghe-gaming-alienware-pro-wireless",
+        "brand": "Dell",
+        "color_name": "Xám Đêm Trăng (Dark Side of the Moon)",
+        "color_hex": "#2C2D30",
+        "sku": "DELL-AWPRO-HS-V1"
+    },
+    {
+        "variant_id": 146,
+        "product_id": 73,
+        "product_name": "Tai nghe Gaming Alienware Pro Wireless",
+        "product_slug": "tai-nghe-gaming-alienware-pro-wireless",
+        "brand": "Dell",
+        "color_name": "Trắng Ánh Sao (Lunar Light)",
+        "color_hex": "#E8E8E8",
+        "sku": "DELL-AWPRO-HS-V2"
+    },
+    {
+        "variant_id": 147,
+        "product_id": 74,
+        "product_name": "Chuột Gaming Alienware Pro Wireless",
+        "product_slug": "chuot-gaming-alienware-pro-wireless",
+        "brand": "Dell",
+        "color_name": "Xám Đêm Trăng (Dark Side of the Moon)",
+        "color_hex": "#2C2D30",
+        "sku": "DELL-AWPRO-MS-V1"
+    },
+    {
+        "variant_id": 148,
+        "product_id": 74,
+        "product_name": "Chuột Gaming Alienware Pro Wireless",
+        "product_slug": "chuot-gaming-alienware-pro-wireless",
+        "brand": "Dell",
+        "color_name": "Trắng Ánh Sao (Lunar Light)",
+        "color_hex": "#E8E8E8",
+        "sku": "DELL-AWPRO-MS-V2"
+    },
+    {
+        "variant_id": 149,
+        "product_id": 75,
+        "product_name": "Bàn phím cơ Alienware Pro TKL",
+        "product_slug": "ban-phim-co-alienware-pro-tkl",
+        "brand": "Dell",
+        "color_name": "Xám Đêm Trăng (Dark Side of the Moon)",
+        "color_hex": "#2C2D30",
+        "sku": "DELL-AWPRO-KB-V1"
+    },
+    {
+        "variant_id": 150,
+        "product_id": 75,
+        "product_name": "Bàn phím cơ Alienware Pro TKL",
+        "product_slug": "ban-phim-co-alienware-pro-tkl",
+        "brand": "Dell",
+        "color_name": "Trắng Ánh Sao (Lunar Light)",
+        "color_hex": "#E8E8E8",
+        "sku": "DELL-AWPRO-KB-V2"
+    },
+    {
+        "variant_id": 151,
+        "product_id": 76,
+        "product_name": "Lenovo ThinkPad X1 Carbon Gen 12",
+        "product_slug": "lenovo-thinkpad-x1-carbon-gen-12",
+        "brand": "Lenovo",
+        "color_name": "Đen Vân Carbon (Deep Black)",
+        "color_hex": "#111827",
+        "sku": "LEN-X1C12-V1"
+    },
+    {
+        "variant_id": 152,
+        "product_id": 76,
+        "product_name": "Lenovo ThinkPad X1 Carbon Gen 12",
+        "product_slug": "lenovo-thinkpad-x1-carbon-gen-12",
+        "brand": "Lenovo",
+        "color_name": "Đen Nhám (Matte Black)",
+        "color_hex": "#1F2937",
+        "sku": "LEN-X1C12-V2"
+    },
+    {
+        "variant_id": 153,
+        "product_id": 77,
+        "product_name": "Lenovo ThinkPad X1 2-in-1 Gen 9",
+        "product_slug": "lenovo-thinkpad-x1-2-in-1-gen-9",
+        "brand": "Lenovo",
+        "color_name": "Đen Vân Carbon (Deep Black)",
+        "color_hex": "#111827",
+        "sku": "LEN-X12IN1-V1"
+    },
+    {
+        "variant_id": 154,
+        "product_id": 77,
+        "product_name": "Lenovo ThinkPad X1 2-in-1 Gen 9",
+        "product_slug": "lenovo-thinkpad-x1-2-in-1-gen-9",
+        "brand": "Lenovo",
+        "color_name": "Đen Nhám (Matte Black)",
+        "color_hex": "#1F2937",
+        "sku": "LEN-X12IN1-V2"
+    },
+    {
+        "variant_id": 155,
+        "product_id": 78,
+        "product_name": "Lenovo ThinkPad T14 Gen 5",
+        "product_slug": "lenovo-thinkpad-t14-gen-5",
+        "brand": "Lenovo",
+        "color_name": "Đen Vân Carbon (Deep Black)",
+        "color_hex": "#111827",
+        "sku": "LEN-T14G5-V1"
+    },
+    {
+        "variant_id": 156,
+        "product_id": 78,
+        "product_name": "Lenovo ThinkPad T14 Gen 5",
+        "product_slug": "lenovo-thinkpad-t14-gen-5",
+        "brand": "Lenovo",
+        "color_name": "Đen Nhám (Matte Black)",
+        "color_hex": "#1F2937",
+        "sku": "LEN-T14G5-V2"
+    },
+    {
+        "variant_id": 157,
+        "product_id": 79,
+        "product_name": "Lenovo ThinkPad T14s Gen 6 Snapdragon",
+        "product_slug": "lenovo-thinkpad-t14s-gen-6-snapdragon",
+        "brand": "Lenovo",
+        "color_name": "Đen Vân Carbon (Deep Black)",
+        "color_hex": "#111827",
+        "sku": "LEN-T14SG6-V1"
+    },
+    {
+        "variant_id": 158,
+        "product_id": 79,
+        "product_name": "Lenovo ThinkPad T14s Gen 6 Snapdragon",
+        "product_slug": "lenovo-thinkpad-t14s-gen-6-snapdragon",
+        "brand": "Lenovo",
+        "color_name": "Đen Nhám (Matte Black)",
+        "color_hex": "#1F2937",
+        "sku": "LEN-T14SG6-V2"
+    },
+    {
+        "variant_id": 159,
+        "product_id": 80,
+        "product_name": "Lenovo ThinkPad P1 Gen 7 Workstation",
+        "product_slug": "lenovo-thinkpad-p1-gen-7-workstation",
+        "brand": "Lenovo",
+        "color_name": "Đen Vân Carbon (Deep Black)",
+        "color_hex": "#111827",
+        "sku": "LEN-P1G7-V1"
+    },
+    {
+        "variant_id": 160,
+        "product_id": 80,
+        "product_name": "Lenovo ThinkPad P1 Gen 7 Workstation",
+        "product_slug": "lenovo-thinkpad-p1-gen-7-workstation",
+        "brand": "Lenovo",
+        "color_name": "Đen Nhám (Matte Black)",
+        "color_hex": "#1F2937",
+        "sku": "LEN-P1G7-V2"
+    },
+    {
+        "variant_id": 161,
+        "product_id": 81,
+        "product_name": "Lenovo ThinkBook 14 G7 IML",
+        "product_slug": "lenovo-thinkbook-14-g7-iml",
+        "brand": "Lenovo",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "LEN-TB14G7-V1"
+    },
+    {
+        "variant_id": 162,
+        "product_id": 81,
+        "product_name": "Lenovo ThinkBook 14 G7 IML",
+        "product_slug": "lenovo-thinkbook-14-g7-iml",
+        "brand": "Lenovo",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "LEN-TB14G7-V2"
+    },
+    {
+        "variant_id": 163,
+        "product_id": 82,
+        "product_name": "Lenovo ThinkBook 16 G7 IML",
+        "product_slug": "lenovo-thinkbook-16-g7-iml",
+        "brand": "Lenovo",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "LEN-TB16G7-V1"
+    },
+    {
+        "variant_id": 164,
+        "product_id": 82,
+        "product_name": "Lenovo ThinkBook 16 G7 IML",
+        "product_slug": "lenovo-thinkbook-16-g7-iml",
+        "brand": "Lenovo",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "LEN-TB16G7-V2"
+    },
+    {
+        "variant_id": 165,
+        "product_id": 83,
+        "product_name": "Lenovo Yoga Slim 7x Copilot+ PC AI",
+        "product_slug": "lenovo-yoga-slim-7x-copilot-pc-ai",
+        "brand": "Lenovo",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "LEN-YOGA7X-V1"
+    },
+    {
+        "variant_id": 166,
+        "product_id": 83,
+        "product_name": "Lenovo Yoga Slim 7x Copilot+ PC AI",
+        "product_slug": "lenovo-yoga-slim-7x-copilot-pc-ai",
+        "brand": "Lenovo",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "LEN-YOGA7X-V2"
+    },
+    {
+        "variant_id": 167,
+        "product_id": 84,
+        "product_name": "Lenovo Yoga Pro 7 14IMH9 OLED",
+        "product_slug": "lenovo-yoga-pro-7-14imh9-oled",
+        "brand": "Lenovo",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "LEN-YOGAP7-V1"
+    },
+    {
+        "variant_id": 168,
+        "product_id": 84,
+        "product_name": "Lenovo Yoga Pro 7 14IMH9 OLED",
+        "product_slug": "lenovo-yoga-pro-7-14imh9-oled",
+        "brand": "Lenovo",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "LEN-YOGAP7-V2"
+    },
+    {
+        "variant_id": 169,
+        "product_id": 85,
+        "product_name": "Lenovo Yoga 9i 2-in-1 14IMH9",
+        "product_slug": "lenovo-yoga-9i-2-in-1-14imh9",
+        "brand": "Lenovo",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "LEN-YOGA9I-V1"
+    },
+    {
+        "variant_id": 170,
+        "product_id": 85,
+        "product_name": "Lenovo Yoga 9i 2-in-1 14IMH9",
+        "product_slug": "lenovo-yoga-9i-2-in-1-14imh9",
+        "brand": "Lenovo",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "LEN-YOGA9I-V2"
+    },
+    {
+        "variant_id": 171,
+        "product_id": 86,
+        "product_name": "Lenovo IdeaPad Slim 5 14IMH9 OLED",
+        "product_slug": "lenovo-ideapad-slim-5-14imh9-oled",
+        "brand": "Lenovo",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "LEN-IDP514-V1"
+    },
+    {
+        "variant_id": 172,
+        "product_id": 86,
+        "product_name": "Lenovo IdeaPad Slim 5 14IMH9 OLED",
+        "product_slug": "lenovo-ideapad-slim-5-14imh9-oled",
+        "brand": "Lenovo",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "LEN-IDP514-V2"
+    },
+    {
+        "variant_id": 173,
+        "product_id": 87,
+        "product_name": "Lenovo IdeaPad Slim 5 16IMH9",
+        "product_slug": "lenovo-ideapad-slim-5-16imh9",
+        "brand": "Lenovo",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "LEN-IDP516-V1"
+    },
+    {
+        "variant_id": 174,
+        "product_id": 87,
+        "product_name": "Lenovo IdeaPad Slim 5 16IMH9",
+        "product_slug": "lenovo-ideapad-slim-5-16imh9",
+        "brand": "Lenovo",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "LEN-IDP516-V2"
+    },
+    {
+        "variant_id": 175,
+        "product_id": 88,
+        "product_name": "Lenovo IdeaPad Pro 5 16IMH9 RTX 4050",
+        "product_slug": "lenovo-ideapad-pro-5-16imh9-rtx-4050",
+        "brand": "Lenovo",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "LEN-IDPP516-V1"
+    },
+    {
+        "variant_id": 176,
+        "product_id": 88,
+        "product_name": "Lenovo IdeaPad Pro 5 16IMH9 RTX 4050",
+        "product_slug": "lenovo-ideapad-pro-5-16imh9-rtx-4050",
+        "brand": "Lenovo",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "LEN-IDPP516-V2"
+    },
+    {
+        "variant_id": 177,
+        "product_id": 89,
+        "product_name": "Lenovo IdeaPad Slim 3 15IRH8",
+        "product_slug": "lenovo-ideapad-slim-3-15irh8",
+        "brand": "Lenovo",
+        "color_name": "Xám Bão Tố (Storm Grey)",
+        "color_hex": "#4B5563",
+        "sku": "LEN-IDP315-V1"
+    },
+    {
+        "variant_id": 178,
+        "product_id": 89,
+        "product_name": "Lenovo IdeaPad Slim 3 15IRH8",
+        "product_slug": "lenovo-ideapad-slim-3-15irh8",
+        "brand": "Lenovo",
+        "color_name": "Xám Đen Onyx (Onyx Grey)",
+        "color_hex": "#2B2C2E",
+        "sku": "LEN-IDP315-V2"
+    },
+    {
+        "variant_id": 179,
+        "product_id": 90,
+        "product_name": "Lenovo Legion Slim 5 16APH8 RTX 4060",
+        "product_slug": "lenovo-legion-slim-5-16aph8-rtx-4060",
+        "brand": "Lenovo",
+        "color_name": "Xám Bão Tố (Storm Grey)",
+        "color_hex": "#4B5563",
+        "sku": "LEN-LEGION5-V1"
+    },
+    {
+        "variant_id": 180,
+        "product_id": 90,
+        "product_name": "Lenovo Legion Slim 5 16APH8 RTX 4060",
+        "product_slug": "lenovo-legion-slim-5-16aph8-rtx-4060",
+        "brand": "Lenovo",
+        "color_name": "Xám Đen Onyx (Onyx Grey)",
+        "color_hex": "#2B2C2E",
+        "sku": "LEN-LEGION5-V2"
+    },
+    {
+        "variant_id": 181,
+        "product_id": 91,
+        "product_name": "Lenovo Legion Pro 5 16IRX9 RTX 4070",
+        "product_slug": "lenovo-legion-pro-5-16irx9-rtx-4070",
+        "brand": "Lenovo",
+        "color_name": "Xám Bão Tố (Storm Grey)",
+        "color_hex": "#4B5563",
+        "sku": "LEN-LEGP5-V1"
+    },
+    {
+        "variant_id": 182,
+        "product_id": 91,
+        "product_name": "Lenovo Legion Pro 5 16IRX9 RTX 4070",
+        "product_slug": "lenovo-legion-pro-5-16irx9-rtx-4070",
+        "brand": "Lenovo",
+        "color_name": "Xám Đen Onyx (Onyx Grey)",
+        "color_hex": "#2B2C2E",
+        "sku": "LEN-LEGP5-V2"
+    },
+    {
+        "variant_id": 183,
+        "product_id": 92,
+        "product_name": "Lenovo Legion Pro 7 16IRX9H RTX 4080",
+        "product_slug": "lenovo-legion-pro-7-16irx9h-rtx-4080",
+        "brand": "Lenovo",
+        "color_name": "Xám Bão Tố (Storm Grey)",
+        "color_hex": "#4B5563",
+        "sku": "LEN-LEGP7-V1"
+    },
+    {
+        "variant_id": 184,
+        "product_id": 92,
+        "product_name": "Lenovo Legion Pro 7 16IRX9H RTX 4080",
+        "product_slug": "lenovo-legion-pro-7-16irx9h-rtx-4080",
+        "brand": "Lenovo",
+        "color_name": "Xám Đen Onyx (Onyx Grey)",
+        "color_hex": "#2B2C2E",
+        "sku": "LEN-LEGP7-V2"
+    },
+    {
+        "variant_id": 185,
+        "product_id": 93,
+        "product_name": "Lenovo Legion 7i 16IRX9 Trắng Tinh Khôi",
+        "product_slug": "lenovo-legion-7i-16irx9-trang-tinh-khoi",
+        "brand": "Lenovo",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "LEN-LEG7I-V1"
+    },
+    {
+        "variant_id": 186,
+        "product_id": 93,
+        "product_name": "Lenovo Legion 7i 16IRX9 Trắng Tinh Khôi",
+        "product_slug": "lenovo-legion-7i-16irx9-trang-tinh-khoi",
+        "brand": "Lenovo",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "LEN-LEG7I-V2"
+    },
+    {
+        "variant_id": 187,
+        "product_id": 94,
+        "product_name": "Lenovo Legion 9i 16IRX9 Tản Nhiệt Nước",
+        "product_slug": "lenovo-legion-9i-16irx9-tan-nhiet-nuoc",
+        "brand": "Lenovo",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "LEN-LEG9I-V1"
+    },
+    {
+        "variant_id": 188,
+        "product_id": 94,
+        "product_name": "Lenovo Legion 9i 16IRX9 Tản Nhiệt Nước",
+        "product_slug": "lenovo-legion-9i-16irx9-tan-nhiet-nuoc",
+        "brand": "Lenovo",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "LEN-LEG9I-V2"
+    },
+    {
+        "variant_id": 189,
+        "product_id": 95,
+        "product_name": "Lenovo LOQ 15IAX9 i5 RTX 3050",
+        "product_slug": "lenovo-loq-15iax9-i5-rtx-3050",
+        "brand": "Lenovo",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "LEN-LOQ15I5-V1"
+    },
+    {
+        "variant_id": 190,
+        "product_id": 95,
+        "product_name": "Lenovo LOQ 15IAX9 i5 RTX 3050",
+        "product_slug": "lenovo-loq-15iax9-i5-rtx-3050",
+        "brand": "Lenovo",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "LEN-LOQ15I5-V2"
+    },
+    {
+        "variant_id": 191,
+        "product_id": 96,
+        "product_name": "Lenovo LOQ 15ARP9 Ryzen 7 RTX 4060",
+        "product_slug": "lenovo-loq-15arp9-ryzen-7-rtx-4060",
+        "brand": "Lenovo",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "LEN-LOQ15R7-V1"
+    },
+    {
+        "variant_id": 192,
+        "product_id": 96,
+        "product_name": "Lenovo LOQ 15ARP9 Ryzen 7 RTX 4060",
+        "product_slug": "lenovo-loq-15arp9-ryzen-7-rtx-4060",
+        "brand": "Lenovo",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "LEN-LOQ15R7-V2"
+    },
+    {
+        "variant_id": 193,
+        "product_id": 97,
+        "product_name": "Lenovo Tab P12 12.7 inch Kèm Bút",
+        "product_slug": "lenovo-tab-p12-127-inch-kem-but",
+        "brand": "Lenovo",
+        "color_name": "Xám Không Gian",
+        "color_hex": "#4A4C4E",
+        "sku": "LEN-TABP12-V1"
+    },
+    {
+        "variant_id": 194,
+        "product_id": 97,
+        "product_name": "Lenovo Tab P12 12.7 inch Kèm Bút",
+        "product_slug": "lenovo-tab-p12-127-inch-kem-but",
+        "brand": "Lenovo",
+        "color_name": "Bạc",
+        "color_hex": "#DCDDE0",
+        "sku": "LEN-TABP12-V2"
+    },
+    {
+        "variant_id": 195,
+        "product_id": 98,
+        "product_name": "Lenovo Legion Tab 8.8 inch Gaming",
+        "product_slug": "lenovo-legion-tab-88-inch-gaming",
+        "brand": "Lenovo",
+        "color_name": "Xám Không Gian",
+        "color_hex": "#4A4C4E",
+        "sku": "LEN-LEGTAB-V1"
+    },
+    {
+        "variant_id": 196,
+        "product_id": 98,
+        "product_name": "Lenovo Legion Tab 8.8 inch Gaming",
+        "product_slug": "lenovo-legion-tab-88-inch-gaming",
+        "brand": "Lenovo",
+        "color_name": "Bạc",
+        "color_hex": "#DCDDE0",
+        "sku": "LEN-LEGTAB-V2"
+    },
+    {
+        "variant_id": 197,
+        "product_id": 99,
+        "product_name": "Chuột Gaming Lenovo Legion M600s Qi",
+        "product_slug": "chuot-gaming-lenovo-legion-m600s-qi",
+        "brand": "Lenovo",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LEN-M600S-V1"
+    },
+    {
+        "variant_id": 198,
+        "product_id": 99,
+        "product_name": "Chuột Gaming Lenovo Legion M600s Qi",
+        "product_slug": "chuot-gaming-lenovo-legion-m600s-qi",
+        "brand": "Lenovo",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LEN-M600S-V2"
+    },
+    {
+        "variant_id": 199,
+        "product_id": 100,
+        "product_name": "Bàn phím không dây Lenovo ThinkPad TrackPoint II",
+        "product_slug": "ban-phim-khong-day-lenovo-thinkpad-trackpoint-ii",
+        "brand": "Lenovo",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LEN-TPKB2-V1"
+    },
+    {
+        "variant_id": 200,
+        "product_id": 100,
+        "product_name": "Bàn phím không dây Lenovo ThinkPad TrackPoint II",
+        "product_slug": "ban-phim-khong-day-lenovo-thinkpad-trackpoint-ii",
+        "brand": "Lenovo",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LEN-TPKB2-V2"
+    },
+    {
+        "variant_id": 201,
+        "product_id": 101,
+        "product_name": "HP Envy x360 14 OLED Xoay Gập",
+        "product_slug": "hp-envy-x360-14-oled-xoay-gap",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-ENVY14-V1"
+    },
+    {
+        "variant_id": 202,
+        "product_id": 101,
+        "product_name": "HP Envy x360 14 OLED Xoay Gập",
+        "product_slug": "hp-envy-x360-14-oled-xoay-gap",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-ENVY14-V2"
+    },
+    {
+        "variant_id": 203,
+        "product_id": 102,
+        "product_name": "HP Envy x360 16 OLED Cảm Ứng",
+        "product_slug": "hp-envy-x360-16-oled-cam-ung",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-ENVY16-V1"
+    },
+    {
+        "variant_id": 204,
+        "product_id": 102,
+        "product_name": "HP Envy x360 16 OLED Cảm Ứng",
+        "product_slug": "hp-envy-x360-16-oled-cam-ung",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-ENVY16-V2"
+    },
+    {
+        "variant_id": 205,
+        "product_id": 103,
+        "product_name": "HP OmniBook Ultra 14 AI",
+        "product_slug": "hp-omnibook-ultra-14-ai",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-OMNI14-V1"
+    },
+    {
+        "variant_id": 206,
+        "product_id": 103,
+        "product_name": "HP OmniBook Ultra 14 AI",
+        "product_slug": "hp-omnibook-ultra-14-ai",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-OMNI14-V2"
+    },
+    {
+        "variant_id": 207,
+        "product_id": 104,
+        "product_name": "HP OmniBook X 14 Snapdragon X Elite",
+        "product_slug": "hp-omnibook-x-14-snapdragon-x-elite",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-OMNIX14-V1"
+    },
+    {
+        "variant_id": 208,
+        "product_id": 104,
+        "product_name": "HP OmniBook X 14 Snapdragon X Elite",
+        "product_slug": "hp-omnibook-x-14-snapdragon-x-elite",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-OMNIX14-V2"
+    },
+    {
+        "variant_id": 209,
+        "product_id": 105,
+        "product_name": "HP Spectre x360 14 OLED 2.8K",
+        "product_slug": "hp-spectre-x360-14-oled-28k",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-SPEC14-V1"
+    },
+    {
+        "variant_id": 210,
+        "product_id": 105,
+        "product_name": "HP Spectre x360 14 OLED 2.8K",
+        "product_slug": "hp-spectre-x360-14-oled-28k",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-SPEC14-V2"
+    },
+    {
+        "variant_id": 211,
+        "product_id": 106,
+        "product_name": "HP Spectre x360 16 RTX 4050",
+        "product_slug": "hp-spectre-x360-16-rtx-4050",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-SPEC16-V1"
+    },
+    {
+        "variant_id": 212,
+        "product_id": 106,
+        "product_name": "HP Spectre x360 16 RTX 4050",
+        "product_slug": "hp-spectre-x360-16-rtx-4050",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-SPEC16-V2"
+    },
+    {
+        "variant_id": 213,
+        "product_id": 107,
+        "product_name": "HP Pavilion Aero 13 Siêu Nhẹ 990g",
+        "product_slug": "hp-pavilion-aero-13-sieu-nhe-990g",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-AERO13-V1"
+    },
+    {
+        "variant_id": 214,
+        "product_id": 107,
+        "product_name": "HP Pavilion Aero 13 Siêu Nhẹ 990g",
+        "product_slug": "hp-pavilion-aero-13-sieu-nhe-990g",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-AERO13-V2"
+    },
+    {
+        "variant_id": 215,
+        "product_id": 108,
+        "product_name": "HP Pavilion Plus 14 OLED",
+        "product_slug": "hp-pavilion-plus-14-oled",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-PAVP14-V1"
+    },
+    {
+        "variant_id": 216,
+        "product_id": 108,
+        "product_name": "HP Pavilion Plus 14 OLED",
+        "product_slug": "hp-pavilion-plus-14-oled",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-PAVP14-V2"
+    },
+    {
+        "variant_id": 217,
+        "product_id": 109,
+        "product_name": "HP Pavilion 15 eg3093TU i5",
+        "product_slug": "hp-pavilion-15-eg3093tu-i5",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-PAV15-V1"
+    },
+    {
+        "variant_id": 218,
+        "product_id": 109,
+        "product_name": "HP Pavilion 15 eg3093TU i5",
+        "product_slug": "hp-pavilion-15-eg3093tu-i5",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-PAV15-V2"
+    },
+    {
+        "variant_id": 219,
+        "product_id": 110,
+        "product_name": "HP 15 fd0234TU Văn Phòng",
+        "product_slug": "hp-15-fd0234tu-van-phong",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-15FD-V1"
+    },
+    {
+        "variant_id": 220,
+        "product_id": 110,
+        "product_name": "HP 15 fd0234TU Văn Phòng",
+        "product_slug": "hp-15-fd0234tu-van-phong",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-15FD-V2"
+    },
+    {
+        "variant_id": 221,
+        "product_id": 111,
+        "product_name": "HP EliteBook 840 G11 Doanh Nhân",
+        "product_slug": "hp-elitebook-840-g11-doanh-nhan",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-ELITE840-V1"
+    },
+    {
+        "variant_id": 222,
+        "product_id": 111,
+        "product_name": "HP EliteBook 840 G11 Doanh Nhân",
+        "product_slug": "hp-elitebook-840-g11-doanh-nhan",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-ELITE840-V2"
+    },
+    {
+        "variant_id": 223,
+        "product_id": 112,
+        "product_name": "HP EliteBook 1040 G11 Siêu Mỏng",
+        "product_slug": "hp-elitebook-1040-g11-sieu-mong",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-ELITE1040-V1"
+    },
+    {
+        "variant_id": 224,
+        "product_id": 112,
+        "product_name": "HP EliteBook 1040 G11 Siêu Mỏng",
+        "product_slug": "hp-elitebook-1040-g11-sieu-mong",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-ELITE1040-V2"
+    },
+    {
+        "variant_id": 225,
+        "product_id": 113,
+        "product_name": "HP ProBook 450 G10 i5",
+        "product_slug": "hp-probook-450-g10-i5",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-PRO450-V1"
+    },
+    {
+        "variant_id": 226,
+        "product_id": 113,
+        "product_name": "HP ProBook 450 G10 i5",
+        "product_slug": "hp-probook-450-g10-i5",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-PRO450-V2"
+    },
+    {
+        "variant_id": 227,
+        "product_id": 114,
+        "product_name": "HP ProBook 440 G11 Core Ultra 5",
+        "product_slug": "hp-probook-440-g11-core-ultra-5",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-PRO440-V1"
+    },
+    {
+        "variant_id": 228,
+        "product_id": 114,
+        "product_name": "HP ProBook 440 G11 Core Ultra 5",
+        "product_slug": "hp-probook-440-g11-core-ultra-5",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-PRO440-V2"
+    },
+    {
+        "variant_id": 229,
+        "product_id": 115,
+        "product_name": "HP ZBook Firefly 14 G11 Workstation",
+        "product_slug": "hp-zbook-firefly-14-g11-workstation",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-ZBOOK14-V1"
+    },
+    {
+        "variant_id": 230,
+        "product_id": 115,
+        "product_name": "HP ZBook Firefly 14 G11 Workstation",
+        "product_slug": "hp-zbook-firefly-14-g11-workstation",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-ZBOOK14-V2"
+    },
+    {
+        "variant_id": 231,
+        "product_id": 116,
+        "product_name": "HP OMEN 16 Gaming RTX 4060",
+        "product_slug": "hp-omen-16-gaming-rtx-4060",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-OMEN16-V1"
+    },
+    {
+        "variant_id": 232,
+        "product_id": 116,
+        "product_name": "HP OMEN 16 Gaming RTX 4060",
+        "product_slug": "hp-omen-16-gaming-rtx-4060",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-OMEN16-V2"
+    },
+    {
+        "variant_id": 233,
+        "product_id": 117,
+        "product_name": "HP OMEN Transcend 14 OLED Siêu Nhẹ",
+        "product_slug": "hp-omen-transcend-14-oled-sieu-nhe",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-OMENT14-V1"
+    },
+    {
+        "variant_id": 234,
+        "product_id": 117,
+        "product_name": "HP OMEN Transcend 14 OLED Siêu Nhẹ",
+        "product_slug": "hp-omen-transcend-14-oled-sieu-nhe",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-OMENT14-V2"
+    },
+    {
+        "variant_id": 235,
+        "product_id": 118,
+        "product_name": "HP OMEN 17 Gaming RTX 4070",
+        "product_slug": "hp-omen-17-gaming-rtx-4070",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-OMEN17-V1"
+    },
+    {
+        "variant_id": 236,
+        "product_id": 118,
+        "product_name": "HP OMEN 17 Gaming RTX 4070",
+        "product_slug": "hp-omen-17-gaming-rtx-4070",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-OMEN17-V2"
+    },
+    {
+        "variant_id": 237,
+        "product_id": 119,
+        "product_name": "HP Victus 16 s0173AX Ryzen 5 RTX 4050",
+        "product_slug": "hp-victus-16-s0173ax-ryzen-5-rtx-4050",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-VIC16R5-V1"
+    },
+    {
+        "variant_id": 238,
+        "product_id": 119,
+        "product_name": "HP Victus 16 s0173AX Ryzen 5 RTX 4050",
+        "product_slug": "hp-victus-16-s0173ax-ryzen-5-rtx-4050",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-VIC16R5-V2"
+    },
+    {
+        "variant_id": 239,
+        "product_id": 120,
+        "product_name": "HP Victus 16 r0369TX i7 RTX 4060",
+        "product_slug": "hp-victus-16-r0369tx-i7-rtx-4060",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-VIC16I7-V1"
+    },
+    {
+        "variant_id": 240,
+        "product_id": 120,
+        "product_name": "HP Victus 16 r0369TX i7 RTX 4060",
+        "product_slug": "hp-victus-16-r0369tx-i7-rtx-4060",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-VIC16I7-V2"
+    },
+    {
+        "variant_id": 241,
+        "product_id": 121,
+        "product_name": "HP Victus 15 fa1139TX i5 RTX 3050",
+        "product_slug": "hp-victus-15-fa1139tx-i5-rtx-3050",
+        "brand": "HP",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "HP-VIC15I5-V1"
+    },
+    {
+        "variant_id": 242,
+        "product_id": 121,
+        "product_name": "HP Victus 15 fa1139TX i5 RTX 3050",
+        "product_slug": "hp-victus-15-fa1139tx-i5-rtx-3050",
+        "brand": "HP",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "HP-VIC15I5-V2"
+    },
+    {
+        "variant_id": 243,
+        "product_id": 122,
+        "product_name": "Tai nghe Gaming HyperX Cloud III Wireless",
+        "product_slug": "tai-nghe-gaming-hyperx-cloud-iii-wireless",
+        "brand": "HP",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "HP-CLOUD3W-V1"
+    },
+    {
+        "variant_id": 244,
+        "product_id": 122,
+        "product_name": "Tai nghe Gaming HyperX Cloud III Wireless",
+        "product_slug": "tai-nghe-gaming-hyperx-cloud-iii-wireless",
+        "brand": "HP",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "HP-CLOUD3W-V2"
+    },
+    {
+        "variant_id": 245,
+        "product_id": 123,
+        "product_name": "Chuột Gaming HyperX Pulsefire Haste 2 Wireless",
+        "product_slug": "chuot-gaming-hyperx-pulsefire-haste-2-wireless",
+        "brand": "HP",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "HP-HASTE2W-V1"
+    },
+    {
+        "variant_id": 246,
+        "product_id": 123,
+        "product_name": "Chuột Gaming HyperX Pulsefire Haste 2 Wireless",
+        "product_slug": "chuot-gaming-hyperx-pulsefire-haste-2-wireless",
+        "brand": "HP",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "HP-HASTE2W-V2"
+    },
+    {
+        "variant_id": 247,
+        "product_id": 124,
+        "product_name": "Bàn phím cơ HyperX Alloy Origins Core",
+        "product_slug": "ban-phim-co-hyperx-alloy-origins-core",
+        "brand": "HP",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "HP-ALLOY-V1"
+    },
+    {
+        "variant_id": 248,
+        "product_id": 124,
+        "product_name": "Bàn phím cơ HyperX Alloy Origins Core",
+        "product_slug": "ban-phim-co-hyperx-alloy-origins-core",
+        "brand": "HP",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "HP-ALLOY-V2"
+    },
+    {
+        "variant_id": 249,
+        "product_id": 125,
+        "product_name": "Chuột không dây HP 930 Creator Wireless",
+        "product_slug": "chuot-khong-day-hp-930-creator-wireless",
+        "brand": "HP",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "HP-930CR-V1"
+    },
+    {
+        "variant_id": 250,
+        "product_id": 125,
+        "product_name": "Chuột không dây HP 930 Creator Wireless",
+        "product_slug": "chuot-khong-day-hp-930-creator-wireless",
+        "brand": "HP",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "HP-930CR-V2"
+    },
+    {
+        "variant_id": 251,
+        "product_id": 126,
+        "product_name": "MSI Katana 15 B13VFK RTX 4060",
+        "product_slug": "msi-katana-15-b13vfk-rtx-4060",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-KATANA15-V1"
+    },
+    {
+        "variant_id": 252,
+        "product_id": 126,
+        "product_name": "MSI Katana 15 B13VFK RTX 4060",
+        "product_slug": "msi-katana-15-b13vfk-rtx-4060",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-KATANA15-V2"
+    },
+    {
+        "variant_id": 253,
+        "product_id": 127,
+        "product_name": "MSI Katana A15 AI B8VF Ryzen 7 RTX 4060",
+        "product_slug": "msi-katana-a15-ai-b8vf-ryzen-7-rtx-4060",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-KATANA-A15-V1"
+    },
+    {
+        "variant_id": 254,
+        "product_id": 127,
+        "product_name": "MSI Katana A15 AI B8VF Ryzen 7 RTX 4060",
+        "product_slug": "msi-katana-a15-ai-b8vf-ryzen-7-rtx-4060",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-KATANA-A15-V2"
+    },
+    {
+        "variant_id": 255,
+        "product_id": 128,
+        "product_name": "MSI Cyborg 15 A13VE i7 RTX 4050",
+        "product_slug": "msi-cyborg-15-a13ve-i7-rtx-4050",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-CYBORG15-V1"
+    },
+    {
+        "variant_id": 256,
+        "product_id": 128,
+        "product_name": "MSI Cyborg 15 A13VE i7 RTX 4050",
+        "product_slug": "msi-cyborg-15-a13ve-i7-rtx-4050",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-CYBORG15-V2"
+    },
+    {
+        "variant_id": 257,
+        "product_id": 129,
+        "product_name": "MSI Thin 15 B13UC i5 RTX 3050",
+        "product_slug": "msi-thin-15-b13uc-i5-rtx-3050",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-THIN15-V1"
+    },
+    {
+        "variant_id": 258,
+        "product_id": 129,
+        "product_name": "MSI Thin 15 B13UC i5 RTX 3050",
+        "product_slug": "msi-thin-15-b13uc-i5-rtx-3050",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-THIN15-V2"
+    },
+    {
+        "variant_id": 259,
+        "product_id": 130,
+        "product_name": "MSI Sword 16 HX B14VFKG RTX 4060",
+        "product_slug": "msi-sword-16-hx-b14vfkg-rtx-4060",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-SWORD16-V1"
+    },
+    {
+        "variant_id": 260,
+        "product_id": 130,
+        "product_name": "MSI Sword 16 HX B14VFKG RTX 4060",
+        "product_slug": "msi-sword-16-hx-b14vfkg-rtx-4060",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-SWORD16-V2"
+    },
+    {
+        "variant_id": 261,
+        "product_id": 131,
+        "product_name": "MSI Crosshair 16 HX D14VFKG RTX 4060",
+        "product_slug": "msi-crosshair-16-hx-d14vfkg-rtx-4060",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-CROSS16-V1"
+    },
+    {
+        "variant_id": 262,
+        "product_id": 131,
+        "product_name": "MSI Crosshair 16 HX D14VFKG RTX 4060",
+        "product_slug": "msi-crosshair-16-hx-d14vfkg-rtx-4060",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-CROSS16-V2"
+    },
+    {
+        "variant_id": 263,
+        "product_id": 132,
+        "product_name": "MSI Pulse 16 AI C1VFKG RTX 4060",
+        "product_slug": "msi-pulse-16-ai-c1vfkg-rtx-4060",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-PULSE16-V1"
+    },
+    {
+        "variant_id": 264,
+        "product_id": 132,
+        "product_name": "MSI Pulse 16 AI C1VFKG RTX 4060",
+        "product_slug": "msi-pulse-16-ai-c1vfkg-rtx-4060",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-PULSE16-V2"
+    },
+    {
+        "variant_id": 265,
+        "product_id": 133,
+        "product_name": "MSI Vector 16 HX A14VHG RTX 4080",
+        "product_slug": "msi-vector-16-hx-a14vhg-rtx-4080",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-VEC16-V1"
+    },
+    {
+        "variant_id": 266,
+        "product_id": 133,
+        "product_name": "MSI Vector 16 HX A14VHG RTX 4080",
+        "product_slug": "msi-vector-16-hx-a14vhg-rtx-4080",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-VEC16-V2"
+    },
+    {
+        "variant_id": 267,
+        "product_id": 134,
+        "product_name": "MSI Raider GE78 HX 14VHG RTX 4080",
+        "product_slug": "msi-raider-ge78-hx-14vhg-rtx-4080",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-GE78-V1"
+    },
+    {
+        "variant_id": 268,
+        "product_id": 134,
+        "product_name": "MSI Raider GE78 HX 14VHG RTX 4080",
+        "product_slug": "msi-raider-ge78-hx-14vhg-rtx-4080",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-GE78-V2"
+    },
+    {
+        "variant_id": 269,
+        "product_id": 135,
+        "product_name": "MSI Titan 18 HX A14VIG RTX 4090",
+        "product_slug": "msi-titan-18-hx-a14vig-rtx-4090",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-TITAN18-V1"
+    },
+    {
+        "variant_id": 270,
+        "product_id": 135,
+        "product_name": "MSI Titan 18 HX A14VIG RTX 4090",
+        "product_slug": "msi-titan-18-hx-a14vig-rtx-4090",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-TITAN18-V2"
+    },
+    {
+        "variant_id": 271,
+        "product_id": 136,
+        "product_name": "MSI Stealth 16 AI+ Studio RTX 4070",
+        "product_slug": "msi-stealth-16-ai-studio-rtx-4070",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-STEALTH16-V1"
+    },
+    {
+        "variant_id": 272,
+        "product_id": 136,
+        "product_name": "MSI Stealth 16 AI+ Studio RTX 4070",
+        "product_slug": "msi-stealth-16-ai-studio-rtx-4070",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-STEALTH16-V2"
+    },
+    {
+        "variant_id": 273,
+        "product_id": 137,
+        "product_name": "MSI Stealth 14 AI Studio RTX 4060",
+        "product_slug": "msi-stealth-14-ai-studio-rtx-4060",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-STEALTH14-V1"
+    },
+    {
+        "variant_id": 274,
+        "product_id": 137,
+        "product_name": "MSI Stealth 14 AI Studio RTX 4060",
+        "product_slug": "msi-stealth-14-ai-studio-rtx-4060",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-STEALTH14-V2"
+    },
+    {
+        "variant_id": 275,
+        "product_id": 138,
+        "product_name": "MSI Stealth 18 AI Studio RTX 4080",
+        "product_slug": "msi-stealth-18-ai-studio-rtx-4080",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-STEALTH18-V1"
+    },
+    {
+        "variant_id": 276,
+        "product_id": 138,
+        "product_name": "MSI Stealth 18 AI Studio RTX 4080",
+        "product_slug": "msi-stealth-18-ai-studio-rtx-4080",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-STEALTH18-V2"
+    },
+    {
+        "variant_id": 277,
+        "product_id": 139,
+        "product_name": "MSI Creator Z16 HX Studio",
+        "product_slug": "msi-creator-z16-hx-studio",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-CREZ16-V1"
+    },
+    {
+        "variant_id": 278,
+        "product_id": 139,
+        "product_name": "MSI Creator Z16 HX Studio",
+        "product_slug": "msi-creator-z16-hx-studio",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-CREZ16-V2"
+    },
+    {
+        "variant_id": 279,
+        "product_id": 140,
+        "product_name": "MSI Prestige 13 AI+ Evo Siêu Nhẹ 990g",
+        "product_slug": "msi-prestige-13-ai-evo-sieu-nhe-990g",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-PRES13-V1"
+    },
+    {
+        "variant_id": 280,
+        "product_id": 140,
+        "product_name": "MSI Prestige 13 AI+ Evo Siêu Nhẹ 990g",
+        "product_slug": "msi-prestige-13-ai-evo-sieu-nhe-990g",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-PRES13-V2"
+    },
+    {
+        "variant_id": 281,
+        "product_id": 141,
+        "product_name": "MSI Prestige 14 AI+ Evo",
+        "product_slug": "msi-prestige-14-ai-evo",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-PRES14-V1"
+    },
+    {
+        "variant_id": 282,
+        "product_id": 141,
+        "product_name": "MSI Prestige 14 AI+ Evo",
+        "product_slug": "msi-prestige-14-ai-evo",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-PRES14-V2"
+    },
+    {
+        "variant_id": 283,
+        "product_id": 142,
+        "product_name": "MSI Prestige 16 AI+ Evo OLED",
+        "product_slug": "msi-prestige-16-ai-evo-oled",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-PRES16-V1"
+    },
+    {
+        "variant_id": 284,
+        "product_id": 142,
+        "product_name": "MSI Prestige 16 AI+ Evo OLED",
+        "product_slug": "msi-prestige-16-ai-evo-oled",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-PRES16-V2"
+    },
+    {
+        "variant_id": 285,
+        "product_id": 143,
+        "product_name": "MSI Summit E13 AI+ Evo Xoay Gập",
+        "product_slug": "msi-summit-e13-ai-evo-xoay-gap",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-SUME13-V1"
+    },
+    {
+        "variant_id": 286,
+        "product_id": 143,
+        "product_name": "MSI Summit E13 AI+ Evo Xoay Gập",
+        "product_slug": "msi-summit-e13-ai-evo-xoay-gap",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-SUME13-V2"
+    },
+    {
+        "variant_id": 287,
+        "product_id": 144,
+        "product_name": "MSI Summit E16 AI+ Studio",
+        "product_slug": "msi-summit-e16-ai-studio",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-SUME16-V1"
+    },
+    {
+        "variant_id": 288,
+        "product_id": 144,
+        "product_name": "MSI Summit E16 AI+ Studio",
+        "product_slug": "msi-summit-e16-ai-studio",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-SUME16-V2"
+    },
+    {
+        "variant_id": 289,
+        "product_id": 145,
+        "product_name": "MSI Modern 14 F13MG i5 Văn Phòng",
+        "product_slug": "msi-modern-14-f13mg-i5-van-phong",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-MOD14-V1"
+    },
+    {
+        "variant_id": 290,
+        "product_id": 145,
+        "product_name": "MSI Modern 14 F13MG i5 Văn Phòng",
+        "product_slug": "msi-modern-14-f13mg-i5-van-phong",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-MOD14-V2"
+    },
+    {
+        "variant_id": 291,
+        "product_id": 146,
+        "product_name": "MSI Modern 15 F13MG i7",
+        "product_slug": "msi-modern-15-f13mg-i7",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-MOD15-V1"
+    },
+    {
+        "variant_id": 292,
+        "product_id": 146,
+        "product_name": "MSI Modern 15 F13MG i7",
+        "product_slug": "msi-modern-15-f13mg-i7",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-MOD15-V2"
+    },
+    {
+        "variant_id": 293,
+        "product_id": 147,
+        "product_name": "Máy chơi game cầm tay MSI Claw A1M",
+        "product_slug": "may-choi-game-cam-tay-msi-claw-a1m",
+        "brand": "MSI",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "MSI-CLAW-V1"
+    },
+    {
+        "variant_id": 294,
+        "product_id": 147,
+        "product_name": "Máy chơi game cầm tay MSI Claw A1M",
+        "product_slug": "may-choi-game-cam-tay-msi-claw-a1m",
+        "brand": "MSI",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "MSI-CLAW-V2"
+    },
+    {
+        "variant_id": 295,
+        "product_id": 148,
+        "product_name": "Chuột Gaming MSI Clutch GM51 Lightweight",
+        "product_slug": "chuot-gaming-msi-clutch-gm51-lightweight",
+        "brand": "MSI",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "MSI-GM51-V1"
+    },
+    {
+        "variant_id": 296,
+        "product_id": 148,
+        "product_name": "Chuột Gaming MSI Clutch GM51 Lightweight",
+        "product_slug": "chuot-gaming-msi-clutch-gm51-lightweight",
+        "brand": "MSI",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "MSI-GM51-V2"
+    },
+    {
+        "variant_id": 297,
+        "product_id": 149,
+        "product_name": "Bàn phím cơ MSI Vigor GK71 Sonic",
+        "product_slug": "ban-phim-co-msi-vigor-gk71-sonic",
+        "brand": "MSI",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "MSI-GK71-V1"
+    },
+    {
+        "variant_id": 298,
+        "product_id": 149,
+        "product_name": "Bàn phím cơ MSI Vigor GK71 Sonic",
+        "product_slug": "ban-phim-co-msi-vigor-gk71-sonic",
+        "brand": "MSI",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "MSI-GK71-V2"
+    },
+    {
+        "variant_id": 299,
+        "product_id": 150,
+        "product_name": "Tai nghe Gaming MSI Immerse GH50 Wireless",
+        "product_slug": "tai-nghe-gaming-msi-immerse-gh50-wireless",
+        "brand": "MSI",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "MSI-GH50-V1"
+    },
+    {
+        "variant_id": 300,
+        "product_id": 150,
+        "product_name": "Tai nghe Gaming MSI Immerse GH50 Wireless",
+        "product_slug": "tai-nghe-gaming-msi-immerse-gh50-wireless",
+        "brand": "MSI",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "MSI-GH50-V2"
+    },
+    {
+        "variant_id": 301,
+        "product_id": 151,
+        "product_name": "Samsung Galaxy S24 Ultra 5G",
+        "product_slug": "samsung-galaxy-s24-ultra-5g",
+        "brand": "Samsung",
+        "color_name": "Xám Titan (Titanium Gray)",
+        "color_hex": "#7A797B",
+        "sku": "SS-S24U-V1"
+    },
+    {
+        "variant_id": 302,
+        "product_id": 151,
+        "product_name": "Samsung Galaxy S24 Ultra 5G",
+        "product_slug": "samsung-galaxy-s24-ultra-5g",
+        "brand": "Samsung",
+        "color_name": "Đen Titan (Titanium Black)",
+        "color_hex": "#2B2B2C",
+        "sku": "SS-S24U-V2"
+    },
+    {
+        "variant_id": 303,
+        "product_id": 152,
+        "product_name": "Samsung Galaxy S24 Plus 5G",
+        "product_slug": "samsung-galaxy-s24-plus-5g",
+        "brand": "Samsung",
+        "color_name": "Tím Coban (Cobalt Violet)",
+        "color_hex": "#5E5669",
+        "sku": "SS-S24P-V1"
+    },
+    {
+        "variant_id": 304,
+        "product_id": 152,
+        "product_name": "Samsung Galaxy S24 Plus 5G",
+        "product_slug": "samsung-galaxy-s24-plus-5g",
+        "brand": "Samsung",
+        "color_name": "Vàng Amber (Amber Yellow)",
+        "color_hex": "#E6E1C5",
+        "sku": "SS-S24P-V2"
+    },
+    {
+        "variant_id": 305,
+        "product_id": 153,
+        "product_name": "Samsung Galaxy S24 5G",
+        "product_slug": "samsung-galaxy-s24-5g",
+        "brand": "Samsung",
+        "color_name": "Tím Coban (Cobalt Violet)",
+        "color_hex": "#5E5669",
+        "sku": "SS-S24-V1"
+    },
+    {
+        "variant_id": 306,
+        "product_id": 153,
+        "product_name": "Samsung Galaxy S24 5G",
+        "product_slug": "samsung-galaxy-s24-5g",
+        "brand": "Samsung",
+        "color_name": "Vàng Amber (Amber Yellow)",
+        "color_hex": "#E6E1C5",
+        "sku": "SS-S24-V2"
+    },
+    {
+        "variant_id": 307,
+        "product_id": 154,
+        "product_name": "Samsung Galaxy S24 FE 5G",
+        "product_slug": "samsung-galaxy-s24-fe-5g",
+        "brand": "Samsung",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "SS-S24FE-V1"
+    },
+    {
+        "variant_id": 308,
+        "product_id": 154,
+        "product_name": "Samsung Galaxy S24 FE 5G",
+        "product_slug": "samsung-galaxy-s24-fe-5g",
+        "brand": "Samsung",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "SS-S24FE-V2"
+    },
+    {
+        "variant_id": 309,
+        "product_id": 155,
+        "product_name": "Samsung Galaxy S23 Ultra 5G",
+        "product_slug": "samsung-galaxy-s23-ultra-5g",
+        "brand": "Samsung",
+        "color_name": "Xanh Icy (Icy Blue)",
+        "color_hex": "#93C5FD",
+        "sku": "SS-S23U-V1"
+    },
+    {
+        "variant_id": 310,
+        "product_id": 155,
+        "product_name": "Samsung Galaxy S23 Ultra 5G",
+        "product_slug": "samsung-galaxy-s23-ultra-5g",
+        "brand": "Samsung",
+        "color_name": "Đen Phantom (Phantom Black)",
+        "color_hex": "#1F2937",
+        "sku": "SS-S23U-V2"
+    },
+    {
+        "variant_id": 311,
+        "product_id": 156,
+        "product_name": "Samsung Galaxy Z Fold6 5G Gập Mở AI",
+        "product_slug": "samsung-galaxy-z-fold6-5g-gap-mo-ai",
+        "brand": "Samsung",
+        "color_name": "Xanh Mint",
+        "color_hex": "#A3E4D7",
+        "sku": "SS-ZFOLD6-V1"
+    },
+    {
+        "variant_id": 312,
+        "product_id": 156,
+        "product_name": "Samsung Galaxy Z Fold6 5G Gập Mở AI",
+        "product_slug": "samsung-galaxy-z-fold6-5g-gap-mo-ai",
+        "brand": "Samsung",
+        "color_name": "Tím Lavender",
+        "color_hex": "#D7BDE2",
+        "sku": "SS-ZFOLD6-V2"
+    },
+    {
+        "variant_id": 313,
+        "product_id": 157,
+        "product_name": "Samsung Galaxy Z Flip6 5G Gập Thời Trang",
+        "product_slug": "samsung-galaxy-z-flip6-5g-gap-thoi-trang",
+        "brand": "Samsung",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "SS-ZFLIP6-V1"
+    },
+    {
+        "variant_id": 314,
+        "product_id": 157,
+        "product_name": "Samsung Galaxy Z Flip6 5G Gập Thời Trang",
+        "product_slug": "samsung-galaxy-z-flip6-5g-gap-thoi-trang",
+        "brand": "Samsung",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "SS-ZFLIP6-V2"
+    },
+    {
+        "variant_id": 315,
+        "product_id": 158,
+        "product_name": "Samsung Galaxy Z Fold5 5G",
+        "product_slug": "samsung-galaxy-z-fold5-5g",
+        "brand": "Samsung",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "SS-ZFOLD5-V1"
+    },
+    {
+        "variant_id": 316,
+        "product_id": 158,
+        "product_name": "Samsung Galaxy Z Fold5 5G",
+        "product_slug": "samsung-galaxy-z-fold5-5g",
+        "brand": "Samsung",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "SS-ZFOLD5-V2"
+    },
+    {
+        "variant_id": 317,
+        "product_id": 159,
+        "product_name": "Samsung Galaxy A55 5G",
+        "product_slug": "samsung-galaxy-a55-5g",
+        "brand": "Samsung",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "SS-A55-V1"
+    },
+    {
+        "variant_id": 318,
+        "product_id": 159,
+        "product_name": "Samsung Galaxy A55 5G",
+        "product_slug": "samsung-galaxy-a55-5g",
+        "brand": "Samsung",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "SS-A55-V2"
+    },
+    {
+        "variant_id": 319,
+        "product_id": 160,
+        "product_name": "Samsung Galaxy A35 5G",
+        "product_slug": "samsung-galaxy-a35-5g",
+        "brand": "Samsung",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "SS-A35-V1"
+    },
+    {
+        "variant_id": 320,
+        "product_id": 160,
+        "product_name": "Samsung Galaxy A35 5G",
+        "product_slug": "samsung-galaxy-a35-5g",
+        "brand": "Samsung",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "SS-A35-V2"
+    },
+    {
+        "variant_id": 321,
+        "product_id": 161,
+        "product_name": "Samsung Galaxy A25 5G",
+        "product_slug": "samsung-galaxy-a25-5g",
+        "brand": "Samsung",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "SS-A25-V1"
+    },
+    {
+        "variant_id": 322,
+        "product_id": 161,
+        "product_name": "Samsung Galaxy A25 5G",
+        "product_slug": "samsung-galaxy-a25-5g",
+        "brand": "Samsung",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "SS-A25-V2"
+    },
+    {
+        "variant_id": 323,
+        "product_id": 162,
+        "product_name": "Samsung Galaxy M55 5G Sạc 45W",
+        "product_slug": "samsung-galaxy-m55-5g-sac-45w",
+        "brand": "Samsung",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "SS-M55-V1"
+    },
+    {
+        "variant_id": 324,
+        "product_id": 162,
+        "product_name": "Samsung Galaxy M55 5G Sạc 45W",
+        "product_slug": "samsung-galaxy-m55-5g-sac-45w",
+        "brand": "Samsung",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "SS-M55-V2"
+    },
+    {
+        "variant_id": 325,
+        "product_id": 163,
+        "product_name": "Samsung Galaxy Tab S10 Ultra 5G",
+        "product_slug": "samsung-galaxy-tab-s10-ultra-5g",
+        "brand": "Samsung",
+        "color_name": "Xám Không Gian",
+        "color_hex": "#4A4C4E",
+        "sku": "SS-TABS10U-V1"
+    },
+    {
+        "variant_id": 326,
+        "product_id": 163,
+        "product_name": "Samsung Galaxy Tab S10 Ultra 5G",
+        "product_slug": "samsung-galaxy-tab-s10-ultra-5g",
+        "brand": "Samsung",
+        "color_name": "Bạc",
+        "color_hex": "#DCDDE0",
+        "sku": "SS-TABS10U-V2"
+    },
+    {
+        "variant_id": 327,
+        "product_id": 164,
+        "product_name": "Samsung Galaxy Tab S10 Plus 5G",
+        "product_slug": "samsung-galaxy-tab-s10-plus-5g",
+        "brand": "Samsung",
+        "color_name": "Than Chì (Graphite)",
+        "color_hex": "#3A3B3C",
+        "sku": "SS-TABS10P-V1"
+    },
+    {
+        "variant_id": 328,
+        "product_id": 164,
+        "product_name": "Samsung Galaxy Tab S10 Plus 5G",
+        "product_slug": "samsung-galaxy-tab-s10-plus-5g",
+        "brand": "Samsung",
+        "color_name": "Kem (Beige)",
+        "color_hex": "#E8E2D4",
+        "sku": "SS-TABS10P-V2"
+    },
+    {
+        "variant_id": 329,
+        "product_id": 165,
+        "product_name": "Samsung Galaxy Tab S9 FE Plus",
+        "product_slug": "samsung-galaxy-tab-s9-fe-plus",
+        "brand": "Samsung",
+        "color_name": "Than Chì (Graphite)",
+        "color_hex": "#3A3B3C",
+        "sku": "SS-TABS9FEP-V1"
+    },
+    {
+        "variant_id": 330,
+        "product_id": 165,
+        "product_name": "Samsung Galaxy Tab S9 FE Plus",
+        "product_slug": "samsung-galaxy-tab-s9-fe-plus",
+        "brand": "Samsung",
+        "color_name": "Kem (Beige)",
+        "color_hex": "#E8E2D4",
+        "sku": "SS-TABS9FEP-V2"
+    },
+    {
+        "variant_id": 331,
+        "product_id": 166,
+        "product_name": "Samsung Galaxy Tab S9 FE",
+        "product_slug": "samsung-galaxy-tab-s9-fe",
+        "brand": "Samsung",
+        "color_name": "Xám Không Gian",
+        "color_hex": "#4A4C4E",
+        "sku": "SS-TABS9FE-V1"
+    },
+    {
+        "variant_id": 332,
+        "product_id": 166,
+        "product_name": "Samsung Galaxy Tab S9 FE",
+        "product_slug": "samsung-galaxy-tab-s9-fe",
+        "brand": "Samsung",
+        "color_name": "Bạc",
+        "color_hex": "#DCDDE0",
+        "sku": "SS-TABS9FE-V2"
+    },
+    {
+        "variant_id": 333,
+        "product_id": 167,
+        "product_name": "Samsung Galaxy Tab A9 Plus Wi-Fi",
+        "product_slug": "samsung-galaxy-tab-a9-plus-wi-fi",
+        "brand": "Samsung",
+        "color_name": "Xám Không Gian",
+        "color_hex": "#4A4C4E",
+        "sku": "SS-TABA9P-V1"
+    },
+    {
+        "variant_id": 334,
+        "product_id": 167,
+        "product_name": "Samsung Galaxy Tab A9 Plus Wi-Fi",
+        "product_slug": "samsung-galaxy-tab-a9-plus-wi-fi",
+        "brand": "Samsung",
+        "color_name": "Bạc",
+        "color_hex": "#DCDDE0",
+        "sku": "SS-TABA9P-V2"
+    },
+    {
+        "variant_id": 335,
+        "product_id": 168,
+        "product_name": "Samsung Galaxy Book4 Pro 14 AMOLED",
+        "product_slug": "samsung-galaxy-book4-pro-14-amoled",
+        "brand": "Samsung",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "SS-GB4P14-V1"
+    },
+    {
+        "variant_id": 336,
+        "product_id": 168,
+        "product_name": "Samsung Galaxy Book4 Pro 14 AMOLED",
+        "product_slug": "samsung-galaxy-book4-pro-14-amoled",
+        "brand": "Samsung",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "SS-GB4P14-V2"
+    },
+    {
+        "variant_id": 337,
+        "product_id": 169,
+        "product_name": "Samsung Galaxy Book4 Pro 360 16",
+        "product_slug": "samsung-galaxy-book4-pro-360-16",
+        "brand": "Samsung",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "SS-GB4P360-V1"
+    },
+    {
+        "variant_id": 338,
+        "product_id": 169,
+        "product_name": "Samsung Galaxy Book4 Pro 360 16",
+        "product_slug": "samsung-galaxy-book4-pro-360-16",
+        "brand": "Samsung",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "SS-GB4P360-V2"
+    },
+    {
+        "variant_id": 339,
+        "product_id": 170,
+        "product_name": "Samsung Galaxy Book4 Edge Snapdragon",
+        "product_slug": "samsung-galaxy-book4-edge-snapdragon",
+        "brand": "Samsung",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "SS-GB4EDGE-V1"
+    },
+    {
+        "variant_id": 340,
+        "product_id": 170,
+        "product_name": "Samsung Galaxy Book4 Edge Snapdragon",
+        "product_slug": "samsung-galaxy-book4-edge-snapdragon",
+        "brand": "Samsung",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "SS-GB4EDGE-V2"
+    },
+    {
+        "variant_id": 341,
+        "product_id": 171,
+        "product_name": "Samsung Galaxy Book4 Ultra RTX 4070",
+        "product_slug": "samsung-galaxy-book4-ultra-rtx-4070",
+        "brand": "Samsung",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "SS-GB4ULT-V1"
+    },
+    {
+        "variant_id": 342,
+        "product_id": 171,
+        "product_name": "Samsung Galaxy Book4 Ultra RTX 4070",
+        "product_slug": "samsung-galaxy-book4-ultra-rtx-4070",
+        "brand": "Samsung",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "SS-GB4ULT-V2"
+    },
+    {
+        "variant_id": 343,
+        "product_id": 172,
+        "product_name": "Tai nghe Samsung Galaxy Buds3 Pro",
+        "product_slug": "tai-nghe-samsung-galaxy-buds3-pro",
+        "brand": "Samsung",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SS-BUDS3P-V1"
+    },
+    {
+        "variant_id": 344,
+        "product_id": 172,
+        "product_name": "Tai nghe Samsung Galaxy Buds3 Pro",
+        "product_slug": "tai-nghe-samsung-galaxy-buds3-pro",
+        "brand": "Samsung",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SS-BUDS3P-V2"
+    },
+    {
+        "variant_id": 345,
+        "product_id": 173,
+        "product_name": "Tai nghe Samsung Galaxy Buds3",
+        "product_slug": "tai-nghe-samsung-galaxy-buds3",
+        "brand": "Samsung",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SS-BUDS3-V1"
+    },
+    {
+        "variant_id": 346,
+        "product_id": 173,
+        "product_name": "Tai nghe Samsung Galaxy Buds3",
+        "product_slug": "tai-nghe-samsung-galaxy-buds3",
+        "brand": "Samsung",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SS-BUDS3-V2"
+    },
+    {
+        "variant_id": 347,
+        "product_id": 174,
+        "product_name": "Tai nghe Samsung Galaxy Buds FE",
+        "product_slug": "tai-nghe-samsung-galaxy-buds-fe",
+        "brand": "Samsung",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SS-BUDSFE-V1"
+    },
+    {
+        "variant_id": 348,
+        "product_id": 174,
+        "product_name": "Tai nghe Samsung Galaxy Buds FE",
+        "product_slug": "tai-nghe-samsung-galaxy-buds-fe",
+        "brand": "Samsung",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SS-BUDSFE-V2"
+    },
+    {
+        "variant_id": 349,
+        "product_id": 175,
+        "product_name": "Loa thanh Samsung Soundbar HW-Q990D",
+        "product_slug": "loa-thanh-samsung-soundbar-hw-q990d",
+        "brand": "Samsung",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SS-HWQ990D-V1"
+    },
+    {
+        "variant_id": 350,
+        "product_id": 175,
+        "product_name": "Loa thanh Samsung Soundbar HW-Q990D",
+        "product_slug": "loa-thanh-samsung-soundbar-hw-q990d",
+        "brand": "Samsung",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SS-HWQ990D-V2"
+    },
+    {
+        "variant_id": 351,
+        "product_id": 176,
+        "product_name": "Xiaomi 14 Ultra 5G Leica Camera",
+        "product_slug": "xiaomi-14-ultra-5g-leica-camera",
+        "brand": "Xiaomi",
+        "color_name": "Xám Titan (Titan Gray)",
+        "color_hex": "#6B7280",
+        "sku": "XM-14U-V1"
+    },
+    {
+        "variant_id": 352,
+        "product_id": 176,
+        "product_name": "Xiaomi 14 Ultra 5G Leica Camera",
+        "product_slug": "xiaomi-14-ultra-5g-leica-camera",
+        "brand": "Xiaomi",
+        "color_name": "Xanh Titan (Titan Blue)",
+        "color_hex": "#3B5998",
+        "sku": "XM-14U-V2"
+    },
+    {
+        "variant_id": 353,
+        "product_id": 177,
+        "product_name": "Xiaomi 14 5G Nhỏ Gọn Leica",
+        "product_slug": "xiaomi-14-5g-nho-gon-leica",
+        "brand": "Xiaomi",
+        "color_name": "Xám Titan (Titan Gray)",
+        "color_hex": "#6B7280",
+        "sku": "XM-14-V1"
+    },
+    {
+        "variant_id": 354,
+        "product_id": 177,
+        "product_name": "Xiaomi 14 5G Nhỏ Gọn Leica",
+        "product_slug": "xiaomi-14-5g-nho-gon-leica",
+        "brand": "Xiaomi",
+        "color_name": "Xanh Titan (Titan Blue)",
+        "color_hex": "#3B5998",
+        "sku": "XM-14-V2"
+    },
+    {
+        "variant_id": 355,
+        "product_id": 178,
+        "product_name": "Xiaomi 14T Pro 5G Sạc Nhanh 120W",
+        "product_slug": "xiaomi-14t-pro-5g-sac-nhanh-120w",
+        "brand": "Xiaomi",
+        "color_name": "Xám Titan (Titan Gray)",
+        "color_hex": "#6B7280",
+        "sku": "XM-14TP-V1"
+    },
+    {
+        "variant_id": 356,
+        "product_id": 178,
+        "product_name": "Xiaomi 14T Pro 5G Sạc Nhanh 120W",
+        "product_slug": "xiaomi-14t-pro-5g-sac-nhanh-120w",
+        "brand": "Xiaomi",
+        "color_name": "Xanh Titan (Titan Blue)",
+        "color_hex": "#3B5998",
+        "sku": "XM-14TP-V2"
+    },
+    {
+        "variant_id": 357,
+        "product_id": 179,
+        "product_name": "Xiaomi 14T 5G Leica Summilux",
+        "product_slug": "xiaomi-14t-5g-leica-summilux",
+        "brand": "Xiaomi",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "XM-14T-V1"
+    },
+    {
+        "variant_id": 358,
+        "product_id": 179,
+        "product_name": "Xiaomi 14T 5G Leica Summilux",
+        "product_slug": "xiaomi-14t-5g-leica-summilux",
+        "brand": "Xiaomi",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "XM-14T-V2"
+    },
+    {
+        "variant_id": 359,
+        "product_id": 180,
+        "product_name": "Xiaomi MIX Flip 5G Gập Màn Hình Ngoài 4 inch",
+        "product_slug": "xiaomi-mix-flip-5g-gap-man-hinh-ngoai-4-inch",
+        "brand": "Xiaomi",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "XM-MIXFLIP-V1"
+    },
+    {
+        "variant_id": 360,
+        "product_id": 180,
+        "product_name": "Xiaomi MIX Flip 5G Gập Màn Hình Ngoài 4 inch",
+        "product_slug": "xiaomi-mix-flip-5g-gap-man-hinh-ngoai-4-inch",
+        "brand": "Xiaomi",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "XM-MIXFLIP-V2"
+    },
+    {
+        "variant_id": 361,
+        "product_id": 181,
+        "product_name": "Xiaomi 13T Pro 5G",
+        "product_slug": "xiaomi-13t-pro-5g",
+        "brand": "Xiaomi",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "XM-13TP-V1"
+    },
+    {
+        "variant_id": 362,
+        "product_id": 181,
+        "product_name": "Xiaomi 13T Pro 5G",
+        "product_slug": "xiaomi-13t-pro-5g",
+        "brand": "Xiaomi",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "XM-13TP-V2"
+    },
+    {
+        "variant_id": 363,
+        "product_id": 182,
+        "product_name": "Xiaomi Redmi Note 13 Pro+ 5G Camera 200MP",
+        "product_slug": "xiaomi-redmi-note-13-pro-5g-camera-200mp",
+        "brand": "Xiaomi",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "XM-RN13PP-V1"
+    },
+    {
+        "variant_id": 364,
+        "product_id": 182,
+        "product_name": "Xiaomi Redmi Note 13 Pro+ 5G Camera 200MP",
+        "product_slug": "xiaomi-redmi-note-13-pro-5g-camera-200mp",
+        "brand": "Xiaomi",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "XM-RN13PP-V2"
+    },
+    {
+        "variant_id": 365,
+        "product_id": 183,
+        "product_name": "Xiaomi Redmi Note 13 Pro 5G",
+        "product_slug": "xiaomi-redmi-note-13-pro-5g",
+        "brand": "Xiaomi",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "XM-RN13P-V1"
+    },
+    {
+        "variant_id": 366,
+        "product_id": 183,
+        "product_name": "Xiaomi Redmi Note 13 Pro 5G",
+        "product_slug": "xiaomi-redmi-note-13-pro-5g",
+        "brand": "Xiaomi",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "XM-RN13P-V2"
+    },
+    {
+        "variant_id": 367,
+        "product_id": 184,
+        "product_name": "Xiaomi Redmi Note 13 4G",
+        "product_slug": "xiaomi-redmi-note-13-4g",
+        "brand": "Xiaomi",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "XM-RN13-V1"
+    },
+    {
+        "variant_id": 368,
+        "product_id": 184,
+        "product_name": "Xiaomi Redmi Note 13 4G",
+        "product_slug": "xiaomi-redmi-note-13-4g",
+        "brand": "Xiaomi",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "XM-RN13-V2"
+    },
+    {
+        "variant_id": 369,
+        "product_id": 185,
+        "product_name": "Xiaomi Redmi 14C Giá Rẻ Pin Khủng",
+        "product_slug": "xiaomi-redmi-14c-gia-re-pin-khung",
+        "brand": "Xiaomi",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "XM-R14C-V1"
+    },
+    {
+        "variant_id": 370,
+        "product_id": 185,
+        "product_name": "Xiaomi Redmi 14C Giá Rẻ Pin Khủng",
+        "product_slug": "xiaomi-redmi-14c-gia-re-pin-khung",
+        "brand": "Xiaomi",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "XM-R14C-V2"
+    },
+    {
+        "variant_id": 371,
+        "product_id": 186,
+        "product_name": "POCO F6 Pro 5G Snapdragon 8 Gen 2",
+        "product_slug": "poco-f6-pro-5g-snapdragon-8-gen-2",
+        "brand": "Xiaomi",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "XM-POCOF6P-V1"
+    },
+    {
+        "variant_id": 372,
+        "product_id": 186,
+        "product_name": "POCO F6 Pro 5G Snapdragon 8 Gen 2",
+        "product_slug": "poco-f6-pro-5g-snapdragon-8-gen-2",
+        "brand": "Xiaomi",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "XM-POCOF6P-V2"
+    },
+    {
+        "variant_id": 373,
+        "product_id": 187,
+        "product_name": "POCO F6 5G Snapdragon 8s Gen 3",
+        "product_slug": "poco-f6-5g-snapdragon-8s-gen-3",
+        "brand": "Xiaomi",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "XM-POCOF6-V1"
+    },
+    {
+        "variant_id": 374,
+        "product_id": 187,
+        "product_name": "POCO F6 5G Snapdragon 8s Gen 3",
+        "product_slug": "poco-f6-5g-snapdragon-8s-gen-3",
+        "brand": "Xiaomi",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "XM-POCOF6-V2"
+    },
+    {
+        "variant_id": 375,
+        "product_id": 188,
+        "product_name": "POCO X6 Pro 5G Gaming Tầm Trung",
+        "product_slug": "poco-x6-pro-5g-gaming-tam-trung",
+        "brand": "Xiaomi",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "XM-POCOX6P-V1"
+    },
+    {
+        "variant_id": 376,
+        "product_id": 188,
+        "product_name": "POCO X6 Pro 5G Gaming Tầm Trung",
+        "product_slug": "poco-x6-pro-5g-gaming-tam-trung",
+        "brand": "Xiaomi",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "XM-POCOX6P-V2"
+    },
+    {
+        "variant_id": 377,
+        "product_id": 189,
+        "product_name": "Xiaomi Pad 6S Pro 12.4 inch 144Hz",
+        "product_slug": "xiaomi-pad-6s-pro-124-inch-144hz",
+        "brand": "Xiaomi",
+        "color_name": "Xám Không Gian",
+        "color_hex": "#4A4C4E",
+        "sku": "XM-PAD6SP-V1"
+    },
+    {
+        "variant_id": 378,
+        "product_id": 189,
+        "product_name": "Xiaomi Pad 6S Pro 12.4 inch 144Hz",
+        "product_slug": "xiaomi-pad-6s-pro-124-inch-144hz",
+        "brand": "Xiaomi",
+        "color_name": "Bạc",
+        "color_hex": "#DCDDE0",
+        "sku": "XM-PAD6SP-V2"
+    },
+    {
+        "variant_id": 379,
+        "product_id": 190,
+        "product_name": "Xiaomi Pad 6 11 inch WQHD+",
+        "product_slug": "xiaomi-pad-6-11-inch-wqhd",
+        "brand": "Xiaomi",
+        "color_name": "Xám Không Gian",
+        "color_hex": "#4A4C4E",
+        "sku": "XM-PAD6-V1"
+    },
+    {
+        "variant_id": 380,
+        "product_id": 190,
+        "product_name": "Xiaomi Pad 6 11 inch WQHD+",
+        "product_slug": "xiaomi-pad-6-11-inch-wqhd",
+        "brand": "Xiaomi",
+        "color_name": "Bạc",
+        "color_hex": "#DCDDE0",
+        "sku": "XM-PAD6-V2"
+    },
+    {
+        "variant_id": 381,
+        "product_id": 191,
+        "product_name": "Redmi Pad Pro 12.1 inch Pin 10000mAh",
+        "product_slug": "redmi-pad-pro-121-inch-pin-10000mah",
+        "brand": "Xiaomi",
+        "color_name": "Xám Không Gian",
+        "color_hex": "#4A4C4E",
+        "sku": "XM-RPADP-V1"
+    },
+    {
+        "variant_id": 382,
+        "product_id": 191,
+        "product_name": "Redmi Pad Pro 12.1 inch Pin 10000mAh",
+        "product_slug": "redmi-pad-pro-121-inch-pin-10000mah",
+        "brand": "Xiaomi",
+        "color_name": "Bạc",
+        "color_hex": "#DCDDE0",
+        "sku": "XM-RPADP-V2"
+    },
+    {
+        "variant_id": 383,
+        "product_id": 192,
+        "product_name": "Redmi Pad SE 11 inch",
+        "product_slug": "redmi-pad-se-11-inch",
+        "brand": "Xiaomi",
+        "color_name": "Xám Không Gian",
+        "color_hex": "#4A4C4E",
+        "sku": "XM-RPADSE-V1"
+    },
+    {
+        "variant_id": 384,
+        "product_id": 192,
+        "product_name": "Redmi Pad SE 11 inch",
+        "product_slug": "redmi-pad-se-11-inch",
+        "brand": "Xiaomi",
+        "color_name": "Bạc",
+        "color_hex": "#DCDDE0",
+        "sku": "XM-RPADSE-V2"
+    },
+    {
+        "variant_id": 385,
+        "product_id": 193,
+        "product_name": "Redmi Pad SE 8.7 inch Nhỏ Gọn",
+        "product_slug": "redmi-pad-se-87-inch-nho-gon",
+        "brand": "Xiaomi",
+        "color_name": "Xám Không Gian",
+        "color_hex": "#4A4C4E",
+        "sku": "XM-RPAD87-V1"
+    },
+    {
+        "variant_id": 386,
+        "product_id": 193,
+        "product_name": "Redmi Pad SE 8.7 inch Nhỏ Gọn",
+        "product_slug": "redmi-pad-se-87-inch-nho-gon",
+        "brand": "Xiaomi",
+        "color_name": "Bạc",
+        "color_hex": "#DCDDE0",
+        "sku": "XM-RPAD87-V2"
+    },
+    {
+        "variant_id": 387,
+        "product_id": 194,
+        "product_name": "Xiaomi Redmi Book Pro 14 2024",
+        "product_slug": "xiaomi-redmi-book-pro-14-2024",
+        "brand": "Xiaomi",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "XM-BOOKP14-V1"
+    },
+    {
+        "variant_id": 388,
+        "product_id": 194,
+        "product_name": "Xiaomi Redmi Book Pro 14 2024",
+        "product_slug": "xiaomi-redmi-book-pro-14-2024",
+        "brand": "Xiaomi",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "XM-BOOKP14-V2"
+    },
+    {
+        "variant_id": 389,
+        "product_id": 195,
+        "product_name": "Xiaomi Redmi Book Pro 16 2024 Pin 99Wh",
+        "product_slug": "xiaomi-redmi-book-pro-16-2024-pin-99wh",
+        "brand": "Xiaomi",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "XM-BOOKP16-V1"
+    },
+    {
+        "variant_id": 390,
+        "product_id": 195,
+        "product_name": "Xiaomi Redmi Book Pro 16 2024 Pin 99Wh",
+        "product_slug": "xiaomi-redmi-book-pro-16-2024-pin-99wh",
+        "brand": "Xiaomi",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "XM-BOOKP16-V2"
+    },
+    {
+        "variant_id": 391,
+        "product_id": 196,
+        "product_name": "Xiaomi Redmi G Pro 2024 Gaming RTX 4060",
+        "product_slug": "xiaomi-redmi-g-pro-2024-gaming-rtx-4060",
+        "brand": "Xiaomi",
+        "color_name": "Đen \/ Xám Không Gian",
+        "color_hex": "#2C2E30",
+        "sku": "XM-REDMIG-V1"
+    },
+    {
+        "variant_id": 392,
+        "product_id": 196,
+        "product_name": "Xiaomi Redmi G Pro 2024 Gaming RTX 4060",
+        "product_slug": "xiaomi-redmi-g-pro-2024-gaming-rtx-4060",
+        "brand": "Xiaomi",
+        "color_name": "Bạc Ánh Kim",
+        "color_hex": "#D8DADC",
+        "sku": "XM-REDMIG-V2"
+    },
+    {
+        "variant_id": 393,
+        "product_id": 197,
+        "product_name": "Tai nghe Xiaomi Buds 5 Chống Ồn",
+        "product_slug": "tai-nghe-xiaomi-buds-5-chong-on",
+        "brand": "Xiaomi",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "XM-BUDS5-V1"
+    },
+    {
+        "variant_id": 394,
+        "product_id": 197,
+        "product_name": "Tai nghe Xiaomi Buds 5 Chống Ồn",
+        "product_slug": "tai-nghe-xiaomi-buds-5-chong-on",
+        "brand": "Xiaomi",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "XM-BUDS5-V2"
+    },
+    {
+        "variant_id": 395,
+        "product_id": 198,
+        "product_name": "Tai nghe Redmi Buds 5 Pro",
+        "product_slug": "tai-nghe-redmi-buds-5-pro",
+        "brand": "Xiaomi",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "XM-RBUDS5P-V1"
+    },
+    {
+        "variant_id": 396,
+        "product_id": 198,
+        "product_name": "Tai nghe Redmi Buds 5 Pro",
+        "product_slug": "tai-nghe-redmi-buds-5-pro",
+        "brand": "Xiaomi",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "XM-RBUDS5P-V2"
+    },
+    {
+        "variant_id": 397,
+        "product_id": 199,
+        "product_name": "Loa Bluetooth Xiaomi Sound Outdoor",
+        "product_slug": "loa-bluetooth-xiaomi-sound-outdoor",
+        "brand": "Xiaomi",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "XM-SOUNDOUT-V1"
+    },
+    {
+        "variant_id": 398,
+        "product_id": 199,
+        "product_name": "Loa Bluetooth Xiaomi Sound Outdoor",
+        "product_slug": "loa-bluetooth-xiaomi-sound-outdoor",
+        "brand": "Xiaomi",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "XM-SOUNDOUT-V2"
+    },
+    {
+        "variant_id": 399,
+        "product_id": 200,
+        "product_name": "Chuột không dây Xiaomi Wireless Mouse 3",
+        "product_slug": "chuot-khong-day-xiaomi-wireless-mouse-3",
+        "brand": "Xiaomi",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "XM-MOUSE3-V1"
+    },
+    {
+        "variant_id": 400,
+        "product_id": 200,
+        "product_name": "Chuột không dây Xiaomi Wireless Mouse 3",
+        "product_slug": "chuot-khong-day-xiaomi-wireless-mouse-3",
+        "brand": "Xiaomi",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "XM-MOUSE3-V2"
+    },
+    {
+        "variant_id": 401,
+        "product_id": 201,
+        "product_name": "Tai nghe chống ồn Sony WH-1000XM5",
+        "product_slug": "tai-nghe-chong-on-sony-wh-1000xm5",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1F1F1F",
+        "sku": "SONY-XM5-V1"
+    },
+    {
+        "variant_id": 402,
+        "product_id": 201,
+        "product_name": "Tai nghe chống ồn Sony WH-1000XM5",
+        "product_slug": "tai-nghe-chong-on-sony-wh-1000xm5",
+        "brand": "Sony",
+        "color_name": "Bạc Ánh Kim (Silver)",
+        "color_hex": "#E6E5E0",
+        "sku": "SONY-XM5-V2"
+    },
+    {
+        "variant_id": 403,
+        "product_id": 202,
+        "product_name": "Tai nghe chống ồn Sony WH-1000XM4",
+        "product_slug": "tai-nghe-chong-on-sony-wh-1000xm4",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-XM4-V1"
+    },
+    {
+        "variant_id": 404,
+        "product_id": 202,
+        "product_name": "Tai nghe chống ồn Sony WH-1000XM4",
+        "product_slug": "tai-nghe-chong-on-sony-wh-1000xm4",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-XM4-V2"
+    },
+    {
+        "variant_id": 405,
+        "product_id": 203,
+        "product_name": "Tai nghe Sony ULT WEAR Bass Mạnh",
+        "product_slug": "tai-nghe-sony-ult-wear-bass-manh",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-ULTWEAR-V1"
+    },
+    {
+        "variant_id": 406,
+        "product_id": 203,
+        "product_name": "Tai nghe Sony ULT WEAR Bass Mạnh",
+        "product_slug": "tai-nghe-sony-ult-wear-bass-manh",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-ULTWEAR-V2"
+    },
+    {
+        "variant_id": 407,
+        "product_id": 204,
+        "product_name": "Tai nghe chụp tai Sony WH-CH720N",
+        "product_slug": "tai-nghe-chup-tai-sony-wh-ch720n",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-CH720N-V1"
+    },
+    {
+        "variant_id": 408,
+        "product_id": 204,
+        "product_name": "Tai nghe chụp tai Sony WH-CH720N",
+        "product_slug": "tai-nghe-chup-tai-sony-wh-ch720n",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-CH720N-V2"
+    },
+    {
+        "variant_id": 409,
+        "product_id": 205,
+        "product_name": "Tai nghe chụp tai Sony WH-CH520",
+        "product_slug": "tai-nghe-chup-tai-sony-wh-ch520",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-CH520-V1"
+    },
+    {
+        "variant_id": 410,
+        "product_id": 205,
+        "product_name": "Tai nghe chụp tai Sony WH-CH520",
+        "product_slug": "tai-nghe-chup-tai-sony-wh-ch520",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-CH520-V2"
+    },
+    {
+        "variant_id": 411,
+        "product_id": 206,
+        "product_name": "Tai nghe True Wireless Sony WF-1000XM5",
+        "product_slug": "tai-nghe-true-wireless-sony-wf-1000xm5",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1F1F1F",
+        "sku": "SONY-WFXM5-V1"
+    },
+    {
+        "variant_id": 412,
+        "product_id": 206,
+        "product_name": "Tai nghe True Wireless Sony WF-1000XM5",
+        "product_slug": "tai-nghe-true-wireless-sony-wf-1000xm5",
+        "brand": "Sony",
+        "color_name": "Bạc (Silver)",
+        "color_hex": "#E6E5E0",
+        "sku": "SONY-WFXM5-V2"
+    },
+    {
+        "variant_id": 413,
+        "product_id": 207,
+        "product_name": "Tai nghe Sony LinkBuds Fit Chống Ồn",
+        "product_slug": "tai-nghe-sony-linkbuds-fit-chong-on",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-LBFIT-V1"
+    },
+    {
+        "variant_id": 414,
+        "product_id": 207,
+        "product_name": "Tai nghe Sony LinkBuds Fit Chống Ồn",
+        "product_slug": "tai-nghe-sony-linkbuds-fit-chong-on",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-LBFIT-V2"
+    },
+    {
+        "variant_id": 415,
+        "product_id": 208,
+        "product_name": "Tai nghe Sony LinkBuds Open",
+        "product_slug": "tai-nghe-sony-linkbuds-open",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-LBOPEN-V1"
+    },
+    {
+        "variant_id": 416,
+        "product_id": 208,
+        "product_name": "Tai nghe Sony LinkBuds Open",
+        "product_slug": "tai-nghe-sony-linkbuds-open",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-LBOPEN-V2"
+    },
+    {
+        "variant_id": 417,
+        "product_id": 209,
+        "product_name": "Tai nghe không dây Sony WF-C700N",
+        "product_slug": "tai-nghe-khong-day-sony-wf-c700n",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-WFC700N-V1"
+    },
+    {
+        "variant_id": 418,
+        "product_id": 209,
+        "product_name": "Tai nghe không dây Sony WF-C700N",
+        "product_slug": "tai-nghe-khong-day-sony-wf-c700n",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-WFC700N-V2"
+    },
+    {
+        "variant_id": 419,
+        "product_id": 210,
+        "product_name": "Tai nghe không dây Sony WF-C510",
+        "product_slug": "tai-nghe-khong-day-sony-wf-c510",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-WFC510-V1"
+    },
+    {
+        "variant_id": 420,
+        "product_id": 210,
+        "product_name": "Tai nghe không dây Sony WF-C510",
+        "product_slug": "tai-nghe-khong-day-sony-wf-c510",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-WFC510-V2"
+    },
+    {
+        "variant_id": 421,
+        "product_id": 211,
+        "product_name": "Tai nghe Gaming Sony INZONE H9 Wireless",
+        "product_slug": "tai-nghe-gaming-sony-inzone-h9-wireless",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-INZH9-V1"
+    },
+    {
+        "variant_id": 422,
+        "product_id": 211,
+        "product_name": "Tai nghe Gaming Sony INZONE H9 Wireless",
+        "product_slug": "tai-nghe-gaming-sony-inzone-h9-wireless",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-INZH9-V2"
+    },
+    {
+        "variant_id": 423,
+        "product_id": 212,
+        "product_name": "Tai nghe Gaming Sony INZONE Buds",
+        "product_slug": "tai-nghe-gaming-sony-inzone-buds",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-INZBUDS-V1"
+    },
+    {
+        "variant_id": 424,
+        "product_id": 212,
+        "product_name": "Tai nghe Gaming Sony INZONE Buds",
+        "product_slug": "tai-nghe-gaming-sony-inzone-buds",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-INZBUDS-V2"
+    },
+    {
+        "variant_id": 425,
+        "product_id": 213,
+        "product_name": "Loa Bluetooth Di Động Sony ULT Field 7",
+        "product_slug": "loa-bluetooth-di-dong-sony-ult-field-7",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-ULT7-V1"
+    },
+    {
+        "variant_id": 426,
+        "product_id": 213,
+        "product_name": "Loa Bluetooth Di Động Sony ULT Field 7",
+        "product_slug": "loa-bluetooth-di-dong-sony-ult-field-7",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-ULT7-V2"
+    },
+    {
+        "variant_id": 427,
+        "product_id": 214,
+        "product_name": "Loa Bluetooth Di Động Sony ULT Field 1",
+        "product_slug": "loa-bluetooth-di-dong-sony-ult-field-1",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-ULT1-V1"
+    },
+    {
+        "variant_id": 428,
+        "product_id": 214,
+        "product_name": "Loa Bluetooth Di Động Sony ULT Field 1",
+        "product_slug": "loa-bluetooth-di-dong-sony-ult-field-1",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-ULT1-V2"
+    },
+    {
+        "variant_id": 429,
+        "product_id": 215,
+        "product_name": "Loa Tiệc Tùng Sony ULT Tower 10",
+        "product_slug": "loa-tiec-tung-sony-ult-tower-10",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-ULTT10-V1"
+    },
+    {
+        "variant_id": 430,
+        "product_id": 215,
+        "product_name": "Loa Tiệc Tùng Sony ULT Tower 10",
+        "product_slug": "loa-tiec-tung-sony-ult-tower-10",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-ULTT10-V2"
+    },
+    {
+        "variant_id": 431,
+        "product_id": 216,
+        "product_name": "Loa Bluetooth Sony SRS-XV800",
+        "product_slug": "loa-bluetooth-sony-srs-xv800",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-XV800-V1"
+    },
+    {
+        "variant_id": 432,
+        "product_id": 216,
+        "product_name": "Loa Bluetooth Sony SRS-XV800",
+        "product_slug": "loa-bluetooth-sony-srs-xv800",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-XV800-V2"
+    },
+    {
+        "variant_id": 433,
+        "product_id": 217,
+        "product_name": "Loa Bluetooth Sony SRS-XV500",
+        "product_slug": "loa-bluetooth-sony-srs-xv500",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-XV500-V1"
+    },
+    {
+        "variant_id": 434,
+        "product_id": 217,
+        "product_name": "Loa Bluetooth Sony SRS-XV500",
+        "product_slug": "loa-bluetooth-sony-srs-xv500",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-XV500-V2"
+    },
+    {
+        "variant_id": 435,
+        "product_id": 218,
+        "product_name": "Loa Di Động Mini Sony SRS-XB100",
+        "product_slug": "loa-di-dong-mini-sony-srs-xb100",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-XB100-V1"
+    },
+    {
+        "variant_id": 436,
+        "product_id": 218,
+        "product_name": "Loa Di Động Mini Sony SRS-XB100",
+        "product_slug": "loa-di-dong-mini-sony-srs-xb100",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-XB100-V2"
+    },
+    {
+        "variant_id": 437,
+        "product_id": 219,
+        "product_name": "Loa thanh Sony Bravia Theatre Bar 9",
+        "product_slug": "loa-thanh-sony-bravia-theatre-bar-9",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-HTB9-V1"
+    },
+    {
+        "variant_id": 438,
+        "product_id": 219,
+        "product_name": "Loa thanh Sony Bravia Theatre Bar 9",
+        "product_slug": "loa-thanh-sony-bravia-theatre-bar-9",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-HTB9-V2"
+    },
+    {
+        "variant_id": 439,
+        "product_id": 220,
+        "product_name": "Loa thanh Sony Bravia Theatre Bar 8",
+        "product_slug": "loa-thanh-sony-bravia-theatre-bar-8",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-HTB8-V1"
+    },
+    {
+        "variant_id": 440,
+        "product_id": 220,
+        "product_name": "Loa thanh Sony Bravia Theatre Bar 8",
+        "product_slug": "loa-thanh-sony-bravia-theatre-bar-8",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-HTB8-V2"
+    },
+    {
+        "variant_id": 441,
+        "product_id": 221,
+        "product_name": "Điện thoại Sony Xperia 1 VI 5G",
+        "product_slug": "dien-thoai-sony-xperia-1-vi-5g",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1A1A1A",
+        "sku": "SONY-XP1VI-V1"
+    },
+    {
+        "variant_id": 442,
+        "product_id": 221,
+        "product_name": "Điện thoại Sony Xperia 1 VI 5G",
+        "product_slug": "dien-thoai-sony-xperia-1-vi-5g",
+        "brand": "Sony",
+        "color_name": "Xanh Rêu (Khaki Green)",
+        "color_hex": "#4A5B4E",
+        "sku": "SONY-XP1VI-V2"
+    },
+    {
+        "variant_id": 443,
+        "product_id": 222,
+        "product_name": "Điện thoại Sony Xperia 10 VI 5G",
+        "product_slug": "dien-thoai-sony-xperia-10-vi-5g",
+        "brand": "Sony",
+        "color_name": "Titan Đen",
+        "color_hex": "#252628",
+        "sku": "SONY-XP10VI-V1"
+    },
+    {
+        "variant_id": 444,
+        "product_id": 222,
+        "product_name": "Điện thoại Sony Xperia 10 VI 5G",
+        "product_slug": "dien-thoai-sony-xperia-10-vi-5g",
+        "brand": "Sony",
+        "color_name": "Titan Bạc \/ Trắng",
+        "color_hex": "#E5E5E7",
+        "sku": "SONY-XP10VI-V2"
+    },
+    {
+        "variant_id": 445,
+        "product_id": 223,
+        "product_name": "Máy nghe nhạc Hi-Res Sony Walkman NW-A306",
+        "product_slug": "may-nghe-nhac-hi-res-sony-walkman-nw-a306",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-NWA306-V1"
+    },
+    {
+        "variant_id": 446,
+        "product_id": 223,
+        "product_name": "Máy nghe nhạc Hi-Res Sony Walkman NW-A306",
+        "product_slug": "may-nghe-nhac-hi-res-sony-walkman-nw-a306",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-NWA306-V2"
+    },
+    {
+        "variant_id": 447,
+        "product_id": 224,
+        "product_name": "Máy nghe nhạc Hi-Res Sony Walkman NW-ZX707",
+        "product_slug": "may-nghe-nhac-hi-res-sony-walkman-nw-zx707",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-NWZX707-V1"
+    },
+    {
+        "variant_id": 448,
+        "product_id": 224,
+        "product_name": "Máy nghe nhạc Hi-Res Sony Walkman NW-ZX707",
+        "product_slug": "may-nghe-nhac-hi-res-sony-walkman-nw-zx707",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-NWZX707-V2"
+    },
+    {
+        "variant_id": 449,
+        "product_id": 225,
+        "product_name": "Loa cổ không dây Sony HT-AN7 Bravia Theatre U",
+        "product_slug": "loa-co-khong-day-sony-ht-an7-bravia-theatre-u",
+        "brand": "Sony",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "SONY-HTAN7-V1"
+    },
+    {
+        "variant_id": 450,
+        "product_id": 225,
+        "product_name": "Loa cổ không dây Sony HT-AN7 Bravia Theatre U",
+        "product_slug": "loa-co-khong-day-sony-ht-an7-bravia-theatre-u",
+        "brand": "Sony",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "SONY-HTAN7-V2"
+    },
+    {
+        "variant_id": 451,
+        "product_id": 226,
+        "product_name": "Chuột không dây Logitech MX Master 3S",
+        "product_slug": "chuot-khong-day-logitech-mx-master-3s",
+        "brand": "Logitech",
+        "color_name": "Đen Graphite",
+        "color_hex": "#2A2B2D",
+        "sku": "LOGI-MX3S-V1"
+    },
+    {
+        "variant_id": 452,
+        "product_id": 226,
+        "product_name": "Chuột không dây Logitech MX Master 3S",
+        "product_slug": "chuot-khong-day-logitech-mx-master-3s",
+        "brand": "Logitech",
+        "color_name": "Xám Nhạt Pale Grey",
+        "color_hex": "#E3E3E3",
+        "sku": "LOGI-MX3S-V2"
+    },
+    {
+        "variant_id": 453,
+        "product_id": 227,
+        "product_name": "Chuột không dây Logitech MX Anywhere 3S",
+        "product_slug": "chuot-khong-day-logitech-mx-anywhere-3s",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-MXAW3S-V1"
+    },
+    {
+        "variant_id": 454,
+        "product_id": 227,
+        "product_name": "Chuột không dây Logitech MX Anywhere 3S",
+        "product_slug": "chuot-khong-day-logitech-mx-anywhere-3s",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-MXAW3S-V2"
+    },
+    {
+        "variant_id": 455,
+        "product_id": 228,
+        "product_name": "Chuột công thái học Logitech MX Vertical",
+        "product_slug": "chuot-cong-thai-hoc-logitech-mx-vertical",
+        "brand": "Logitech",
+        "color_name": "Hồng Pastel",
+        "color_hex": "#F4C2C2",
+        "sku": "LOGI-MXVERT-V1"
+    },
+    {
+        "variant_id": 456,
+        "product_id": 228,
+        "product_name": "Chuột công thái học Logitech MX Vertical",
+        "product_slug": "chuot-cong-thai-hoc-logitech-mx-vertical",
+        "brand": "Logitech",
+        "color_name": "Trắng Tinh Khôi",
+        "color_hex": "#FFFFFF",
+        "sku": "LOGI-MXVERT-V2"
+    },
+    {
+        "variant_id": 457,
+        "product_id": 229,
+        "product_name": "Chuột công thái học Logitech Lift Vertical",
+        "product_slug": "chuot-cong-thai-hoc-logitech-lift-vertical",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-LIFT-V1"
+    },
+    {
+        "variant_id": 458,
+        "product_id": 229,
+        "product_name": "Chuột công thái học Logitech Lift Vertical",
+        "product_slug": "chuot-cong-thai-hoc-logitech-lift-vertical",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-LIFT-V2"
+    },
+    {
+        "variant_id": 459,
+        "product_id": 230,
+        "product_name": "Chuột không dây Logitech M650 Signature",
+        "product_slug": "chuot-khong-day-logitech-m650-signature",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-M650-V1"
+    },
+    {
+        "variant_id": 460,
+        "product_id": 230,
+        "product_name": "Chuột không dây Logitech M650 Signature",
+        "product_slug": "chuot-khong-day-logitech-m650-signature",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-M650-V2"
+    },
+    {
+        "variant_id": 461,
+        "product_id": 231,
+        "product_name": "Chuột không dây Logitech Pebble Mouse 2 M350s",
+        "product_slug": "chuot-khong-day-logitech-pebble-mouse-2-m350s",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-M350S-V1"
+    },
+    {
+        "variant_id": 462,
+        "product_id": 231,
+        "product_name": "Chuột không dây Logitech Pebble Mouse 2 M350s",
+        "product_slug": "chuot-khong-day-logitech-pebble-mouse-2-m350s",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-M350S-V2"
+    },
+    {
+        "variant_id": 463,
+        "product_id": 232,
+        "product_name": "Bàn phím không dây Logitech MX Keys S",
+        "product_slug": "ban-phim-khong-day-logitech-mx-keys-s",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-MXKEYS-V1"
+    },
+    {
+        "variant_id": 464,
+        "product_id": 232,
+        "product_name": "Bàn phím không dây Logitech MX Keys S",
+        "product_slug": "ban-phim-khong-day-logitech-mx-keys-s",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-MXKEYS-V2"
+    },
+    {
+        "variant_id": 465,
+        "product_id": 233,
+        "product_name": "Bàn phím không dây Logitech MX Keys Mini",
+        "product_slug": "ban-phim-khong-day-logitech-mx-keys-mini",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-MXKMINI-V1"
+    },
+    {
+        "variant_id": 466,
+        "product_id": 233,
+        "product_name": "Bàn phím không dây Logitech MX Keys Mini",
+        "product_slug": "ban-phim-khong-day-logitech-mx-keys-mini",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-MXKMINI-V2"
+    },
+    {
+        "variant_id": 467,
+        "product_id": 234,
+        "product_name": "Bàn phím cơ không dây Logitech MX Mechanical",
+        "product_slug": "ban-phim-co-khong-day-logitech-mx-mechanical",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-MXMECH-V1"
+    },
+    {
+        "variant_id": 468,
+        "product_id": 234,
+        "product_name": "Bàn phím cơ không dây Logitech MX Mechanical",
+        "product_slug": "ban-phim-co-khong-day-logitech-mx-mechanical",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-MXMECH-V2"
+    },
+    {
+        "variant_id": 469,
+        "product_id": 235,
+        "product_name": "Bàn phím cơ không dây Logitech MX Mechanical Mini",
+        "product_slug": "ban-phim-co-khong-day-logitech-mx-mechanical-mini",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-MXMMINI-V1"
+    },
+    {
+        "variant_id": 470,
+        "product_id": 235,
+        "product_name": "Bàn phím cơ không dây Logitech MX Mechanical Mini",
+        "product_slug": "ban-phim-co-khong-day-logitech-mx-mechanical-mini",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-MXMMINI-V2"
+    },
+    {
+        "variant_id": 471,
+        "product_id": 236,
+        "product_name": "Bàn phím không dây Logitech Pebble Keys 2 K380s",
+        "product_slug": "ban-phim-khong-day-logitech-pebble-keys-2-k380s",
+        "brand": "Logitech",
+        "color_name": "Đen Than Chì",
+        "color_hex": "#1F2937",
+        "sku": "LOGI-K380S-V1"
+    },
+    {
+        "variant_id": 472,
+        "product_id": 236,
+        "product_name": "Bàn phím không dây Logitech Pebble Keys 2 K380s",
+        "product_slug": "ban-phim-khong-day-logitech-pebble-keys-2-k380s",
+        "brand": "Logitech",
+        "color_name": "Xám Bạc Pale Grey",
+        "color_hex": "#E5E7EB",
+        "sku": "LOGI-K380S-V2"
+    },
+    {
+        "variant_id": 473,
+        "product_id": 237,
+        "product_name": "Bàn phím công thái học Logitech Wave Keys",
+        "product_slug": "ban-phim-cong-thai-hoc-logitech-wave-keys",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-WAVE-V1"
+    },
+    {
+        "variant_id": 474,
+        "product_id": 237,
+        "product_name": "Bàn phím công thái học Logitech Wave Keys",
+        "product_slug": "ban-phim-cong-thai-hoc-logitech-wave-keys",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-WAVE-V2"
+    },
+    {
+        "variant_id": 475,
+        "product_id": 238,
+        "product_name": "Combo Bàn phím & Chuột Logitech MK850 Performance",
+        "product_slug": "combo-ban-phim-chuot-logitech-mk850-performance",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-MK850-V1"
+    },
+    {
+        "variant_id": 476,
+        "product_id": 238,
+        "product_name": "Combo Bàn phím & Chuột Logitech MK850 Performance",
+        "product_slug": "combo-ban-phim-chuot-logitech-mk850-performance",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-MK850-V2"
+    },
+    {
+        "variant_id": 477,
+        "product_id": 239,
+        "product_name": "Chuột Gaming Logitech G Pro X Superlight 2",
+        "product_slug": "chuot-gaming-logitech-g-pro-x-superlight-2",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-GPXSL2-V1"
+    },
+    {
+        "variant_id": 478,
+        "product_id": 239,
+        "product_name": "Chuột Gaming Logitech G Pro X Superlight 2",
+        "product_slug": "chuot-gaming-logitech-g-pro-x-superlight-2",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-GPXSL2-V2"
+    },
+    {
+        "variant_id": 479,
+        "product_id": 240,
+        "product_name": "Chuột Gaming Logitech G Pro X Superlight 2 DEX",
+        "product_slug": "chuot-gaming-logitech-g-pro-x-superlight-2-dex",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-GPXDEX-V1"
+    },
+    {
+        "variant_id": 480,
+        "product_id": 240,
+        "product_name": "Chuột Gaming Logitech G Pro X Superlight 2 DEX",
+        "product_slug": "chuot-gaming-logitech-g-pro-x-superlight-2-dex",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-GPXDEX-V2"
+    },
+    {
+        "variant_id": 481,
+        "product_id": 241,
+        "product_name": "Chuột Gaming Logitech G502 X Plus Lightspeed",
+        "product_slug": "chuot-gaming-logitech-g502-x-plus-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-G502XP-V1"
+    },
+    {
+        "variant_id": 482,
+        "product_id": 241,
+        "product_name": "Chuột Gaming Logitech G502 X Plus Lightspeed",
+        "product_slug": "chuot-gaming-logitech-g502-x-plus-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-G502XP-V2"
+    },
+    {
+        "variant_id": 483,
+        "product_id": 242,
+        "product_name": "Chuột Gaming Logitech G502 X Lightspeed",
+        "product_slug": "chuot-gaming-logitech-g502-x-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-G502X-V1"
+    },
+    {
+        "variant_id": 484,
+        "product_id": 242,
+        "product_name": "Chuột Gaming Logitech G502 X Lightspeed",
+        "product_slug": "chuot-gaming-logitech-g502-x-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-G502X-V2"
+    },
+    {
+        "variant_id": 485,
+        "product_id": 243,
+        "product_name": "Chuột Gaming Logitech G309 Lightspeed",
+        "product_slug": "chuot-gaming-logitech-g309-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-G309-V1"
+    },
+    {
+        "variant_id": 486,
+        "product_id": 243,
+        "product_name": "Chuột Gaming Logitech G309 Lightspeed",
+        "product_slug": "chuot-gaming-logitech-g309-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-G309-V2"
+    },
+    {
+        "variant_id": 487,
+        "product_id": 244,
+        "product_name": "Chuột Gaming Logitech G304 Lightspeed",
+        "product_slug": "chuot-gaming-logitech-g304-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-G304-V1"
+    },
+    {
+        "variant_id": 488,
+        "product_id": 244,
+        "product_name": "Chuột Gaming Logitech G304 Lightspeed",
+        "product_slug": "chuot-gaming-logitech-g304-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-G304-V2"
+    },
+    {
+        "variant_id": 489,
+        "product_id": 245,
+        "product_name": "Bàn phím cơ Gaming Logitech G Pro X TKL Lightspeed",
+        "product_slug": "ban-phim-co-gaming-logitech-g-pro-x-tkl-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-GPXTKL-V1"
+    },
+    {
+        "variant_id": 490,
+        "product_id": 245,
+        "product_name": "Bàn phím cơ Gaming Logitech G Pro X TKL Lightspeed",
+        "product_slug": "ban-phim-co-gaming-logitech-g-pro-x-tkl-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-GPXTKL-V2"
+    },
+    {
+        "variant_id": 491,
+        "product_id": 246,
+        "product_name": "Bàn phím cơ Gaming Logitech G Pro X 60 Lightspeed",
+        "product_slug": "ban-phim-co-gaming-logitech-g-pro-x-60-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Trắng Tinh Khôi",
+        "color_hex": "#FFFFFF",
+        "sku": "LOGI-GPX60-V1"
+    },
+    {
+        "variant_id": 492,
+        "product_id": 246,
+        "product_name": "Bàn phím cơ Gaming Logitech G Pro X 60 Lightspeed",
+        "product_slug": "ban-phim-co-gaming-logitech-g-pro-x-60-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1A1A1A",
+        "sku": "LOGI-GPX60-V2"
+    },
+    {
+        "variant_id": 493,
+        "product_id": 247,
+        "product_name": "Bàn phím cơ Gaming Logitech G915 X Lightspeed",
+        "product_slug": "ban-phim-co-gaming-logitech-g915-x-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-G915X-V1"
+    },
+    {
+        "variant_id": 494,
+        "product_id": 247,
+        "product_name": "Bàn phím cơ Gaming Logitech G915 X Lightspeed",
+        "product_slug": "ban-phim-co-gaming-logitech-g915-x-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-G915X-V2"
+    },
+    {
+        "variant_id": 495,
+        "product_id": 248,
+        "product_name": "Bàn phím cơ Gaming Logitech G515 Lightspeed TKL",
+        "product_slug": "ban-phim-co-gaming-logitech-g515-lightspeed-tkl",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-G515-V1"
+    },
+    {
+        "variant_id": 496,
+        "product_id": 248,
+        "product_name": "Bàn phím cơ Gaming Logitech G515 Lightspeed TKL",
+        "product_slug": "ban-phim-co-gaming-logitech-g515-lightspeed-tkl",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-G515-V2"
+    },
+    {
+        "variant_id": 497,
+        "product_id": 249,
+        "product_name": "Tai nghe Gaming Không Dây Logitech G Pro X 2 Lightspeed",
+        "product_slug": "tai-nghe-gaming-khong-day-logitech-g-pro-x-2-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-GPROX2-V1"
+    },
+    {
+        "variant_id": 498,
+        "product_id": 249,
+        "product_name": "Tai nghe Gaming Không Dây Logitech G Pro X 2 Lightspeed",
+        "product_slug": "tai-nghe-gaming-khong-day-logitech-g-pro-x-2-lightspeed",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-GPROX2-V2"
+    },
+    {
+        "variant_id": 499,
+        "product_id": 250,
+        "product_name": "Tai nghe Gaming Logitech Astro A50 X Wireless",
+        "product_slug": "tai-nghe-gaming-logitech-astro-a50-x-wireless",
+        "brand": "Logitech",
+        "color_name": "Đen (Black)",
+        "color_hex": "#1D1D1F",
+        "sku": "LOGI-A50X-V1"
+    },
+    {
+        "variant_id": 500,
+        "product_id": 250,
+        "product_name": "Tai nghe Gaming Logitech Astro A50 X Wireless",
+        "product_slug": "tai-nghe-gaming-logitech-astro-a50-x-wireless",
+        "brand": "Logitech",
+        "color_name": "Trắng \/ Bạc (Silver)",
+        "color_hex": "#E3E4E6",
+        "sku": "LOGI-A50X-V2"
+    }
+]
