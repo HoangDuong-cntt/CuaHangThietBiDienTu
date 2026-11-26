@@ -134,17 +134,30 @@
                                 onclick="toggleUserDropdown()" 
                                 class="px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:text-blue-600 rounded-lg hover:bg-slate-100 transition-colors flex items-center gap-1.5 cursor-pointer"
                             >
-                                <div class="w-5 h-5 rounded-full bg-blue-600 text-white text-[10px] font-bold flex items-center justify-center uppercase">
-                                    {{ mb_substr(Auth::user()->name, 0, 1) }}
-                                </div>
+                                @if(Auth::user()->avatar)
+                                    <img src="{{ str_starts_with(Auth::user()->avatar, 'http') ? Auth::user()->avatar : asset('storage/' . Auth::user()->avatar) }}" alt="{{ Auth::user()->name }}" class="w-5 h-5 rounded-full object-cover">
+                                @else
+                                    <div class="w-5 h-5 rounded-full bg-blue-600 text-white text-[10px] font-bold flex items-center justify-center uppercase">
+                                        {{ mb_substr(Auth::user()->name, 0, 1) }}
+                                    </div>
+                                @endif
                                 <span class="max-w-[100px] truncate">{{ Auth::user()->name }}</span>
                                 <i class="fa-solid fa-chevron-down text-[9px] text-slate-400"></i>
                             </button>
 
                             <div id="user-dropdown" class="hidden absolute right-0 top-full mt-2 w-56 bg-white rounded-2xl shadow-xl border border-slate-100 p-2 z-50 text-xs">
-                                <div class="px-3 py-2 border-b border-slate-100 mb-1">
-                                    <p class="font-bold text-slate-900 truncate">{{ Auth::user()->name }}</p>
-                                    <p class="text-[11px] text-slate-400 truncate">{{ Auth::user()->email }}</p>
+                                <div class="px-3 py-2 border-b border-slate-100 mb-1 flex items-center gap-2.5">
+                                    @if(Auth::user()->avatar)
+                                        <img src="{{ str_starts_with(Auth::user()->avatar, 'http') ? Auth::user()->avatar : asset('storage/' . Auth::user()->avatar) }}" alt="{{ Auth::user()->name }}" class="w-8 h-8 rounded-full object-cover shrink-0">
+                                    @else
+                                        <div class="w-8 h-8 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center uppercase shrink-0">
+                                            {{ mb_substr(Auth::user()->name, 0, 1) }}
+                                        </div>
+                                    @endif
+                                    <div class="min-w-0">
+                                        <p class="font-bold text-slate-900 truncate">{{ Auth::user()->name }}</p>
+                                        <p class="text-[11px] text-slate-400 truncate">{{ Auth::user()->email }}</p>
+                                    </div>
                                 </div>
                                 <a href="{{ route('profile.edit') }}" class="flex items-center gap-2 px-3 py-2 rounded-xl text-slate-700 hover:bg-slate-100 font-medium transition-colors">
                                     <i class="fa-solid fa-id-card text-blue-600 w-4"></i>

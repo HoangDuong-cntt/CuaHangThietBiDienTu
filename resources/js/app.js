@@ -1,3 +1,8 @@
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+Alpine.start();
+
 const currency = new Intl.NumberFormat('vi-VN', {
     maximumFractionDigits: 0,
 });

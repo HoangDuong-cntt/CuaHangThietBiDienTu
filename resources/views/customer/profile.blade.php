@@ -469,104 +469,15 @@
 
 <!-- Alpine.js Address Manager Component Script -->
 <script>
-document.addEventListener('alpine:init', () => {
-    Alpine.data('addressManager', () => ({
-        activeTab: (new URLSearchParams(window.location.search)).get('tab') || @js(session('active_tab', 'profile')) || 'profile',
-        showAddressModal: false,
-        editMode: false,
-        mode: '34', // Mặc định 34 Tỉnh Thành sau sáp nhập
-        currentAddress: {
-            id: null,
-            receiver_name: @js($user->name),
-            receiver_phone: @js($user->phone ?? ''),
-            province: '',
-            district: '',
-            ward: '',
-            street_address: '',
-            is_default: false
-        },
-        provinces34: [],
-        wards34: [],
-        provinces63: [],
-        districts63: [],
-        wards63: [],
-
-        init() {
-            this.fetchData34();
-        },
-
-        async setMode(m) {
-            this.mode = m;
-            if (m === '34' && this.provinces34.length === 0) {
-                await this.fetchData34();
-            } else if (m === '63' && this.provinces63.length === 0) {
-                await this.fetchData63();
-            }
-        },
-
-        async fetchData34() {
-            if (this.provinces34.length > 0) return;
-            try {
-                const res = await fetch('/data/vietnam-34-provinces.json');
-                this.provinces34 = await res.json();
-            } catch (err) {
-                console.error('Lỗi đọc dữ liệu 34 tỉnh thành:', err);
-            }
-        },
-
-        async fetchData63() {
-            if (this.provinces63.length > 0) return;
-            try {
-                const res = await fetch('/data/vietnam-provinces.json');
-                this.provinces63 = await res.json();
-            } catch (err) {
-                console.error('Lỗi đọc dữ liệu 63 tỉnh thành:', err);
-            }
-        },
-
-        onProvince34Change(provinceName) {
-            this.currentAddress.province = provinceName;
-            this.currentAddress.district = provinceName;
-            this.currentAddress.ward = '';
-            this.wards34 = [];
-
-            if (!provinceName) return;
-            const p = this.provinces34.find(item => item.name === provinceName);
-            if (p && p.wards) {
-                this.wards34 = p.wards;
-            }
-        },
-
-        onProvince63Change(provinceName) {
-            this.currentAddress.province = provinceName;
-            this.currentAddress.district = '';
-            this.currentAddress.ward = '';
-            this.districts63 = [];
-            this.wards63 = [];
-
-            if (!provinceName) return;
-            const prov = this.provinces63.find(p => p.Name === provinceName);
-            if (prov && prov.Districts) {
-                this.districts63 = prov.Districts;
-            }
-        },
-
-        onDistrict63Change(districtName) {
-            this.currentAddress.district = districtName;
-            this.currentAddress.ward = '';
-            this.wards63 = [];
-
-            if (!districtName) return;
-            const dist = this.districts63.find(d => d.Name === districtName);
-            if (dist && dist.Wards) {
-                this.wards63 = dist.Wards;
-            }
-        },
-
-        openAddModal() {
-            this.editMode = false;
-            this.mode = '34';
-            this.currentAddress = {
+function registerAddressManager() {
+    if (window.Alpine && !window._addressManagerRegistered) {
+        window._addressManagerRegistered = true;
+        Alpine.data('addressManager', () => ({
+            activeTab: (new URLSearchParams(window.location.search)).get('tab') || @js(session('active_tab', 'profile')) || 'profile',
+            showAddressModal: false,
+            editMode: false,
+            mode: '34', // Mặc định 34 Tỉnh Thành sau sáp nhập
+            currentAddress: {
                 id: null,
                 receiver_name: @js($user->name),
                 receiver_phone: @js($user->phone ?? ''),
@@ -575,41 +486,137 @@ document.addEventListener('alpine:init', () => {
                 ward: '',
                 street_address: '',
                 is_default: false
-            };
-            this.wards34 = [];
-            this.districts63 = [];
-            this.wards63 = [];
-            this.showAddressModal = true;
-            this.fetchData34();
-        },
+            },
+            provinces34: [],
+            wards34: [],
+            provinces63: [],
+            districts63: [],
+            wards63: [],
 
-        async openEditModal(addr) {
-            this.editMode = true;
-            this.currentAddress = { ...addr };
-            this.showAddressModal = true;
-            this.mode = '34'; // Luôn ưu tiên hiển thị theo chuẩn 34 Tỉnh thành
+            init() {
+                this.fetchData34();
+            },
 
-            await this.fetchData34();
+            async setMode(m) {
+                this.mode = m;
+                if (m === '34' && this.provinces34.length === 0) {
+                    await this.fetchData34();
+                } else if (m === '63' && this.provinces63.length === 0) {
+                    await this.fetchData63();
+                }
+            },
 
-            // Tìm tỉnh trong danh sách 34 tỉnh thành
-            let p34 = this.provinces34.find(item => item.name === addr.province);
-            if (!p34 && addr.province) {
-                const slug = addr.province.toLowerCase().replace(/^(tỉnh|thành phố|tp\.?)\s+/i, '').trim();
-                p34 = this.provinces34.find(item => item.name.toLowerCase().includes(slug));
-            }
+            async fetchData34() {
+                if (this.provinces34.length > 0) return;
+                try {
+                    const res = await fetch('/data/vietnam-34-provinces.json');
+                    this.provinces34 = await res.json();
+                } catch (err) {
+                    console.error('Lỗi đọc dữ liệu 34 tỉnh thành:', err);
+                }
+            },
 
-            if (p34) {
-                this.currentAddress.province = p34.name;
-                this.currentAddress.district = p34.name;
-                this.wards34 = [...(p34.wards || [])];
+            async fetchData63() {
+                if (this.provinces63.length > 0) return;
+                try {
+                    const res = await fetch('/data/vietnam-provinces.json');
+                    this.provinces63 = await res.json();
+                } catch (err) {
+                    console.error('Lỗi đọc dữ liệu 63 tỉnh thành:', err);
+                }
+            },
 
-                // Nếu phường cũ chưa có trong danh mục 34 tỉnh mới, thêm tạm để select vẫn hiển thị đúng
-                if (addr.ward && !this.wards34.some(w => w.name === addr.ward)) {
-                    this.wards34.unshift({ code: 'saved', name: addr.ward });
+            onProvince34Change(provinceName) {
+                this.currentAddress.province = provinceName;
+                this.currentAddress.district = provinceName;
+                this.currentAddress.ward = '';
+                this.wards34 = [];
+
+                if (!provinceName) return;
+                const p = this.provinces34.find(item => item.name === provinceName);
+                if (p && p.wards) {
+                    this.wards34 = p.wards;
+                }
+            },
+
+            onProvince63Change(provinceName) {
+                this.currentAddress.province = provinceName;
+                this.currentAddress.district = '';
+                this.currentAddress.ward = '';
+                this.districts63 = [];
+                this.wards63 = [];
+
+                if (!provinceName) return;
+                const prov = this.provinces63.find(p => p.Name === provinceName);
+                if (prov && prov.Districts) {
+                    this.districts63 = prov.Districts;
+                }
+            },
+
+            onDistrict63Change(districtName) {
+                this.currentAddress.district = districtName;
+                this.currentAddress.ward = '';
+                this.wards63 = [];
+
+                if (!districtName) return;
+                const dist = this.districts63.find(d => d.Name === districtName);
+                if (dist && dist.Wards) {
+                    this.wards63 = dist.Wards;
+                }
+            },
+
+            openAddModal() {
+                this.editMode = false;
+                this.mode = '34';
+                this.currentAddress = {
+                    id: null,
+                    receiver_name: @js($user->name),
+                    receiver_phone: @js($user->phone ?? ''),
+                    province: '',
+                    district: '',
+                    ward: '',
+                    street_address: '',
+                    is_default: false
+                };
+                this.wards34 = [];
+                this.districts63 = [];
+                this.wards63 = [];
+                this.showAddressModal = true;
+                this.fetchData34();
+            },
+
+            async openEditModal(addr) {
+                this.editMode = true;
+                this.currentAddress = { ...addr };
+                this.showAddressModal = true;
+                this.mode = '34'; // Luôn ưu tiên hiển thị theo chuẩn 34 Tỉnh thành
+
+                await this.fetchData34();
+
+                // Tìm tỉnh trong danh sách 34 tỉnh thành
+                let p34 = this.provinces34.find(item => item.name === addr.province);
+                if (!p34 && addr.province) {
+                    const slug = addr.province.toLowerCase().replace(/^(tỉnh|thành phố|tp\.?)\s+/i, '').trim();
+                    p34 = this.provinces34.find(item => item.name.toLowerCase().includes(slug));
+                }
+
+                if (p34) {
+                    this.currentAddress.province = p34.name;
+                    this.currentAddress.district = p34.name;
+                    this.wards34 = [...(p34.wards || [])];
+
+                    // Nếu phường cũ chưa có trong danh mục 34 tỉnh mới, thêm tạm để select vẫn hiển thị đúng
+                    if (addr.ward && !this.wards34.some(w => w.name === addr.ward)) {
+                        this.wards34.unshift({ code: 'saved', name: addr.ward });
+                    }
                 }
             }
-        }
-    }));
-});
+        }));
+    }
+}
+document.addEventListener('alpine:init', registerAddressManager);
+if (window.Alpine) {
+    registerAddressManager();
+}
 </script>
 @endsection
