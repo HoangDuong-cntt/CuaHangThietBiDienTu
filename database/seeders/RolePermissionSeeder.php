@@ -64,8 +64,9 @@ class RolePermissionSeeder extends Seeder
         $allPermissions = Permission::all();
         $adminRole->permissions()->sync($allPermissions->pluck('id'));
 
-        // Nhân viên bán hàng: Đơn hàng, Voucher, Đánh giá, Banners
+        // Nhân viên bán hàng: Dashboard, Đơn hàng, Voucher, Đánh giá, Banners
         $salesPermissions = Permission::whereIn('name', [
+            'view_dashboard',
             'manage_orders',
             'manage_coupons',
             'manage_reviews',
@@ -73,8 +74,9 @@ class RolePermissionSeeder extends Seeder
         ])->pluck('id');
         $salesRole->permissions()->sync($salesPermissions);
 
-        // Nhân viên kho: Xem đơn, quản lý sản phẩm, tồn kho
+        // Nhân viên kho: Dashboard, Xem đơn, quản lý sản phẩm, tồn kho
         $warehousePermissions = Permission::whereIn('name', [
+            'view_dashboard',
             'manage_orders',
             'manage_products',
             'view_inventory',

@@ -39,15 +39,29 @@ class UserAddress extends Model
     }
 
     /**
-     * Lấy chuỗi địa chỉ đầy đủ tiện hiển thị.
+     * Lấy chuỗi địa chỉ đầy đủ tiện hiển thị (chuẩn 2 cấp theo 34 tỉnh thành, không lặp lại tên tỉnh).
      */
     public function getFullAddressAttribute(): string
     {
-        return implode(', ', array_filter([
-            $this->street_address,
-            $this->ward,
-            $this->district,
-            $this->province,
-        ]));
+        $parts = [];
+
+        if (! empty($this->street_address)) {
+            $parts[] = $this->street_address;
+        }
+
+        if (! empty($this->ward)) {
+            $parts[] = $this->ward;
+        }
+
+        // Chỉ hiển thị quận/huyện nếu khác với tỉnh/thành phố và không rỗng
+        if (! empty($this->district) && $this->district !== $this->province) {
+            $parts[] = $this->district;
+        }
+
+        if (! empty($this->province)) {
+            $parts[] = $this->province;
+        }
+
+        return implode(', ', $parts);
     }
 }

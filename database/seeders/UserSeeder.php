@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Role;
 use App\Models\User;
 use App\Models\UserAddress;
 use Illuminate\Database\Seeder;
@@ -14,6 +15,10 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
+        $adminRole = Role::where('name', 'admin')->first();
+        $salesRole = Role::where('name', 'sales_staff')->first();
+        $warehouseRole = Role::where('name', 'warehouse_staff')->first();
+
         // 1. Tạo tài khoản Quản trị viên (Admin)
         User::updateOrCreate(
             ['email' => 'admin@smarttech.vn'],
@@ -22,20 +27,37 @@ class UserSeeder extends Seeder
                 'phone' => '0901234567',
                 'password' => Hash::make('password123'),
                 'role' => 'admin',
+                'role_id' => $adminRole?->id,
                 'avatar' => null,
                 'is_active' => true,
                 'email_verified_at' => now(),
             ]
         );
 
-        // 2. Tạo tài khoản Nhân viên (Staff)
+        // 2. Tạo tài khoản Nhân viên Bán hàng (Sales Staff)
         User::updateOrCreate(
             ['email' => 'staff@smarttech.vn'],
             [
-                'name' => 'Nhân viên CSKH & Kho',
+                'name' => 'Nhân viên Bán hàng & CSKH',
                 'phone' => '0902345678',
                 'password' => Hash::make('password123'),
                 'role' => 'staff',
+                'role_id' => $salesRole?->id,
+                'avatar' => null,
+                'is_active' => true,
+                'email_verified_at' => now(),
+            ]
+        );
+
+        // 3. Tạo tài khoản Nhân viên Quản lý Kho (Warehouse Staff)
+        User::updateOrCreate(
+            ['email' => 'kho@smarttech.vn'],
+            [
+                'name' => 'Nhân viên Quản lý Kho',
+                'phone' => '0907890123',
+                'password' => Hash::make('password123'),
+                'role' => 'staff',
+                'role_id' => $warehouseRole?->id,
                 'avatar' => null,
                 'is_active' => true,
                 'email_verified_at' => now(),
