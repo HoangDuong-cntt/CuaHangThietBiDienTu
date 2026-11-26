@@ -13,6 +13,9 @@ class SpecificationGroup extends Model
 
     public $timestamps = false;
 
+    /**
+     * @var list<string>
+     */
     protected $fillable = [
         'category_id',
         'name',
@@ -29,11 +32,17 @@ class SpecificationGroup extends Model
         ];
     }
 
+    /**
+     * @return BelongsTo<Category, $this>
+     */
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class);
     }
 
+    /**
+     * @return HasMany<Specification, $this>
+     */
     public function specifications(): HasMany
     {
         return $this->hasMany(Specification::class, 'group_id')->orderBy('sort_order');

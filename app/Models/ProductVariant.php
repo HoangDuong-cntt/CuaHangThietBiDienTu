@@ -13,6 +13,9 @@ class ProductVariant extends Model
 {
     use HasFactory;
 
+    /**
+     * @var list<string>
+     */
     protected $fillable = [
         'product_id',
         'sku',
@@ -50,14 +53,20 @@ class ProductVariant extends Model
         );
     }
 
+    /**
+     * @return BelongsTo<Product, $this>
+     */
     public function product(): BelongsTo
     {
         return $this->belongsTo(Product::class);
     }
 
+    /**
+     * @return HasMany<ProductImage, $this>
+     */
     public function images(): HasMany
     {
-        return $this->hasMany(ProductImage::class, 'variant_id');
+        return $this->hasMany(ProductImage::class, 'variant_id')->orderBy('sort_order');
     }
 
     public function scopeActive(Builder $query): Builder

@@ -13,6 +13,9 @@ class Specification extends Model
 
     public $timestamps = false;
 
+    /**
+     * @var list<string>
+     */
     protected $fillable = [
         'group_id',
         'name',
@@ -31,11 +34,17 @@ class Specification extends Model
         ];
     }
 
+    /**
+     * @return BelongsTo<SpecificationGroup, $this>
+     */
     public function group(): BelongsTo
     {
         return $this->belongsTo(SpecificationGroup::class, 'group_id');
     }
 
+    /**
+     * @return HasMany<ProductSpecification, $this>
+     */
     public function productSpecifications(): HasMany
     {
         return $this->hasMany(ProductSpecification::class);
