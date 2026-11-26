@@ -1,45 +1,49 @@
-@extends('layouts.app', ['title' => 'Xác thực địa chỉ Email'])
+@extends('layouts.client', ['title' => 'Xác thực địa chỉ Email - tinh.'])
 
 @section('content')
-<div class="min-h-[calc(100vh-12rem)] flex items-center justify-center p-6">
-    <div class="w-full max-w-md space-y-6 p-8 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 shadow-xl text-center">
-        
-        <div class="w-12 h-12 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 mx-auto flex items-center justify-center text-2xl">
-            ✉️
-        </div>
+<div class="py-12 sm:py-16 lg:py-20 bg-[#fafbfc] min-h-[calc(100vh-16rem)] flex items-center justify-center px-4 sm:px-6">
+    <div class="w-full max-w-md">
 
-        <div class="space-y-2">
-            <span class="text-[10px] font-mono tracking-widest uppercase text-zinc-500">BẢO MẬT TÀI KHOẢN</span>
-            <h1 class="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">
+        <!-- Main Card -->
+        <div class="bg-white rounded-3xl border border-slate-200/80 p-8 sm:p-10 shadow-xl shadow-slate-900/5 text-center">
+            
+            <!-- Icon -->
+            <div class="w-16 h-16 rounded-3xl bg-blue-50 text-blue-600 mx-auto flex items-center justify-center text-3xl mb-5 shadow-2xs">
+                <i class="fa-regular fa-envelope-open"></i>
+            </div>
+
+            <h1 class="text-2xl font-bold tracking-tight text-slate-900 mb-2">
                 Xác thực địa chỉ Email
             </h1>
-            <p class="text-xs text-zinc-500 leading-relaxed">
-                Cảm ơn bạn đã đăng ký! Hệ thống đã gửi một liên kết xác thực đến hộp thư 
-                <strong class="text-zinc-900 dark:text-white font-mono">{{ Auth::user()?->email }}</strong>. 
-                Vui lòng kiểm tra hộp thư đến (hoặc thư rác/spam) và bấm vào liên kết để kích hoạt tài khoản.
+            <p class="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6">
+                Cảm ơn bạn đã đăng ký tài khoản! Chúng tôi đã gửi một liên kết kích hoạt đến hộp thư:
+                <br>
+                <strong class="font-bold text-slate-900 font-mono mt-1 inline-block">{{ Auth::user()?->email }}</strong>
             </p>
-        </div>
 
-        @if (session('status') == 'verification-link-sent')
-            <div class="p-3 rounded-md border border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 text-xs font-medium">
-                ✓ Một liên kết xác thực mới vừa được gửi lại vào email của bạn!
+            @if (session('status') == 'verification-link-sent')
+                <div class="mb-6 p-4 rounded-2xl bg-emerald-50 border border-emerald-200/80 text-emerald-700 text-xs sm:text-sm flex items-start gap-3 text-left">
+                    <i class="fa-solid fa-circle-check text-emerald-500 mt-0.5 shrink-0 text-base"></i>
+                    <div>Một liên kết xác thực mới vừa được gửi lại đến hộp thư của bạn!</div>
+                </div>
+            @endif
+
+            <div class="space-y-3">
+                <form action="{{ route('verification.send') }}" method="POST">
+                    @csrf
+                    <button type="submit" class="w-full py-3 px-4 rounded-2xl bg-slate-900 hover:bg-blue-600 text-white text-xs sm:text-sm font-bold tracking-wide transition-all shadow-md shadow-slate-950/10 hover:shadow-blue-600/20 active:scale-[0.99] cursor-pointer">
+                        Gửi lại email xác thực
+                    </button>
+                </form>
+
+                <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button type="submit" class="w-full py-2.5 px-4 text-xs font-semibold text-slate-500 hover:text-rose-600 transition-colors cursor-pointer">
+                        Đăng xuất tài khoản
+                    </button>
+                </form>
             </div>
-        @endif
 
-        <div class="flex flex-col gap-3 pt-2">
-            <form action="{{ route('verification.send') }}" method="POST">
-                @csrf
-                <button type="submit" class="w-full py-2.5 px-4 rounded-md bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-all shadow-sm">
-                    Gửi lại email xác thực
-                </button>
-            </form>
-
-            <form action="{{ route('logout') }}" method="POST">
-                @csrf
-                <button type="submit" class="w-full py-2 px-4 text-xs font-semibold text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors">
-                    Đăng xuất tài khoản
-                </button>
-            </form>
         </div>
 
     </div>
