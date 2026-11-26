@@ -411,8 +411,8 @@
     </script>
 
     <!-- DRAWER: DANH SÁCH YÊU THÍCH & ĐÃ XEM GẦN ĐÂY (THÀNH VIÊN 3) -->
-    <div id="wishlist-backdrop" onclick="closeWishlistDrawer()" class="fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-50 hidden transition-opacity opacity-0"></div>
-    <div id="wishlist-drawer" class="fixed top-0 right-0 bottom-0 w-full max-w-md bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div id="wishlist-backdrop" onclick="closeWishlistDrawer()" class="fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-50 hidden transition-opacity opacity-0" style="display: none;"></div>
+    <div id="wishlist-drawer" class="fixed top-0 right-0 bottom-0 w-full max-w-md bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col hidden" style="display: none; transform: translateX(100%);">
         <!-- Drawer Header -->
         <div class="p-4 sm:p-5 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
             <div class="flex items-center gap-2.5">
@@ -424,7 +424,7 @@
                     <p class="text-[11px] text-slate-400">Yêu thích & Sản phẩm vừa xem</p>
                 </div>
             </div>
-            <button type="button" onclick="closeWishlistDrawer()" class="w-8 h-8 rounded-xl hover:bg-slate-200/60 text-slate-400 hover:text-slate-600 flex items-center justify-center transition-colors">
+            <button type="button" onclick="closeWishlistDrawer()" class="w-8 h-8 rounded-xl hover:bg-slate-200/60 text-slate-400 hover:text-slate-600 flex items-center justify-center transition-colors cursor-pointer">
                 <i class="fa-solid fa-xmark text-sm"></i>
             </button>
         </div>
@@ -435,7 +435,7 @@
                 type="button" 
                 id="tab-btn-wishlist" 
                 onclick="switchWishlistTab('wishlist')" 
-                class="flex-1 py-2 px-3 rounded-xl bg-white text-slate-800 shadow-xs transition-all flex items-center justify-center gap-1.5"
+                class="flex-1 py-2 px-3 rounded-xl bg-white text-slate-800 shadow-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer"
             >
                 <i class="fa-solid fa-heart text-red-500 text-xs"></i>
                 <span>Yêu thích</span>
@@ -445,7 +445,7 @@
                 type="button" 
                 id="tab-btn-recent" 
                 onclick="switchWishlistTab('recent')" 
-                class="flex-1 py-2 px-3 rounded-xl text-slate-500 hover:text-slate-800 transition-all flex items-center justify-center gap-1.5"
+                class="flex-1 py-2 px-3 rounded-xl text-slate-500 hover:text-slate-800 transition-all flex items-center justify-center gap-1.5 cursor-pointer"
             >
                 <i class="fa-solid fa-clock-rotate-left text-blue-500 text-xs"></i>
                 <span>Đã xem gần đây</span>
@@ -454,10 +454,13 @@
 
         <!-- Drawer Content List -->
         <div id="drawer-items-list" class="flex-1 overflow-y-auto p-4 space-y-3">
-            <!-- Items injected by JS -->
             <div class="py-12 text-center text-slate-400 text-xs">
-                <i class="fa-solid fa-spinner fa-spin text-2xl text-blue-500 mb-2 block"></i>
-                Đang tải dữ liệu...
+                <i class="fa-regular fa-heart text-4xl text-slate-300 mb-3 block"></i>
+                <p class="font-bold text-slate-600 mb-1">Chưa có sản phẩm yêu thích</p>
+                <p class="text-slate-400 mb-4">Hãy bấm vào biểu tượng trái tim ở các sản phẩm bạn ưng ý nhé.</p>
+                <a href="{{ route('shop.index') }}" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs transition-colors">
+                    Khám phá thiết bị ngay
+                </a>
             </div>
         </div>
 
@@ -480,11 +483,17 @@
         function openWishlistDrawer(tab = 'wishlist') {
             const backdrop = document.getElementById('wishlist-backdrop');
             const drawer = document.getElementById('wishlist-drawer');
+            if (!drawer || !backdrop) return;
 
+            backdrop.style.display = 'block';
             backdrop.classList.remove('hidden');
+            drawer.style.display = 'flex';
+            drawer.classList.remove('hidden');
+
             setTimeout(() => {
                 backdrop.classList.remove('opacity-0');
                 drawer.classList.remove('translate-x-full');
+                drawer.style.transform = 'translateX(0)';
             }, 10);
 
             switchWishlistTab(tab);
@@ -493,11 +502,17 @@
         function closeWishlistDrawer() {
             const backdrop = document.getElementById('wishlist-backdrop');
             const drawer = document.getElementById('wishlist-drawer');
+            if (!drawer || !backdrop) return;
 
             backdrop.classList.add('opacity-0');
             drawer.classList.add('translate-x-full');
+            drawer.style.transform = 'translateX(100%)';
+
             setTimeout(() => {
                 backdrop.classList.add('hidden');
+                backdrop.style.display = 'none';
+                drawer.classList.add('hidden');
+                drawer.style.display = 'none';
             }, 300);
         }
 
