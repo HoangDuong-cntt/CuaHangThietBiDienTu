@@ -1,0 +1,1502 @@
+[
+    {
+        "id": 1,
+        "brand": "Apple",
+        "name": "MacBook Air 13 inch M3 (2024)",
+        "slug": "macbook-air-13-inch-m4-2025"
+    },
+    {
+        "id": 2,
+        "brand": "Apple",
+        "name": "MacBook Air 15 inch M3 (2024)",
+        "slug": "macbook-air-15-inch-m4-2025"
+    },
+    {
+        "id": 3,
+        "brand": "Apple",
+        "name": "MacBook Air 13 inch M3",
+        "slug": "macbook-air-13-inch-m3"
+    },
+    {
+        "id": 4,
+        "brand": "Apple",
+        "name": "MacBook Air 15 inch M3",
+        "slug": "macbook-air-15-inch-m3"
+    },
+    {
+        "id": 5,
+        "brand": "Apple",
+        "name": "MacBook Pro 14 inch M4",
+        "slug": "macbook-pro-14-inch-m4"
+    },
+    {
+        "id": 6,
+        "brand": "Apple",
+        "name": "MacBook Pro 14 inch M4 Pro",
+        "slug": "macbook-pro-14-inch-m4-pro"
+    },
+    {
+        "id": 7,
+        "brand": "Apple",
+        "name": "MacBook Pro 14 inch M4 Max",
+        "slug": "macbook-pro-14-inch-m4-max"
+    },
+    {
+        "id": 8,
+        "brand": "Apple",
+        "name": "MacBook Pro 16 inch M4 Pro",
+        "slug": "macbook-pro-16-inch-m4-pro"
+    },
+    {
+        "id": 9,
+        "brand": "Apple",
+        "name": "MacBook Pro 16 inch M4 Max",
+        "slug": "macbook-pro-16-inch-m4-max"
+    },
+    {
+        "id": 10,
+        "brand": "Apple",
+        "name": "iPhone 16 Pro Max 256GB VN\/A",
+        "slug": "iphone-16-pro-max-256gb-vna"
+    },
+    {
+        "id": 11,
+        "brand": "Apple",
+        "name": "iPhone 16 Pro 128GB VN\/A",
+        "slug": "iphone-16-pro-128gb-vna"
+    },
+    {
+        "id": 12,
+        "brand": "Apple",
+        "name": "iPhone 16 Plus 128GB VN\/A",
+        "slug": "iphone-16-plus-128gb-vna"
+    },
+    {
+        "id": 13,
+        "brand": "Apple",
+        "name": "iPhone 16 128GB VN\/A",
+        "slug": "iphone-16-128gb-vna"
+    },
+    {
+        "id": 14,
+        "brand": "Apple",
+        "name": "iPhone 15 Pro Max 256GB VN\/A",
+        "slug": "iphone-15-pro-max-256gb-vna"
+    },
+    {
+        "id": 15,
+        "brand": "Apple",
+        "name": "iPhone 15 128GB VN\/A",
+        "slug": "iphone-15-128gb-vna"
+    },
+    {
+        "id": 16,
+        "brand": "Apple",
+        "name": "iPhone 14 128GB VN\/A",
+        "slug": "iphone-14-128gb-vna"
+    },
+    {
+        "id": 17,
+        "brand": "Apple",
+        "name": "iPhone 13 128GB VN\/A",
+        "slug": "iphone-13-128gb-vna"
+    },
+    {
+        "id": 18,
+        "brand": "Apple",
+        "name": "iPad Pro M4 13 inch Wi-Fi",
+        "slug": "ipad-pro-m4-13-inch-wi-fi"
+    },
+    {
+        "id": 19,
+        "brand": "Apple",
+        "name": "iPad Pro M4 11 inch Wi-Fi",
+        "slug": "ipad-pro-m4-11-inch-wi-fi"
+    },
+    {
+        "id": 20,
+        "brand": "Apple",
+        "name": "iPad Air M2 13 inch Wi-Fi",
+        "slug": "ipad-air-m2-13-inch-wi-fi"
+    },
+    {
+        "id": 21,
+        "brand": "Apple",
+        "name": "iPad Air M2 11 inch Wi-Fi",
+        "slug": "ipad-air-m2-11-inch-wi-fi"
+    },
+    {
+        "id": 22,
+        "brand": "Apple",
+        "name": "iPad Mini 7 A17 Pro Wi-Fi",
+        "slug": "ipad-mini-7-a17-pro-wi-fi"
+    },
+    {
+        "id": 23,
+        "brand": "Apple",
+        "name": "AirPods Max USB-C 2024",
+        "slug": "airpods-max-usb-c-2024"
+    },
+    {
+        "id": 24,
+        "brand": "Apple",
+        "name": "AirPods Pro 2 USB-C",
+        "slug": "airpods-pro-2-usb-c"
+    },
+    {
+        "id": 25,
+        "brand": "Apple",
+        "name": "Magic Mouse USB-C 2024",
+        "slug": "magic-mouse-usb-c-2024"
+    },
+    {
+        "id": 26,
+        "brand": "Asus",
+        "name": "Asus Zenbook 14 OLED UX3405CA",
+        "slug": "asus-zenbook-14-oled-ux3405ca"
+    },
+    {
+        "id": 27,
+        "brand": "Asus",
+        "name": "Asus Zenbook S 14 OLED UX5406",
+        "slug": "asus-zenbook-s-14-oled-ux5406"
+    },
+    {
+        "id": 28,
+        "brand": "Asus",
+        "name": "Asus Zenbook S 16 OLED UM5606",
+        "slug": "asus-zenbook-s-16-oled-um5606"
+    },
+    {
+        "id": 29,
+        "brand": "Asus",
+        "name": "Asus Zenbook DUO 2 màn hình UX8406",
+        "slug": "asus-zenbook-duo-2-man-hinh-ux8406"
+    },
+    {
+        "id": 30,
+        "brand": "Asus",
+        "name": "Asus Vivobook S 14 OLED M5406",
+        "slug": "asus-vivobook-s-14-oled-m5406"
+    },
+    {
+        "id": 31,
+        "brand": "Asus",
+        "name": "Asus Vivobook S 15 OLED S5507 Copilot+",
+        "slug": "asus-vivobook-s-15-oled-s5507-copilot"
+    },
+    {
+        "id": 32,
+        "brand": "Asus",
+        "name": "Asus Vivobook S 16 OLED S5606",
+        "slug": "asus-vivobook-s-16-oled-s5606"
+    },
+    {
+        "id": 33,
+        "brand": "Asus",
+        "name": "Asus Vivobook 15 X1504ZA",
+        "slug": "asus-vivobook-15-x1504za"
+    },
+    {
+        "id": 34,
+        "brand": "Asus",
+        "name": "Asus Vivobook Go 14 E1404FA",
+        "slug": "asus-vivobook-go-14-e1404fa"
+    },
+    {
+        "id": 35,
+        "brand": "Asus",
+        "name": "Asus ExpertBook B9 OLED Siêu Nhẹ 990g",
+        "slug": "asus-expertbook-b9-oled-sieu-nhe-990g"
+    },
+    {
+        "id": 36,
+        "brand": "Asus",
+        "name": "Asus ExpertBook P5 P5405 AI",
+        "slug": "asus-expertbook-p5-p5405-ai"
+    },
+    {
+        "id": 37,
+        "brand": "Asus",
+        "name": "Asus ProArt P16 H7606 RTX 4070",
+        "slug": "asus-proart-p16-h7606-rtx-4070"
+    },
+    {
+        "id": 38,
+        "brand": "Asus",
+        "name": "Asus ProArt PX13 HN7306 Xoay Gập",
+        "slug": "asus-proart-px13-hn7306-xoay-gap"
+    },
+    {
+        "id": 39,
+        "brand": "Asus",
+        "name": "Asus ROG Strix G16 G614JU RTX 4050",
+        "slug": "asus-rog-strix-g16-g614ju-rtx-4050"
+    },
+    {
+        "id": 40,
+        "brand": "Asus",
+        "name": "Asus ROG Strix G16 G614JV RTX 4060",
+        "slug": "asus-rog-strix-g16-g614jv-rtx-4060"
+    },
+    {
+        "id": 41,
+        "brand": "Asus",
+        "name": "Asus ROG Strix SCAR 16 G634JZR RTX 4080",
+        "slug": "asus-rog-strix-scar-16-g634jzr-rtx-4080"
+    },
+    {
+        "id": 42,
+        "brand": "Asus",
+        "name": "Asus ROG Strix SCAR 18 G834JYR RTX 4090",
+        "slug": "asus-rog-strix-scar-18-g834jyr-rtx-4090"
+    },
+    {
+        "id": 43,
+        "brand": "Asus",
+        "name": "Asus ROG Zephyrus G14 GA403 OLED",
+        "slug": "asus-rog-zephyrus-g14-ga403-oled"
+    },
+    {
+        "id": 44,
+        "brand": "Asus",
+        "name": "Asus ROG Zephyrus G16 GU605 OLED",
+        "slug": "asus-rog-zephyrus-g16-gu605-oled"
+    },
+    {
+        "id": 45,
+        "brand": "Asus",
+        "name": "Asus ROG Flow Z13 GZ301",
+        "slug": "asus-rog-flow-z13-gz301"
+    },
+    {
+        "id": 46,
+        "brand": "Asus",
+        "name": "Asus TUF Gaming A15 FA507NV RTX 4060",
+        "slug": "asus-tuf-gaming-a15-fa507nv-rtx-4060"
+    },
+    {
+        "id": 47,
+        "brand": "Asus",
+        "name": "Asus TUF Gaming F15 FX507ZC4 RTX 3050",
+        "slug": "asus-tuf-gaming-f15-fx507zc4-rtx-3050"
+    },
+    {
+        "id": 48,
+        "brand": "Asus",
+        "name": "Asus TUF Gaming A14 FA401UU Siêu Nhẹ",
+        "slug": "asus-tuf-gaming-a14-fa401uu-sieu-nhe"
+    },
+    {
+        "id": 49,
+        "brand": "Asus",
+        "name": "ROG Phone 8 Pro 16GB\/512GB",
+        "slug": "rog-phone-8-pro-16gb512gb"
+    },
+    {
+        "id": 50,
+        "brand": "Asus",
+        "name": "Chuột Gaming ROG Harpe Ace Aim Lab",
+        "slug": "chuot-gaming-rog-harpe-ace-aim-lab"
+    },
+    {
+        "id": 51,
+        "brand": "Dell",
+        "name": "Dell XPS 13 9340 Core Ultra 7",
+        "slug": "dell-xps-13-9340-core-ultra-7"
+    },
+    {
+        "id": 52,
+        "brand": "Dell",
+        "name": "Dell XPS 13 9345 Snapdragon X Elite",
+        "slug": "dell-xps-13-9345-snapdragon-x-elite"
+    },
+    {
+        "id": 53,
+        "brand": "Dell",
+        "name": "Dell XPS 14 9440 OLED RTX 4050",
+        "slug": "dell-xps-14-9440-oled-rtx-4050"
+    },
+    {
+        "id": 54,
+        "brand": "Dell",
+        "name": "Dell XPS 16 9640 OLED RTX 4060",
+        "slug": "dell-xps-16-9640-oled-rtx-4060"
+    },
+    {
+        "id": 55,
+        "brand": "Dell",
+        "name": "Dell Inspiron 14 Plus 7440",
+        "slug": "dell-inspiron-14-plus-7440"
+    },
+    {
+        "id": 56,
+        "brand": "Dell",
+        "name": "Dell Inspiron 14 5440 Core 7",
+        "slug": "dell-inspiron-14-5440-core-7"
+    },
+    {
+        "id": 57,
+        "brand": "Dell",
+        "name": "Dell Inspiron 15 3530 i5-1335U",
+        "slug": "dell-inspiron-15-3530-i5-1335u"
+    },
+    {
+        "id": 58,
+        "brand": "Dell",
+        "name": "Dell Inspiron 16 5640 Core Ultra 7",
+        "slug": "dell-inspiron-16-5640-core-ultra-7"
+    },
+    {
+        "id": 59,
+        "brand": "Dell",
+        "name": "Dell Inspiron 14 7445 2-in-1 Xoay Gập",
+        "slug": "dell-inspiron-14-7445-2-in-1-xoay-gap"
+    },
+    {
+        "id": 60,
+        "brand": "Dell",
+        "name": "Dell Latitude 7450 Ultralight",
+        "slug": "dell-latitude-7450-ultralight"
+    },
+    {
+        "id": 61,
+        "brand": "Dell",
+        "name": "Dell Latitude 5450 Doanh Nghiệp",
+        "slug": "dell-latitude-5450-doanh-nghiep"
+    },
+    {
+        "id": 62,
+        "brand": "Dell",
+        "name": "Dell Latitude 3440 Văn Phòng",
+        "slug": "dell-latitude-3440-van-phong"
+    },
+    {
+        "id": 63,
+        "brand": "Dell",
+        "name": "Dell Vostro 3530 i5 Văn Phòng",
+        "slug": "dell-vostro-3530-i5-van-phong"
+    },
+    {
+        "id": 64,
+        "brand": "Dell",
+        "name": "Dell Vostro 5630 i7-1360P",
+        "slug": "dell-vostro-5630-i7-1360p"
+    },
+    {
+        "id": 65,
+        "brand": "Dell",
+        "name": "Dell Precision 3590 Workstation",
+        "slug": "dell-precision-3590-workstation"
+    },
+    {
+        "id": 66,
+        "brand": "Dell",
+        "name": "Dell Precision 5690 RTX 2000 Ada",
+        "slug": "dell-precision-5690-rtx-2000-ada"
+    },
+    {
+        "id": 67,
+        "brand": "Dell",
+        "name": "Dell Alienware m16 R2 RTX 4070",
+        "slug": "dell-alienware-m16-r2-rtx-4070"
+    },
+    {
+        "id": 68,
+        "brand": "Dell",
+        "name": "Dell Alienware m18 R2 RTX 4080",
+        "slug": "dell-alienware-m18-r2-rtx-4080"
+    },
+    {
+        "id": 69,
+        "brand": "Dell",
+        "name": "Dell Alienware x16 R2 Siêu Mỏng",
+        "slug": "dell-alienware-x16-r2-sieu-mong"
+    },
+    {
+        "id": 70,
+        "brand": "Dell",
+        "name": "Dell Gaming G15 5530 i7 RTX 4060",
+        "slug": "dell-gaming-g15-5530-i7-rtx-4060"
+    },
+    {
+        "id": 71,
+        "brand": "Dell",
+        "name": "Dell Gaming G15 5530 i5 RTX 3050",
+        "slug": "dell-gaming-g15-5530-i5-rtx-3050"
+    },
+    {
+        "id": 72,
+        "brand": "Dell",
+        "name": "Dell Gaming G16 7630 QHD+ 240Hz",
+        "slug": "dell-gaming-g16-7630-qhd-240hz"
+    },
+    {
+        "id": 73,
+        "brand": "Dell",
+        "name": "Tai nghe Gaming Alienware Pro Wireless",
+        "slug": "tai-nghe-gaming-alienware-pro-wireless"
+    },
+    {
+        "id": 74,
+        "brand": "Dell",
+        "name": "Chuột Gaming Alienware Pro Wireless",
+        "slug": "chuot-gaming-alienware-pro-wireless"
+    },
+    {
+        "id": 75,
+        "brand": "Dell",
+        "name": "Bàn phím cơ Alienware Pro TKL",
+        "slug": "ban-phim-co-alienware-pro-tkl"
+    },
+    {
+        "id": 76,
+        "brand": "Lenovo",
+        "name": "Lenovo ThinkPad X1 Carbon Gen 12",
+        "slug": "lenovo-thinkpad-x1-carbon-gen-12"
+    },
+    {
+        "id": 77,
+        "brand": "Lenovo",
+        "name": "Lenovo ThinkPad X1 2-in-1 Gen 9",
+        "slug": "lenovo-thinkpad-x1-2-in-1-gen-9"
+    },
+    {
+        "id": 78,
+        "brand": "Lenovo",
+        "name": "Lenovo ThinkPad T14 Gen 5",
+        "slug": "lenovo-thinkpad-t14-gen-5"
+    },
+    {
+        "id": 79,
+        "brand": "Lenovo",
+        "name": "Lenovo ThinkPad T14s Gen 6 Snapdragon",
+        "slug": "lenovo-thinkpad-t14s-gen-6-snapdragon"
+    },
+    {
+        "id": 80,
+        "brand": "Lenovo",
+        "name": "Lenovo ThinkPad P1 Gen 7 Workstation",
+        "slug": "lenovo-thinkpad-p1-gen-7-workstation"
+    },
+    {
+        "id": 81,
+        "brand": "Lenovo",
+        "name": "Lenovo ThinkBook 14 G7 IML",
+        "slug": "lenovo-thinkbook-14-g7-iml"
+    },
+    {
+        "id": 82,
+        "brand": "Lenovo",
+        "name": "Lenovo ThinkBook 16 G7 IML",
+        "slug": "lenovo-thinkbook-16-g7-iml"
+    },
+    {
+        "id": 83,
+        "brand": "Lenovo",
+        "name": "Lenovo Yoga Slim 7x Copilot+ PC AI",
+        "slug": "lenovo-yoga-slim-7x-copilot-pc-ai"
+    },
+    {
+        "id": 84,
+        "brand": "Lenovo",
+        "name": "Lenovo Yoga Pro 7 14IMH9 OLED",
+        "slug": "lenovo-yoga-pro-7-14imh9-oled"
+    },
+    {
+        "id": 85,
+        "brand": "Lenovo",
+        "name": "Lenovo Yoga 9i 2-in-1 14IMH9",
+        "slug": "lenovo-yoga-9i-2-in-1-14imh9"
+    },
+    {
+        "id": 86,
+        "brand": "Lenovo",
+        "name": "Lenovo IdeaPad Slim 5 14IMH9 OLED",
+        "slug": "lenovo-ideapad-slim-5-14imh9-oled"
+    },
+    {
+        "id": 87,
+        "brand": "Lenovo",
+        "name": "Lenovo IdeaPad Slim 5 16IMH9",
+        "slug": "lenovo-ideapad-slim-5-16imh9"
+    },
+    {
+        "id": 88,
+        "brand": "Lenovo",
+        "name": "Lenovo IdeaPad Pro 5 16IMH9 RTX 4050",
+        "slug": "lenovo-ideapad-pro-5-16imh9-rtx-4050"
+    },
+    {
+        "id": 89,
+        "brand": "Lenovo",
+        "name": "Lenovo IdeaPad Slim 3 15IRH8",
+        "slug": "lenovo-ideapad-slim-3-15irh8"
+    },
+    {
+        "id": 90,
+        "brand": "Lenovo",
+        "name": "Lenovo Legion Slim 5 16APH8 RTX 4060",
+        "slug": "lenovo-legion-slim-5-16aph8-rtx-4060"
+    },
+    {
+        "id": 91,
+        "brand": "Lenovo",
+        "name": "Lenovo Legion Pro 5 16IRX9 RTX 4070",
+        "slug": "lenovo-legion-pro-5-16irx9-rtx-4070"
+    },
+    {
+        "id": 92,
+        "brand": "Lenovo",
+        "name": "Lenovo Legion Pro 7 16IRX9H RTX 4080",
+        "slug": "lenovo-legion-pro-7-16irx9h-rtx-4080"
+    },
+    {
+        "id": 93,
+        "brand": "Lenovo",
+        "name": "Lenovo Legion 7i 16IRX9 Trắng Tinh Khôi",
+        "slug": "lenovo-legion-7i-16irx9-trang-tinh-khoi"
+    },
+    {
+        "id": 94,
+        "brand": "Lenovo",
+        "name": "Lenovo Legion 9i 16IRX9 Tản Nhiệt Nước",
+        "slug": "lenovo-legion-9i-16irx9-tan-nhiet-nuoc"
+    },
+    {
+        "id": 95,
+        "brand": "Lenovo",
+        "name": "Lenovo LOQ 15IAX9 i5 RTX 3050",
+        "slug": "lenovo-loq-15iax9-i5-rtx-3050"
+    },
+    {
+        "id": 96,
+        "brand": "Lenovo",
+        "name": "Lenovo LOQ 15ARP9 Ryzen 7 RTX 4060",
+        "slug": "lenovo-loq-15arp9-ryzen-7-rtx-4060"
+    },
+    {
+        "id": 97,
+        "brand": "Lenovo",
+        "name": "Lenovo Tab P12 12.7 inch Kèm Bút",
+        "slug": "lenovo-tab-p12-127-inch-kem-but"
+    },
+    {
+        "id": 98,
+        "brand": "Lenovo",
+        "name": "Lenovo Legion Tab 8.8 inch Gaming",
+        "slug": "lenovo-legion-tab-88-inch-gaming"
+    },
+    {
+        "id": 99,
+        "brand": "Lenovo",
+        "name": "Chuột Gaming Lenovo Legion M600s Qi",
+        "slug": "chuot-gaming-lenovo-legion-m600s-qi"
+    },
+    {
+        "id": 100,
+        "brand": "Lenovo",
+        "name": "Bàn phím không dây Lenovo ThinkPad TrackPoint II",
+        "slug": "ban-phim-khong-day-lenovo-thinkpad-trackpoint-ii"
+    },
+    {
+        "id": 101,
+        "brand": "HP",
+        "name": "HP Envy x360 14 OLED Xoay Gập",
+        "slug": "hp-envy-x360-14-oled-xoay-gap"
+    },
+    {
+        "id": 102,
+        "brand": "HP",
+        "name": "HP Envy x360 16 OLED Cảm Ứng",
+        "slug": "hp-envy-x360-16-oled-cam-ung"
+    },
+    {
+        "id": 103,
+        "brand": "HP",
+        "name": "HP OmniBook Ultra 14 AI",
+        "slug": "hp-omnibook-ultra-14-ai"
+    },
+    {
+        "id": 104,
+        "brand": "HP",
+        "name": "HP OmniBook X 14 Snapdragon X Elite",
+        "slug": "hp-omnibook-x-14-snapdragon-x-elite"
+    },
+    {
+        "id": 105,
+        "brand": "HP",
+        "name": "HP Spectre x360 14 OLED 2.8K",
+        "slug": "hp-spectre-x360-14-oled-28k"
+    },
+    {
+        "id": 106,
+        "brand": "HP",
+        "name": "HP Spectre x360 16 RTX 4050",
+        "slug": "hp-spectre-x360-16-rtx-4050"
+    },
+    {
+        "id": 107,
+        "brand": "HP",
+        "name": "HP Pavilion Aero 13 Siêu Nhẹ 990g",
+        "slug": "hp-pavilion-aero-13-sieu-nhe-990g"
+    },
+    {
+        "id": 108,
+        "brand": "HP",
+        "name": "HP Pavilion Plus 14 OLED",
+        "slug": "hp-pavilion-plus-14-oled"
+    },
+    {
+        "id": 109,
+        "brand": "HP",
+        "name": "HP Pavilion 15 eg3093TU i5",
+        "slug": "hp-pavilion-15-eg3093tu-i5"
+    },
+    {
+        "id": 110,
+        "brand": "HP",
+        "name": "HP 15 fd0234TU Văn Phòng",
+        "slug": "hp-15-fd0234tu-van-phong"
+    },
+    {
+        "id": 111,
+        "brand": "HP",
+        "name": "HP EliteBook 840 G11 Doanh Nhân",
+        "slug": "hp-elitebook-840-g11-doanh-nhan"
+    },
+    {
+        "id": 112,
+        "brand": "HP",
+        "name": "HP EliteBook 1040 G11 Siêu Mỏng",
+        "slug": "hp-elitebook-1040-g11-sieu-mong"
+    },
+    {
+        "id": 113,
+        "brand": "HP",
+        "name": "HP ProBook 450 G10 i5",
+        "slug": "hp-probook-450-g10-i5"
+    },
+    {
+        "id": 114,
+        "brand": "HP",
+        "name": "HP ProBook 440 G11 Core Ultra 5",
+        "slug": "hp-probook-440-g11-core-ultra-5"
+    },
+    {
+        "id": 115,
+        "brand": "HP",
+        "name": "HP ZBook Firefly 14 G11 Workstation",
+        "slug": "hp-zbook-firefly-14-g11-workstation"
+    },
+    {
+        "id": 116,
+        "brand": "HP",
+        "name": "HP OMEN 16 Gaming RTX 4060",
+        "slug": "hp-omen-16-gaming-rtx-4060"
+    },
+    {
+        "id": 117,
+        "brand": "HP",
+        "name": "HP OMEN Transcend 14 OLED Siêu Nhẹ",
+        "slug": "hp-omen-transcend-14-oled-sieu-nhe"
+    },
+    {
+        "id": 118,
+        "brand": "HP",
+        "name": "HP OMEN 17 Gaming RTX 4070",
+        "slug": "hp-omen-17-gaming-rtx-4070"
+    },
+    {
+        "id": 119,
+        "brand": "HP",
+        "name": "HP Victus 16 s0173AX Ryzen 5 RTX 4050",
+        "slug": "hp-victus-16-s0173ax-ryzen-5-rtx-4050"
+    },
+    {
+        "id": 120,
+        "brand": "HP",
+        "name": "HP Victus 16 r0369TX i7 RTX 4060",
+        "slug": "hp-victus-16-r0369tx-i7-rtx-4060"
+    },
+    {
+        "id": 121,
+        "brand": "HP",
+        "name": "HP Victus 15 fa1139TX i5 RTX 3050",
+        "slug": "hp-victus-15-fa1139tx-i5-rtx-3050"
+    },
+    {
+        "id": 122,
+        "brand": "HP",
+        "name": "Tai nghe Gaming HyperX Cloud III Wireless",
+        "slug": "tai-nghe-gaming-hyperx-cloud-iii-wireless"
+    },
+    {
+        "id": 123,
+        "brand": "HP",
+        "name": "Chuột Gaming HyperX Pulsefire Haste 2 Wireless",
+        "slug": "chuot-gaming-hyperx-pulsefire-haste-2-wireless"
+    },
+    {
+        "id": 124,
+        "brand": "HP",
+        "name": "Bàn phím cơ HyperX Alloy Origins Core",
+        "slug": "ban-phim-co-hyperx-alloy-origins-core"
+    },
+    {
+        "id": 125,
+        "brand": "HP",
+        "name": "Chuột không dây HP 930 Creator Wireless",
+        "slug": "chuot-khong-day-hp-930-creator-wireless"
+    },
+    {
+        "id": 126,
+        "brand": "MSI",
+        "name": "MSI Katana 15 B13VFK RTX 4060",
+        "slug": "msi-katana-15-b13vfk-rtx-4060"
+    },
+    {
+        "id": 127,
+        "brand": "MSI",
+        "name": "MSI Katana A15 AI B8VF Ryzen 7 RTX 4060",
+        "slug": "msi-katana-a15-ai-b8vf-ryzen-7-rtx-4060"
+    },
+    {
+        "id": 128,
+        "brand": "MSI",
+        "name": "MSI Cyborg 15 A13VE i7 RTX 4050",
+        "slug": "msi-cyborg-15-a13ve-i7-rtx-4050"
+    },
+    {
+        "id": 129,
+        "brand": "MSI",
+        "name": "MSI Thin 15 B13UC i5 RTX 3050",
+        "slug": "msi-thin-15-b13uc-i5-rtx-3050"
+    },
+    {
+        "id": 130,
+        "brand": "MSI",
+        "name": "MSI Sword 16 HX B14VFKG RTX 4060",
+        "slug": "msi-sword-16-hx-b14vfkg-rtx-4060"
+    },
+    {
+        "id": 131,
+        "brand": "MSI",
+        "name": "MSI Crosshair 16 HX D14VFKG RTX 4060",
+        "slug": "msi-crosshair-16-hx-d14vfkg-rtx-4060"
+    },
+    {
+        "id": 132,
+        "brand": "MSI",
+        "name": "MSI Pulse 16 AI C1VFKG RTX 4060",
+        "slug": "msi-pulse-16-ai-c1vfkg-rtx-4060"
+    },
+    {
+        "id": 133,
+        "brand": "MSI",
+        "name": "MSI Vector 16 HX A14VHG RTX 4080",
+        "slug": "msi-vector-16-hx-a14vhg-rtx-4080"
+    },
+    {
+        "id": 134,
+        "brand": "MSI",
+        "name": "MSI Raider GE78 HX 14VHG RTX 4080",
+        "slug": "msi-raider-ge78-hx-14vhg-rtx-4080"
+    },
+    {
+        "id": 135,
+        "brand": "MSI",
+        "name": "MSI Titan 18 HX A14VIG RTX 4090",
+        "slug": "msi-titan-18-hx-a14vig-rtx-4090"
+    },
+    {
+        "id": 136,
+        "brand": "MSI",
+        "name": "MSI Stealth 16 AI+ Studio RTX 4070",
+        "slug": "msi-stealth-16-ai-studio-rtx-4070"
+    },
+    {
+        "id": 137,
+        "brand": "MSI",
+        "name": "MSI Stealth 14 AI Studio RTX 4060",
+        "slug": "msi-stealth-14-ai-studio-rtx-4060"
+    },
+    {
+        "id": 138,
+        "brand": "MSI",
+        "name": "MSI Stealth 18 AI Studio RTX 4080",
+        "slug": "msi-stealth-18-ai-studio-rtx-4080"
+    },
+    {
+        "id": 139,
+        "brand": "MSI",
+        "name": "MSI Creator Z16 HX Studio",
+        "slug": "msi-creator-z16-hx-studio"
+    },
+    {
+        "id": 140,
+        "brand": "MSI",
+        "name": "MSI Prestige 13 AI+ Evo Siêu Nhẹ 990g",
+        "slug": "msi-prestige-13-ai-evo-sieu-nhe-990g"
+    },
+    {
+        "id": 141,
+        "brand": "MSI",
+        "name": "MSI Prestige 14 AI+ Evo",
+        "slug": "msi-prestige-14-ai-evo"
+    },
+    {
+        "id": 142,
+        "brand": "MSI",
+        "name": "MSI Prestige 16 AI+ Evo OLED",
+        "slug": "msi-prestige-16-ai-evo-oled"
+    },
+    {
+        "id": 143,
+        "brand": "MSI",
+        "name": "MSI Summit E13 AI+ Evo Xoay Gập",
+        "slug": "msi-summit-e13-ai-evo-xoay-gap"
+    },
+    {
+        "id": 144,
+        "brand": "MSI",
+        "name": "MSI Summit E16 AI+ Studio",
+        "slug": "msi-summit-e16-ai-studio"
+    },
+    {
+        "id": 145,
+        "brand": "MSI",
+        "name": "MSI Modern 14 F13MG i5 Văn Phòng",
+        "slug": "msi-modern-14-f13mg-i5-van-phong"
+    },
+    {
+        "id": 146,
+        "brand": "MSI",
+        "name": "MSI Modern 15 F13MG i7",
+        "slug": "msi-modern-15-f13mg-i7"
+    },
+    {
+        "id": 147,
+        "brand": "MSI",
+        "name": "Máy chơi game cầm tay MSI Claw A1M",
+        "slug": "may-choi-game-cam-tay-msi-claw-a1m"
+    },
+    {
+        "id": 148,
+        "brand": "MSI",
+        "name": "Chuột Gaming MSI Clutch GM51 Lightweight",
+        "slug": "chuot-gaming-msi-clutch-gm51-lightweight"
+    },
+    {
+        "id": 149,
+        "brand": "MSI",
+        "name": "Bàn phím cơ MSI Vigor GK71 Sonic",
+        "slug": "ban-phim-co-msi-vigor-gk71-sonic"
+    },
+    {
+        "id": 150,
+        "brand": "MSI",
+        "name": "Tai nghe Gaming MSI Immerse GH50 Wireless",
+        "slug": "tai-nghe-gaming-msi-immerse-gh50-wireless"
+    },
+    {
+        "id": 151,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy S24 Ultra 5G",
+        "slug": "samsung-galaxy-s24-ultra-5g"
+    },
+    {
+        "id": 152,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy S24 Plus 5G",
+        "slug": "samsung-galaxy-s24-plus-5g"
+    },
+    {
+        "id": 153,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy S24 5G",
+        "slug": "samsung-galaxy-s24-5g"
+    },
+    {
+        "id": 154,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy S24 FE 5G",
+        "slug": "samsung-galaxy-s24-fe-5g"
+    },
+    {
+        "id": 155,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy S23 Ultra 5G",
+        "slug": "samsung-galaxy-s23-ultra-5g"
+    },
+    {
+        "id": 156,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy Z Fold6 5G Gập Mở AI",
+        "slug": "samsung-galaxy-z-fold6-5g-gap-mo-ai"
+    },
+    {
+        "id": 157,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy Z Flip6 5G Gập Thời Trang",
+        "slug": "samsung-galaxy-z-flip6-5g-gap-thoi-trang"
+    },
+    {
+        "id": 158,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy Z Fold5 5G",
+        "slug": "samsung-galaxy-z-fold5-5g"
+    },
+    {
+        "id": 159,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy A55 5G",
+        "slug": "samsung-galaxy-a55-5g"
+    },
+    {
+        "id": 160,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy A35 5G",
+        "slug": "samsung-galaxy-a35-5g"
+    },
+    {
+        "id": 161,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy A25 5G",
+        "slug": "samsung-galaxy-a25-5g"
+    },
+    {
+        "id": 162,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy M55 5G Sạc 45W",
+        "slug": "samsung-galaxy-m55-5g-sac-45w"
+    },
+    {
+        "id": 163,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy Tab S10 Ultra 5G",
+        "slug": "samsung-galaxy-tab-s10-ultra-5g"
+    },
+    {
+        "id": 164,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy Tab S10 Plus 5G",
+        "slug": "samsung-galaxy-tab-s10-plus-5g"
+    },
+    {
+        "id": 165,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy Tab S9 FE Plus",
+        "slug": "samsung-galaxy-tab-s9-fe-plus"
+    },
+    {
+        "id": 166,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy Tab S9 FE",
+        "slug": "samsung-galaxy-tab-s9-fe"
+    },
+    {
+        "id": 167,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy Tab A9 Plus Wi-Fi",
+        "slug": "samsung-galaxy-tab-a9-plus-wi-fi"
+    },
+    {
+        "id": 168,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy Book4 Pro 14 AMOLED",
+        "slug": "samsung-galaxy-book4-pro-14-amoled"
+    },
+    {
+        "id": 169,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy Book4 Pro 360 16",
+        "slug": "samsung-galaxy-book4-pro-360-16"
+    },
+    {
+        "id": 170,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy Book4 Edge Snapdragon",
+        "slug": "samsung-galaxy-book4-edge-snapdragon"
+    },
+    {
+        "id": 171,
+        "brand": "Samsung",
+        "name": "Samsung Galaxy Book4 Ultra RTX 4070",
+        "slug": "samsung-galaxy-book4-ultra-rtx-4070"
+    },
+    {
+        "id": 172,
+        "brand": "Samsung",
+        "name": "Tai nghe Samsung Galaxy Buds3 Pro",
+        "slug": "tai-nghe-samsung-galaxy-buds3-pro"
+    },
+    {
+        "id": 173,
+        "brand": "Samsung",
+        "name": "Tai nghe Samsung Galaxy Buds3",
+        "slug": "tai-nghe-samsung-galaxy-buds3"
+    },
+    {
+        "id": 174,
+        "brand": "Samsung",
+        "name": "Tai nghe Samsung Galaxy Buds FE",
+        "slug": "tai-nghe-samsung-galaxy-buds-fe"
+    },
+    {
+        "id": 175,
+        "brand": "Samsung",
+        "name": "Loa thanh Samsung Soundbar HW-Q990D",
+        "slug": "loa-thanh-samsung-soundbar-hw-q990d"
+    },
+    {
+        "id": 176,
+        "brand": "Xiaomi",
+        "name": "Xiaomi 14 Ultra 5G Leica Camera",
+        "slug": "xiaomi-14-ultra-5g-leica-camera"
+    },
+    {
+        "id": 177,
+        "brand": "Xiaomi",
+        "name": "Xiaomi 14 5G Nhỏ Gọn Leica",
+        "slug": "xiaomi-14-5g-nho-gon-leica"
+    },
+    {
+        "id": 178,
+        "brand": "Xiaomi",
+        "name": "Xiaomi 14T Pro 5G Sạc Nhanh 120W",
+        "slug": "xiaomi-14t-pro-5g-sac-nhanh-120w"
+    },
+    {
+        "id": 179,
+        "brand": "Xiaomi",
+        "name": "Xiaomi 14T 5G Leica Summilux",
+        "slug": "xiaomi-14t-5g-leica-summilux"
+    },
+    {
+        "id": 180,
+        "brand": "Xiaomi",
+        "name": "Xiaomi MIX Flip 5G Gập Màn Hình Ngoài 4 inch",
+        "slug": "xiaomi-mix-flip-5g-gap-man-hinh-ngoai-4-inch"
+    },
+    {
+        "id": 181,
+        "brand": "Xiaomi",
+        "name": "Xiaomi 13T Pro 5G",
+        "slug": "xiaomi-13t-pro-5g"
+    },
+    {
+        "id": 182,
+        "brand": "Xiaomi",
+        "name": "Xiaomi Redmi Note 13 Pro+ 5G Camera 200MP",
+        "slug": "xiaomi-redmi-note-13-pro-5g-camera-200mp"
+    },
+    {
+        "id": 183,
+        "brand": "Xiaomi",
+        "name": "Xiaomi Redmi Note 13 Pro 5G",
+        "slug": "xiaomi-redmi-note-13-pro-5g"
+    },
+    {
+        "id": 184,
+        "brand": "Xiaomi",
+        "name": "Xiaomi Redmi Note 13 4G",
+        "slug": "xiaomi-redmi-note-13-4g"
+    },
+    {
+        "id": 185,
+        "brand": "Xiaomi",
+        "name": "Xiaomi Redmi 14C Giá Rẻ Pin Khủng",
+        "slug": "xiaomi-redmi-14c-gia-re-pin-khung"
+    },
+    {
+        "id": 186,
+        "brand": "Xiaomi",
+        "name": "POCO F6 Pro 5G Snapdragon 8 Gen 2",
+        "slug": "poco-f6-pro-5g-snapdragon-8-gen-2"
+    },
+    {
+        "id": 187,
+        "brand": "Xiaomi",
+        "name": "POCO F6 5G Snapdragon 8s Gen 3",
+        "slug": "poco-f6-5g-snapdragon-8s-gen-3"
+    },
+    {
+        "id": 188,
+        "brand": "Xiaomi",
+        "name": "POCO X6 Pro 5G Gaming Tầm Trung",
+        "slug": "poco-x6-pro-5g-gaming-tam-trung"
+    },
+    {
+        "id": 189,
+        "brand": "Xiaomi",
+        "name": "Xiaomi Pad 6S Pro 12.4 inch 144Hz",
+        "slug": "xiaomi-pad-6s-pro-124-inch-144hz"
+    },
+    {
+        "id": 190,
+        "brand": "Xiaomi",
+        "name": "Xiaomi Pad 6 11 inch WQHD+",
+        "slug": "xiaomi-pad-6-11-inch-wqhd"
+    },
+    {
+        "id": 191,
+        "brand": "Xiaomi",
+        "name": "Redmi Pad Pro 12.1 inch Pin 10000mAh",
+        "slug": "redmi-pad-pro-121-inch-pin-10000mah"
+    },
+    {
+        "id": 192,
+        "brand": "Xiaomi",
+        "name": "Redmi Pad SE 11 inch",
+        "slug": "redmi-pad-se-11-inch"
+    },
+    {
+        "id": 193,
+        "brand": "Xiaomi",
+        "name": "Redmi Pad SE 8.7 inch Nhỏ Gọn",
+        "slug": "redmi-pad-se-87-inch-nho-gon"
+    },
+    {
+        "id": 194,
+        "brand": "Xiaomi",
+        "name": "Xiaomi Redmi Book Pro 14 2024",
+        "slug": "xiaomi-redmi-book-pro-14-2024"
+    },
+    {
+        "id": 195,
+        "brand": "Xiaomi",
+        "name": "Xiaomi Redmi Book Pro 16 2024 Pin 99Wh",
+        "slug": "xiaomi-redmi-book-pro-16-2024-pin-99wh"
+    },
+    {
+        "id": 196,
+        "brand": "Xiaomi",
+        "name": "Xiaomi Redmi G Pro 2024 Gaming RTX 4060",
+        "slug": "xiaomi-redmi-g-pro-2024-gaming-rtx-4060"
+    },
+    {
+        "id": 197,
+        "brand": "Xiaomi",
+        "name": "Tai nghe Xiaomi Buds 5 Chống Ồn",
+        "slug": "tai-nghe-xiaomi-buds-5-chong-on"
+    },
+    {
+        "id": 198,
+        "brand": "Xiaomi",
+        "name": "Tai nghe Redmi Buds 5 Pro",
+        "slug": "tai-nghe-redmi-buds-5-pro"
+    },
+    {
+        "id": 199,
+        "brand": "Xiaomi",
+        "name": "Loa Bluetooth Xiaomi Sound Outdoor",
+        "slug": "loa-bluetooth-xiaomi-sound-outdoor"
+    },
+    {
+        "id": 200,
+        "brand": "Xiaomi",
+        "name": "Chuột không dây Xiaomi Wireless Mouse 3",
+        "slug": "chuot-khong-day-xiaomi-wireless-mouse-3"
+    },
+    {
+        "id": 201,
+        "brand": "Sony",
+        "name": "Tai nghe chống ồn Sony WH-1000XM5",
+        "slug": "tai-nghe-chong-on-sony-wh-1000xm5"
+    },
+    {
+        "id": 202,
+        "brand": "Sony",
+        "name": "Tai nghe chống ồn Sony WH-1000XM4",
+        "slug": "tai-nghe-chong-on-sony-wh-1000xm4"
+    },
+    {
+        "id": 203,
+        "brand": "Sony",
+        "name": "Tai nghe Sony ULT WEAR Bass Mạnh",
+        "slug": "tai-nghe-sony-ult-wear-bass-manh"
+    },
+    {
+        "id": 204,
+        "brand": "Sony",
+        "name": "Tai nghe chụp tai Sony WH-CH720N",
+        "slug": "tai-nghe-chup-tai-sony-wh-ch720n"
+    },
+    {
+        "id": 205,
+        "brand": "Sony",
+        "name": "Tai nghe chụp tai Sony WH-CH520",
+        "slug": "tai-nghe-chup-tai-sony-wh-ch520"
+    },
+    {
+        "id": 206,
+        "brand": "Sony",
+        "name": "Tai nghe True Wireless Sony WF-1000XM5",
+        "slug": "tai-nghe-true-wireless-sony-wf-1000xm5"
+    },
+    {
+        "id": 207,
+        "brand": "Sony",
+        "name": "Tai nghe Sony LinkBuds Fit Chống Ồn",
+        "slug": "tai-nghe-sony-linkbuds-fit-chong-on"
+    },
+    {
+        "id": 208,
+        "brand": "Sony",
+        "name": "Tai nghe Sony LinkBuds Open",
+        "slug": "tai-nghe-sony-linkbuds-open"
+    },
+    {
+        "id": 209,
+        "brand": "Sony",
+        "name": "Tai nghe không dây Sony WF-C700N",
+        "slug": "tai-nghe-khong-day-sony-wf-c700n"
+    },
+    {
+        "id": 210,
+        "brand": "Sony",
+        "name": "Tai nghe không dây Sony WF-C510",
+        "slug": "tai-nghe-khong-day-sony-wf-c510"
+    },
+    {
+        "id": 211,
+        "brand": "Sony",
+        "name": "Tai nghe Gaming Sony INZONE H9 Wireless",
+        "slug": "tai-nghe-gaming-sony-inzone-h9-wireless"
+    },
+    {
+        "id": 212,
+        "brand": "Sony",
+        "name": "Tai nghe Gaming Sony INZONE Buds",
+        "slug": "tai-nghe-gaming-sony-inzone-buds"
+    },
+    {
+        "id": 213,
+        "brand": "Sony",
+        "name": "Loa Bluetooth Di Động Sony ULT Field 7",
+        "slug": "loa-bluetooth-di-dong-sony-ult-field-7"
+    },
+    {
+        "id": 214,
+        "brand": "Sony",
+        "name": "Loa Bluetooth Di Động Sony ULT Field 1",
+        "slug": "loa-bluetooth-di-dong-sony-ult-field-1"
+    },
+    {
+        "id": 215,
+        "brand": "Sony",
+        "name": "Loa Tiệc Tùng Sony ULT Tower 10",
+        "slug": "loa-tiec-tung-sony-ult-tower-10"
+    },
+    {
+        "id": 216,
+        "brand": "Sony",
+        "name": "Loa Bluetooth Sony SRS-XV800",
+        "slug": "loa-bluetooth-sony-srs-xv800"
+    },
+    {
+        "id": 217,
+        "brand": "Sony",
+        "name": "Loa Bluetooth Sony SRS-XV500",
+        "slug": "loa-bluetooth-sony-srs-xv500"
+    },
+    {
+        "id": 218,
+        "brand": "Sony",
+        "name": "Loa Di Động Mini Sony SRS-XB100",
+        "slug": "loa-di-dong-mini-sony-srs-xb100"
+    },
+    {
+        "id": 219,
+        "brand": "Sony",
+        "name": "Loa thanh Sony Bravia Theatre Bar 9",
+        "slug": "loa-thanh-sony-bravia-theatre-bar-9"
+    },
+    {
+        "id": 220,
+        "brand": "Sony",
+        "name": "Loa thanh Sony Bravia Theatre Bar 8",
+        "slug": "loa-thanh-sony-bravia-theatre-bar-8"
+    },
+    {
+        "id": 221,
+        "brand": "Sony",
+        "name": "Điện thoại Sony Xperia 1 VI 5G",
+        "slug": "dien-thoai-sony-xperia-1-vi-5g"
+    },
+    {
+        "id": 222,
+        "brand": "Sony",
+        "name": "Điện thoại Sony Xperia 10 VI 5G",
+        "slug": "dien-thoai-sony-xperia-10-vi-5g"
+    },
+    {
+        "id": 223,
+        "brand": "Sony",
+        "name": "Máy nghe nhạc Hi-Res Sony Walkman NW-A306",
+        "slug": "may-nghe-nhac-hi-res-sony-walkman-nw-a306"
+    },
+    {
+        "id": 224,
+        "brand": "Sony",
+        "name": "Máy nghe nhạc Hi-Res Sony Walkman NW-ZX707",
+        "slug": "may-nghe-nhac-hi-res-sony-walkman-nw-zx707"
+    },
+    {
+        "id": 225,
+        "brand": "Sony",
+        "name": "Loa cổ không dây Sony HT-AN7 Bravia Theatre U",
+        "slug": "loa-co-khong-day-sony-ht-an7-bravia-theatre-u"
+    },
+    {
+        "id": 226,
+        "brand": "Logitech",
+        "name": "Chuột không dây Logitech MX Master 3S",
+        "slug": "chuot-khong-day-logitech-mx-master-3s"
+    },
+    {
+        "id": 227,
+        "brand": "Logitech",
+        "name": "Chuột không dây Logitech MX Anywhere 3S",
+        "slug": "chuot-khong-day-logitech-mx-anywhere-3s"
+    },
+    {
+        "id": 228,
+        "brand": "Logitech",
+        "name": "Chuột công thái học Logitech MX Vertical",
+        "slug": "chuot-cong-thai-hoc-logitech-mx-vertical"
+    },
+    {
+        "id": 229,
+        "brand": "Logitech",
+        "name": "Chuột công thái học Logitech Lift Vertical",
+        "slug": "chuot-cong-thai-hoc-logitech-lift-vertical"
+    },
+    {
+        "id": 230,
+        "brand": "Logitech",
+        "name": "Chuột không dây Logitech M650 Signature",
+        "slug": "chuot-khong-day-logitech-m650-signature"
+    },
+    {
+        "id": 231,
+        "brand": "Logitech",
+        "name": "Chuột không dây Logitech Pebble Mouse 2 M350s",
+        "slug": "chuot-khong-day-logitech-pebble-mouse-2-m350s"
+    },
+    {
+        "id": 232,
+        "brand": "Logitech",
+        "name": "Bàn phím không dây Logitech MX Keys S",
+        "slug": "ban-phim-khong-day-logitech-mx-keys-s"
+    },
+    {
+        "id": 233,
+        "brand": "Logitech",
+        "name": "Bàn phím không dây Logitech MX Keys Mini",
+        "slug": "ban-phim-khong-day-logitech-mx-keys-mini"
+    },
+    {
+        "id": 234,
+        "brand": "Logitech",
+        "name": "Bàn phím cơ không dây Logitech MX Mechanical",
+        "slug": "ban-phim-co-khong-day-logitech-mx-mechanical"
+    },
+    {
+        "id": 235,
+        "brand": "Logitech",
+        "name": "Bàn phím cơ không dây Logitech MX Mechanical Mini",
+        "slug": "ban-phim-co-khong-day-logitech-mx-mechanical-mini"
+    },
+    {
+        "id": 236,
+        "brand": "Logitech",
+        "name": "Bàn phím không dây Logitech Pebble Keys 2 K380s",
+        "slug": "ban-phim-khong-day-logitech-pebble-keys-2-k380s"
+    },
+    {
+        "id": 237,
+        "brand": "Logitech",
+        "name": "Bàn phím công thái học Logitech Wave Keys",
+        "slug": "ban-phim-cong-thai-hoc-logitech-wave-keys"
+    },
+    {
+        "id": 238,
+        "brand": "Logitech",
+        "name": "Combo Bàn phím & Chuột Logitech MK850 Performance",
+        "slug": "combo-ban-phim-chuot-logitech-mk850-performance"
+    },
+    {
+        "id": 239,
+        "brand": "Logitech",
+        "name": "Chuột Gaming Logitech G Pro X Superlight 2",
+        "slug": "chuot-gaming-logitech-g-pro-x-superlight-2"
+    },
+    {
+        "id": 240,
+        "brand": "Logitech",
+        "name": "Chuột Gaming Logitech G Pro X Superlight 2 DEX",
+        "slug": "chuot-gaming-logitech-g-pro-x-superlight-2-dex"
+    },
+    {
+        "id": 241,
+        "brand": "Logitech",
+        "name": "Chuột Gaming Logitech G502 X Plus Lightspeed",
+        "slug": "chuot-gaming-logitech-g502-x-plus-lightspeed"
+    },
+    {
+        "id": 242,
+        "brand": "Logitech",
+        "name": "Chuột Gaming Logitech G502 X Lightspeed",
+        "slug": "chuot-gaming-logitech-g502-x-lightspeed"
+    },
+    {
+        "id": 243,
+        "brand": "Logitech",
+        "name": "Chuột Gaming Logitech G309 Lightspeed",
+        "slug": "chuot-gaming-logitech-g309-lightspeed"
+    },
+    {
+        "id": 244,
+        "brand": "Logitech",
+        "name": "Chuột Gaming Logitech G304 Lightspeed",
+        "slug": "chuot-gaming-logitech-g304-lightspeed"
+    },
+    {
+        "id": 245,
+        "brand": "Logitech",
+        "name": "Bàn phím cơ Gaming Logitech G Pro X TKL Lightspeed",
+        "slug": "ban-phim-co-gaming-logitech-g-pro-x-tkl-lightspeed"
+    },
+    {
+        "id": 246,
+        "brand": "Logitech",
+        "name": "Bàn phím cơ Gaming Logitech G Pro X 60 Lightspeed",
+        "slug": "ban-phim-co-gaming-logitech-g-pro-x-60-lightspeed"
+    },
+    {
+        "id": 247,
+        "brand": "Logitech",
+        "name": "Bàn phím cơ Gaming Logitech G915 X Lightspeed",
+        "slug": "ban-phim-co-gaming-logitech-g915-x-lightspeed"
+    },
+    {
+        "id": 248,
+        "brand": "Logitech",
+        "name": "Bàn phím cơ Gaming Logitech G515 Lightspeed TKL",
+        "slug": "ban-phim-co-gaming-logitech-g515-lightspeed-tkl"
+    },
+    {
+        "id": 249,
+        "brand": "Logitech",
+        "name": "Tai nghe Gaming Không Dây Logitech G Pro X 2 Lightspeed",
+        "slug": "tai-nghe-gaming-khong-day-logitech-g-pro-x-2-lightspeed"
+    },
+    {
+        "id": 250,
+        "brand": "Logitech",
+        "name": "Tai nghe Gaming Logitech Astro A50 X Wireless",
+        "slug": "tai-nghe-gaming-logitech-astro-a50-x-wireless"
+    }
+]

@@ -124,13 +124,22 @@
                             </a>
                         @endif
 
-                        @if(auth()->user()->hasPermission('manage_orders') || auth()->user()->hasPermission('view_inventory'))
-                            <a href="#orders" class="flex items-center justify-between px-3 py-2 rounded-md text-xs text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900/60 transition-colors">
+                        @if(auth()->user()->hasPermission('manage_orders') || auth()->user()->hasPermission('view_inventory') || auth()->user()->isStaff())
+                            <a href="{{ route('admin.orders.index') }}" class="flex items-center justify-between px-3 py-2 rounded-md text-xs text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900/60 transition-colors {{ request()->routeIs('admin.orders.*') ? 'bg-zinc-800/90 text-white font-semibold border-l-2 border-emerald-500' : '' }}">
                                 <div class="flex items-center gap-2.5">
                                     <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
                                     </svg>
-                                    <span>Đơn hàng &amp; Kho</span>
+                                    <span>Đơn hàng &amp; Giao vận</span>
+                                </div>
+                                <span class="text-[9px] font-mono text-zinc-400 border border-zinc-800 px-1 rounded">P4</span>
+                            </a>
+                            <a href="{{ route('admin.inventory.low-stock') }}" class="flex items-center justify-between px-3 py-2 rounded-md text-xs text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900/60 transition-colors {{ request()->routeIs('admin.inventory.*') ? 'bg-zinc-800/90 text-white font-semibold border-l-2 border-amber-500' : '' }}">
+                                <div class="flex items-center gap-2.5">
+                                    <svg class="w-4 h-4 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                                    </svg>
+                                    <span>Cảnh báo tồn kho</span>
                                 </div>
                                 <span class="text-[9px] font-mono text-zinc-400 border border-zinc-800 px-1 rounded">P4</span>
                             </a>
@@ -263,7 +272,11 @@
 
         <!-- Main Workspace Body -->
         <main class="flex-1 p-4 sm:p-6 lg:p-8">
-            @yield('content')
+            @hasSection('admin-content')
+                @yield('admin-content')
+            @else
+                @yield('content')
+            @endif
         </main>
 
         <!-- Subdued Terminal Footer -->

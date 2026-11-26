@@ -23,6 +23,10 @@ class UserAddress extends Model
         'is_default',
     ];
 
+    protected $appends = [
+        'full_address',
+    ];
+
     protected function casts(): array
     {
         return [
