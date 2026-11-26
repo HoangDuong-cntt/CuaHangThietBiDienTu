@@ -1,16 +1,5 @@
 <?php
 
-use App\Http\Controllers\CatalogController;
-use App\Http\Controllers\ProductComparisonController;
-use Illuminate\Support\Facades\Route;
-
-Route::get('/', [CatalogController::class, 'home'])->name('home');
-
-// Trang Cửa Hàng & Bộ Lọc Nâng Cao
-Route::get('/shop', [CatalogController::class, 'index'])->name('shop.index');
-
-// Trang So Sánh Đối Chiếu Sản Phẩm
-Route::get('/compare', [ProductComparisonController::class, 'index'])->name('compare.index');
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\RolePermissionController;
 use App\Http\Controllers\Admin\StaffController;
@@ -19,8 +8,10 @@ use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\Customer\AddressController;
 use App\Http\Controllers\Customer\ProfileController;
+use App\Http\Controllers\ProductComparisonController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -31,10 +22,14 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-// Trang chủ tạm thời
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+// Trang Chủ
+Route::get('/', [CatalogController::class, 'home'])->name('home');
+
+// Trang Cửa Hàng & Bộ Lọc Nâng Cao
+Route::get('/shop', [CatalogController::class, 'index'])->name('shop.index');
+
+// Trang So Sánh Đối Chiếu Sản Phẩm
+Route::get('/compare', [ProductComparisonController::class, 'index'])->name('compare.index');
 
 // =========================================================================
 // PHÂN HỆ XÁC THỰC (GUEST ONLY)
