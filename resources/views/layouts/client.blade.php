@@ -106,8 +106,9 @@
                     </button>
 
                     <!-- Cart button -->
-                    <a href="{{ route('shop.index') }}" class="p-2 text-slate-600 hover:text-blue-600 hover:bg-slate-100 rounded-full transition-colors relative" title="Cửa hàng">
-                        <i class="fa-solid fa-bag-shopping text-base"></i>
+                    <a href="{{ route('cart.index') }}" class="p-2 text-slate-600 hover:text-blue-600 hover:bg-slate-100 rounded-full transition-colors relative" title="Giỏ hàng">
+                        <i class="fa-solid fa-cart-shopping text-base"></i>
+                        <span class="cart-badge absolute top-1 right-1 min-w-[14px] h-[14px] px-1 bg-blue-600 text-[9px] font-black text-white rounded-full flex items-center justify-center ring-2 ring-white" data-cart-count>{{ $cartCount ?? 0 }}</span>
                     </a>
                 </nav>
             </div>
