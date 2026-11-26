@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AiAssistantController;
+use App\Http\Controllers\Api\CouponApiController;
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\ProductComparisonController;
 use Illuminate\Http\Request;
@@ -32,4 +33,7 @@ Route::middleware(['web'])->group(function () {
     Route::post('/wishlist/toggle', [CatalogController::class, 'toggleWishlist']);
     Route::post('/recently-viewed/record', [CatalogController::class, 'recordRecentlyViewed']);
     Route::get('/recently-viewed', [CatalogController::class, 'getRecentlyViewed']);
+
+    // Động cơ Khuyến mãi (Voucher / Coupon API cho Giỏ hàng & Checkout)
+    Route::post('/coupons/apply', [CouponApiController::class, 'apply'])->name('api.coupons.apply');
 });
