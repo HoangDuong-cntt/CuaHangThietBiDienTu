@@ -1,6 +1,6 @@
 @extends('layouts.client')
 
-@section('title', 'SmartTech - Thiết bị công nghệ')
+@section('title', 'D&D. - Thiết bị công nghệ chính hãng')
 
 @section('content')
     <section class="home-hero">

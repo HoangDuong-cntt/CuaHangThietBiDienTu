@@ -1,6 +1,6 @@
 @extends('layouts.client')
 
-@section('title', 'So Sánh Thông Số Đối Chiếu Thiết Bị - SmartTech')
+@section('title', 'So Sánh Thông Số Đối Chiếu Thiết Bị - D&D.')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -35,13 +35,13 @@
                 <button 
                     type="button"
                     onclick="openCompareModal()"
-                    class="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-xs font-bold rounded-xl shadow-xs transition-all flex items-center gap-1.5"
+                    class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-full shadow-xs transition-all flex items-center gap-1.5 cursor-pointer"
                 >
                     <i class="fa-solid fa-plus text-xs"></i>
                     <span>Thêm thiết bị so sánh</span>
                 </button>
                 @endif
-                <a href="{{ route('shop.index') }}" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl transition-colors">
+                <a href="{{ route('shop.index') }}" class="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-full transition-colors">
                     Xem Cửa hàng
                 </a>
             </div>
@@ -50,7 +50,7 @@
 
     @if(empty($products))
         <div class="bg-white rounded-3xl p-12 text-center border border-slate-200 shadow-xs max-w-2xl mx-auto my-8">
-            <div class="w-20 h-20 rounded-3xl bg-indigo-50 text-indigo-500 flex items-center justify-center text-3xl mx-auto mb-5 shadow-xs border border-indigo-100">
+            <div class="w-20 h-20 rounded-3xl bg-blue-50 text-blue-600 flex items-center justify-center text-3xl mx-auto mb-5 shadow-xs border border-blue-100">
                 <i class="fa-solid fa-scale-unbalanced-flip"></i>
             </div>
             <h3 class="text-lg font-extrabold text-slate-800 mb-2">Bảng so sánh đang trống</h3>
@@ -61,16 +61,16 @@
                 <button 
                     type="button" 
                     onclick="openCompareModal()" 
-                    class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white text-xs font-bold transition-all shadow-xs flex items-center gap-2 cursor-pointer"
+                    class="px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-all shadow-xs flex items-center gap-2 cursor-pointer"
                 >
                     <i class="fa-solid fa-plus text-xs"></i>
                     <span>Thêm thiết bị so sánh</span>
                 </button>
-                <a href="{{ route('shop.index') }}" class="px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-colors inline-flex items-center gap-2">
+                <a href="{{ route('shop.index') }}" class="px-6 py-2.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition-colors inline-flex items-center gap-2">
                     <i class="fa-solid fa-store text-xs text-slate-400"></i>
                     <span>Xem Cửa hàng</span>
                 </a>
-                <a href="{{ route('compare.index') }}" class="px-5 py-2.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-bold transition-colors inline-flex items-center gap-2">
+                <a href="{{ route('compare.index') }}" class="px-6 py-2.5 rounded-full bg-blue-50 hover:bg-blue-100 text-blue-700 text-xs font-bold transition-colors inline-flex items-center gap-2">
                     <i class="fa-solid fa-rotate-left text-xs text-blue-500"></i>
                     <span>So sánh mẫu mặc định</span>
                 </a>
@@ -120,15 +120,15 @@
 
                                 <!-- Product Info -->
                                 <a href="{{ route('products.show', $product['slug']) }}" class="block group/link">
-                                    <div class="w-28 h-28 mx-auto rounded-2xl bg-white p-2 border border-slate-200/80 flex items-center justify-center mb-3 overflow-hidden shadow-2xs group-hover/link:border-blue-400 transition-colors">
-                                        <img src="{{ $product['image_url'] }}" alt="{{ $product['name'] }}" class="max-h-full max-w-full object-contain group-hover/link:scale-105 transition-transform" onerror="this.src='/images/placeholder.svg'">
+                                    <div class="w-32 h-24 mx-auto rounded-2xl bg-[#F1F5F9] flex items-center justify-center mb-3 overflow-hidden shadow-2xs group-hover/link:ring-2 group-hover/link:ring-blue-500/30 transition-all">
+                                        <img src="{{ $product['image_url'] }}" alt="{{ $product['name'] }}" class="w-full h-full object-cover group-hover/link:scale-105 transition-transform" onerror="this.src='/images/placeholder.svg'">
                                     </div>
                                     <div class="text-[10px] font-extrabold text-blue-600 uppercase tracking-wider mb-1">{{ $product['brand'] }}</div>
                                     <h3 class="font-bold text-slate-900 text-sm leading-snug line-clamp-2 mb-2 group-hover/link:text-blue-600 transition-colors">{{ $product['name'] }}</h3>
                                 </a>
                                 
                                 <div class="mb-3">
-                                    <div class="text-base font-extrabold text-red-600">
+                                    <div class="text-base font-black text-slate-900">
                                         {{ number_format($product['current_price'], 0, ',', '.') }} đ
                                     </div>
                                     @if($product['is_on_sale'])
@@ -141,7 +141,7 @@
                                 <button 
                                     type="button" 
                                     onclick="window.SmartTechAI && window.SmartTechAI.setProductContext({{ $product['id'] }}); window.SmartTechAI && window.SmartTechAI.openChat();"
-                                    class="w-full py-1.5 px-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold text-xs shadow-xs transition-all flex items-center justify-center gap-1.5"
+                                    class="w-full py-2 px-4 rounded-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold text-xs shadow-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer"
                                 >
                                     <i class="fa-solid fa-sparkles text-[11px]"></i>
                                     <span>Hỏi AI về máy này</span>

@@ -65,7 +65,7 @@
 </head>
 <body>
     <h1>HÓA ĐƠN BÁN HÀNG</h1>
-    <p class="muted">SmartTech · Thiết bị công nghệ chính hãng</p>
+    <p class="muted">D&D. · Thiết bị công nghệ chính hãng</p>
 
     <table class="details">
         <tr><td><strong>Mã đơn hàng</strong></td><td>{{ $order->order_code }}</td></tr>

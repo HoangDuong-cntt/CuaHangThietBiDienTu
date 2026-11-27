@@ -1,8 +1,9 @@
 @extends('layouts.client')
 
-@section('title', 'Kết quả thanh toán')
+@section('title', 'Kết quả thanh toán - D&D.')
 
 @section('content')
+<div class="max-w-xl mx-auto px-4 py-12">
     <section class="tracking-card card">
         <p class="eyebrow">KẾT QUẢ THANH TOÁN</p>
         <h1>{{ $isPaid ? 'Thanh toán thành công' : 'Chưa ghi nhận thanh toán thành công' }}</h1>
@@ -24,4 +25,5 @@
         @endif
         <a class="text-link" href="{{ route('orders.track.form') }}">Tra cứu đơn hàng</a>
     </section>
+</div>
 @endsection
