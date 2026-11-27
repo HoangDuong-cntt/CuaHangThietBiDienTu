@@ -58,7 +58,7 @@
                     <div class="relative mx-auto max-w-md">
                         <div class="rounded-2xl overflow-hidden bg-white/60 p-4 border border-white/80 shadow-md">
                             <img 
-                                src="/uploads/products/macbook-pro-14-inch-m4-pro-v1-main.jpg" 
+                                src="/storage/products/macbook-pro-14-inch-m4-pro-main.jpg" 
                                 alt="Laptop tinh tế" 
                                 class="w-full h-64 sm:h-72 object-contain"
                                 onerror="this.src='/images/placeholder.svg'"
@@ -466,7 +466,7 @@
             <a href="{{ route('shop.index') }}" class="rounded-2xl bg-white border border-slate-200/80 overflow-hidden shadow-2xs hover:shadow-md transition-all group block">
                 <div class="h-44 bg-[#f8fafc] overflow-hidden relative p-4 flex items-center justify-center">
                     <img 
-                        src="/uploads/products/macbook-air-13-inch-m4-2025-v1-main.jpg" 
+                        src="/storage/products/macbook-air-13-inch-m4-2025-main.jpg" 
                         alt="Góc làm việc" 
                         class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         onerror="this.src='/images/placeholder.svg'"
@@ -490,7 +490,7 @@
             <a href="{{ route('shop.index') }}" class="rounded-2xl bg-white border border-slate-200/80 overflow-hidden shadow-2xs hover:shadow-md transition-all group block">
                 <div class="h-44 bg-[#f8fafc] overflow-hidden relative p-4 flex items-center justify-center">
                     <img 
-                        src="/uploads/products/asus-expertbook-b9-oled-sieu-nhe-990g-main.jpg" 
+                        src="/storage/products/asus-expertbook-b9-oled-sieu-nhe-990g-main.jpg" 
                         alt="Chọn máy tính" 
                         class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         onerror="this.src='/images/placeholder.svg'"
@@ -514,7 +514,7 @@
             <a href="{{ route('shop.index') }}" class="rounded-2xl bg-white border border-slate-200/80 overflow-hidden shadow-2xs hover:shadow-md transition-all group block">
                 <div class="h-44 bg-[#f8fafc] overflow-hidden relative p-4 flex items-center justify-center">
                     <img 
-                        src="/uploads/products/airpods-max-usb-c-2024-main.jpg" 
+                        src="/storage/products/airpods-max-usb-c-2024-main.jpg" 
                         alt="Pin bền" 
                         class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         onerror="this.src='/images/placeholder.svg'"

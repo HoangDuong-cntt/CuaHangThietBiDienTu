@@ -127,7 +127,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         @forelse($products as $product)
             @php
-                $firstImg = $product->images->first()?->image_url ?? '/uploads/products/default.jpg';
+                $firstImg = $product->images->first()?->image_url ?? '/images/placeholder.svg';
                 $discountPercent = $product->base_price > $product->sale_price 
                     ? round((($product->base_price - $product->sale_price) / $product->base_price) * 100) 
                     : 0;

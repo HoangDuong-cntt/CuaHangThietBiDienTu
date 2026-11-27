@@ -49,7 +49,7 @@
                 <!-- Main Active Image -->
                 <div class="relative aspect-square flex items-center justify-center p-4 bg-slate-50/50 rounded-2xl overflow-hidden">
                     @php
-                        $defaultImg = $initialImages->first()?->image_url ?? '/uploads/products/default.jpg';
+                        $defaultImg = $initialImages->first()?->image_url ?? '/images/placeholder.svg';
                     @endphp
                     <img
                         id="mainProductImage"
@@ -412,7 +412,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 @foreach($relatedProducts as $rel)
                     @php
-                        $relImg = $rel->images->first()?->image_url ?? '/uploads/products/default.jpg';
+                        $relImg = $rel->images->first()?->image_url ?? '/images/placeholder.svg';
                     @endphp
                     <a href="{{ route('products.show', $rel->slug) }}" class="group bg-white rounded-2xl border border-slate-200/90 hover:border-blue-400 p-4 shadow-2xs hover:shadow-lg transition block">
                         <div class="aspect-square bg-slate-50 rounded-xl overflow-hidden p-4 mb-3">
