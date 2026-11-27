@@ -20,6 +20,14 @@
         </div>
     @endif
 
+    @if (session('status'))
+        <p class="flash-message" role="status">{{ session('status') }}</p>
+    @endif
+
+    @if (session('coupon_warning'))
+        <p class="form-errors" role="alert">{{ session('coupon_warning') }}</p>
+    @endif
+
     <div class="checkout-layout">
         <form class="card checkout-form" action="{{ route('checkout.store') }}" method="POST">
             @csrf
@@ -112,13 +120,40 @@
                 <span>Giao hàng · <span data-shipping-method-label>{{ $shippingMethods[$selectedShippingMethod]['label'] }}</span></span>
                 <strong data-shipping-fee>{{ number_format($shippingFee, 0, ',', '.') }} ₫</strong>
             </div>
+            @if ($coupon)
+                <div class="summary-line">
+                    <span>Giảm giá · {{ $coupon->code }}</span>
+                    <strong>-{{ number_format($coupon->discountAmount, 0, ',', '.') }} ₫</strong>
+                </div>
+            @endif
+            <form class="coupon-form" action="{{ route('checkout.coupon.apply') }}" method="POST">
+                @csrf
+                <label class="field-label" for="coupon_code">Mã voucher ưu đãi</label>
+                <div class="coupon-form-row">
+                    <input
+                        id="coupon_code"
+                        name="coupon_code"
+                        value="{{ old('coupon_code', $coupon?->code ?? '') }}"
+                        autocomplete="off"
+                        placeholder="Nhập mã voucher"
+                        required
+                    >
+                    <button class="button button-secondary" type="submit">Áp dụng</button>
+                </div>
+                @if ($coupon)
+                    <p class="coupon-applied" role="status">{{ $coupon->message }}</p>
+                @endif
+            </form>
             <div class="summary-total">
                 <span>Tổng thanh toán</span>
-                <strong data-checkout-total data-subtotal="{{ (int) round($subtotal) }}">
-                    {{ number_format($subtotal + $shippingFee, 0, ',', '.') }} ₫
+                <strong
+                    data-checkout-total
+                    data-subtotal="{{ (int) round($subtotal) }}"
+                    data-discount="{{ (int) round($discountAmount) }}"
+                >
+                    {{ number_format($subtotal - $discountAmount + $shippingFee, 0, ',', '.') }} ₫
                 </strong>
             </div>
-            <p class="secure-note">Voucher sẽ được áp dụng sau khi tích hợp API mã giảm giá.</p>
         </aside>
     </div>
 </div>
