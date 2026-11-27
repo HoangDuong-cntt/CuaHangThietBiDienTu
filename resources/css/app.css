@@ -345,7 +345,7 @@ textarea {
     gap: 7px;
 }
 
-input,
+input:not([type="checkbox"]):not([type="radio"]),
 select,
 textarea {
     width: 100%;
@@ -357,7 +357,7 @@ textarea {
     color: #172033;
 }
 
-input:focus,
+input:not([type="checkbox"]):not([type="radio"]):focus,
 select:focus,
 textarea:focus {
     border-color: #527ee7;
