@@ -64,13 +64,13 @@
                     <div>
                         <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Danh Mục</h4>
                         <div class="space-y-1.5 max-h-48 overflow-y-auto pr-1 text-xs">
-                            <a href="{{ route('shop.index', array_merge(request()->except('category', 'page'))) }}" 
+                            <a href="{{ route('shop.index', array_merge(request()->except('category', 'page'))) }}"
                                class="flex items-center justify-between py-1.5 px-2.5 rounded-xl transition-colors {{ !request('category') ? 'bg-blue-50 text-blue-700 font-bold' : 'text-slate-600 hover:bg-slate-50' }}">
                                 <span>Tất cả danh mục</span>
                                 <span class="text-[10px] text-slate-400">{{ \App\Models\Product::where('is_active', true)->count() }}</span>
                             </a>
                             @foreach($categories as $cat)
-                            <a href="{{ route('shop.index', array_merge(request()->except('page'), ['category' => $cat->slug])) }}" 
+                            <a href="{{ route('shop.index', array_merge(request()->except('page'), ['category' => $cat->slug])) }}"
                                class="flex items-center justify-between py-1.5 px-2.5 rounded-xl transition-colors {{ request('category') === $cat->slug ? 'bg-blue-50 text-blue-700 font-bold' : 'text-slate-600 hover:bg-slate-50' }}">
                                 <span>{{ $cat->name }}</span>
                                 <span class="text-[10px] text-slate-400">{{ $cat->products_count }}</span>
@@ -89,9 +89,9 @@
                             @foreach($brands as $brand)
                             <label class="flex items-center justify-between cursor-pointer group hover:text-blue-600">
                                 <div class="flex items-center gap-2">
-                                    <input 
-                                        type="checkbox" 
-                                        name="brands[]" 
+                                    <input
+                                        type="checkbox"
+                                        name="brands[]"
                                         value="{{ $brand->id }}"
                                         {{ in_array($brand->id, $selectedBrands) ? 'checked' : '' }}
                                         onchange="document.getElementById('filter-form').submit()"
@@ -111,9 +111,9 @@
                         <div class="grid grid-cols-2 gap-2 text-xs mb-2.5">
                             <div>
                                 <label class="text-[10px] text-slate-400 block mb-1">Từ (triệu):</label>
-                                <input 
-                                    type="number" 
-                                    name="min_price" 
+                                <input
+                                    type="number"
+                                    name="min_price"
                                     value="{{ request('min_price') }}"
                                     placeholder="0"
                                     class="w-full px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs focus:border-blue-500 focus:outline-hidden"
@@ -121,9 +121,9 @@
                             </div>
                             <div>
                                 <label class="text-[10px] text-slate-400 block mb-1">Đến (triệu):</label>
-                                <input 
-                                    type="number" 
-                                    name="max_price" 
+                                <input
+                                    type="number"
+                                    name="max_price"
                                     value="{{ request('max_price') }}"
                                     placeholder="100"
                                     class="w-full px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs focus:border-blue-500 focus:outline-hidden"
@@ -250,7 +250,7 @@
                 <!-- Sorting Dropdown -->
                 <div class="flex items-center gap-2 text-xs">
                     <label class="text-slate-400 font-medium shrink-0">Sắp xếp theo:</label>
-                    <select 
+                    <select
                         id="sort-select"
                         onchange="handleSortChange(this.value)"
                         class="px-3 py-1.5 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 text-slate-700 text-xs font-semibold focus:outline-hidden focus:border-blue-500 cursor-pointer shadow-2xs"

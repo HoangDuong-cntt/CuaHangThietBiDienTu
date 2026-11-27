@@ -121,8 +121,11 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile/addresses/{id}/default', [AddressController::class, 'setDefault'])->name('addresses.default');
     Route::post('/profile/addresses/normalize-34', [AddressController::class, 'normalizeAllTo34'])->name('addresses.normalize-34');
 
-    // API Sổ địa chỉ (Cung cấp cho Thành viên 4 chọn nhanh khi Checkout)
+    // API Sổ địa chỉ (Cung cấp cho Thành viên 4 chọn nhanh khi Checkout & Đồng bộ 34 tỉnh)
     Route::get('/api/user/addresses', [AddressController::class, 'apiList'])->name('api.user.addresses');
+    Route::get('/api/user/addresses/preview-sync', [AddressController::class, 'previewSync'])->name('api.user.addresses.preview-sync');
+    Route::post('/api/user/addresses/convert', [AddressController::class, 'convert'])->name('api.user.addresses.convert');
+    Route::post('/api/user/addresses/parse-convert', [AddressController::class, 'parseConvert'])->name('api.user.addresses.parse-convert');
 });
 
 // =========================================================================
