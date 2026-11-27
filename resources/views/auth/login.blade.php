@@ -5,8 +5,8 @@
     <div class="w-full max-w-[420px]">
 
         <!-- Compact Card -->
-        <div class="bg-white rounded-3xl border border-slate-200/80 p-6 sm:p-8 shadow-sm">
-            
+        <div class="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-sm">
+
             <!-- Brand & Title -->
             <div class="text-center mb-6">
                 <a href="{{ route('home') }}" class="inline-flex items-center gap-1 group mb-2">
@@ -37,8 +37,8 @@
 
             <!-- Google OAuth Button -->
             <div class="mb-4">
-                <a href="{{ route('login.google') }}" 
-                   class="w-full flex items-center justify-center gap-2.5 px-4 py-2.5 rounded-full border border-slate-200 bg-white hover:bg-slate-50 text-xs font-semibold text-slate-700 shadow-2xs hover:border-slate-300 transition-all active:scale-[0.99]">
+                <a href="{{ route('login.google') }}"
+                   class="w-full flex items-center justify-center gap-2.5 px-4 py-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-semibold text-slate-700 shadow-2xs hover:border-slate-300 transition-all active:scale-[0.99]">
                     <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24">
                         <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                         <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -66,11 +66,11 @@
                     <label for="email" class="block text-[11px] font-bold text-slate-700 uppercase tracking-wider mb-1">
                         Địa chỉ Email
                     </label>
-                    <input type="email" 
-                           id="email" 
-                           name="email" 
-                           value="{{ old('email') }}" 
-                           required 
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           value="{{ old('email') }}"
+                           required
                            autofocus
                            autocomplete="email"
                            placeholder="name@email.com"
@@ -92,16 +92,16 @@
                         </a>
                     </div>
                     <div class="relative">
-                        <input type="password" 
-                               id="password" 
-                               name="password" 
-                               required 
+                        <input type="password"
+                               id="password"
+                               name="password"
+                               required
                                autocomplete="current-password"
                                placeholder="••••••••"
                                class="w-full pl-3.5 pr-10 py-2.5 rounded-xl border text-xs sm:text-sm bg-white hover:border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-500/10 outline-none transition-all placeholder:text-slate-400
                                       {{ $errors->has('password') ? 'border-rose-400 focus:border-rose-600 focus:ring-2 focus:ring-rose-500/10' : 'border-slate-200' }}">
-                        <button type="button" 
-                                onclick="togglePasswordVisibility('password', this)" 
+                        <button type="button"
+                                onclick="togglePasswordVisibility('password', this)"
                                 class="absolute inset-y-0 right-0 flex items-center pr-3 text-slate-400 hover:text-slate-600 transition-colors cursor-pointer"
                                 title="Ẩn/Hiện mật khẩu">
                             <i class="fa-regular fa-eye text-xs"></i>
@@ -115,7 +115,7 @@
                 <!-- Remember Me -->
                 <div class="flex items-center justify-between pt-0.5">
                     <label class="flex items-center gap-2 cursor-pointer select-none">
-                        <input type="checkbox" name="remember" class="w-3.5 h-3.5 rounded border-slate-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
+                        <input type="checkbox" name="remember" class="w-4 h-4 rounded border-slate-300 text-blue-600 focus:ring-blue-500 cursor-pointer">
                         <span class="text-xs text-slate-600">Ghi nhớ đăng nhập</span>
                     </label>
                 </div>
@@ -129,7 +129,7 @@
             <!-- Bottom Footnote -->
             <div class="mt-6 pt-4 border-t border-slate-100 text-center">
                 <p class="text-xs text-slate-500">
-                    Chưa có tài khoản? 
+                    Chưa có tài khoản?
                     <a href="{{ route('register') }}" class="font-bold text-blue-600 hover:text-blue-700 hover:underline">
                         Đăng ký ngay
                     </a>

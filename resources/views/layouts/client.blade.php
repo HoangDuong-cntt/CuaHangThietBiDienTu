@@ -47,25 +47,33 @@
                     <span class="text-2xl font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">D&D<span class="text-blue-600 font-extrabold text-3xl leading-none">.</span></span>
                 </a>
 
-                <!-- Search Bar with Live Autocomplete & ⌘K Shortcut -->
                 <div class="flex-1 max-w-xl relative" id="autocomplete-wrapper">
                     <form action="{{ route('shop.index') }}" method="GET" class="relative">
                         <div class="relative flex items-center">
-                            <i class="fa-solid fa-magnifying-glass absolute left-3.5 text-slate-400 text-sm pointer-events-none"></i>
-                            <input 
-                                type="text" 
-                                name="q" 
-                                id="autocomplete-input"
-                                value="{{ request('q') }}"
-                                placeholder="Bạn đang tìm thiết bị nào?" 
-                                autocomplete="off"
-                                class="w-full pl-10 pr-4 sm:pr-12 py-2 text-sm bg-slate-100 hover:bg-slate-100/90 focus:bg-white text-slate-900 rounded-full border border-transparent focus:border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500/10 transition-all placeholder:text-slate-400"
-                            >
-                            <span class="hidden sm:inline-block absolute right-3 font-mono text-[10px] text-slate-400 border border-slate-200 bg-white px-1.5 py-0.5 rounded shadow-2xs select-none pointer-events-none">⌘K</span>
-                            <button type="button" id="clear-search-btn" class="hidden absolute right-3 sm:right-10 text-slate-400 hover:text-slate-600 text-xs">
-                                <i class="fa-solid fa-circle-xmark"></i>
-                            </button>
-                        </div>
+                                <input
+                                    type="text"
+                                    name="q"
+                                    id="autocomplete-input"
+                                    value="{{ request('q') }}"
+                                    placeholder="Bạn đang tìm thiết bị nào?"
+                                    autocomplete="off"
+                                    class="w-full pl-4 pr-16 py-2 text-sm bg-slate-100 hover:bg-slate-100/90 focus:bg-white text-slate-900
+                                    rounded-full border border-transparent focus:border-slate-300 focus:outline-hidden focus:ring-2
+                                    focus:ring-blue-500/10 transition-all placeholder:text-slate-400"
+                                >
+
+                                <!-- Nút xoá chữ -->
+                                <button type="button" id="clear-search-btn" class="hidden absolute right-10 text-slate-400
+                                hover:text-slate-600 text-xs">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                </button>
+
+                                <!-- Nút kính lúp có thể click để tìm kiếm -->
+                                <button type="submit" class="absolute right-3 text-slate-400 hover:text-blue-600 transition-colors p-1 flex
+                                items-center justify-center cursor-pointer">
+                                    <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                                </button>
+                            </div>
                     </form>
 
                     <!-- Autocomplete Dropdown Popup -->
@@ -99,8 +107,8 @@
                     <!-- Tài khoản Dropdown Menu -->
                     <div class="relative" id="user-menu-wrapper">
                         @guest
-                            <button 
-                                type="button" 
+                            <button
+                                type="button"
                                 id="user-menu-btn"
                                 onclick="toggleUserDropdown()" 
                                 class="px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:text-blue-600 rounded-full hover:bg-slate-100 transition-colors flex items-center gap-1.5 cursor-pointer"
@@ -130,10 +138,10 @@
                                 </a>
                             </div>
                         @else
-                            <button 
-                                type="button" 
+                            <button
+                                type="button"
                                 id="user-menu-btn"
-                                onclick="toggleUserDropdown()" 
+                                onclick="toggleUserDropdown()"
                                 class="px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:text-blue-600 rounded-lg hover:bg-slate-100 transition-colors flex items-center gap-1.5 cursor-pointer"
                             >
                                 @if(Auth::user()->avatar)
@@ -441,20 +449,20 @@
 
         <!-- Drawer Tabs -->
         <div class="flex p-2 bg-slate-100/80 border-b border-slate-200/60 text-xs font-semibold gap-1">
-            <button 
-                type="button" 
-                id="tab-btn-wishlist" 
-                onclick="switchWishlistTab('wishlist')" 
+            <button
+                type="button"
+                id="tab-btn-wishlist"
+                onclick="switchWishlistTab('wishlist')"
                 class="flex-1 py-2 px-3 rounded-xl bg-white text-slate-800 shadow-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer"
             >
                 <i class="fa-solid fa-heart text-red-500 text-xs"></i>
                 <span>Yêu thích</span>
                 <span id="drawer-wishlist-count" class="ml-1 px-1.5 py-0.2 bg-red-100 text-red-700 text-[10px] font-bold rounded-full">0</span>
             </button>
-            <button 
-                type="button" 
-                id="tab-btn-recent" 
-                onclick="switchWishlistTab('recent')" 
+            <button
+                type="button"
+                id="tab-btn-recent"
+                onclick="switchWishlistTab('recent')"
                 class="flex-1 py-2 px-3 rounded-xl text-slate-500 hover:text-slate-800 transition-all flex items-center justify-center gap-1.5 cursor-pointer"
             >
                 <i class="fa-solid fa-clock-rotate-left text-blue-500 text-xs"></i>
@@ -600,10 +608,10 @@
                                 </button>
                             </div>
                         </div>
-                        <button 
-                            type="button" 
-                            onclick="removeWishlistItem(${item.id})" 
-                            class="w-7 h-7 rounded-lg hover:bg-red-50 text-slate-300 hover:text-red-500 flex items-center justify-center transition-colors shrink-0" 
+                        <button
+                            type="button"
+                            onclick="removeWishlistItem(${item.id})"
+                            class="w-7 h-7 rounded-lg hover:bg-red-50 text-slate-300 hover:text-red-500 flex items-center justify-center transition-colors shrink-0"
                             title="Xóa khỏi yêu thích"
                         >
                             <i class="fa-solid fa-trash-can text-xs"></i>

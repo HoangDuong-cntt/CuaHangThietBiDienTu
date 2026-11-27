@@ -92,7 +92,7 @@ Route::middleware('auth')->group(function () {
         $request->fulfill();
 
         return redirect()->intended('/')->with('success', 'Xác thực địa chỉ email thành công!');
-    })->middleware(['signed:relative'])->name('verification.verify');
+    })->middleware(['signed'])->name('verification.verify');
 
     Route::post('/email/verification-notification', function (Request $request) {
         $request->user()->sendEmailVerificationNotification();

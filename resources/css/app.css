@@ -447,7 +447,26 @@
 .cart-quantity-form {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 7px;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #dce2ed;
+    border-radius: 10px;
+    background: #fff;
+    color: #172033;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus,
+select:focus,
+textarea:focus {
+    border-color: #527ee7;
+    outline: 3px solid rgb(82 126 231 / 14%);
 }
 
 .cart-quantity-form input {

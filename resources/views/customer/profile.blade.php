@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10" x-data="addressManager()">
-    
+
     <!-- User Overview Hero Banner (Harmonious Level 1 Container #f4f6f8) -->
     <div class="p-6 sm:p-8 rounded-3xl bg-[#f4f6f8] border border-slate-200/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-2xs">
         <div class="flex items-center gap-5">
@@ -35,12 +35,21 @@
                 <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Sổ địa chỉ</p>
                 <p class="text-sm font-black text-slate-900 mt-0.5">{{ $addresses->count() }} địa chỉ</p>
             </div>
-            <div class="flex-1 md:flex-none px-4 py-2.5 rounded-2xl bg-white border border-slate-200/80 shadow-2xs text-left md:text-right">
+            <div class="flex-1 md:flex-none px-4 py-2.5 rounded-2xl bg-white border border-slate-200/80 shadow-2xs text-left
+            md:text-right">
                 <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Tài khoản</p>
-                <p class="text-xs font-bold text-emerald-600 mt-0.5 flex items-center md:justify-end gap-1">
-                    <i class="fa-solid fa-circle-check text-[11px]"></i>
-                    <span>Đã kích hoạt</span>
-                </p>
+                @if($user->hasVerifiedEmail())
+                    <p class="text-xs font-bold text-emerald-600 mt-0.5 flex items-center md:justify-end gap-1">
+                        <i class="fa-solid fa-circle-check text-[11px]"></i>
+                        <span>Đã xác thực</span>
+                    </p>
+                @else
+                    <a href="{{ route('verification.notice') }}" class="text-xs font-bold text-amber-600 hover:text-amber-700
+                    mt-0.5 flex items-center md:justify-end gap-1">
+                        <i class="fa-solid fa-triangle-exclamation text-[11px]"></i>
+                        <span class="underline">Chưa xác thực email</span>
+                    </a>
+                @endif
             </div>
         </div>
     </div>
@@ -69,14 +78,14 @@
 
     <!-- Clean Apple-style Navigation Tabs -->
     <div class="flex items-center gap-2 border-b border-slate-200 mt-8">
-        <button @click="activeTab = 'profile'; history.replaceState(null, null, '?tab=profile')" 
+        <button @click="activeTab = 'profile'; history.replaceState(null, null, '?tab=profile')"
                 :class="activeTab === 'profile' ? 'border-blue-600 text-blue-600 font-bold' : 'border-transparent text-slate-500 hover:text-slate-800 font-medium'"
                 class="py-3 px-4 border-b-2 text-xs sm:text-sm transition-all flex items-center gap-2 cursor-pointer">
             <i class="fa-regular fa-user"></i>
             <span>Thông tin cá nhân &amp; Đổi mật khẩu</span>
         </button>
 
-        <button @click="activeTab = 'addresses'; history.replaceState(null, null, '?tab=addresses')" 
+        <button @click="activeTab = 'addresses'; history.replaceState(null, null, '?tab=addresses')"
                 :class="activeTab === 'addresses' ? 'border-blue-600 text-blue-600 font-bold' : 'border-transparent text-slate-500 hover:text-slate-800 font-medium'"
                 class="py-3 px-4 border-b-2 text-xs sm:text-sm transition-all flex items-center gap-2 cursor-pointer">
             <i class="fa-solid fa-location-dot"></i>
@@ -86,7 +95,7 @@
 
     <!-- TAB 1: THÔNG TIN CÁ NHÂN & MẬT KHẨU -->
     <div x-show="activeTab === 'profile'" class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
-        
+
         <!-- Cập nhật thông tin -->
         <div class="p-6 sm:p-8 rounded-3xl border border-slate-200/80 bg-white shadow-xs space-y-5">
             <div>
@@ -200,7 +209,7 @@
 
     <!-- TAB 2: SỔ ĐỊA CHỈ NHẬN HÀNG -->
     <div x-show="activeTab === 'addresses'" class="mt-6 space-y-6">
-        
+
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-5 rounded-2xl border border-slate-200/80 shadow-2xs">
             <div>
                 <h2 class="text-base font-bold text-slate-900 tracking-tight flex items-center gap-2">
@@ -211,12 +220,12 @@
                 </h2>
                 <p class="text-xs text-slate-500 mt-0.5">Địa chỉ được đồng bộ về 34 tỉnh thành thống nhất để đảm bảo giao hàng chính xác.</p>
             </div>
-            
+
             <div class="flex items-center gap-2.5 flex-wrap">
                 @if(!$addresses->isEmpty())
                     <form action="{{ route('addresses.normalize-34') }}" method="POST" onsubmit="return confirm('Hệ thống sẽ quy đổi toàn bộ các địa chỉ cũ sang chuẩn 34 tỉnh thành và tự động gộp các địa chỉ trùng lặp. Bạn có muốn thực hiện?');">
                         @csrf
-                        <button type="submit" 
+                        <button type="submit"
                                 title="Quy đổi tất cả địa chỉ cũ (63 tỉnh) về chuẩn 34 tỉnh thành và xóa trùng lặp"
                                 class="py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold flex items-center gap-1.5 transition-colors border border-slate-200 cursor-pointer">
                             <i class="fa-solid fa-arrows-rotate text-blue-600 text-[11px]"></i>
@@ -225,8 +234,8 @@
                     </form>
                 @endif
 
-                <button @click="openAddModal()" 
-                        type="button" 
+                <button @click="openAddModal()"
+                        type="button"
                         class="py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center gap-1.5 transition-all shadow-sm shrink-0 cursor-pointer">
                     <i class="fa-solid fa-plus text-xs"></i>
                     <span>Thêm địa chỉ mới</span>
@@ -250,7 +259,7 @@
                 @foreach($addresses as $addr)
                     <div class="p-6 rounded-2xl border transition-all shadow-2xs flex flex-col justify-between space-y-4
                                 {{ $addr->is_default ? 'border-2 border-blue-600 bg-blue-50/20' : 'border-slate-200/90 bg-white hover:border-slate-300' }}">
-                        
+
                         <div class="space-y-2.5">
                             <div class="flex items-center justify-between gap-2">
                                 <span class="font-bold text-base text-slate-900 tracking-tight">{{ $addr->receiver_name }}</span>
@@ -265,7 +274,7 @@
                                 <i class="fa-solid fa-phone text-slate-400 text-xs"></i>
                                 <span>{{ $addr->receiver_phone }}</span>
                             </p>
-                            
+
                             <p class="text-xs sm:text-sm text-slate-800 font-medium leading-relaxed flex items-start gap-2 bg-white/70 p-2.5 rounded-xl border border-slate-100">
                                 <i class="fa-solid fa-location-dot text-blue-600 text-sm mt-0.5 shrink-0"></i>
                                 <span>{{ $addr->full_address }}</span>
@@ -275,13 +284,13 @@
                         <!-- Action Row -->
                         <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                             <div class="flex items-center gap-3">
-                                <button type="button" 
+                                <button type="button"
                                         @click="openEditModal({{ json_encode($addr) }})"
                                         class="font-bold text-blue-600 hover:text-blue-700 transition-colors flex items-center gap-1 cursor-pointer">
                                     <i class="fa-regular fa-pen-to-square text-[11px]"></i>
                                     <span>Chỉnh sửa</span>
                                 </button>
-                                
+
                                 <form action="{{ route('addresses.destroy', $addr->id) }}" method="POST" onsubmit="return confirm('Bạn có chắc chắn muốn xóa địa chỉ này?');">
                                     @csrf
                                     @method('DELETE')
@@ -311,14 +320,14 @@
     </div>
 
     <!-- MODAL THÊM / SỬA ĐỊA CHỈ (Alpine.js Dialog với Backdrop Blur) -->
-    <div x-show="showAddressModal" 
+    <div x-show="showAddressModal"
          x-cloak
          class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/40 backdrop-blur-xs overflow-y-auto"
          @keydown.escape.window="showAddressModal = false">
-        
-        <div class="w-full max-w-lg bg-white rounded-3xl border border-slate-200/90 shadow-2xl p-6 sm:p-8 space-y-5 my-8" 
+
+        <div class="w-full max-w-lg bg-white rounded-3xl border border-slate-200/90 shadow-2xl p-6 sm:p-8 space-y-5 my-8"
              @click.away="showAddressModal = false">
-            
+
             <div class="flex items-center justify-between pb-3 border-b border-slate-100">
                 <div>
                     <h3 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight" x-text="editMode ? 'Chỉnh sửa địa chỉ' : 'Thêm địa chỉ mới'"></h3>
@@ -331,28 +340,28 @@
 
             <!-- Segmented Mode Selector: 34 Tỉnh thành vs 63 Tỉnh thành vs Gõ tay -->
             <div class="flex rounded-xl bg-slate-100 p-1 text-xs font-semibold">
-                <button type="button" 
-                        @click="setMode('34')" 
+                <button type="button"
+                        @click="setMode('34')"
                         :class="mode === '34' ? 'bg-white text-blue-600 shadow-2xs font-bold' : 'text-slate-600 hover:text-slate-900'"
                         class="flex-1 py-1.5 px-2 rounded-lg transition-all text-center cursor-pointer">
                     34 Tỉnh Mới
                 </button>
-                <button type="button" 
-                        @click="setMode('63')" 
+                <button type="button"
+                        @click="setMode('63')"
                         :class="mode === '63' ? 'bg-white text-blue-600 shadow-2xs font-bold' : 'text-slate-600 hover:text-slate-900'"
                         class="flex-1 py-1.5 px-2 rounded-lg transition-all text-center cursor-pointer">
                     63 Tỉnh Cũ
                 </button>
-                <button type="button" 
-                        @click="setMode('manual')" 
+                <button type="button"
+                        @click="setMode('manual')"
                         :class="mode === 'manual' ? 'bg-white text-blue-600 shadow-2xs font-bold' : 'text-slate-600 hover:text-slate-900'"
                         class="flex-1 py-1.5 px-2 rounded-lg transition-all text-center cursor-pointer">
                     Nhập tay
                 </button>
             </div>
 
-            <form :action="editMode ? '/profile/addresses/' + currentAddress.id : '{{ route('addresses.store') }}'" 
-                  method="POST" 
+            <form :action="editMode ? '/profile/addresses/' + currentAddress.id : '{{ route('addresses.store') }}'"
+                  method="POST"
                   class="space-y-4">
                 @csrf
                 <template x-if="editMode">
@@ -383,8 +392,8 @@
                         <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
                             Tỉnh / Thành phố <span class="text-rose-500">*</span>
                         </label>
-                        <select :name="mode === '34' ? 'province' : null" 
-                                x-model="currentAddress.province" 
+                        <select :name="mode === '34' ? 'province' : null"
+                                x-model="currentAddress.province"
                                 @change="onProvince34Change($event.target.value)"
                                 :disabled="mode !== '34'"
                                 :required="mode === '34'"
@@ -400,8 +409,8 @@
                         <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
                             Phường / Xã <span class="text-rose-500">*</span>
                         </label>
-                        <select :name="mode === '34' ? 'ward' : null" 
-                                x-model="currentAddress.ward" 
+                        <select :name="mode === '34' ? 'ward' : null"
+                                x-model="currentAddress.ward"
                                 :disabled="mode !== '34' || wards34.length === 0"
                                 :required="mode === '34'"
                                 class="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm bg-slate-50/50 hover:bg-white focus:bg-white focus:border-blue-600 focus:ring-2 focus:ring-blue-500/10 outline-none transition-all disabled:opacity-50">
@@ -419,8 +428,8 @@
                         <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
                             Tỉnh / TP <span class="text-rose-500">*</span>
                         </label>
-                        <select :name="mode === '63' ? 'province' : null" 
-                                x-model="currentAddress.province" 
+                        <select :name="mode === '63' ? 'province' : null"
+                                x-model="currentAddress.province"
                                 @change="onProvince63Change($event.target.value)"
                                 :disabled="mode !== '63'"
                                 :required="mode === '63'"
@@ -436,8 +445,8 @@
                         <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
                             Quận / Huyện <span class="text-rose-500">*</span>
                         </label>
-                        <select :name="mode === '63' ? 'district' : null" 
-                                x-model="currentAddress.district" 
+                        <select :name="mode === '63' ? 'district' : null"
+                                x-model="currentAddress.district"
                                 @change="onDistrict63Change($event.target.value)"
                                 :disabled="mode !== '63' || districts63.length === 0"
                                 :required="mode === '63'"
@@ -453,8 +462,8 @@
                         <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
                             Phường / Xã <span class="text-rose-500">*</span>
                         </label>
-                        <select :name="mode === '63' ? 'ward' : null" 
-                                x-model="currentAddress.ward" 
+                        <select :name="mode === '63' ? 'ward' : null"
+                                x-model="currentAddress.ward"
                                 :disabled="mode !== '63' || wards63.length === 0"
                                 :required="mode === '63'"
                                 class="w-full px-2.5 py-2 rounded-xl border border-slate-200 text-xs bg-slate-50/50 hover:bg-white focus:bg-white focus:border-blue-600 outline-none disabled:opacity-50">
