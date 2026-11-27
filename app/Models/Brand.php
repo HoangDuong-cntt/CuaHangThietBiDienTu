@@ -10,6 +10,9 @@ class Brand extends Model
 {
     use HasFactory;
 
+    /**
+     * @var list<string>
+     */
     protected $fillable = [
         'name',
         'slug',
@@ -27,6 +30,9 @@ class Brand extends Model
         ];
     }
 
+    /**
+     * @return HasMany<Product, $this>
+     */
     public function products(): HasMany
     {
         return $this->hasMany(Product::class);

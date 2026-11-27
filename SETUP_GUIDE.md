@@ -32,6 +32,10 @@ Nếu chưa có file `.env`, hãy copy từ `.env.example`:
 > - `DB_USERNAME=sail`, `DB_PASSWORD=password`
 > - `FORWARD_DB_PORT=33066` (Cổng kết nối MySQL từ máy host)
 > - `REDIS_HOST=redis`, `MAIL_HOST=mailpit`
+>
+> Phí vận chuyển demo có thể cấu hình qua `STORE_SHIPPING_STANDARD_FEE` (30.000₫),
+> `STORE_SHIPPING_EXPRESS_FEE` (50.000₫) và `STORE_SHIPPING_SAME_DAY_FEE` (80.000₫).
+> Ứng dụng tính phí ở phía máy chủ; không cần thông tin API hãng vận chuyển.
 
 ### Bước 2: Khởi động các Docker Containers
 - **Windows:**
@@ -46,6 +50,7 @@ Nếu chưa có file `.env`, hãy copy từ `.env.example`:
   # Hoặc dùng lệnh Sail gốc của Laravel:
   ./vendor/bin/sail up -d
   ```
+> Compose cũng khởi chạy worker `queue` để xử lý email nền. Dùng `docker compose logs -f queue` để theo dõi; email thử nghiệm xem trong Mailpit.
 
 ### Bước 3: Cài đặt thư viện PHP & Sinh Application Key
 *(Chỉ cần chạy nếu thư mục `vendor/` chưa có hoặc khi mới clone project về máy mới)*

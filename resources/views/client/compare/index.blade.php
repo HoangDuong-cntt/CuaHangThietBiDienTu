@@ -119,11 +119,13 @@
                                 </button>
 
                                 <!-- Product Info -->
-                                <div class="w-28 h-28 mx-auto rounded-2xl bg-white p-2 border border-slate-200/80 flex items-center justify-center mb-3 overflow-hidden shadow-2xs">
-                                    <img src="{{ $product['image_url'] }}" alt="{{ $product['name'] }}" class="max-h-full max-w-full object-contain" onerror="this.src='/images/placeholder.svg'">
-                                </div>
-                                <div class="text-[10px] font-extrabold text-blue-600 uppercase tracking-wider mb-1">{{ $product['brand'] }}</div>
-                                <h3 class="font-bold text-slate-900 text-sm leading-snug line-clamp-2 mb-2">{{ $product['name'] }}</h3>
+                                <a href="{{ route('products.show', $product['slug']) }}" class="block group/link">
+                                    <div class="w-28 h-28 mx-auto rounded-2xl bg-white p-2 border border-slate-200/80 flex items-center justify-center mb-3 overflow-hidden shadow-2xs group-hover/link:border-blue-400 transition-colors">
+                                        <img src="{{ $product['image_url'] }}" alt="{{ $product['name'] }}" class="max-h-full max-w-full object-contain group-hover/link:scale-105 transition-transform" onerror="this.src='/images/placeholder.svg'">
+                                    </div>
+                                    <div class="text-[10px] font-extrabold text-blue-600 uppercase tracking-wider mb-1">{{ $product['brand'] }}</div>
+                                    <h3 class="font-bold text-slate-900 text-sm leading-snug line-clamp-2 mb-2 group-hover/link:text-blue-600 transition-colors">{{ $product['name'] }}</h3>
+                                </a>
                                 
                                 <div class="mb-3">
                                     <div class="text-base font-extrabold text-red-600">

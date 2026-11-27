@@ -14,6 +14,9 @@ class Product extends Model
 {
     use HasFactory;
 
+    /**
+     * @var list<string>
+     */
     protected $fillable = [
         'category_id',
         'brand_id',
@@ -66,32 +69,62 @@ class Product extends Model
         );
     }
 
+    /**
+     * @return BelongsTo<Category, $this>
+     */
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class);
     }
 
+    /**
+     * @return BelongsTo<Brand, $this>
+     */
     public function brand(): BelongsTo
     {
         return $this->belongsTo(Brand::class);
     }
 
+    /**
+     * @return HasMany<ProductVariant, $this>
+     */
     public function variants(): HasMany
     {
         return $this->hasMany(ProductVariant::class);
     }
 
+    /**
+     * @return HasMany<ProductImage, $this>
+     */
     public function images(): HasMany
     {
-        return $this->hasMany(ProductImage::class)->orderBy('sort_order');
+        return $this->hasMany(ProductImage::class)
+            ->orderBy('variant_id')
+            ->orderBy('sort_order');
     }
 
+    /**
+     * @return HasMany<ProductSpecification, $this>
+     */
     public function productSpecifications(): HasMany
     {
         return $this->hasMany(ProductSpecification::class);
     }
 
-    public function specifications(): BelongsToMany
+    /**
+     * Alias for productSpecifications for controller & view compatibility
+     *
+     * @return HasMany<ProductSpecification, $this>
+     */
+    public function specifications(): HasMany
+    {
+        return $this->hasMany(ProductSpecification::class);
+    }
+
+    /**
+     * Many-to-many relationship to Specification model via pivot
+     */
+    public function specificationDefinitions(): BelongsToMany
     {
         return $this->belongsToMany(Specification::class, 'product_specifications')
             ->withPivot(['value_text', 'value_numeric']);
@@ -100,6 +133,11 @@ class Product extends Model
     public function wishlists(): HasMany
     {
         return $this->hasMany(Wishlist::class);
+    }
+
+    public function reviews(): HasMany
+    {
+        return $this->hasMany(Review::class);
     }
 
     public function recentlyViewed(): HasMany

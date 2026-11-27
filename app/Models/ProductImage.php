@@ -12,6 +12,9 @@ class ProductImage extends Model
 
     public $timestamps = false;
 
+    /**
+     * @var list<string>
+     */
     protected $fillable = [
         'product_id',
         'variant_id',
@@ -30,11 +33,17 @@ class ProductImage extends Model
         ];
     }
 
+    /**
+     * @return BelongsTo<Product, $this>
+     */
     public function product(): BelongsTo
     {
         return $this->belongsTo(Product::class);
     }
 
+    /**
+     * @return BelongsTo<ProductVariant, $this>
+     */
     public function variant(): BelongsTo
     {
         return $this->belongsTo(ProductVariant::class, 'variant_id');
