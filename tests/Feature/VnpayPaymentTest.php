@@ -37,6 +37,30 @@ class VnpayPaymentTest extends TestCase
         ]);
     }
 
+    public function test_payment_url_signs_urlencoded_parameter_values(): void
+    {
+        $transaction = $this->createVnpayTransaction();
+        config([
+            'services.vnpay.tmn_code' => 'sandbox-merchant',
+            'services.vnpay.hash_secret' => 'sandbox-secret',
+            'services.vnpay.payment_url' => 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html',
+            'services.vnpay.return_url' => 'https://example.test/payments/vnpay/return',
+        ]);
+
+        $url = app(VnpayService::class)->paymentUrl(
+            $transaction->order,
+            $transaction,
+            '127.0.0.1',
+        );
+        $query = (string) parse_url($url, PHP_URL_QUERY);
+        parse_str($query, $parameters);
+        $signature = $parameters['vnp_SecureHash'];
+        unset($parameters['vnp_SecureHash']);
+
+        $this->assertStringContainsString('vnp_OrderInfo=Thanh+toan+don+hang', $query);
+        $this->assertSame($this->signature($parameters), $signature);
+    }
+
     public function test_valid_callback_confirms_payment_once(): void
     {
         $transaction = $this->createVnpayTransaction();
@@ -102,6 +126,7 @@ class VnpayPaymentTest extends TestCase
     {
         $parameters = [
             'vnp_Amount' => '10000000',
+            'vnp_OrderInfo' => 'Thanh toan don hang '.$transactionReference,
             'vnp_ResponseCode' => '00',
             'vnp_TxnRef' => $transactionReference,
             'vnp_TransactionStatus' => '00',
@@ -121,7 +146,7 @@ class VnpayPaymentTest extends TestCase
 
         return hash_hmac(
             'sha512',
-            http_build_query($parameters, '', '&', PHP_QUERY_RFC3986),
+            http_build_query($parameters, '', '&', PHP_QUERY_RFC1738),
             'sandbox-secret',
         );
     }
