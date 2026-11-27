@@ -1,9 +1,12 @@
 <?php
 
+use App\Http\Controllers\Admin\BrandController;
 use App\Http\Controllers\Admin\CouponController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\OrderManagementController;
+use App\Http\Controllers\Admin\ProductManagementController;
 use App\Http\Controllers\Admin\RolePermissionController;
+use App\Http\Controllers\Admin\SpecificationController;
 use App\Http\Controllers\Admin\StaffController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\GoogleController;
@@ -38,9 +41,6 @@ Route::get('/san-pham', [ProductController::class, 'index'])->name('products.ind
 Route::get('/san-pham/{slug}', [ProductController::class, 'show'])->name('products.show');
 Route::get('/products/{slug}', [ProductController::class, 'show'])->name('products.show.alias');
 Route::get('/compare', [ProductComparisonController::class, 'index'])->name('compare.index');
-Route::get('/welcome', function () {
-    return view('welcome');
-})->name('welcome');
 
 // =========================================================================
 // PHÂN HỆ GIỎ HÀNG, THANH TOÁN & ĐƠN HÀNG (THÀNH VIÊN 4)
@@ -122,8 +122,11 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile/addresses/{id}/default', [AddressController::class, 'setDefault'])->name('addresses.default');
     Route::post('/profile/addresses/normalize-34', [AddressController::class, 'normalizeAllTo34'])->name('addresses.normalize-34');
 
-    // API Sổ địa chỉ (Cung cấp cho Thành viên 4 chọn nhanh khi Checkout)
+    // API Sổ địa chỉ (Cung cấp cho Thành viên 4 chọn nhanh khi Checkout & Đồng bộ 34 tỉnh)
     Route::get('/api/user/addresses', [AddressController::class, 'apiList'])->name('api.user.addresses');
+    Route::get('/api/user/addresses/preview-sync', [AddressController::class, 'previewSync'])->name('api.user.addresses.preview-sync');
+    Route::post('/api/user/addresses/convert', [AddressController::class, 'convert'])->name('api.user.addresses.convert');
+    Route::post('/api/user/addresses/parse-convert', [AddressController::class, 'parseConvert'])->name('api.user.addresses.parse-convert');
 });
 
 // =========================================================================
@@ -146,6 +149,32 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::get('/inventory/low-stock', [OrderManagementController::class, 'lowStock'])
         ->middleware('permission:view_inventory')
         ->name('inventory.low-stock');
+
+    // Quản lý sản phẩm, biến thể và thông số kỹ thuật.
+    Route::middleware('permission:manage_products')->group(function () {
+        Route::get('/products', [ProductManagementController::class, 'index'])->name('products.index');
+        Route::get('/products/create', [ProductManagementController::class, 'create'])->name('products.create');
+        Route::post('/products', [ProductManagementController::class, 'store'])->name('products.store');
+        Route::get('/products/{product}/edit', [ProductManagementController::class, 'edit'])->name('products.edit');
+        Route::put('/products/{product}', [ProductManagementController::class, 'update'])->name('products.update');
+        Route::delete('/products/{product}', [ProductManagementController::class, 'destroy'])->name('products.destroy');
+
+        Route::get('/specifications', [SpecificationController::class, 'index'])->name('specifications.index');
+        Route::post('/specification-groups', [SpecificationController::class, 'storeGroup'])->name('specification-groups.store');
+        Route::put('/specification-groups/{group}', [SpecificationController::class, 'updateGroup'])->name('specification-groups.update');
+        Route::delete('/specification-groups/{group}', [SpecificationController::class, 'destroyGroup'])->name('specification-groups.destroy');
+        Route::post('/specifications', [SpecificationController::class, 'store'])->name('specifications.store');
+        Route::put('/specifications/{specification}', [SpecificationController::class, 'update'])->name('specifications.update');
+        Route::delete('/specifications/{specification}', [SpecificationController::class, 'destroy'])->name('specifications.destroy');
+    });
+
+    // Quản lý thương hiệu.
+    Route::middleware('permission:manage_categories')->group(function () {
+        Route::get('/brands', [BrandController::class, 'index'])->name('brands.index');
+        Route::post('/brands', [BrandController::class, 'store'])->name('brands.store');
+        Route::put('/brands/{brand}', [BrandController::class, 'update'])->name('brands.update');
+        Route::delete('/brands/{brand}', [BrandController::class, 'destroy'])->name('brands.destroy');
+    });
 
     // Quản lý Voucher & Khuyến mãi (Thành viên 1)
     Route::middleware('permission:manage_coupons')->group(function () {

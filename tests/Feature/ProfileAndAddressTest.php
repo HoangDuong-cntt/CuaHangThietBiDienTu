@@ -277,4 +277,37 @@ class ProfileAndAddressTest extends TestCase
         $response->assertJsonCount(1, 'data');
         $response->assertJsonPath('data.0.receiver_name', 'Người Nhận API');
     }
+
+    public function test_parse_and_convert_merges_commune_to_34_provinces(): void
+    {
+        $user = User::factory()->create();
+
+        $response = $this->actingAs($user)->postJson(route('api.user.addresses.parse-convert'), [
+            'raw_address' => 'Thôn 4, Xã Krông Jing, Tỉnh Đăk Lăk',
+        ]);
+
+        $response->assertStatus(200);
+        $response->assertJsonPath('success', true);
+        $response->assertJsonPath('data.converted.province', 'Tỉnh Đắk Lắk');
+        $response->assertJsonPath('data.converted.ward', 'Xã M’Drắk');
+        $response->assertJsonPath('data.converted.full_address', 'Thôn 4, Xã M’Drắk, Tỉnh Đắk Lắk');
+    }
+
+    public function test_convert_api_merges_commune_with_district(): void
+    {
+        $user = User::factory()->create();
+
+        $response = $this->actingAs($user)->postJson(route('api.user.addresses.convert'), [
+            'province' => 'Tỉnh Đắk Lắk',
+            'district' => 'Huyện M\'Đrắk',
+            'ward' => 'Xã Krông Jing',
+            'street_address' => 'Thôn 4',
+        ]);
+
+        $response->assertStatus(200);
+        $response->assertJsonPath('success', true);
+        $response->assertJsonPath('data.converted.province', 'Tỉnh Đắk Lắk');
+        $response->assertJsonPath('data.converted.ward', 'Xã M’Drắk');
+        $response->assertJsonPath('data.converted.full_address', 'Thôn 4, Xã M’Drắk, Tỉnh Đắk Lắk');
+    }
 }
