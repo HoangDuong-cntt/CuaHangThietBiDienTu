@@ -1,6 +1,6 @@
 @extends('layouts.client')
 
-@section('title', 'Giỏ hàng - D.D.')
+@section('title', 'Giỏ hàng - D&D.')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -42,8 +42,8 @@
                         data-quantity="{{ $item['quantity'] }}"
                     >
                         @if($variant->product->images->first()?->image_url)
-                            <div class="w-16 h-16 rounded-xl bg-[#f8fafc] border border-slate-200/80 p-1 flex items-center justify-center shrink-0 overflow-hidden">
-                                <img src="{{ $variant->product->images->first()->image_url }}" alt="{{ $variant->product->name }}" class="w-full h-full object-contain">
+                            <div class="w-16 h-16 rounded-2xl bg-[#F1F5F9] overflow-hidden flex items-center justify-center shrink-0">
+                                <img src="{{ $variant->product->images->first()->image_url }}" alt="{{ $variant->product->name }}" class="w-full h-full object-cover" onerror="this.src='/images/placeholder.svg'">
                             </div>
                         @else
                             <div class="product-placeholder" aria-hidden="true">{{ mb_substr($variant->product->name, 0, 1) }}</div>

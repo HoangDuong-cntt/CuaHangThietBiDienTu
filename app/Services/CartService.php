@@ -17,6 +17,10 @@ class CartService
 
     public function count(Request $request): int
     {
+        if (! $request->hasSession()) {
+            return 0;
+        }
+
         if ($request->user() === null) {
             $items = $request->session()->get(self::SESSION_KEY, []);
 

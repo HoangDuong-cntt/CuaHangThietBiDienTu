@@ -1,8 +1,9 @@
 @extends('layouts.client')
 
-@section('title', 'Đơn hàng '.$order->order_code)
+@section('title', 'Đơn hàng '.$order->order_code.' - D&D.')
 
 @section('content')
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="page-heading">
         <div>
             <p class="eyebrow">ĐẶT HÀNG THÀNH CÔNG</p>
@@ -52,4 +53,5 @@
             </form>
         @endif
     </section>
+</div>
 @endsection

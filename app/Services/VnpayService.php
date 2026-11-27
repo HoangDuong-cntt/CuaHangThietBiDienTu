@@ -41,7 +41,7 @@ class VnpayService
         ];
 
         ksort($parameters);
-        $query = http_build_query($parameters, '', '&', PHP_QUERY_RFC3986);
+        $query = http_build_query($parameters, '', '&', PHP_QUERY_RFC1738);
         $signature = hash_hmac('sha512', $query, (string) config('services.vnpay.hash_secret'));
 
         return config('services.vnpay.payment_url').'?'.$query.'&vnp_SecureHash='.$signature;
@@ -175,7 +175,7 @@ class VnpayService
 
         unset($parameters['vnp_SecureHash'], $parameters['vnp_SecureHashType']);
         ksort($parameters);
-        $query = http_build_query($parameters, '', '&', PHP_QUERY_RFC3986);
+        $query = http_build_query($parameters, '', '&', PHP_QUERY_RFC1738);
         $expectedSignature = hash_hmac('sha512', $query, (string) config('services.vnpay.hash_secret'));
 
         return hash_equals(strtolower($expectedSignature), strtolower($receivedSignature));

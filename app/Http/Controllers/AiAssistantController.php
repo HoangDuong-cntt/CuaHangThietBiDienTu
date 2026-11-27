@@ -25,7 +25,7 @@ class AiAssistantController extends Controller
             'session_id' => ['nullable', 'string', 'max:255'],
         ]);
 
-        $sessionId = $validated['session_id'] ?? $request->session()->getId() ?? (string) Str::uuid();
+        $sessionId = $validated['session_id'] ?? ($request->hasSession() ? $request->session()->getId() : (string) Str::uuid());
         $userId = $request->user()?->id;
 
         $product = ! empty($validated['product_id'])

@@ -1,6 +1,6 @@
 @extends('layouts.client')
 
-@section('title', '404 - Không tìm thấy trang hoặc tham số không hợp lệ')
+@section('title', '404 - Không tìm thấy trang - D&D.')
 
 @section('content')
 <div class="min-h-[60vh] flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8">
@@ -22,11 +22,11 @@
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a href="{{ route('shop.index') }}" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-xs transition-all flex items-center justify-center gap-2">
+            <a href="{{ route('shop.index') }}" class="w-full sm:w-auto px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-xs transition-all flex items-center justify-center gap-2">
                 <i class="fa-solid fa-store text-xs"></i>
                 <span>Về Cửa Hàng</span>
             </a>
-            <a href="{{ route('home') }}" class="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-colors flex items-center justify-center gap-2">
+            <a href="{{ route('home') }}" class="w-full sm:w-auto px-6 py-2.5 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-colors flex items-center justify-center gap-2">
                 <i class="fa-solid fa-house text-xs text-slate-400"></i>
                 <span>Trang Chủ</span>
             </a>
