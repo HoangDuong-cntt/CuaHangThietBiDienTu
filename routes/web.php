@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\CouponController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\OrderManagementController;
 use App\Http\Controllers\Admin\RolePermissionController;
 use App\Http\Controllers\Admin\StaffController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
@@ -8,10 +10,15 @@ use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\CatalogController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\Customer\AddressController;
 use App\Http\Controllers\Customer\ProfileController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProductComparisonController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -23,14 +30,31 @@ use Illuminate\Support\Facades\Route;
 */
 
 // =========================================================================
-// PHÂN HỆ CỬA HÀNG, TÌM KIẾM & SO SÁNH (THÀNH VIÊN 3)
+// PHÂN HỆ CỬA HÀNG, TÌM KIẾM & SO SÁNH (THÀNH VIÊN 3 & THÀNH VIÊN 2)
 // =========================================================================
 Route::get('/', [CatalogController::class, 'home'])->name('home');
 Route::get('/shop', [CatalogController::class, 'index'])->name('shop.index');
+Route::get('/san-pham', [ProductController::class, 'index'])->name('products.index');
+Route::get('/san-pham/{slug}', [ProductController::class, 'show'])->name('products.show');
+Route::get('/products/{slug}', [ProductController::class, 'show'])->name('products.show.alias');
 Route::get('/compare', [ProductComparisonController::class, 'index'])->name('compare.index');
 Route::get('/welcome', function () {
     return view('welcome');
 })->name('welcome');
+
+// =========================================================================
+// PHÂN HỆ GIỎ HÀNG, THANH TOÁN & ĐƠN HÀNG (THÀNH VIÊN 4)
+// =========================================================================
+Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
+Route::post('/cart/add', [CartController::class, 'add'])->name('cart.add');
+Route::patch('/cart/items/{variantId}', [CartController::class, 'update'])->whereNumber('variantId')->name('cart.items.update');
+Route::delete('/cart/items/{variantId}', [CartController::class, 'remove'])->whereNumber('variantId')->name('cart.items.destroy');
+Route::get('/orders/track', [OrderController::class, 'trackingForm'])->name('orders.track.form');
+Route::post('/orders/track', [OrderController::class, 'track'])->name('orders.track');
+Route::get('/warranty', [OrderController::class, 'warrantyForm'])->name('warranty.form');
+Route::post('/warranty', [OrderController::class, 'warrantyLookup'])->name('warranty.lookup');
+Route::get('/payments/vnpay/return', [PaymentController::class, 'returned'])->name('payments.vnpay.return');
+Route::get('/payments/vnpay/ipn', [PaymentController::class, 'ipn'])->name('payments.vnpay.ipn');
 
 // =========================================================================
 // PHÂN HỆ XÁC THỰC (GUEST ONLY)
@@ -68,7 +92,7 @@ Route::middleware('auth')->group(function () {
         $request->fulfill();
 
         return redirect()->intended('/')->with('success', 'Xác thực địa chỉ email thành công!');
-    })->middleware(['signed'])->name('verification.verify');
+    })->middleware(['signed:relative'])->name('verification.verify');
 
     Route::post('/email/verification-notification', function (Request $request) {
         $request->user()->sendEmailVerificationNotification();
@@ -78,6 +102,12 @@ Route::middleware('auth')->group(function () {
 
     // Đăng xuất an toàn
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+    // Checkout & Đơn hàng người dùng
+    Route::get('/checkout', [CheckoutController::class, 'create'])->name('checkout.create');
+    Route::post('/checkout', [CheckoutController::class, 'store'])->name('checkout.store');
+    Route::get('/orders/{orderCode}', [OrderController::class, 'show'])->name('orders.show');
+    Route::post('/orders/{orderCode}/payment/retry', [PaymentController::class, 'retry'])->name('orders.payment.retry');
 
     // Hồ sơ cá nhân
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -103,6 +133,27 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::get('/dashboard', [DashboardController::class, 'index'])
         ->middleware('permission:view_dashboard')
         ->name('dashboard');
+
+    // Quản lý Đơn hàng & Kho hàng (Thành viên 4)
+    Route::middleware('permission:manage_orders')->group(function () {
+        Route::get('/orders', [OrderManagementController::class, 'index'])->name('orders.index');
+        Route::get('/orders/{orderCode}/invoice', [OrderManagementController::class, 'invoice'])->name('orders.invoice');
+        Route::get('/orders/{orderCode}', [OrderManagementController::class, 'show'])->name('orders.show');
+        Route::patch('/orders/{orderCode}/status', [OrderManagementController::class, 'updateStatus'])->name('orders.status.update');
+    });
+
+    Route::get('/inventory/low-stock', [OrderManagementController::class, 'lowStock'])
+        ->middleware('permission:view_inventory')
+        ->name('inventory.low-stock');
+
+    // Quản lý Voucher & Khuyến mãi (Thành viên 1)
+    Route::middleware('permission:manage_coupons')->group(function () {
+        Route::get('/coupons', [CouponController::class, 'index'])->name('coupons.index');
+        Route::post('/coupons', [CouponController::class, 'store'])->name('coupons.store');
+        Route::put('/coupons/{id}', [CouponController::class, 'update'])->name('coupons.update');
+        Route::delete('/coupons/{id}', [CouponController::class, 'destroy'])->name('coupons.destroy');
+        Route::post('/coupons/{id}/toggle-status', [CouponController::class, 'toggleStatus'])->name('coupons.toggle-status');
+    });
 
     // Ma trận Phân quyền & Vai trò (RBAC)
     Route::get('/roles', [RolePermissionController::class, 'index'])

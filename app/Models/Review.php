@@ -40,6 +40,22 @@ class Review extends Model
     }
 
     /**
+     * Sản phẩm được đánh giá.
+     */
+    public function product(): BelongsTo
+    {
+        return $this->belongsTo(Product::class);
+    }
+
+    /**
+     * Dòng sản phẩm trong đơn hàng tương ứng.
+     */
+    public function orderItem(): BelongsTo
+    {
+        return $this->belongsTo(OrderItem::class);
+    }
+
+    /**
      * Scope lọc các đánh giá đã được duyệt hiển thị công khai.
      */
     public function scopeApproved($query)

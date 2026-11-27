@@ -167,13 +167,22 @@ class ProductFilterService
             ->where('is_active', true);
 
         match ($tab) {
-            'study', 'office' => $query->where('category_id', 2),
-            'gaming', 'power' => $query->where('category_id', 3),
-            'design' => $query->where('category_id', 4),
+            'study', 'office' => $query->where(fn ($q) => $q->where('category_id', 2)->orWhere('category_id', 1)),
+            'creative', 'design' => $query->where(fn ($q) => $q->where('category_id', 4)->orWhere('category_id', 1)),
+            'entertainment', 'gaming' => $query->where(fn ($q) => $q->whereIn('category_id', [3, 9, 10])),
             default => $query->orderBy('total_sold', 'desc'),
         };
 
-        return $query->take($limit)->get()->map(fn (Product $p) => [
+        $products = $query->take($limit)->get();
+        if ($products->isEmpty()) {
+            $products = Product::with(['brand', 'category', 'images'])
+                ->where('is_active', true)
+                ->orderBy('total_sold', 'desc')
+                ->take($limit)
+                ->get();
+        }
+
+        return $products->map(fn (Product $p) => [
             'id' => $p->id,
             'name' => $p->name,
             'slug' => $p->slug,

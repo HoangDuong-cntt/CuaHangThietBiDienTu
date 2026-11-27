@@ -12,6 +12,9 @@ class ProductSpecification extends Model
 
     public $timestamps = false;
 
+    /**
+     * @var list<string>
+     */
     protected $fillable = [
         'product_id',
         'specification_id',
@@ -29,11 +32,17 @@ class ProductSpecification extends Model
         ];
     }
 
+    /**
+     * @return BelongsTo<Product, $this>
+     */
     public function product(): BelongsTo
     {
         return $this->belongsTo(Product::class);
     }
 
+    /**
+     * @return BelongsTo<Specification, $this>
+     */
     public function specification(): BelongsTo
     {
         return $this->belongsTo(Specification::class);
