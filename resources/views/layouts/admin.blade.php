@@ -310,7 +310,7 @@
 
         <!-- Clean Footer -->
         <footer class="h-12 px-6 border-t border-slate-200 bg-white text-slate-500 text-xs flex items-center justify-between">
-            <div>D&D SmartTech Store &bull; Phân hệ Quản trị 2026</div>
+            <div>D&D. Store &bull; Phân hệ Quản trị 2026</div>
             <div class="font-mono text-[11px] text-slate-400">STATUS: READY</div>
         </footer>
 

@@ -47,7 +47,7 @@
                 </div>
 
                 <!-- Main Active Image -->
-                <div class="relative aspect-square flex items-center justify-center p-4 bg-slate-50/50 rounded-2xl overflow-hidden">
+                <div class="relative aspect-[4/3] flex items-center justify-center bg-[#F1F5F9] rounded-2xl overflow-hidden">
                     @php
                         $defaultImg = $initialImages->first()?->image_url ?? '/images/placeholder.svg';
                     @endphp
@@ -55,9 +55,10 @@
                         id="mainProductImage"
                         src="{{ $defaultImg }}"
                         alt="{{ $product->name }}"
-                        class="max-h-full max-w-full object-contain transition-all duration-300 transform hover:scale-110 cursor-zoom-in"
+                        class="w-full h-full object-cover transition-all duration-300 transform hover:scale-105 cursor-zoom-in"
+                        onerror="this.src='/images/placeholder.svg'"
                     >
-                    <span id="activeAngleBadge" class="absolute bottom-3 right-3 text-[10px] font-bold uppercase bg-slate-900/80 text-white px-2.5 py-1 rounded-md backdrop-blur-xs">
+                    <span id="activeAngleBadge" class="absolute bottom-3 right-3 text-[10px] font-bold uppercase bg-slate-900/75 text-white px-2.5 py-1 rounded-full backdrop-blur-xs">
                         Góc: {{ $initialImages->first()?->angle_type ?? 'main' }}
                     </span>
                 </div>
@@ -70,9 +71,9 @@
                             onclick="selectGalleryImage('{{ $img->image_url }}', '{{ $img->angle_type }}', {{ $img->variant_id ?? 'null' }}, this)"
                             data-variant-id="{{ $img->variant_id ?? '' }}"
                             data-angle="{{ $img->angle_type }}"
-                            class="gallery-thumb-btn shrink-0 w-16 h-16 rounded-xl border-2 overflow-hidden p-1 transition {{ $index === 0 ? 'border-blue-600 bg-blue-50/30' : 'border-slate-200 hover:border-slate-400' }}"
+                            class="gallery-thumb-btn shrink-0 w-16 h-16 rounded-xl border-2 overflow-hidden bg-[#F1F5F9] transition cursor-pointer {{ $index === 0 ? 'border-blue-600 shadow-2xs' : 'border-slate-200 hover:border-slate-400' }}"
                         >
-                            <img src="{{ $img->image_url }}" alt="Angle {{ $img->angle_type }}" class="w-full h-full object-contain">
+                            <img src="{{ $img->image_url }}" alt="Angle {{ $img->angle_type }}" class="w-full h-full object-cover" onerror="this.src='/images/placeholder.svg'">
                         </button>
                     @endforeach
                 </div>
@@ -147,17 +148,17 @@
                 </div>
 
                 <!-- Live Price Card -->
-                <div class="bg-slate-50 rounded-2xl p-4 md:p-5 flex flex-wrap items-baseline justify-between gap-4">
+                <div class="bg-[#F8FAFC] border border-slate-200/70 rounded-2xl p-4 md:p-5 flex flex-wrap items-baseline justify-between gap-4">
                     <div>
                         <span class="text-xs text-slate-500 font-medium block">Giá bán chính hãng (Đã gồm VAT):</span>
-                        <div class="flex items-baseline gap-3 mt-1">
-                            <span id="salePriceDisplay" class="text-3xl md:text-4xl font-black text-rose-600 tracking-tight">
+                        <div class="flex items-baseline gap-3 mt-1 flex-wrap">
+                            <span id="salePriceDisplay" class="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
                                 {{ number_format($product->sale_price, 0, ',', '.') }}₫
                             </span>
                             <span id="basePriceDisplay" class="text-base text-slate-400 line-through font-semibold {{ $product->base_price <= $product->sale_price ? 'hidden' : '' }}">
                                 {{ number_format($product->base_price, 0, ',', '.') }}₫
                             </span>
-                            <span id="discountBadge" class="bg-rose-500 text-white text-xs font-black px-2 py-0.5 rounded-md shadow-xs">
+                            <span id="discountBadge" class="bg-rose-50 text-rose-600 border border-rose-100 text-xs font-bold px-2.5 py-0.5 rounded-full {{ $product->base_price <= $product->sale_price ? 'hidden' : '' }}">
                                 Tiết kiệm {{ number_format($product->base_price - $product->sale_price, 0, ',', '.') }}₫
                             </span>
                         </div>
@@ -223,7 +224,7 @@
                                     data-storage="{{ $v->storage }}"
                                 >
                                     <span class="text-slate-900 font-extrabold">{{ $v->ram ? $v->ram . ' - ' : '' }}{{ $v->storage }}</span>
-                                    <span class="text-[11px] font-semibold text-rose-600 mt-0.5">{{ number_format($v->sale_price, 0, ',', '.') }}₫</span>
+                                    <span class="text-[11px] font-bold text-blue-600 mt-0.5">{{ number_format($v->sale_price, 0, ',', '.') }}₫</span>
                                 </button>
                             @endforeach
                         </div>
@@ -245,7 +246,7 @@
                         type="button"
                         id="btnAddToCart"
                         onclick="addToCart()"
-                        class="w-full bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-sm py-4 rounded-2xl shadow-lg transition duration-200 flex items-center justify-center gap-2 group"
+                        class="w-full bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-sm py-4 rounded-full shadow-md transition duration-200 flex items-center justify-center gap-2 group cursor-pointer"
                     >
                         <i class="fa-solid fa-cart-plus text-base group-hover:scale-110 transition-transform"></i>
                         <span>Thêm vào giỏ hàng</span>
@@ -254,7 +255,7 @@
                         type="button"
                         id="btnBuyNow"
                         onclick="buyNow()"
-                        class="w-full bg-gradient-to-r from-rose-600 to-red-600 hover:from-rose-500 hover:to-red-500 text-white font-extrabold text-sm py-4 rounded-2xl shadow-lg shadow-rose-500/30 transition duration-200 flex flex-col items-center justify-center"
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-sm py-4 rounded-full shadow-md shadow-blue-500/25 transition duration-200 flex flex-col items-center justify-center cursor-pointer"
                     >
                         <span>MUA NGAY VỚI GIÁ ƯU ĐÃI</span>
                         <span class="text-[10px] font-medium opacity-90">Giao hàng tận nơi hoặc nhận tại cửa hàng</span>
@@ -262,26 +263,26 @@
                 </div>
             </div>
 
-            <!-- AI Summary Widget (Phân hệ AI Member 2 & 3) -->
+            <!-- AI Summary Widget (Phân hệ AI D&D) -->
             @if($product->ai_summary)
-                <div class="bg-[#f0f3ff] rounded-3xl p-6 md:p-8 text-slate-800 border border-blue-100/70 shadow-2xs relative overflow-hidden">
+                <div class="bg-gradient-to-br from-[#F5F3FF] to-[#EDE9FE] rounded-3xl p-6 md:p-8 text-slate-800 border border-purple-100 shadow-2xs relative overflow-hidden">
                     <div class="relative z-10 space-y-4">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center gap-2">
-                                <div class="w-8 h-8 rounded-lg bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-600">
+                                <div class="w-8 h-8 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-600">
                                     <i class="fa-solid fa-wand-magic-sparkles text-sm"></i>
                                 </div>
-                                <h3 class="font-extrabold text-base tracking-tight text-slate-900">AI Smart Summary</h3>
+                                <h3 class="font-extrabold text-base tracking-tight text-slate-900">D&D AI Smart Summary</h3>
                             </div>
-                            <span class="text-[10px] font-bold uppercase tracking-wider bg-white text-blue-600 border border-blue-200 px-2.5 py-1 rounded-full shadow-2xs">
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-white text-purple-700 border border-purple-200 px-2.5 py-1 rounded-full shadow-2xs">
                                 Phân tích kỹ thuật tự động
                             </span>
                         </div>
 
                         <!-- Target Audience -->
                         @if(isset($product->ai_summary['target_users']))
-                            <div class="bg-white rounded-xl p-3 text-xs flex items-center gap-2 border border-slate-200/80 shadow-2xs">
-                                <i class="fa-solid fa-user-check text-blue-600 text-sm"></i>
+                            <div class="bg-white/90 backdrop-blur-xs rounded-xl p-3 text-xs flex items-center gap-2 border border-purple-100 shadow-2xs">
+                                <i class="fa-solid fa-user-check text-purple-600 text-sm"></i>
                                 <span class="text-slate-700"><strong>Phù hợp nhất với:</strong> {{ $product->ai_summary['target_users'] }}</span>
                             </div>
                         @endif
@@ -408,19 +409,19 @@
     <!-- RELATED PRODUCTS -->
     @if($relatedProducts->isNotEmpty())
         <div class="pt-8 space-y-4">
-            <h3 class="text-xl font-extrabold text-slate-900 tracking-tight">Sản Phẩm Cùng Phân Khúc</h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <h3 class="text-xl font-black text-slate-900 tracking-tight">Sản Phẩm Cùng Phân Khúc</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                 @foreach($relatedProducts as $rel)
                     @php
                         $relImg = $rel->images->first()?->image_url ?? '/images/placeholder.svg';
                     @endphp
-                    <a href="{{ route('products.show', $rel->slug) }}" class="group bg-white rounded-2xl border border-slate-200/90 hover:border-blue-400 p-4 shadow-2xs hover:shadow-lg transition block">
-                        <div class="aspect-square bg-slate-50 rounded-xl overflow-hidden p-4 mb-3">
-                            <img src="{{ $relImg }}" alt="{{ $rel->name }}" class="w-full h-full object-contain group-hover:scale-105 transition">
+                    <a href="{{ route('products.show', $rel->slug) }}" class="tilt-card group bg-white rounded-3xl border border-slate-200/80 hover:border-slate-300 p-4 shadow-2xs transition block" data-tilt>
+                        <div class="aspect-[4/3] bg-[#F1F5F9] rounded-2xl overflow-hidden mb-3">
+                            <img src="{{ $relImg }}" alt="{{ $rel->name }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" onerror="this.src='/images/placeholder.svg'">
                         </div>
-                        <span class="text-[10px] font-bold uppercase text-slate-400">{{ $rel->brand?->name }}</span>
-                        <div class="text-xs font-bold text-slate-800 line-clamp-2 mt-1 group-hover:text-blue-600 transition">{{ $rel->name }}</div>
-                        <div class="text-sm font-extrabold text-rose-600 mt-2">{{ number_format($rel->sale_price, 0, ',', '.') }}₫</div>
+                        <span class="text-[10px] font-bold uppercase text-blue-600">{{ $rel->brand?->name }}</span>
+                        <div class="text-xs font-bold text-slate-900 line-clamp-2 mt-1 group-hover:text-blue-600 transition">{{ $rel->name }}</div>
+                        <div class="text-sm font-black text-slate-900 mt-2">{{ number_format($rel->sale_price, 0, ',', '.') }}₫</div>
                     </a>
                 @endforeach
             </div>
@@ -458,8 +459,8 @@
             btn.type = 'button';
             btn.setAttribute('data-variant-id', img.variant_id || '');
             btn.setAttribute('data-angle', img.angle_type);
-            btn.className = 'gallery-thumb-btn shrink-0 w-16 h-16 rounded-xl border-2 overflow-hidden p-1 transition '
-                + (index === 0 ? 'border-blue-600 bg-blue-50/30' : 'border-slate-200 hover:border-slate-400');
+            btn.className = 'gallery-thumb-btn shrink-0 w-16 h-16 rounded-xl border-2 overflow-hidden bg-[#F1F5F9] transition cursor-pointer '
+                + (index === 0 ? 'border-blue-600 shadow-2xs' : 'border-slate-200 hover:border-slate-400');
 
             // Apply angle filter visibility
             if (currentAngleFilter !== 'all' && img.angle_type !== currentAngleFilter) {
@@ -469,7 +470,8 @@
             const imgEl = document.createElement('img');
             imgEl.src = img.image_url;
             imgEl.alt = 'Góc ' + img.angle_type;
-            imgEl.className = 'w-full h-full object-contain';
+            imgEl.className = 'w-full h-full object-cover';
+            imgEl.onerror = function() { this.src = '/images/placeholder.svg'; };
             btn.appendChild(imgEl);
 
             btn.addEventListener('click', function() {
@@ -647,11 +649,22 @@
                 return;
             }
 
+            const data = await res.json().catch(() => ({}));
+            if (!res.ok) {
+                const msg = Object.values(data.errors || {}).flat()[0] || data.message || 'Không thể thêm sản phẩm vào giỏ hàng.';
+                window.showToast(msg, 'error');
+                return;
+            }
+
             // Update badge
             const badges = document.querySelectorAll('[data-cart-count]');
             badges.forEach(badge => {
-                const current = parseInt(badge.textContent.trim(), 10) || 0;
-                badge.textContent = current + 1;
+                if (typeof data.cart_count !== 'undefined') {
+                    badge.textContent = data.cart_count;
+                } else {
+                    const current = parseInt(badge.textContent.trim(), 10) || 0;
+                    badge.textContent = current + 1;
+                }
             });
 
             window.showToast(`Đã thêm ${currentVariant.sku || 'sản phẩm'} vào giỏ hàng!`, 'success');

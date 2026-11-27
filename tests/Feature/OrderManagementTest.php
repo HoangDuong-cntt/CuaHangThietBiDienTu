@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Mail\OrderStatusUpdatedMail;
 use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Order;
@@ -9,6 +10,7 @@ use App\Models\Product;
 use App\Models\ProductVariant;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
 class OrderManagementTest extends TestCase
@@ -56,6 +58,8 @@ class OrderManagementTest extends TestCase
 
     public function test_unpaid_vnpay_order_cannot_be_confirmed(): void
     {
+        Mail::fake();
+
         $order = Order::factory()->create([
             'payment_method' => 'vnpay',
             'payment_status' => 'unpaid',
@@ -71,6 +75,58 @@ class OrderManagementTest extends TestCase
             ->assertSessionHasErrors('status');
 
         $this->assertSame('pending', $order->fresh()->status);
+        Mail::assertNothingQueued();
+    }
+
+    public function test_confirming_order_queues_status_email_to_customer(): void
+    {
+        Mail::fake();
+
+        $customer = User::factory()->create();
+        $order = Order::factory()->create([
+            'user_id' => $customer->id,
+            'status' => 'pending',
+        ]);
+        $admin = User::factory()->create(['role' => 'admin']);
+
+        $this->actingAs($admin)
+            ->patch(route('admin.orders.status.update', $order->order_code), [
+                'status' => 'confirmed',
+            ])
+            ->assertRedirect(route('admin.orders.show', $order->order_code));
+
+        Mail::assertQueued(OrderStatusUpdatedMail::class, function (OrderStatusUpdatedMail $mail) use ($customer, $order): bool {
+            return $mail->hasTo($customer->email)
+                && $mail->order->is($order)
+                && $mail->order->status === 'confirmed';
+        });
+    }
+
+    public function test_cancelling_order_queues_status_email_to_customer(): void
+    {
+        Mail::fake();
+
+        $customer = User::factory()->create();
+        $order = Order::factory()->create([
+            'user_id' => $customer->id,
+            'status' => 'pending',
+            'payment_status' => 'unpaid',
+        ]);
+        $admin = User::factory()->create(['role' => 'admin']);
+
+        $this->actingAs($admin)
+            ->patch(route('admin.orders.status.update', $order->order_code), [
+                'status' => 'cancelled',
+                'cancel_reason' => 'Khách yêu cầu hủy',
+            ])
+            ->assertRedirect(route('admin.orders.show', $order->order_code));
+
+        Mail::assertQueued(OrderStatusUpdatedMail::class, function (OrderStatusUpdatedMail $mail) use ($customer, $order): bool {
+            return $mail->hasTo($customer->email)
+                && $mail->order->is($order)
+                && $mail->order->status === 'cancelled'
+                && $mail->order->cancel_reason === 'Khách yêu cầu hủy';
+        });
     }
 
     public function test_admin_can_download_a_rendered_pdf_invoice(): void

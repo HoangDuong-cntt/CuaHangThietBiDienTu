@@ -201,6 +201,52 @@ class AddressController extends Controller
     }
 
     /**
+     * API xem trước kết quả đồng bộ toàn bộ địa chỉ về chuẩn 34 tỉnh thành.
+     */
+    public function previewSync(): JsonResponse
+    {
+        $user = Auth::user();
+        $preview = VietnamAddressService::previewDeduplicateAndNormalize($user);
+
+        return response()->json([
+            'success' => true,
+            'data' => $preview,
+        ]);
+    }
+
+    /**
+     * API chuyển đổi một địa chỉ cụ thể sang chuẩn 34 tỉnh realtime.
+     */
+    public function convert(Request $request): JsonResponse
+    {
+        $converted = VietnamAddressService::convert63To34(
+            $request->input('province'),
+            $request->input('district'),
+            $request->input('ward'),
+            $request->input('street_address')
+        );
+
+        return response()->json([
+            'success' => true,
+            'data' => $converted,
+        ]);
+    }
+
+    /**
+     * API bóc tách chuỗi địa chỉ tự do và chuyển đổi sang chuẩn 34 tỉnh realtime.
+     */
+    public function parseConvert(Request $request): JsonResponse
+    {
+        $raw = $request->input('raw_address', '');
+        $converted = VietnamAddressService::parseAndConvertAddress($raw);
+
+        return response()->json([
+            'success' => true,
+            'data' => $converted,
+        ]);
+    }
+
+    /**
      * Tính năng chuẩn hóa toàn bộ sổ địa chỉ của người dùng về chuẩn 34 Tỉnh Thành và loại bỏ trùng lặp.
      */
     public function normalizeAllTo34(Request $request): RedirectResponse|JsonResponse

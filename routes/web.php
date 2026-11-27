@@ -32,19 +32,18 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-// Trang Chủ
+// =========================================================================
+// PHÂN HỆ CỬA HÀNG, TÌM KIẾM & SO SÁNH (THÀNH VIÊN 3 & THÀNH VIÊN 2)
+// =========================================================================
 Route::get('/', [CatalogController::class, 'home'])->name('home');
-
-// Trang Cửa Hàng & Bộ Lọc Nâng Cao
 Route::get('/shop', [CatalogController::class, 'index'])->name('shop.index');
-
-// Chi tiết sản phẩm & Danh mục sản phẩm (Đồng bộ với phân hệ Catalog của Duongdev)
 Route::get('/san-pham', [ProductController::class, 'index'])->name('products.index');
 Route::get('/san-pham/{slug}', [ProductController::class, 'show'])->name('products.show');
 Route::get('/products/{slug}', [ProductController::class, 'show'])->name('products.show.alias');
-
-// Trang So Sánh Đối Chiếu Sản Phẩm
 Route::get('/compare', [ProductComparisonController::class, 'index'])->name('compare.index');
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
 
 // =========================================================================
 // PHÂN HỆ GIỎ HÀNG, THANH TOÁN & ĐƠN HÀNG (THÀNH VIÊN 4)
@@ -96,7 +95,7 @@ Route::middleware('auth')->group(function () {
         $request->fulfill();
 
         return redirect()->intended('/')->with('success', 'Xác thực địa chỉ email thành công!');
-    })->middleware(['signed:relative'])->name('verification.verify');
+    })->middleware(['signed'])->name('verification.verify');
 
     Route::post('/email/verification-notification', function (Request $request) {
         $request->user()->sendEmailVerificationNotification();
@@ -125,8 +124,11 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile/addresses/{id}/default', [AddressController::class, 'setDefault'])->name('addresses.default');
     Route::post('/profile/addresses/normalize-34', [AddressController::class, 'normalizeAllTo34'])->name('addresses.normalize-34');
 
-    // API Sổ địa chỉ (Cung cấp cho Thành viên 4 chọn nhanh khi Checkout)
+    // API Sổ địa chỉ (Cung cấp cho Thành viên 4 chọn nhanh khi Checkout & Đồng bộ 34 tỉnh)
     Route::get('/api/user/addresses', [AddressController::class, 'apiList'])->name('api.user.addresses');
+    Route::get('/api/user/addresses/preview-sync', [AddressController::class, 'previewSync'])->name('api.user.addresses.preview-sync');
+    Route::post('/api/user/addresses/convert', [AddressController::class, 'convert'])->name('api.user.addresses.convert');
+    Route::post('/api/user/addresses/parse-convert', [AddressController::class, 'parseConvert'])->name('api.user.addresses.parse-convert');
 });
 
 // =========================================================================

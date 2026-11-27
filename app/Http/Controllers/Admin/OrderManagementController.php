@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Mail\OrderStatusUpdatedMail;
 use App\Models\Order;
 use App\Models\OrderStatusHistory;
 use App\Models\ProductVariant;
@@ -11,6 +12,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Validation\ValidationException;
 use Illuminate\View\View;
 
@@ -81,7 +83,7 @@ class OrderManagementController extends Controller
             'cancel_reason' => ['required_if:status,cancelled', 'nullable', 'string', 'max:255'],
         ]);
 
-        DB::transaction(function () use ($request, $orderCode, $validated): void {
+        $order = DB::transaction(function () use ($request, $orderCode, $validated): Order {
             $order = Order::query()
                 ->where('order_code', $orderCode)
                 ->lockForUpdate()
@@ -157,7 +159,13 @@ class OrderManagementController extends Controller
                     : 'Trạng thái đơn hàng được cập nhật.',
                 'changed_by' => $request->user()->getKey(),
             ]);
+
+            return $order;
         }, attempts: 3);
+
+        if (in_array($order->status, ['confirmed', 'cancelled'], true)) {
+            Mail::to($order->user->email)->queue(new OrderStatusUpdatedMail($order));
+        }
 
         return redirect()
             ->route('admin.orders.show', $orderCode)

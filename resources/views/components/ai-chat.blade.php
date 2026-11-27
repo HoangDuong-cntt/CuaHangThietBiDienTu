@@ -64,7 +64,7 @@
                 </div>
                 <div>
                     <h3 class="font-bold text-sm leading-none">Chăm Sóc Khách Hàng</h3>
-                    <p class="text-[11px] text-emerald-100 font-normal mt-1 leading-none">SmartTech Support 24/7</p>
+                    <p class="text-[11px] text-emerald-100 font-normal mt-1 leading-none">D&D Support 24/7</p>
                 </div>
             </div>
             <button type="button" onclick="window.SmartTechAI.closeCSKH()" class="w-7 h-7 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-xs transition-colors">
@@ -114,7 +114,7 @@
                 </div>
                 <div class="flex items-center gap-2">
                     <i class="fa-solid fa-envelope text-slate-400"></i>
-                    <span>Email: <strong>cskh@smarttech.vn</strong></span>
+                    <span>Email: <strong>cskh@dnd.vn</strong></span>
                 </div>
             </div>
 
@@ -122,7 +122,7 @@
             <button 
                 type="button" 
                 onclick="window.SmartTechAI.closeCSKH(); window.SmartTechAI.openChat();"
-                class="w-full py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold text-xs shadow-xs transition-all flex items-center justify-center gap-1.5"
+                class="w-full py-2.5 rounded-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white font-bold text-xs shadow-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer"
             >
                 <i class="fa-solid fa-sparkles text-[11px]"></i>
                 <span>Cần tư vấn thông số? Hỏi AI ngay</span>
@@ -143,7 +143,7 @@
                 </div>
                 <div>
                     <div class="flex items-center gap-1.5">
-                        <h3 class="font-bold text-sm tracking-tight leading-none">SmartTech AI</h3>
+                        <h3 class="font-bold text-sm tracking-tight leading-none">D&D AI</h3>
                         <span class="text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded-full bg-emerald-400/20 text-emerald-200 border border-emerald-300/30">Online</span>
                     </div>
                     <p class="text-[11px] text-white/80 font-normal mt-1 leading-none">Tư vấn thông số kỹ thuật 24/7</p>
@@ -166,7 +166,7 @@
                     <i class="fa-solid fa-sparkles text-[10px]"></i>
                 </div>
                 <div class="bg-white border border-slate-200/70 rounded-2xl rounded-tl-xs p-3 text-slate-800 shadow-xs max-w-[85%] leading-relaxed">
-                    👋 Chào bạn! Tôi là <strong>SmartTech AI</strong>. Bạn đang tìm Laptop văn phòng mỏng nhẹ, máy Gaming hay muốn so sánh chi tiết pin/cân nặng của sản phẩm nào không?
+                    👋 Chào bạn! Tôi là <strong>D&D AI</strong>. Bạn đang tìm Laptop văn phòng mỏng nhẹ, máy Gaming hay muốn so sánh chi tiết pin/cân nặng của sản phẩm nào không?
                 </div>
             </div>
 
@@ -197,13 +197,13 @@
                     type="text" 
                     id="ai-chat-input"
                     placeholder="Hỏi về cấu hình, pin, cân nặng..." 
-                    class="flex-1 py-2 px-3.5 text-xs bg-slate-100 focus:bg-white text-slate-900 rounded-full border border-transparent focus:border-blue-500 focus:outline-hidden focus:ring-2 focus:ring-blue-500/20 transition-all placeholder:text-slate-400"
+                    class="flex-1 min-h-0 h-10 py-2 px-4 text-xs bg-slate-100 focus:bg-white text-slate-900 rounded-full border border-transparent focus:border-[#7C3AED] focus:outline-hidden focus:ring-2 focus:ring-purple-500/20 transition-all placeholder:text-slate-400"
                     autocomplete="off"
                 >
                 <button 
                     type="submit" 
                     id="ai-chat-send-btn"
-                    class="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center shrink-0 hover:shadow-md hover:scale-105 active:scale-95 transition-all text-xs"
+                    class="w-10 h-10 rounded-full bg-[#7C3AED] hover:bg-[#6D28D9] text-white flex items-center justify-center shrink-0 hover:shadow-md hover:scale-105 active:scale-95 transition-all text-xs cursor-pointer"
                 >
                     <i class="fa-solid fa-paper-plane"></i>
                 </button>
@@ -465,4 +465,5 @@ window.SmartTechAI = (function() {
         setProductContext
     };
 })();
+window.DndAI = window.SmartTechAI;
 </script>

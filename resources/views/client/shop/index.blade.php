@@ -1,11 +1,11 @@
 @extends('layouts.client')
 
-@section('title', 'Cửa Hàng Thiết Bị Công Nghệ - tinh.')
+@section('title', 'Cửa Hàng Thiết Bị Công Nghệ - D&D.')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
-    <!-- BREADCRUMB & HEADER BANNER (CHUẨN FORM MẪU TINH.) -->
+    <!-- BREADCRUMB & HEADER BANNER (CHUẨN DESIGN SYSTEM D&D.) -->
     <div class="mb-8">
         <nav class="flex items-center gap-2 text-xs text-slate-400 mb-4">
             <a href="{{ route('home') }}" class="hover:text-blue-600 transition-colors">Trang chủ</a>
@@ -17,13 +17,13 @@
             @endif
         </nav>
 
-        <div class="bg-[#f4f6f8] rounded-3xl p-8 sm:p-10 border border-slate-200/70 relative overflow-hidden">
+        <div class="bg-[#F5F7FA] rounded-3xl p-8 sm:p-10 border border-slate-200/60 relative overflow-hidden shadow-2xs">
             <div class="relative z-10 max-w-2xl space-y-2">
                 <span class="text-blue-600 font-bold text-[11px] uppercase tracking-wider block">
                     CÔNG NGHỆ TINH GỌN &bull; TRẢI NGHIỆM TRỌN VẸN
                 </span>
                 <h1 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-                    Hệ Thống Thiết Bị Thông Minh
+                    Hệ Thống Thiết Bị Thông Minh D&D.
                 </h1>
                 <p class="text-xs sm:text-sm text-slate-500 leading-relaxed font-normal">
                     Khám phá thiết bị công nghệ chính hãng từ Apple, Asus, Dell, MSI, Lenovo, Samsung, Xiaomi. Sử dụng bộ lọc thông số sâu và trợ lý AI để chọn máy ưng ý nhất!
@@ -64,13 +64,13 @@
                     <div>
                         <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Danh Mục</h4>
                         <div class="space-y-1.5 max-h-48 overflow-y-auto pr-1 text-xs">
-                            <a href="{{ route('shop.index', array_merge(request()->except('category', 'page'))) }}" 
+                            <a href="{{ route('shop.index', array_merge(request()->except('category', 'page'))) }}"
                                class="flex items-center justify-between py-1.5 px-2.5 rounded-xl transition-colors {{ !request('category') ? 'bg-blue-50 text-blue-700 font-bold' : 'text-slate-600 hover:bg-slate-50' }}">
                                 <span>Tất cả danh mục</span>
                                 <span class="text-[10px] text-slate-400">{{ \App\Models\Product::where('is_active', true)->count() }}</span>
                             </a>
                             @foreach($categories as $cat)
-                            <a href="{{ route('shop.index', array_merge(request()->except('page'), ['category' => $cat->slug])) }}" 
+                            <a href="{{ route('shop.index', array_merge(request()->except('page'), ['category' => $cat->slug])) }}"
                                class="flex items-center justify-between py-1.5 px-2.5 rounded-xl transition-colors {{ request('category') === $cat->slug ? 'bg-blue-50 text-blue-700 font-bold' : 'text-slate-600 hover:bg-slate-50' }}">
                                 <span>{{ $cat->name }}</span>
                                 <span class="text-[10px] text-slate-400">{{ $cat->products_count }}</span>
@@ -89,9 +89,9 @@
                             @foreach($brands as $brand)
                             <label class="flex items-center justify-between cursor-pointer group hover:text-blue-600">
                                 <div class="flex items-center gap-2">
-                                    <input 
-                                        type="checkbox" 
-                                        name="brands[]" 
+                                    <input
+                                        type="checkbox"
+                                        name="brands[]"
                                         value="{{ $brand->id }}"
                                         {{ in_array($brand->id, $selectedBrands) ? 'checked' : '' }}
                                         onchange="document.getElementById('filter-form').submit()"
@@ -111,9 +111,9 @@
                         <div class="grid grid-cols-2 gap-2 text-xs mb-2.5">
                             <div>
                                 <label class="text-[10px] text-slate-400 block mb-1">Từ (triệu):</label>
-                                <input 
-                                    type="number" 
-                                    name="min_price" 
+                                <input
+                                    type="number"
+                                    name="min_price"
                                     value="{{ request('min_price') }}"
                                     placeholder="0"
                                     class="w-full px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs focus:border-blue-500 focus:outline-hidden"
@@ -121,16 +121,16 @@
                             </div>
                             <div>
                                 <label class="text-[10px] text-slate-400 block mb-1">Đến (triệu):</label>
-                                <input 
-                                    type="number" 
-                                    name="max_price" 
+                                <input
+                                    type="number"
+                                    name="max_price"
                                     value="{{ request('max_price') }}"
                                     placeholder="100"
                                     class="w-full px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs focus:border-blue-500 focus:outline-hidden"
                                 >
                             </div>
                         </div>
-                        <button type="submit" class="w-full py-1.5 bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-700 text-xs font-semibold rounded-lg transition-colors">
+                        <button type="submit" class="w-full py-2 bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-700 text-xs font-semibold rounded-full transition-colors cursor-pointer">
                             Áp dụng giá
                         </button>
 
@@ -250,7 +250,7 @@
                 <!-- Sorting Dropdown -->
                 <div class="flex items-center gap-2 text-xs">
                     <label class="text-slate-400 font-medium shrink-0">Sắp xếp theo:</label>
-                    <select 
+                    <select
                         id="sort-select"
                         onchange="handleSortChange(this.value)"
                         class="px-3 py-1.5 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 text-slate-700 text-xs font-semibold focus:outline-hidden focus:border-blue-500 cursor-pointer shadow-2xs"
@@ -273,28 +273,28 @@
                     </div>
                     <h3 class="text-base font-bold text-slate-800 mb-1">Không tìm thấy sản phẩm nào</h3>
                     <p class="text-xs text-slate-500 max-w-sm mx-auto mb-6">Thử thay đổi bộ lọc khoảng giá, thương hiệu hoặc từ khóa tìm kiếm để khám phá nhiều sản phẩm hơn.</p>
-                    <a href="{{ route('shop.index') }}" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-colors inline-block">
+                    <a href="{{ route('shop.index') }}" class="px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition-colors inline-block shadow-sm">
                         Khôi phục bộ lọc
                     </a>
                 </div>
             @else
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
                     @foreach($products as $product)
-                    <div class="bg-white rounded-3xl p-4 border border-slate-200/80 hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative">
+                    <div class="tilt-card bg-white rounded-3xl p-4 border border-slate-200/80 hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group relative shadow-2xs" data-tilt>
 
                         <!-- Badge Giảm giá hoặc Bán chạy -->
-                        <div class="absolute top-4 left-4 z-10 flex flex-col gap-1">
+                        <div class="absolute top-6 left-6 z-10 flex flex-col gap-1">
                             @if($product->is_on_sale)
                                 @php
                                     $discountPercent = round((($product->base_price - $product->sale_price) / $product->base_price) * 100);
                                 @endphp
-                                <span class="px-2 py-0.5 rounded-full text-[10px] font-black bg-red-600 text-white shadow-xs">
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-rose-50/95 text-rose-600 border border-rose-100 backdrop-blur-xs shadow-2xs">
                                     -{{ $discountPercent }}%
                                 </span>
                             @endif
                             @if($product->total_sold > 150)
-                                <span class="px-2 py-0.5 rounded-full text-[10px] font-black bg-amber-500 text-white shadow-xs">
-                                    🔥 HOT
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-50/95 text-amber-700 border border-amber-100 backdrop-blur-xs shadow-2xs">
+                                    🔥 Bán chạy
                                 </span>
                             @endif
                         </div>
@@ -303,7 +303,7 @@
                         <button 
                             type="button" 
                             onclick="toggleWishlist({{ $product->id }}, this)" 
-                            class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-white/80 backdrop-blur-xs text-slate-400 hover:text-red-500 hover:bg-white flex items-center justify-center shadow-xs border border-slate-200 transition-colors"
+                            class="absolute top-6 right-6 z-10 w-8 h-8 rounded-full bg-white/85 backdrop-blur-xs text-slate-400 hover:text-rose-500 hover:bg-white flex items-center justify-center shadow-xs border border-slate-200/80 transition-colors cursor-pointer"
                             title="Thêm vào yêu thích"
                         >
                             <i class="fa-regular fa-heart text-xs"></i>
@@ -311,11 +311,11 @@
 
                         <!-- Product Thumbnail -->
                         <div>
-                            <a href="{{ route('products.show', $product->slug) }}" class="w-full h-44 rounded-2xl bg-slate-50/70 p-4 flex items-center justify-center overflow-hidden mb-3 border border-slate-100 block group-hover:border-blue-200 transition-colors">
+                            <a href="{{ route('products.show', $product->slug) }}" class="w-full h-48 rounded-2xl bg-[#F1F5F9] overflow-hidden mb-3.5 block">
                                 <img 
                                     src="{{ $product->images->first()?->image_url ?? '/images/placeholder.svg' }}" 
                                     alt="{{ $product->name }}" 
-                                    class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                                     onerror="this.src='/images/placeholder.svg'"
                                 >
                             </a>
@@ -356,7 +356,7 @@
                         <!-- Price & Action Buttons -->
                         <div class="pt-3 border-t border-slate-100">
                             <div class="flex items-baseline gap-2 mb-3">
-                                <span class="text-base font-extrabold text-red-600">
+                                <span class="text-base font-black text-slate-900">
                                     {{ number_format($product->current_price, 0, ',', '.') }} đ
                                 </span>
                                 @if($product->is_on_sale)
@@ -371,7 +371,7 @@
                                 <button 
                                     type="button" 
                                     onclick="addToCart({{ $product->variants->first()?->id ?? $product->id }}, 1)" 
-                                    class="py-2 px-2 rounded-xl bg-blue-50 hover:bg-blue-600 text-blue-600 hover:text-white text-xs font-bold transition-all text-center flex items-center justify-center gap-1 cursor-pointer"
+                                    class="py-2 px-2 rounded-full bg-blue-50 hover:bg-blue-600 text-blue-600 hover:text-white text-xs font-bold transition-all text-center flex items-center justify-center gap-1 cursor-pointer"
                                     title="Thêm vào giỏ hàng"
                                 >
                                     <i class="fa-solid fa-cart-plus text-[11px]"></i>
@@ -381,7 +381,7 @@
                                 <button 
                                     type="button" 
                                     onclick="addToCompare({{ $product->id }}, {{ $product->category?->getRoot()->id ?? $product->category_id }}, '{{ addslashes($product->category?->getRoot()->name ?? $product->category?->name) }}')" 
-                                    class="py-2 px-2 rounded-xl bg-slate-100 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 text-xs font-semibold text-center border border-slate-200/80 transition-colors flex items-center justify-center gap-1 cursor-pointer"
+                                    class="py-2 px-2 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold text-center border border-slate-200/70 transition-colors flex items-center justify-center gap-1 cursor-pointer"
                                     title="So sánh với máy cùng loại"
                                 >
                                     <i class="fa-solid fa-scale-balanced text-[11px]"></i>
@@ -391,10 +391,10 @@
                                 <button 
                                     type="button" 
                                     onclick="window.SmartTechAI && window.SmartTechAI.setProductContext({{ $product->id }}); window.SmartTechAI && window.SmartTechAI.openChat();" 
-                                    class="py-2 px-2 rounded-xl bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-blue-600 text-xs font-semibold text-center border border-slate-200/80 transition-colors flex items-center justify-center gap-1 cursor-pointer"
+                                    class="py-2 px-2 rounded-full bg-[#F5F3FF] hover:bg-[#7C3AED] text-[#7C3AED] hover:text-white text-xs font-semibold text-center border border-purple-100 transition-colors flex items-center justify-center gap-1 cursor-pointer"
                                     title="Hỏi AI về máy này"
                                 >
-                                    <i class="fa-solid fa-sparkles text-amber-500 text-[11px]"></i>
+                                    <i class="fa-solid fa-sparkles text-[11px]"></i>
                                     <span>Hỏi AI</span>
                                 </button>
                             </div>

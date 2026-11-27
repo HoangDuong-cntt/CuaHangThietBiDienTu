@@ -7,41 +7,144 @@
 @source '../views/**/*.blade.php';
 
 @theme {
-    --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --color-dnd-blue: #2563eb;
+    --color-dnd-blue-dark: #1d4ed8;
+    --color-dnd-purple: #7c3aed;
+    --color-dnd-purple-dark: #6d28d9;
+    --color-dnd-navy: #0f172a;
+    --color-dnd-subtle: #f8fafc;
 }
 
 :root {
+    --dnd-primary: #2563eb;
+    --dnd-primary-hover: #1d4ed8;
+    --dnd-purple: #7c3aed;
+    --dnd-purple-hover: #6d28d9;
+    --dnd-bg-page: #ffffff;
+    --dnd-bg-subtle: #f8fafc;
+    --dnd-bg-surface: #f1f5f9;
+    --dnd-text-heading: #0f172a;
+    --dnd-text-body: #334155;
+    --dnd-text-muted: #64748b;
+    --dnd-border-light: #e2e8f0;
+    --dnd-radius-card: 1.25rem;
+    --dnd-radius-pill: 9999px;
     color: #0f172a;
     background: #ffffff;
-    font-family: 'Plus Jakarta Sans', var(--font-sans);
+    font-family: var(--font-sans);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
 }
 
-* {
-    box-sizing: border-box;
+/* ==================== D&D 3D & MICRO-INTERACTIONS ==================== */
+@keyframes dnd-float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-8px) rotate(0.5deg);
+    }
 }
 
-body {
-    min-width: 320px;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #ffffff;
-    color: #0f172a;
+@keyframes dnd-pulse-glow {
+    0%, 100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.04);
+    }
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+.animate-dnd-float {
+    animation: dnd-float 6s ease-in-out infinite;
 }
 
-button,
-input,
-select,
-textarea {
-    font: inherit;
+.animate-dnd-pulse-glow {
+    animation: dnd-pulse-glow 4s ease-in-out infinite;
 }
 
+/* 3D Tilt Card Container */
+.tilt-card {
+    transition: transform 0.25s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.25s cubic-bezier(0.2, 0, 0, 1);
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.tilt-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+}
+
+/* Glassmorphism utility */
+.dnd-glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.dnd-glass-pill {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.08);
+}
+
+.scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+@layer base {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        min-width: 320px;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #ffffff;
+        color: #0f172a;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font: inherit;
+    }
+
+    :where(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea) {
+        width: 100%;
+        min-height: 44px;
+        padding: 10px 14px;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        background: #ffffff;
+        color: #0f172a;
+        transition: border-color .15s ease, box-shadow .15s ease;
+    }
+
+    :where(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select, textarea):focus {
+        border-color: #2563eb;
+        outline: 3px solid rgb(37 99 235 / 14%);
+    }
+}
+
+@layer components {
 .container {
     width: min(1120px, calc(100% - 40px));
     margin: 0 auto;
@@ -256,15 +359,15 @@ textarea {
 
 .text-link,
 .button-link {
-    color: #1747b0;
+    color: #2563eb;
     font-weight: 700;
 }
 
 .card {
-    border: 1px solid #e7eaf1;
-    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
     background: #fff;
-    box-shadow: 0 12px 30px rgb(22 37 69 / 4%);
+    box-shadow: 0 12px 30px rgb(15 23 42 / 4%);
 }
 
 .cart-layout,
@@ -280,7 +383,7 @@ textarea {
 .checkout-form,
 .order-status-card,
 .order-detail-card {
-    padding: 24px;
+    padding: 28px;
 }
 
 .cart-row {
@@ -289,7 +392,7 @@ textarea {
     align-items: center;
     gap: 18px;
     padding: 20px 0;
-    border-bottom: 1px solid #edf0f5;
+    border-bottom: 1px solid #f1f5f9;
 }
 
 .cart-row:first-child {
@@ -305,9 +408,9 @@ textarea {
     width: 76px;
     height: 76px;
     place-items: center;
-    border-radius: 15px;
-    background: linear-gradient(145deg, #eaf0ff, #f3f6ff);
-    color: #1747b0;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #eff6ff, #f8fafc);
+    color: #2563eb;
     font-size: 1.8rem;
     font-weight: 800;
 }
@@ -318,13 +421,15 @@ textarea {
 .order-detail-card h2 {
     margin: 0 0 7px;
     font-size: 1.02rem;
+    font-weight: 800;
+    color: #0f172a;
 }
 
 .cart-product p,
 .muted-text,
 .secure-note,
 .tracking-card > p {
-    color: #6b7890;
+    color: #64748b;
     font-size: .88rem;
 }
 
@@ -345,7 +450,7 @@ textarea {
     gap: 7px;
 }
 
-input,
+input:not([type="checkbox"]):not([type="radio"]),
 select,
 textarea {
     width: 100%;
@@ -357,7 +462,7 @@ textarea {
     color: #172033;
 }
 
-input:focus,
+input:not([type="checkbox"]):not([type="radio"]):focus,
 select:focus,
 textarea:focus {
     border-color: #527ee7;
@@ -368,6 +473,7 @@ textarea:focus {
     width: 68px;
     min-height: 40px;
     text-align: center;
+    border-radius: 9999px;
 }
 
 .cart-row-total {
@@ -392,12 +498,13 @@ textarea:focus {
     min-height: 44px;
     align-items: center;
     justify-content: center;
-    padding: 0 16px;
+    padding: 0 22px;
     border: 0;
-    border-radius: 10px;
+    border-radius: 9999px;
     cursor: pointer;
-    font-weight: 750;
-    transition: transform .15s ease, background .15s ease;
+    font-size: .875rem;
+    font-weight: 700;
+    transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
 }
 
 .button:hover {
@@ -405,20 +512,25 @@ textarea:focus {
 }
 
 .button-primary {
-    background: #1747b0;
+    background: #2563eb;
     color: #fff;
+    box-shadow: 0 8px 20px -6px rgb(37 99 235 / 40%);
 }
 
 .button-primary:hover {
-    background: #103991;
+    background: #1d4ed8;
 }
 
 .button-secondary {
     min-height: 38px;
-    padding: 0 11px;
-    background: #eef2fb;
-    color: #34425d;
-    font-size: .82rem;
+    padding: 0 14px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: .8rem;
+}
+
+.button-secondary:hover {
+    background: #dbeafe;
 }
 
 .button-full {
@@ -433,12 +545,12 @@ textarea:focus {
 .summary-line {
     gap: 16px;
     margin: 14px 0;
-    color: #68758d;
+    color: #64748b;
     font-size: .9rem;
 }
 
 .summary-line > :last-child {
-    color: #172033;
+    color: #0f172a;
     text-align: right;
 }
 
@@ -446,13 +558,14 @@ textarea:focus {
     gap: 16px;
     margin-top: 20px;
     padding-top: 18px;
-    border-top: 1px solid #e9edf4;
+    border-top: 1px solid #f1f5f9;
     font-size: 1rem;
 }
 
 .summary-total strong {
-    color: #1747b0;
-    font-size: 1.2rem;
+    color: #2563eb;
+    font-size: 1.25rem;
+    font-weight: 800;
 }
 
 .secure-note {
@@ -605,18 +718,18 @@ textarea:focus {
 }
 
 .status-heading > strong {
-    color: #1747b0;
+    color: #2563eb;
     font-size: 1.2rem;
 }
 
 .status-pill {
     display: inline-block;
-    padding: 6px 10px;
+    padding: 6px 12px;
     border-radius: 999px;
-    background: #edf2ff;
-    color: #1747b0;
+    background: #eff6ff;
+    color: #2563eb;
     font-size: .78rem;
-    font-weight: 750;
+    font-weight: 700;
 }
 
 .status-cancelled {
@@ -661,9 +774,9 @@ textarea:focus {
     height: 13px;
     flex: 0 0 13px;
     margin-top: 3px;
-    border: 3px solid #dbe6ff;
+    border: 3px solid #dbeafe;
     border-radius: 50%;
-    background: #1747b0;
+    background: #2563eb;
 }
 
 .timeline-item p {
@@ -1028,6 +1141,7 @@ textarea:focus {
     .admin-content {
         padding: 18px;
     }
+}
 }
 
 [x-cloak] {

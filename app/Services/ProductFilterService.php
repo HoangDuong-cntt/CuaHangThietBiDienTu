@@ -163,7 +163,7 @@ class ProductFilterService
      */
     public function getFeaturedTabsProducts(string $tab = 'featured', int $limit = 4): array
     {
-        $query = Product::with(['brand', 'category', 'images'])
+        $query = Product::with(['brand', 'category', 'images', 'variants'])
             ->where('is_active', true);
 
         match ($tab) {
@@ -175,7 +175,7 @@ class ProductFilterService
 
         $products = $query->take($limit)->get();
         if ($products->isEmpty()) {
-            $products = Product::with(['brand', 'category', 'images'])
+            $products = Product::with(['brand', 'category', 'images', 'variants'])
                 ->where('is_active', true)
                 ->orderBy('total_sold', 'desc')
                 ->take($limit)
@@ -184,6 +184,7 @@ class ProductFilterService
 
         return $products->map(fn (Product $p) => [
             'id' => $p->id,
+            'default_variant_id' => $p->variants->first()?->id ?? $p->id,
             'name' => $p->name,
             'slug' => $p->slug,
             'sku' => $p->sku_master,

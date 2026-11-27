@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="csrf-token" content="{{ request()->hasSession() ? csrf_token() : '' }}">
 
     <title>@yield('title', 'D&D - Tinh Chọn Công Nghệ, Trọn Vẹn Trải Nghiệm')</title>
 
@@ -23,14 +23,14 @@
 </head>
 <body class="flex flex-col min-h-screen bg-white text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
 
-    <!-- TOP ANNOUNCEMENT BAR -->
-    <div class="bg-zinc-950 text-zinc-300 text-xs font-medium py-2 px-4 border-b border-zinc-900">
+    <!-- TOP ANNOUNCEMENT BAR (MATCHING MOCKUP: #0F172A) -->
+    <div class="bg-[#0F172A] text-slate-300 text-xs font-medium py-2 px-4 border-b border-slate-900">
         <div class="max-w-7xl mx-auto flex items-center justify-between text-xs">
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-2">
                 <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
                 <span>Giao hàng miễn phí cho đơn từ 2 triệu &bull; Đổi mới trong 30 ngày</span>
             </div>
-            <a href="{{ route('shop.index') }}" class="text-zinc-200 hover:text-white font-semibold transition-colors flex items-center gap-1">
+            <a href="{{ route('shop.index') }}" class="text-white hover:text-blue-300 font-semibold transition-colors flex items-center gap-1">
                 <span>Khám phá ngay</span>
                 <span class="text-xs">&rarr;</span>
             </a>
@@ -47,25 +47,33 @@
                     <span class="text-2xl font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">D&D<span class="text-blue-600 font-extrabold text-3xl leading-none">.</span></span>
                 </a>
 
-                <!-- Search Bar with Live Autocomplete & ⌘K Shortcut -->
                 <div class="flex-1 max-w-xl relative" id="autocomplete-wrapper">
                     <form action="{{ route('shop.index') }}" method="GET" class="relative">
                         <div class="relative flex items-center">
-                            <i class="fa-solid fa-magnifying-glass absolute left-3.5 text-slate-400 text-sm pointer-events-none"></i>
-                            <input 
-                                type="text" 
-                                name="q" 
-                                id="autocomplete-input"
-                                value="{{ request('q') }}"
-                                placeholder="Bạn đang tìm thiết bị nào?" 
-                                autocomplete="off"
-                                class="w-full pl-10 pr-12 py-2 text-sm bg-slate-100 hover:bg-slate-100/90 focus:bg-white text-slate-900 rounded-full border border-transparent focus:border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500/10 transition-all placeholder:text-slate-400"
-                            >
-                            <span class="absolute right-3 font-mono text-[10px] text-slate-400 border border-slate-200 bg-white px-1.5 py-0.5 rounded shadow-2xs select-none pointer-events-none">⌘K</span>
-                            <button type="button" id="clear-search-btn" class="hidden absolute right-10 text-slate-400 hover:text-slate-600 text-xs">
-                                <i class="fa-solid fa-circle-xmark"></i>
-                            </button>
-                        </div>
+                                <input
+                                    type="text"
+                                    name="q"
+                                    id="autocomplete-input"
+                                    value="{{ request('q') }}"
+                                    placeholder="Bạn đang tìm thiết bị nào?"
+                                    autocomplete="off"
+                                    class="w-full pl-4 pr-16 py-2 text-sm bg-slate-100 hover:bg-slate-100/90 focus:bg-white text-slate-900
+                                    rounded-full border border-transparent focus:border-slate-300 focus:outline-hidden focus:ring-2
+                                    focus:ring-blue-500/10 transition-all placeholder:text-slate-400"
+                                >
+
+                                <!-- Nút xoá chữ -->
+                                <button type="button" id="clear-search-btn" class="hidden absolute right-10 text-slate-400
+                                hover:text-slate-600 text-xs">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                </button>
+
+                                <!-- Nút kính lúp có thể click để tìm kiếm -->
+                                <button type="submit" class="absolute right-3 text-slate-400 hover:text-blue-600 transition-colors p-1 flex
+                                items-center justify-center cursor-pointer">
+                                    <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                                </button>
+                            </div>
                     </form>
 
                     <!-- Autocomplete Dropdown Popup -->
@@ -84,28 +92,30 @@
                 </div>
 
                 <!-- Navigation Links & Actions matching screenshot: Tư vấn | Tài khoản | Giỏ hàng -->
-                <nav class="flex items-center gap-2 sm:gap-4">
+                <nav class="flex items-center gap-1.5 sm:gap-3 shrink-0">
                     <!-- Tư vấn Button -->
                     <button 
                         type="button" 
                         onclick="window.SmartTechAI && window.SmartTechAI.openChat()" 
-                        class="px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:text-blue-600 rounded-lg hover:bg-slate-100 transition-colors flex items-center gap-1.5 cursor-pointer"
+                        class="px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:text-blue-600 rounded-full hover:bg-slate-100 transition-colors flex items-center gap-1.5 cursor-pointer"
+                        title="Tư vấn AI & CSKH"
                     >
                         <i class="fa-solid fa-headset text-slate-500"></i>
-                        <span>Tư vấn</span>
+                        <span class="hidden sm:inline">Tư vấn</span>
                     </button>
 
                     <!-- Tài khoản Dropdown Menu -->
                     <div class="relative" id="user-menu-wrapper">
                         @guest
-                            <button 
-                                type="button" 
+                            <button
+                                type="button"
                                 id="user-menu-btn"
                                 onclick="toggleUserDropdown()" 
-                                class="px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:text-blue-600 rounded-lg hover:bg-slate-100 transition-colors flex items-center gap-1.5 cursor-pointer"
+                                class="px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:text-blue-600 rounded-full hover:bg-slate-100 transition-colors flex items-center gap-1.5 cursor-pointer"
+                                title="Tài khoản"
                             >
                                 <i class="fa-regular fa-user text-slate-500"></i>
-                                <span>Tài khoản</span>
+                                <span class="hidden sm:inline">Tài khoản</span>
                             </button>
 
                             <div id="user-dropdown" class="hidden absolute right-0 top-full mt-2 w-52 bg-white rounded-2xl shadow-xl border border-slate-100 p-2 z-50 text-xs">
@@ -128,10 +138,10 @@
                                 </a>
                             </div>
                         @else
-                            <button 
-                                type="button" 
+                            <button
+                                type="button"
                                 id="user-menu-btn"
-                                onclick="toggleUserDropdown()" 
+                                onclick="toggleUserDropdown()"
                                 class="px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:text-blue-600 rounded-lg hover:bg-slate-100 transition-colors flex items-center gap-1.5 cursor-pointer"
                             >
                                 @if(Auth::user()->avatar)
@@ -191,10 +201,10 @@
                     </div>
 
                     <!-- Giỏ hàng Button with live badge -->
-                    <a href="{{ route('cart.index') }}" class="px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:text-blue-600 rounded-lg hover:bg-slate-100 transition-colors flex items-center gap-1.5 relative" title="Giỏ hàng">
+                    <a href="{{ route('cart.index') }}" class="px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:text-blue-600 rounded-full hover:bg-slate-100 transition-colors flex items-center gap-1.5 relative" title="Giỏ hàng">
                         <i class="fa-solid fa-cart-shopping text-slate-500"></i>
-                        <span>Giỏ hàng</span>
-                        <span class="cart-badge min-w-[18px] h-[18px] px-1 bg-blue-600 text-[10px] font-bold text-white rounded-full flex items-center justify-center ml-0.5" data-cart-count>{{ $cartCount ?? 0 }}</span>
+                        <span class="hidden sm:inline">Giỏ hàng</span>
+                        <span class="min-w-[18px] h-[18px] px-1 bg-blue-600 text-[10px] font-bold text-white rounded-full flex items-center justify-center ml-0.5" data-cart-count>{{ $cartCount ?? 0 }}</span>
                     </a>
                 </nav>
             </div>
@@ -226,7 +236,7 @@
                     <a href="{{ route('shop.index', ['sort' => 'sale']) }}" class="hover:text-blue-600 font-semibold transition-colors flex items-center gap-1">
                         <span>Ưu đãi hôm nay</span>
                     </a>
-                    <a href="#goc-cong-nghe" class="hover:text-blue-600 font-semibold transition-colors flex items-center gap-0.5 text-slate-500">
+                    <a href="{{ route('home') }}#goc-cong-nghe" class="hover:text-blue-600 font-semibold transition-colors flex items-center gap-0.5 text-slate-500">
                         <span>Góc công nghệ</span>
                         <span class="text-[10px]">↗</span>
                     </a>
@@ -270,7 +280,7 @@
                     <h4 class="text-slate-900 text-xs font-bold tracking-wider mb-4">Khám phá D&D</h4>
                     <ul class="space-y-2.5 text-xs text-slate-500">
                         <li><a href="{{ route('shop.index') }}" class="hover:text-blue-600 transition-colors">Về chúng tôi</a></li>
-                        <li><a href="#goc-cong-nghe" class="hover:text-blue-600 transition-colors">Góc công nghệ</a></li>
+                        <li><a href="{{ route('home') }}#goc-cong-nghe" class="hover:text-blue-600 transition-colors">Góc công nghệ</a></li>
                         <li><a href="{{ route('shop.index') }}" class="hover:text-blue-600 transition-colors">Hệ thống cửa hàng</a></li>
                         <li><a href="{{ route('shop.index') }}" class="hover:text-blue-600 transition-colors">Cơ hội nghề nghiệp</a></li>
                     </ul>
@@ -378,18 +388,18 @@
                     viewAllLink.href = `/shop?q=${encodeURIComponent(query)}`;
 
                     resultsContainer.innerHTML = json.results.map(item => `
-                        <a href="/shop?q=${encodeURIComponent(item.name)}" class="flex items-center gap-3 p-3 hover:bg-slate-50 transition-colors group">
-                            <div class="w-12 h-12 rounded-lg bg-slate-100 flex items-center justify-center p-1 overflow-hidden shrink-0 border border-slate-200">
-                                <img src="${item.image_url}" alt="${escapeHtml(item.name)}" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300" onerror="this.src='/images/placeholder.svg'">
+                        <a href="/san-pham/${encodeURIComponent(item.slug)}" class="flex items-center gap-3 p-3 hover:bg-slate-50 transition-colors group">
+                            <div class="w-12 h-12 rounded-xl bg-[#F1F5F9] flex items-center justify-center overflow-hidden shrink-0">
+                                <img src="${item.image_url}" alt="${escapeHtml(item.name)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='/images/placeholder.svg'">
                             </div>
                             <div class="flex-1 min-w-0">
                                 <div class="flex items-center gap-1.5">
                                     <span class="text-[10px] font-bold text-blue-600 uppercase tracking-wider">${escapeHtml(item.brand || '')}</span>
                                     <span class="text-[10px] text-slate-400">• ${escapeHtml(item.sku)}</span>
                                 </div>
-                                <h4 class="text-xs font-semibold text-slate-800 truncate group-hover:text-blue-600 transition-colors">${escapeHtml(item.name)}</h4>
+                                <h4 class="text-xs font-semibold text-slate-900 truncate group-hover:text-blue-600 transition-colors">${escapeHtml(item.name)}</h4>
                                 <div class="flex items-baseline gap-2 mt-0.5">
-                                    <span class="text-xs font-bold text-red-600">${item.sale_price ? item.sale_price : item.price}</span>
+                                    <span class="text-xs font-bold text-slate-900">${item.sale_price ? item.sale_price : item.price}</span>
                                     ${item.sale_price ? `<span class="text-[10px] text-slate-400 line-through">${item.price}</span>` : ''}
                                 </div>
                             </div>
@@ -439,20 +449,20 @@
 
         <!-- Drawer Tabs -->
         <div class="flex p-2 bg-slate-100/80 border-b border-slate-200/60 text-xs font-semibold gap-1">
-            <button 
-                type="button" 
-                id="tab-btn-wishlist" 
-                onclick="switchWishlistTab('wishlist')" 
+            <button
+                type="button"
+                id="tab-btn-wishlist"
+                onclick="switchWishlistTab('wishlist')"
                 class="flex-1 py-2 px-3 rounded-xl bg-white text-slate-800 shadow-xs transition-all flex items-center justify-center gap-1.5 cursor-pointer"
             >
                 <i class="fa-solid fa-heart text-red-500 text-xs"></i>
                 <span>Yêu thích</span>
                 <span id="drawer-wishlist-count" class="ml-1 px-1.5 py-0.2 bg-red-100 text-red-700 text-[10px] font-bold rounded-full">0</span>
             </button>
-            <button 
-                type="button" 
-                id="tab-btn-recent" 
-                onclick="switchWishlistTab('recent')" 
+            <button
+                type="button"
+                id="tab-btn-recent"
+                onclick="switchWishlistTab('recent')"
                 class="flex-1 py-2 px-3 rounded-xl text-slate-500 hover:text-slate-800 transition-all flex items-center justify-center gap-1.5 cursor-pointer"
             >
                 <i class="fa-solid fa-clock-rotate-left text-blue-500 text-xs"></i>
@@ -571,7 +581,7 @@
                             <i class="fa-regular fa-heart text-4xl text-slate-300 mb-3 block"></i>
                             <p class="font-bold text-slate-600 mb-1">Chưa có sản phẩm yêu thích</p>
                             <p class="text-slate-400 mb-4">Hãy bấm vào biểu tượng trái tim ở các sản phẩm bạn ưng ý nhé.</p>
-                            <a href="/shop" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs transition-colors">
+                            <a href="/shop" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs transition-colors">
                                 Khám phá thiết bị ngay
                             </a>
                         </div>
@@ -581,13 +591,13 @@
 
                 listEl.innerHTML = items.map(item => `
                     <div class="p-3 rounded-2xl border border-slate-100 hover:border-slate-200 bg-white shadow-2xs flex items-center gap-3 transition-all group">
-                        <div class="w-16 h-16 rounded-xl bg-slate-50 border border-slate-100 p-1 flex items-center justify-center shrink-0">
-                            <img src="${item.image_url}" alt="${item.name}" class="w-full h-full object-contain group-hover:scale-105 transition-transform" onerror="this.src='/images/placeholder.svg'">
+                        <div class="w-16 h-16 rounded-xl bg-[#F1F5F9] overflow-hidden flex items-center justify-center shrink-0">
+                            <img src="${item.image_url}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform" onerror="this.src='/images/placeholder.svg'">
                         </div>
                         <div class="flex-1 min-w-0">
                             <span class="text-[10px] font-bold text-blue-600 uppercase">${item.brand || ''}</span>
-                            <h4 class="text-xs font-bold text-slate-800 truncate mb-1">${item.name}</h4>
-                            <div class="text-xs font-black text-red-600">${item.price}</div>
+                            <h4 class="text-xs font-bold text-slate-900 truncate mb-1">${item.name}</h4>
+                            <div class="text-xs font-black text-slate-900">${item.price}</div>
                             <div class="flex items-center gap-2 mt-2">
                                 <a href="/shop?q=${encodeURIComponent(item.name)}" class="text-[11px] font-semibold text-blue-600 hover:underline">
                                     Xem hàng
@@ -598,10 +608,10 @@
                                 </button>
                             </div>
                         </div>
-                        <button 
-                            type="button" 
-                            onclick="removeWishlistItem(${item.id})" 
-                            class="w-7 h-7 rounded-lg hover:bg-red-50 text-slate-300 hover:text-red-500 flex items-center justify-center transition-colors shrink-0" 
+                        <button
+                            type="button"
+                            onclick="removeWishlistItem(${item.id})"
+                            class="w-7 h-7 rounded-lg hover:bg-red-50 text-slate-300 hover:text-red-500 flex items-center justify-center transition-colors shrink-0"
                             title="Xóa khỏi yêu thích"
                         >
                             <i class="fa-solid fa-trash-can text-xs"></i>
@@ -633,7 +643,7 @@
                             <i class="fa-solid fa-clock-rotate-left text-4xl text-slate-300 mb-3 block"></i>
                             <p class="font-bold text-slate-600 mb-1">Chưa có lịch sử xem</p>
                             <p class="text-slate-400 mb-4">Các thiết bị bạn xem qua sẽ tự động lưu lại ở đây.</p>
-                            <a href="/shop" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs transition-colors">
+                            <a href="/shop" class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs transition-colors">
                                 Khám phá thiết bị ngay
                             </a>
                         </div>
@@ -643,13 +653,13 @@
 
                 listEl.innerHTML = items.map(item => `
                     <div class="p-3 rounded-2xl border border-slate-100 hover:border-slate-200 bg-white shadow-2xs flex items-center gap-3 transition-all group">
-                        <div class="w-16 h-16 rounded-xl bg-slate-50 border border-slate-100 p-1 flex items-center justify-center shrink-0">
-                            <img src="${item.image_url}" alt="${item.name}" class="w-full h-full object-contain group-hover:scale-105 transition-transform" onerror="this.src='/images/placeholder.svg'">
+                        <div class="w-16 h-16 rounded-xl bg-[#F1F5F9] overflow-hidden flex items-center justify-center shrink-0">
+                            <img src="${item.image_url}" alt="${item.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform" onerror="this.src='/images/placeholder.svg'">
                         </div>
                         <div class="flex-1 min-w-0">
                             <span class="text-[10px] font-bold text-blue-600 uppercase">${item.brand || ''}</span>
-                            <h4 class="text-xs font-bold text-slate-800 truncate mb-1">${item.name}</h4>
-                            <div class="text-xs font-black text-red-600">${item.price}</div>
+                            <h4 class="text-xs font-bold text-slate-900 truncate mb-1">${item.name}</h4>
+                            <div class="text-xs font-black text-slate-900">${item.price}</div>
                             <div class="flex items-center gap-2 mt-2">
                                 <a href="/shop?q=${encodeURIComponent(item.name)}" class="text-[11px] font-semibold text-blue-600 hover:underline">
                                     Xem hàng
@@ -737,6 +747,15 @@
             window.location.href = `/compare?ids=${ids.join(',')}`;
         }
 
+        // Đóng User Dropdown khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            const container = document.getElementById('user-menu-container');
+            const dropdown = document.getElementById('user-dropdown');
+            if (container && dropdown && !container.contains(e.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
+
         // Tự động kiểm tra badge yêu thích khi load trang
         document.addEventListener('DOMContentLoaded', function() {
             fetch('/api/wishlist')
@@ -780,6 +799,31 @@
             }
         });
 
+        // 3D Tilt Micro-interactions
+        function initTiltEffects() {
+            const tiltElements = document.querySelectorAll('.tilt-card, [data-tilt]');
+            tiltElements.forEach(card => {
+                if (card.dataset.tiltInitialized) return;
+                card.dataset.tiltInitialized = 'true';
+                
+                card.addEventListener('mousemove', e => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = ((y - centerY) / centerY) * -5;
+                    const rotateY = ((x - centerX) / centerX) * 5;
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px)`;
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+                });
+            });
+        }
+        document.addEventListener('DOMContentLoaded', initTiltEffects);
+        window.initTiltEffects = initTiltEffects;
+
         // Toast Notification System
         function showToast(message, type = 'success') {
             const container = document.getElementById('toast-container');
@@ -808,7 +852,7 @@
         // AJAX Add to Cart Handler
         async function addToCart(variantId, quantity = 1) {
             try {
-                const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+                const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || '';
                 const res = await fetch('/cart/add', {
                     method: 'POST',
                     headers: {
@@ -828,16 +872,24 @@
                 }
 
                 const data = await res.json().catch(() => ({}));
-                // Update badge
+                if (!res.ok) {
+                    const msg = Object.values(data.errors || {}).flat()[0] || data.message || 'Không thể thêm sản phẩm vào giỏ hàng.';
+                    showToast(msg, 'error');
+                    return;
+                }
+
                 const badges = document.querySelectorAll('[data-cart-count]');
                 badges.forEach(badge => {
-                    const current = parseInt(badge.textContent.trim(), 10) || 0;
-                    badge.textContent = current + quantity;
+                    if (typeof data.cart_count !== 'undefined') {
+                        badge.textContent = data.cart_count;
+                    } else {
+                        const current = parseInt(badge.textContent.trim(), 10) || 0;
+                        badge.textContent = current + quantity;
+                    }
                 });
 
-                showToast('Đã thêm sản phẩm vào giỏ hàng!', 'success');
+                showToast(data.message || 'Đã thêm sản phẩm vào giỏ hàng!', 'success');
             } catch (err) {
-                // Fallback direct navigate
                 window.location.href = `/cart`;
             }
         }
