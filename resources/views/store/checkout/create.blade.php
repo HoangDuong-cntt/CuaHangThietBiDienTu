@@ -1,6 +1,6 @@
 @extends('layouts.client')
 
-@section('title', 'Thanh toán - tinh.')
+@section('title', 'Thanh toán - D.D.')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

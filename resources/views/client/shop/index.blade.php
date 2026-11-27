@@ -1,11 +1,11 @@
 @extends('layouts.client')
 
-@section('title', 'Cửa Hàng Thiết Bị Công Nghệ - tinh.')
+@section('title', 'Cửa Hàng Thiết Bị Công Nghệ - D.D.')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
-    <!-- BREADCRUMB & HEADER BANNER (CHUẨN FORM MẪU TINH.) -->
+    <!-- BREADCRUMB & HEADER BANNER (CHUẨN FORM MẪU D.D.) -->
     <div class="mb-8">
         <nav class="flex items-center gap-2 text-xs text-slate-400 mb-4">
             <a href="{{ route('home') }}" class="hover:text-blue-600 transition-colors">Trang chủ</a>
@@ -64,13 +64,13 @@
                     <div>
                         <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Danh Mục</h4>
                         <div class="space-y-1.5 max-h-48 overflow-y-auto pr-1 text-xs">
-                            <a href="{{ route('shop.index', array_merge(request()->except('category', 'page'))) }}" 
+                            <a href="{{ route('shop.index', array_merge(request()->except('category', 'page'))) }}"
                                class="flex items-center justify-between py-1.5 px-2.5 rounded-xl transition-colors {{ !request('category') ? 'bg-blue-50 text-blue-700 font-bold' : 'text-slate-600 hover:bg-slate-50' }}">
                                 <span>Tất cả danh mục</span>
                                 <span class="text-[10px] text-slate-400">{{ \App\Models\Product::where('is_active', true)->count() }}</span>
                             </a>
                             @foreach($categories as $cat)
-                            <a href="{{ route('shop.index', array_merge(request()->except('page'), ['category' => $cat->slug])) }}" 
+                            <a href="{{ route('shop.index', array_merge(request()->except('page'), ['category' => $cat->slug])) }}"
                                class="flex items-center justify-between py-1.5 px-2.5 rounded-xl transition-colors {{ request('category') === $cat->slug ? 'bg-blue-50 text-blue-700 font-bold' : 'text-slate-600 hover:bg-slate-50' }}">
                                 <span>{{ $cat->name }}</span>
                                 <span class="text-[10px] text-slate-400">{{ $cat->products_count }}</span>
@@ -89,9 +89,9 @@
                             @foreach($brands as $brand)
                             <label class="flex items-center justify-between cursor-pointer group hover:text-blue-600">
                                 <div class="flex items-center gap-2">
-                                    <input 
-                                        type="checkbox" 
-                                        name="brands[]" 
+                                    <input
+                                        type="checkbox"
+                                        name="brands[]"
                                         value="{{ $brand->id }}"
                                         {{ in_array($brand->id, $selectedBrands) ? 'checked' : '' }}
                                         onchange="document.getElementById('filter-form').submit()"
@@ -111,9 +111,9 @@
                         <div class="grid grid-cols-2 gap-2 text-xs mb-2.5">
                             <div>
                                 <label class="text-[10px] text-slate-400 block mb-1">Từ (triệu):</label>
-                                <input 
-                                    type="number" 
-                                    name="min_price" 
+                                <input
+                                    type="number"
+                                    name="min_price"
                                     value="{{ request('min_price') }}"
                                     placeholder="0"
                                     class="w-full px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs focus:border-blue-500 focus:outline-hidden"
@@ -121,9 +121,9 @@
                             </div>
                             <div>
                                 <label class="text-[10px] text-slate-400 block mb-1">Đến (triệu):</label>
-                                <input 
-                                    type="number" 
-                                    name="max_price" 
+                                <input
+                                    type="number"
+                                    name="max_price"
                                     value="{{ request('max_price') }}"
                                     placeholder="100"
                                     class="w-full px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs focus:border-blue-500 focus:outline-hidden"
@@ -250,7 +250,7 @@
                 <!-- Sorting Dropdown -->
                 <div class="flex items-center gap-2 text-xs">
                     <label class="text-slate-400 font-medium shrink-0">Sắp xếp theo:</label>
-                    <select 
+                    <select
                         id="sort-select"
                         onchange="handleSortChange(this.value)"
                         class="px-3 py-1.5 bg-slate-50 hover:bg-slate-100 rounded-xl border border-slate-200 text-slate-700 text-xs font-semibold focus:outline-hidden focus:border-blue-500 cursor-pointer shadow-2xs"
@@ -300,9 +300,9 @@
                         </div>
 
                         <!-- Wishlist Toggle Button -->
-                        <button 
-                            type="button" 
-                            onclick="toggleWishlist({{ $product->id }}, this)" 
+                        <button
+                            type="button"
+                            onclick="toggleWishlist({{ $product->id }}, this)"
                             class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-white/80 backdrop-blur-xs text-slate-400 hover:text-red-500 hover:bg-white flex items-center justify-center shadow-xs border border-slate-200 transition-colors"
                             title="Thêm vào yêu thích"
                         >
@@ -312,9 +312,9 @@
                         <!-- Product Thumbnail -->
                         <div>
                             <a href="{{ route('products.show', $product->slug) }}" class="w-full h-44 rounded-2xl bg-slate-50/70 p-4 flex items-center justify-center overflow-hidden mb-3 border border-slate-100 block group-hover:border-blue-200 transition-colors">
-                                <img 
-                                    src="{{ $product->images->first()?->image_url ?? '/images/placeholder.svg' }}" 
-                                    alt="{{ $product->name }}" 
+                                <img
+                                    src="{{ $product->images->first()?->image_url ?? '/images/placeholder.svg' }}"
+                                    alt="{{ $product->name }}"
                                     class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                                     onerror="this.src='/images/placeholder.svg'"
                                 >
@@ -368,9 +368,9 @@
 
                             <!-- Action Bar: Thêm Giỏ + So Sánh + Hỏi AI -->
                             <div class="grid grid-cols-3 gap-1.5">
-                                <button 
-                                    type="button" 
-                                    onclick="addToCart({{ $product->variants->first()?->id ?? $product->id }}, 1)" 
+                                <button
+                                    type="button"
+                                    onclick="addToCart({{ $product->variants->first()?->id ?? $product->id }}, 1)"
                                     class="py-2 px-2 rounded-xl bg-blue-50 hover:bg-blue-600 text-blue-600 hover:text-white text-xs font-bold transition-all text-center flex items-center justify-center gap-1 cursor-pointer"
                                     title="Thêm vào giỏ hàng"
                                 >
@@ -378,9 +378,9 @@
                                     <span>+ Giỏ</span>
                                 </button>
 
-                                <button 
-                                    type="button" 
-                                    onclick="addToCompare({{ $product->id }}, {{ $product->category?->getRoot()->id ?? $product->category_id }}, '{{ addslashes($product->category?->getRoot()->name ?? $product->category?->name) }}')" 
+                                <button
+                                    type="button"
+                                    onclick="addToCompare({{ $product->id }}, {{ $product->category?->getRoot()->id ?? $product->category_id }}, '{{ addslashes($product->category?->getRoot()->name ?? $product->category?->name) }}')"
                                     class="py-2 px-2 rounded-xl bg-slate-100 hover:bg-indigo-50 text-slate-700 hover:text-indigo-600 text-xs font-semibold text-center border border-slate-200/80 transition-colors flex items-center justify-center gap-1 cursor-pointer"
                                     title="So sánh với máy cùng loại"
                                 >
@@ -388,9 +388,9 @@
                                     <span>So sánh</span>
                                 </button>
 
-                                <button 
-                                    type="button" 
-                                    onclick="window.SmartTechAI && window.SmartTechAI.setProductContext({{ $product->id }}); window.SmartTechAI && window.SmartTechAI.openChat();" 
+                                <button
+                                    type="button"
+                                    onclick="window.SmartTechAI && window.SmartTechAI.setProductContext({{ $product->id }}); window.SmartTechAI && window.SmartTechAI.openChat();"
                                     class="py-2 px-2 rounded-xl bg-slate-100 hover:bg-blue-50 text-slate-700 hover:text-blue-600 text-xs font-semibold text-center border border-slate-200/80 transition-colors flex items-center justify-center gap-1 cursor-pointer"
                                     title="Hỏi AI về máy này"
                                 >

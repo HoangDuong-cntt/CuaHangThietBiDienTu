@@ -5,7 +5,7 @@
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
 
-    <!-- Hero Banner (Chuẩn form mẫu tinh.) -->
+    <!-- Hero Banner (Chuẩn form mẫu D.D.) -->
     <div class="relative overflow-hidden rounded-3xl bg-[#f4f6f8] border border-slate-200/70 p-8 sm:p-10">
         <div class="relative z-10 max-w-2xl space-y-3">
             <span class="text-blue-600 font-bold text-[11px] uppercase tracking-wider block">
@@ -128,8 +128,8 @@
         @forelse($products as $product)
             @php
                 $firstImg = $product->images->first()?->image_url ?? '/uploads/products/default.jpg';
-                $discountPercent = $product->base_price > $product->sale_price 
-                    ? round((($product->base_price - $product->sale_price) / $product->base_price) * 100) 
+                $discountPercent = $product->base_price > $product->sale_price
+                    ? round((($product->base_price - $product->sale_price) / $product->base_price) * 100)
                     : 0;
                 $firstVariant = $product->variants->first();
             @endphp
