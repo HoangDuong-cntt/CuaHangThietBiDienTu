@@ -5,7 +5,7 @@
     <div class="w-full max-w-[420px]">
 
         <!-- Compact Card -->
-        <div class="bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 shadow-sm">
+        <div class="bg-white rounded-3xl border border-slate-200/80 p-6 sm:p-8 shadow-sm">
             
             <!-- Brand & Icon -->
             <div class="text-center mb-6">
@@ -57,7 +57,7 @@
                     @enderror
                 </div>
 
-                <button type="submit" class="w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-bold uppercase tracking-wider transition-all shadow-sm active:scale-[0.99] cursor-pointer mt-1">
+                <button type="submit" class="w-full py-3 px-5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold tracking-wide transition-all shadow-md shadow-blue-600/20 active:scale-[0.99] cursor-pointer mt-1">
                     Gửi liên kết khôi phục
                 </button>
             </form>

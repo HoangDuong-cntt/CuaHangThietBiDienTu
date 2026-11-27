@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ $title ?? 'SmartTech E-Commerce' }} - Thiết Bị Công Nghệ Thông Minh</title>
+    <title>{{ $title ?? 'D&D. E-Commerce' }} - Thiết Bị Công Nghệ Thông Minh</title>
 
     <!-- Scripts & Styles via Vite -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -22,14 +22,8 @@
             
             <!-- Logo & Brand -->
             <div class="flex items-center gap-8">
-                <a href="{{ url('/') }}" class="flex items-center gap-2.5 group">
-                    <div class="w-8 h-8 rounded-md bg-zinc-900 text-white dark:bg-white dark:text-zinc-950 flex items-center justify-center font-bold text-sm tracking-tighter transition-transform group-hover:scale-95">
-                        ST
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-base font-bold tracking-tight text-zinc-900 dark:text-white uppercase leading-none">SmartTech</span>
-                        <span class="text-[9px] font-mono tracking-widest uppercase text-zinc-500 leading-tight">HARDWARE LAB</span>
-                    </div>
+                <a href="{{ url('/') }}" class="flex items-center gap-1.5 group">
+                    <span class="text-2xl font-black tracking-tight text-slate-900 dark:text-white">D&D<span class="text-blue-600">.</span></span>
                 </a>
 
                 <!-- Navigation Links -->
@@ -177,11 +171,11 @@
     <footer class="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950 py-8 text-xs text-zinc-500">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-2">
-                <span class="font-bold text-zinc-900 dark:text-white uppercase tracking-tight">SmartTech E-Commerce</span>
+                <span class="font-bold text-zinc-900 dark:text-white uppercase tracking-tight">D&D. E-Commerce</span>
                 <span>&bull;</span>
                 <span class="font-mono text-[11px]">PHP 8.5 &bull; Laravel Framework</span>
             </div>
-            <p>&copy; 2026 SmartTech Hardware Lab. Đồ án Thực tập chuyên ngành CNTT.</p>
+            <p>&copy; 2026 D&D. Đồ án Thực tập chuyên ngành CNTT.</p>
         </div>
     </footer>
 

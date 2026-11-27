@@ -121,7 +121,7 @@
                 </div>
 
                 <!-- Submit Button -->
-                <button type="submit" class="w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-blue-600 text-white text-xs font-bold uppercase tracking-wider transition-all shadow-sm active:scale-[0.99] cursor-pointer mt-1">
+                <button type="submit" class="w-full py-3 px-5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold tracking-wide transition-all shadow-md shadow-blue-600/20 active:scale-[0.99] cursor-pointer mt-1">
                     Đăng nhập tài khoản
                 </button>
             </form>

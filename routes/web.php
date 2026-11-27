@@ -29,19 +29,18 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-// Trang Chủ
+// =========================================================================
+// PHÂN HỆ CỬA HÀNG, TÌM KIẾM & SO SÁNH (THÀNH VIÊN 3 & THÀNH VIÊN 2)
+// =========================================================================
 Route::get('/', [CatalogController::class, 'home'])->name('home');
-
-// Trang Cửa Hàng & Bộ Lọc Nâng Cao
 Route::get('/shop', [CatalogController::class, 'index'])->name('shop.index');
-
-// Chi tiết sản phẩm & Danh mục sản phẩm (Đồng bộ với phân hệ Catalog của Duongdev)
 Route::get('/san-pham', [ProductController::class, 'index'])->name('products.index');
 Route::get('/san-pham/{slug}', [ProductController::class, 'show'])->name('products.show');
 Route::get('/products/{slug}', [ProductController::class, 'show'])->name('products.show.alias');
-
-// Trang So Sánh Đối Chiếu Sản Phẩm
 Route::get('/compare', [ProductComparisonController::class, 'index'])->name('compare.index');
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
 
 // =========================================================================
 // PHÂN HỆ GIỎ HÀNG, THANH TOÁN & ĐƠN HÀNG (THÀNH VIÊN 4)

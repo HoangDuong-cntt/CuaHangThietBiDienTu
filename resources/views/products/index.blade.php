@@ -5,7 +5,7 @@
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
 
-    <!-- Hero Banner (Chuẩn form mẫu tinh.) -->
+    <!-- Hero Banner (Chuẩn form mẫu D&D.) -->
     <div class="relative overflow-hidden rounded-3xl bg-[#f4f6f8] border border-slate-200/70 p-8 sm:p-10">
         <div class="relative z-10 max-w-2xl space-y-3">
             <span class="text-blue-600 font-bold text-[11px] uppercase tracking-wider block">
@@ -127,41 +127,42 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         @forelse($products as $product)
             @php
-                $firstImg = $product->images->first()?->image_url ?? '/uploads/products/default.jpg';
+                $firstImg = $product->images->first()?->image_url ?? '/images/placeholder.svg';
                 $discountPercent = $product->base_price > $product->sale_price 
                     ? round((($product->base_price - $product->sale_price) / $product->base_price) * 100) 
                     : 0;
                 $firstVariant = $product->variants->first();
             @endphp
-            <div class="group bg-white rounded-2xl border border-slate-200/90 hover:border-blue-400 hover:shadow-xl transition-all duration-300 flex flex-col overflow-hidden relative">
+            <div class="tilt-card group bg-white rounded-3xl border border-slate-200/80 hover:border-slate-300 transition-all duration-300 flex flex-col overflow-hidden relative shadow-2xs" data-tilt>
                 <!-- Badges -->
-                <div class="absolute top-3 left-3 z-10 flex flex-col gap-1.5">
+                <div class="absolute top-3.5 left-3.5 z-10 flex flex-col gap-1.5">
                     @if($discountPercent > 0)
-                        <span class="bg-rose-500 text-white text-[11px] font-black px-2.5 py-1 rounded-lg shadow-sm">
+                        <span class="bg-rose-50/95 text-rose-600 border border-rose-100 text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-2xs backdrop-blur-xs">
                             -{{ $discountPercent }}%
                         </span>
                     @endif
                     @if($product->total_sold > 30)
-                        <span class="bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-md shadow-xs">
+                        <span class="bg-amber-50/95 text-amber-700 border border-amber-100 text-[10px] font-bold px-2.5 py-0.5 rounded-full shadow-2xs backdrop-blur-xs">
                             <i class="fa-solid fa-fire mr-0.5"></i> Bán chạy
                         </span>
                     @endif
                 </div>
 
                 <!-- Brand tag -->
-                <div class="absolute top-3 right-3 z-10">
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-600 px-2 py-1 rounded-md border border-slate-200">
+                <div class="absolute top-3.5 right-3.5 z-10">
+                    <span class="text-[10px] font-bold uppercase tracking-wider bg-white/85 backdrop-blur-xs text-slate-600 px-2.5 py-0.5 rounded-full border border-slate-200/70">
                         {{ $product->brand?->name }}
                     </span>
                 </div>
 
                 <!-- Image container -->
-                <a href="{{ route('products.show', $product->slug) }}" class="block relative aspect-square bg-slate-50 overflow-hidden p-6">
+                <a href="{{ route('products.show', $product->slug) }}" class="block relative aspect-[4/3] bg-[#F1F5F9] overflow-hidden">
                     <img
                         src="{{ $firstImg }}"
                         alt="{{ $product->name }}"
                         loading="lazy"
-                        class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                        onerror="this.src='/images/placeholder.svg'"
                     >
                 </a>
 
@@ -180,23 +181,23 @@
                     <!-- Key Spec Pills -->
                     <div class="flex flex-wrap gap-1.5 text-[11px] text-slate-600">
                         @if($firstVariant && $firstVariant->ram)
-                            <span class="bg-slate-100 px-2 py-0.5 rounded font-medium">{{ $firstVariant->ram }}</span>
+                            <span class="bg-slate-100 px-2 py-0.5 rounded-md font-medium">{{ $firstVariant->ram }}</span>
                         @endif
                         @if($firstVariant && $firstVariant->storage)
-                            <span class="bg-slate-100 px-2 py-0.5 rounded font-medium">{{ $firstVariant->storage }}</span>
+                            <span class="bg-slate-100 px-2 py-0.5 rounded-md font-medium">{{ $firstVariant->storage }}</span>
                         @endif
                         @if($product->screen_size)
-                            <span class="bg-slate-100 px-2 py-0.5 rounded font-medium">{{ $product->screen_size }}"</span>
+                            <span class="bg-slate-100 px-2 py-0.5 rounded-md font-medium">{{ $product->screen_size }}"</span>
                         @endif
                         @if($product->weight_grams)
-                            <span class="bg-slate-100 px-2 py-0.5 rounded font-medium">{{ round($product->weight_grams / 1000, 2) }}kg</span>
+                            <span class="bg-slate-100 px-2 py-0.5 rounded-md font-medium">{{ round($product->weight_grams / 1000, 2) }}kg</span>
                         @endif
                     </div>
 
                     <!-- Price Block -->
                     <div class="pt-2 mt-auto border-t border-slate-100">
                         <div class="flex items-baseline gap-2">
-                            <span class="text-base font-extrabold text-rose-600">
+                            <span class="text-base font-black text-slate-900">
                                 {{ number_format($product->sale_price, 0, ',', '.') }}₫
                             </span>
                             @if($product->base_price > $product->sale_price)
@@ -214,7 +215,7 @@
                     <!-- CTA Button -->
                     <a
                         href="{{ route('products.show', $product->slug) }}"
-                        class="w-full text-center bg-slate-100 group-hover:bg-blue-600 text-slate-700 group-hover:text-white text-xs font-bold py-2.5 rounded-xl transition duration-200 flex items-center justify-center gap-1.5"
+                        class="w-full text-center bg-blue-50 hover:bg-blue-600 text-blue-600 hover:text-white text-xs font-bold py-2.5 rounded-full transition duration-200 flex items-center justify-center gap-1.5"
                     >
                         <span>Xem chi tiết</span>
                         <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"></i>
@@ -228,7 +229,7 @@
                 </div>
                 <h3 class="text-lg font-bold text-slate-700">Không tìm thấy sản phẩm phù hợp</h3>
                 <p class="text-sm text-slate-500 max-w-md mx-auto">Vui lòng thử tìm kiếm với từ khóa khác hoặc xóa bớt các tiêu chí lọc danh mục / thương hiệu.</p>
-                <a href="{{ route('products.index') }}" class="inline-block bg-blue-600 text-white text-xs font-bold px-5 py-2.5 rounded-xl hover:bg-blue-700 transition">
+                <a href="{{ route('products.index') }}" class="inline-block bg-blue-600 text-white text-xs font-bold px-6 py-2.5 rounded-full hover:bg-blue-700 transition">
                     Xóa tất cả bộ lọc
                 </a>
             </div>

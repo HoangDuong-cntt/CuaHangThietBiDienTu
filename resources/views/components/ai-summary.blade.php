@@ -8,21 +8,21 @@
     ];
 @endphp
 
-<!-- AI SUMMARY CARD COMPONENT (THÀNH VIÊN 3 BÀN GIAO CHO THÀNH VIÊN 2) -->
-<div class="bg-gradient-to-br from-indigo-50/80 via-white to-blue-50/60 rounded-3xl p-6 border border-indigo-100 shadow-sm relative overflow-hidden my-6">
+<!-- AI SUMMARY CARD COMPONENT -->
+<div class="bg-gradient-to-br from-[#F5F3FF] via-white to-[#EDE9FE]/50 rounded-3xl p-6 border border-purple-100 shadow-2xs relative overflow-hidden my-6">
     <!-- Decorative background glow -->
-    <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-gradient-to-br from-indigo-400/10 to-blue-400/10 rounded-full blur-2xl pointer-events-none"></div>
+    <div class="absolute -right-10 -bottom-10 w-44 h-44 bg-gradient-to-br from-purple-400/10 to-violet-400/10 rounded-full blur-2xl pointer-events-none"></div>
 
     <!-- Header -->
-    <div class="flex items-center justify-between pb-4 border-b border-indigo-100/80 mb-5">
+    <div class="flex items-center justify-between pb-4 border-b border-purple-100/80 mb-5">
         <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center shadow-md shadow-indigo-500/20">
+            <div class="w-10 h-10 rounded-2xl bg-[#7C3AED] text-white flex items-center justify-center shadow-md shadow-purple-500/20">
                 <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
             </div>
             <div>
                 <div class="flex items-center gap-2">
                     <h3 class="font-extrabold text-sm text-slate-900 tracking-tight">Tóm Tắt Đánh Giá Bằng Trợ Lý AI</h3>
-                    <span class="px-2 py-0.5 rounded-full text-[10px] font-black tracking-wider bg-gradient-to-r from-blue-600 to-indigo-600 text-white uppercase shadow-xs">Gemini Flash</span>
+                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider bg-purple-100 text-purple-700 border border-purple-200 uppercase">D&D AI</span>
                 </div>
                 <p class="text-xs text-slate-500 mt-0.5">Phân tích tự động dựa trên thông số kỹ thuật và phản hồi thực tế</p>
             </div>
@@ -33,7 +33,7 @@
             type="button" 
             onclick="refreshAiSummary({{ $product->id }})"
             id="refresh-summary-btn-{{ $product->id }}"
-            class="text-xs text-indigo-600 hover:text-indigo-800 font-semibold flex items-center gap-1.5 px-3 py-1.5 rounded-xl hover:bg-white transition-colors border border-transparent hover:border-indigo-100"
+            class="text-xs text-[#7C3AED] hover:text-[#6D28D9] font-semibold flex items-center gap-1.5 px-3.5 py-1.5 rounded-full hover:bg-white transition-colors border border-transparent hover:border-purple-200 cursor-pointer"
             title="Tạo lại tóm tắt mới"
         >
             <i class="fa-solid fa-arrows-rotate text-[11px]"></i>

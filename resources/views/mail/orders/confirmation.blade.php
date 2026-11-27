@@ -7,7 +7,7 @@
 <body style="font-family: Arial, sans-serif; color: #172033; line-height: 1.6;">
     <h1>Đơn hàng đã được tiếp nhận</h1>
     <p>Xin chào {{ $order->receiver_name }},</p>
-    <p>SmartTech đã nhận đơn hàng <strong>{{ $order->order_code }}</strong>.</p>
+    <p>D&D. đã nhận đơn hàng <strong>{{ $order->order_code }}</strong>.</p>
     <table style="width: 100%; border-collapse: collapse;">
         <thead>
             <tr>
@@ -29,6 +29,6 @@
     <p><strong>Tổng thanh toán: {{ number_format($order->total_amount, 0, ',', '.') }} ₫</strong></p>
     <p>Địa chỉ nhận hàng: {{ $order->shipping_address }}</p>
     <p>Hóa đơn PDF được đính kèm trong email này.</p>
-    <p>Cảm ơn bạn đã mua sắm tại SmartTech.</p>
+    <p>Cảm ơn bạn đã mua sắm tại D&D.</p>
 </body>
 </html>
